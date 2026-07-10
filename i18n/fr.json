@@ -1,0 +1,105 @@
+{
+  "_draft": "TODO: native French review required before launch",
+  "lang": "fr",
+  "nav": {
+    "brand":      "Pretty Absurd",
+    "lookbook":   "Lookbook",
+    "collection": "Les Robes",
+    "about":      "À Propos",
+    "brandWorld": "L'Univers",
+    "contact":    "Contact"
+  },
+  "home": {
+    "hero": {
+      "headline":      "Pretty Absurd.",
+      "sub":           "Trois robes. Une idée absurde.",
+      "cta_lookbook":  "Voir le lookbook",
+      "cta_collection":"Voir les robes"
+    },
+    "intro": {
+      "label": "Prélancement",
+      "text":  "Une marque en devenir. Une créatrice indépendante qui confectionne des vêtements qui ne devraient pas fonctionner — mais qui fonctionnent.",
+      "cta":   "Rencontrer la créatrice"
+    },
+    "teaser": {
+      "label":    "La collection",
+      "headline": "Trois robes. Chacune délibérément décalée."
+    }
+  },
+  "lookbook": {
+    "label":         "Numéro 01",
+    "headline":      "Le Lookbook.",
+    "sub":           "Un magazine de mode que l'on fait défiler.",
+    "credits_label": "Crédits",
+    "spread_label":  "Planche"
+  },
+  "collection": {
+    "label":       "La Collection",
+    "headline":    "Trois Robes.",
+    "sub":         "Chacune faite pour être admirée.",
+    "cta_inquire": "Renseignements",
+    "cta_notify":  "M'avertir",
+    "pieces": {
+      "pink": {
+        "name":  "Le Satin Rose",
+        "desc":  "Un corsage structuré sérieux. Une jupe plissée qui ne l'est pas.",
+        "price": 3800
+      },
+      "blue": {
+        "name":  "Le Bleu Glacier",
+        "desc":  "Satin bleu poudre. Encolure en cœur. Structurellement absurde.",
+        "price": 3800
+      },
+      "polkadot": {
+        "name":  "Les Pois",
+        "desc":  "Points noirs sur blanc. Charme rétro. Chaos contemporain.",
+        "price": 3500
+      }
+    }
+  },
+  "about": {
+    "label":            "La Créatrice",
+    "headline":         "Derrière Pretty Absurd.",
+    "sub":              "Une créatrice indépendante qui confectionne des vêtements qui semblent ne pas devoir exister — mais qu'on ne peut plus imaginer absents.",
+    "story_label":      "L'Histoire",
+    "philosophy_label": "La Philosophie",
+    "process_label":    "Le Processus"
+  },
+  "brandWorld": {
+    "label":    "L'Univers",
+    "headline": "L'Univers de Pretty Absurd.",
+    "sub":      "Là où vivent les références.",
+    "intro":    "Des pois dans le métro. De l'herbe dans les salons. Une robe parfaitement repassée dans un endroit totalement incongru. Voilà le monde dont viennent ces vêtements."
+  },
+  "contact": {
+    "label":    "Nous Contacter",
+    "headline": "Parlons-en.",
+    "sub":      "Presse, revendeurs et amateurs passionnés bienvenus.",
+    "form": {
+      "name":          "Votre nom",
+      "email":         "Adresse e-mail",
+      "country":       "Pays",
+      "type":          "De quoi s'agit-il ?",
+      "type_press":    "Demande presse",
+      "type_stockist": "Demande revendeur",
+      "type_general":  "Général",
+      "message":       "Votre message",
+      "submit":        "Envoyer",
+      "success":       "Envoyé. Nous vous recontacterons bientôt.",
+      "error":         "Une erreur s'est produite. Veuillez réessayer."
+    }
+  },
+  "footer": {
+    "tagline": "Des robes faites pour être admirées.",
+    "copy":    "© 2026 Pretty Absurd. Tous droits réservés.",
+    "links": {
+      "lookbook":   "Lookbook",
+      "collection": "Les Robes",
+      "about":      "À Propos",
+      "contact":    "Contact"
+    }
+  },
+  "currency": {
+    "note": "approx. — prix définitif en ZAR"
+  }
+}

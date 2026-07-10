@@ -1,0 +1,105 @@
+{
+  "_draft": "TODO: native Italian review required before launch",
+  "lang": "it",
+  "nav": {
+    "brand":      "Pretty Absurd",
+    "lookbook":   "Lookbook",
+    "collection": "Gli Abiti",
+    "about":      "Chi Siamo",
+    "brandWorld": "L'Universo",
+    "contact":    "Contatti"
+  },
+  "home": {
+    "hero": {
+      "headline":      "Pretty Absurd.",
+      "sub":           "Tre abiti. Un'idea assurda.",
+      "cta_lookbook":  "Scopri il lookbook",
+      "cta_collection":"Scopri gli abiti"
+    },
+    "intro": {
+      "label": "Prelaunch",
+      "text":  "Un brand in arrivo. Una stilista indipendente che crea abiti che non dovrebbero funzionare — eppure funzionano.",
+      "cta":   "Incontra la stilista"
+    },
+    "teaser": {
+      "label":    "La collezione",
+      "headline": "Tre abiti. Ognuno deliberatamente fuori posto."
+    }
+  },
+  "lookbook": {
+    "label":         "Numero 01",
+    "headline":      "Il Lookbook.",
+    "sub":           "Un magazine di moda da scorrere.",
+    "credits_label": "Credits",
+    "spread_label":  "Pagina"
+  },
+  "collection": {
+    "label":       "La Collezione",
+    "headline":    "Tre Abiti.",
+    "sub":         "Ognuno fatto per essere guardato.",
+    "cta_inquire": "Richiedi info",
+    "cta_notify":  "Avvisami",
+    "pieces": {
+      "pink": {
+        "name":  "Il Raso Rosa",
+        "desc":  "Un corsetto che fa sul serio. Una gonna plissettata che no.",
+        "price": 3800
+      },
+      "blue": {
+        "name":  "L'Azzurro Ghiaccio",
+        "desc":  "Raso azzurro cipria. Scollatura a cuore. Strutturalmente assurdo.",
+        "price": 3800
+      },
+      "polkadot": {
+        "name":  "Il Pois",
+        "desc":  "Puntini neri su bianco. Fascino d'altri tempi. Caos contemporaneo.",
+        "price": 3500
+      }
+    }
+  },
+  "about": {
+    "label":            "La Stilista",
+    "headline":         "Dietro Pretty Absurd.",
+    "sub":              "Una stilista indipendente che crea abiti che sembrerebbero non dover esistere — ma che, una volta visti, non si riesce più a immaginare assenti.",
+    "story_label":      "La Storia",
+    "philosophy_label": "La Filosofia",
+    "process_label":    "Il Processo"
+  },
+  "brandWorld": {
+    "label":    "L'Universo",
+    "headline": "L'Universo di Pretty Absurd.",
+    "sub":      "Dove vivono i riferimenti.",
+    "intro":    "Pois in metropolitana. Erba nei salotti. Un abito perfettamente stirato in un posto completamente sbagliato. Questo è il mondo da cui vengono questi vestiti."
+  },
+  "contact": {
+    "label":    "Contattaci",
+    "headline": "Parliamoci.",
+    "sub":      "Stampa, rivenditori e curiosi appassionati sono benvenuti.",
+    "form": {
+      "name":          "Il tuo nome",
+      "email":         "Indirizzo e-mail",
+      "country":       "Paese",
+      "type":          "Di cosa si tratta?",
+      "type_press":    "Richiesta stampa",
+      "type_stockist": "Richiesta rivenditore",
+      "type_general":  "Generale",
+      "message":       "Il tuo messaggio",
+      "submit":        "Invia",
+      "success":       "Inviato. Ti ricontatteremo presto.",
+      "error":         "Qualcosa è andato storto. Riprova."
+    }
+  },
+  "footer": {
+    "tagline": "Abiti fatti per essere guardati.",
+    "copy":    "© 2026 Pretty Absurd. Tutti i diritti riservati.",
+    "links": {
+      "lookbook":   "Lookbook",
+      "collection": "Gli Abiti",
+      "about":      "Chi Siamo",
+      "contact":    "Contatti"
+    }
+  },
+  "currency": {
+    "note": "ca. — prezzo definitivo in ZAR"
+  }
+}

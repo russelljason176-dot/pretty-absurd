@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Pretty Absurd — About Kaylah, the designer. The story, philosophy, and process behind the brand.">
+  <meta name="theme-color" content="#F7F2EE">
+  <title>About — Pretty Absurd</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/nav.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/about.css">
+</head>
+<body data-page="about">
+
+  <nav class="site-nav" role="navigation" aria-label="Main navigation">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__brand">Pretty Absurd</a>
+      <ul class="nav__links" role="list">
+        <li><a href="lookbook.html"    class="nav__link">Lookbook</a></li>
+        <li><a href="collection.html"  class="nav__link">The Dresses</a></li>
+        <li><a href="about.html"       class="nav__link is-active">About</a></li>
+        <li><a href="brand-world.html" class="nav__link">Brand World</a></li>
+        <li><a href="contact.html"     class="nav__link">Contact</a></li>
+      </ul>
+      <div class="nav__lang" role="group" aria-label="Language">
+        <button class="nav__lang-btn is-active" data-lang="en">EN</button>
+        <button class="nav__lang-btn"            data-lang="fr">FR</button>
+        <button class="nav__lang-btn"            data-lang="it">IT</button>
+      </div>
+      <button class="nav__toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-overlay">
+        <span class="nav__toggle-line" aria-hidden="true"></span>
+        <span class="nav__toggle-line" aria-hidden="true"></span>
+        <span class="nav__toggle-line" aria-hidden="true"></span>
+      </button>
+    </div>
+    <div class="nav__overlay" id="nav-overlay" role="dialog" aria-label="Mobile navigation">
+      <ul class="nav__overlay-links" role="list">
+        <li><a href="lookbook.html"    class="nav__overlay-link">Lookbook</a></li>
+        <li><a href="collection.html"  class="nav__overlay-link">The Dresses</a></li>
+        <li><a href="about.html"       class="nav__overlay-link">About</a></li>
+        <li><a href="brand-world.html" class="nav__overlay-link">Brand World</a></li>
+        <li><a href="contact.html"     class="nav__overlay-link">Contact</a></li>
+      </ul>
+      <div class="nav__overlay-bottom">
+        <button class="nav__lang-btn is-active" data-lang="en">EN</button>
+        <button class="nav__lang-btn"            data-lang="fr">FR</button>
+        <button class="nav__lang-btn"            data-lang="it">IT</button>
+      </div>
+    </div>
+  </nav>
+
+  <main id="main-content">
+    <div class="nav-spacer"></div>
+
+    <div class="container">
+
+      <!-- ── Page header ── -->
+      <header class="about-header section--sm">
+        <span class="about-header__label">The Designer</span>
+        <h1 class="about-header__headline">Behind<br><em>Pretty Absurd.</em></h1>
+        <p class="about-header__sub">An independent designer making clothes that look like they shouldn't exist — and yet, once you see them, you can't imagine they don't.</p>
+      </header>
+
+      <!-- ── Portrait + Story ── -->
+      <section class="about-story section" aria-label="Designer story">
+        <div class="about-story__portrait">
+          <div class="about-story__img-wrap reveal-item">
+            <img
+              src="assets/images/designer-portrait.jpg"
+              alt="Kaylah — designer and founder of Pretty Absurd"
+              class="about-story__img"
+              loading="eager"
+            >
+          </div>
+          <span class="about-story__img-caption">Kaylah &mdash; Designer &amp; Founder</span>
+        </div>
+        <div class="about-story__text">
+          <span class="about-section-label">The Story</span>
+          <h2 class="about-section-headline">Clothes that belong in a film you can't quite place.</h2>
+          <p>Pretty Absurd started with one question: why do women's clothes either fight to be invisible or try too hard to be seen?</p>
+          <p>Kaylah's answer was three dresses. Each one built around the same structure — a corset bodice, a sweetheart neckline, a pleated skirt — but each one telling a completely different story. Pink satin that feels like a Barbie dream. Ice blue that belongs on a catwalk in Paris. Polka dots that make you think of Marilyn Monroe on a rooftop.</p>
+          <p>The name says it all. Pretty Absurd is fashion that's deliberately, joyfully out of place. Clothes that make people stare — not because they're strange, but because they're exactly right in all the wrong ways.</p>
+        </div>
+      </section>
+
+      <!-- ── Philosophy pull-quote ── -->
+      <section class="about-philosophy section" aria-label="Philosophy">
+        <div class="about-philosophy__inner">
+          <span class="about-section-label">The Philosophy</span>
+          <blockquote class="about-philosophy__quote">
+            "Pretty Absurd is built on one idea: clothes should make you feel like the most interesting person in the room. Not the most tasteful. The most interesting."
+          </blockquote>
+          <p class="about-philosophy__body">Fashion has spent a long time telling women to choose — be feminine or be taken seriously, be playful or be polished. Pretty Absurd doesn't believe in that choice. The corset boning is serious. The polka dots are playful. Both are true at the same time, and that's exactly the point.</p>
+        </div>
+      </section>
+
+    </div>
+
+    <!-- ── Studio editorial full-bleed ── -->
+    <div class="about-studio-image" aria-label="Designer in studio with all three dresses">
+      <img
+        src="assets/images/designer-studio.png"
+        alt="Designer studying all three Pretty Absurd dresses hung in the studio"
+        class="about-studio-image__img"
+        loading="lazy"
+      >
+      <div class="about-studio-image__caption">
+        <span>The studio &mdash; where it begins</span>
+      </div>
+    </div>
+
+    <div class="container">
+
+      <!-- ── Process ── -->
+      <section class="about-process section--lg" aria-label="Process">
+        <span class="about-section-label">The Process</span>
+        <h2 class="about-section-headline">Every seam placed with intention.<br><em>The chaos is in the wearing, not the making.</em></h2>
+        <div class="about-process__grid">
+          <div class="about-process__item reveal-item">
+            <span class="about-process__step">01</span>
+            <h3 class="about-process__title">Structure first</h3>
+            <p class="about-process__text">Every dress starts with the bones. The corset boning defines the silhouette before a single piece of satin is cut. Structure is never an afterthought.</p>
+          </div>
+          <div class="about-process__item reveal-item">
+            <span class="about-process__step">02</span>
+            <h3 class="about-process__title">Fabric as character</h3>
+            <p class="about-process__text">The fabric is never just a covering — it's the personality of the piece. Satin catches the light differently. Polka dots change the conversation before you say a word.</p>
+          </div>
+          <div class="about-process__item reveal-item">
+            <span class="about-process__step">03</span>
+            <h3 class="about-process__title">Details that earn their place</h3>
+            <p class="about-process__text">The ruffle at the sweetheart neckline. The lacing at the back. The invisible zip at the side. Nothing is there for decoration — every detail does a job.</p>
+          </div>
+        </div>
+      </section>
+
+    </div>
+
+    <!-- ── CTA strip ── -->
+    <div class="about-cta-strip">
+      <div class="container">
+        <div class="about-cta-strip__inner">
+          <p class="about-cta-strip__text">Three dresses. Launching September 2026.</p>
+          <div class="about-cta-strip__links">
+            <a href="collection.html" class="about-cta-strip__link">See the dresses →</a>
+            <a href="lookbook.html" class="about-cta-strip__link">Enter the lookbook →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer__inner">
+      <div class="footer__top">
+        <div>
+          <div class="footer__brand">Pretty Absurd</div>
+          <div class="footer__tagline">Dresses made to be stared at.</div>
+        </div>
+        <nav class="footer__nav" aria-label="Footer navigation">
+          <a href="lookbook.html"    class="footer__nav-link">Lookbook</a>
+          <a href="collection.html"  class="footer__nav-link">The Dresses</a>
+          <a href="about.html"       class="footer__nav-link">About</a>
+          <a href="contact.html"     class="footer__nav-link">Contact</a>
+        </nav>
+      </div>
+      <div class="footer__bottom">
+        <span class="footer__copy">© 2026 Pretty Absurd. All rights reserved.</span>
+        <div class="footer__socials">
+          <a href="https://instagram.com/pretty_absurdd" class="footer__social" aria-label="Instagram" target="_blank" rel="noopener">Instagram</a>
+          <a href="https://tiktok.com/@pretty.absrudd" class="footer__social" aria-label="TikTok" target="_blank" rel="noopener">TikTok</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+  <script src="js/i18n.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

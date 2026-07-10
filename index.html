@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Pretty Absurd — an independent fashion designer. Three dresses. One absurd idea. Prelaunch 2026.">
+  <meta name="theme-color" content="#F7F2EE">
+  <meta property="og:title" content="Pretty Absurd">
+  <meta property="og:description" content="Three dresses. One absurd idea.">
+  <meta property="og:type" content="website">
+  <title>Pretty Absurd</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600&family=DM+Sans:wght@400;500;700&family=Poiret+One&family=Sacramento&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/nav.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/home.css">
+  <link rel="stylesheet" href="css/ephemera.css">
+</head>
+<body data-page="home">
+
+  <nav class="site-nav" role="navigation" aria-label="Main navigation">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__brand">Pretty Absurd</a>
+      <ul class="nav__links" role="list">
+        <li><a href="lookbook.html"    class="nav__link">Lookbook</a></li>
+        <li><a href="collection.html"  class="nav__link">The Dresses</a></li>
+        <li><a href="about.html"       class="nav__link">About</a></li>
+        <li><a href="brand-world.html" class="nav__link">Brand World</a></li>
+        <li><a href="contact.html"     class="nav__link">Contact</a></li>
+      </ul>
+      <div class="nav__lang" role="group" aria-label="Language">
+        <button class="nav__lang-btn is-active" data-lang="en">EN</button>
+        <button class="nav__lang-btn"            data-lang="fr">FR</button>
+        <button class="nav__lang-btn"            data-lang="it">IT</button>
+      </div>
+      <button class="nav__toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-overlay">
+        <span class="nav__toggle-line" aria-hidden="true"></span>
+        <span class="nav__toggle-line" aria-hidden="true"></span>
+        <span class="nav__toggle-line" aria-hidden="true"></span>
+      </button>
+    </div>
+    <div class="nav__overlay" id="nav-overlay" role="dialog" aria-label="Mobile navigation">
+      <ul class="nav__overlay-links" role="list">
+        <li><a href="lookbook.html"    class="nav__overlay-link">Lookbook</a></li>
+        <li><a href="collection.html"  class="nav__overlay-link">The Dresses</a></li>
+        <li><a href="about.html"       class="nav__overlay-link">About</a></li>
+        <li><a href="brand-world.html" class="nav__overlay-link">Brand World</a></li>
+        <li><a href="contact.html"     class="nav__overlay-link">Contact</a></li>
+      </ul>
+      <div class="nav__overlay-bottom">
+        <button class="nav__lang-btn is-active" data-lang="en">EN</button>
+        <button class="nav__lang-btn"            data-lang="fr">FR</button>
+        <button class="nav__lang-btn"            data-lang="it">IT</button>
+      </div>
+    </div>
+  </nav>
+
+  <main id="main-content">
+
+    <!-- ── Hero ── -->
+    <section class="home-hero" aria-label="Hero">
+      <div class="nav-spacer" aria-hidden="true"></div>
+      <div class="home-hero__img-wrap">
+        <img
+          src="assets/images/editorial/dot-subway.png"
+          alt="Editorial — model in polka dot corset dress ironing on the subway — Pretty Absurd"
+          class="home-hero__img"
+          loading="eager"
+          fetchpriority="high"
+        >
+        <div class="home-hero__overlay" aria-hidden="true"></div>
+      </div>
+      <div class="home-hero__content">
+        <div class="home-hero__text" data-parallax="0.06">
+          <h1 class="home-hero__headline">Pretty<br>Absurd.</h1>
+          <p class="home-hero__sub">Too much is the whole point.</p>
+          <div class="home-hero__ctas">
+            <a href="#" class="home-hero__cta home-hero__cta--primary" id="pa-hero-lookbook-btn">Enter the lookbook</a>
+            <a href="collection.html" class="home-hero__cta home-hero__cta--ghost">See the dresses</a>
+          </div>
+        </div>
+      </div>
+      <!-- ── Prelaunch strip ── -->
+      <div class="home-prelaunch" role="banner" aria-label="Prelaunch announcement">
+        <span class="home-prelaunch__label">Prelaunch</span>
+        <p class="home-prelaunch__text">Pre-ordering opens 25 July — Collection drops 25 July 2026</p>
+        <a href="contact.html" class="home-prelaunch__cta">Notify me →</a>
+      </div>
+
+    </section>
+
+    <!-- ── Ephemera: receipt + zine ── -->
+    <section class="home-ephemera">
+
+      <!-- Scattered stickers -->
+      <img class="pa-sticker" data-s="2" data-sparallax="0.15" src="assets/images/stickers/sticker-blue-star.png"  alt="" loading="lazy" aria-hidden="true">
+      <video class="pa-sticker" data-s="3" autoplay loop muted playsinline aria-hidden="true">
+        <source src="assets/images/stickers/discoball.webm" type="video/webm">
+        <source src="assets/images/stickers/discoball.mp4" type="video/mp4">
+      </video>
+      <img class="pa-sticker" data-s="4" data-sparallax="0.08" src="assets/images/stickers/sticker-camera.png"     alt="" loading="lazy" aria-hidden="true">
+      <img class="pa-sticker" data-s="5" data-sparallax="0.18" src="assets/images/stickers/sticker-stars.png"      alt="" loading="lazy" aria-hidden="true">
+      <img class="pa-sticker" data-s="6" data-sparallax="0.11" src="assets/images/stickers/sticker-megaphone.png"  alt="" loading="lazy" aria-hidden="true">
+      <img class="pa-sticker" data-s="7" src="assets/images/stickers/sticker-chevrons.png"   alt="" loading="lazy" aria-hidden="true">
+
+      <div class="home-ephemera__inner">
+
+        <!-- Slot 1: Receipt / waitlist card -->
+        <a class="pa-receipt" href="contact.html">
+          <div class="pa-curl"></div>
+          <span class="pa-logo-text">PRETTY ABSURD</span>
+          <div class="pa-rule">------------------------------</div>
+
+          <div class="pa-dress-item">
+            <img class="pa-dress-thumb" src="assets/images/product-detail/pink-hero.png" alt="The Pink Satin" loading="lazy">
+            <div class="pa-dress-info">
+              <span class="pa-dress-name">The Pink Satin</span>
+              <span class="pa-dress-price" data-price="1950">R1,950</span>
+            </div>
+          </div>
+
+          <div class="pa-dress-item">
+            <img class="pa-dress-thumb" src="assets/images/product-detail/blue-hero.png" alt="The Ice Blue" loading="lazy">
+            <div class="pa-dress-info">
+              <span class="pa-dress-name">The Ice Blue</span>
+              <span class="pa-dress-price" data-price="1950">R1,950</span>
+            </div>
+          </div>
+
+          <div class="pa-dress-item">
+            <img class="pa-dress-thumb" src="assets/images/product-detail/dot-hero.png" alt="The Polka Dot" loading="lazy">
+            <div class="pa-dress-info">
+              <span class="pa-dress-name">The Polka Dot</span>
+              <span class="pa-dress-price" data-price="1950">R1,950</span>
+            </div>
+          </div>
+
+          <div class="pa-rule">------------------------------</div>
+          <div class="pa-line pa-total"><span>TOTAL</span><span data-price="1950">R1,950</span></div>
+          <div class="pa-rule">------------------------------</div>
+          <div class="pa-meta">STATUS … coming soon<br>WAITLIST … now open</div>
+          <div class="pa-cta"><b>TAP TO RESERVE HER</b><span>join the waitlist — xo</span></div>
+          <div class="pa-barcode"></div>
+        </a>
+
+        <!-- Slot 2: Lookbook preview — click to open fullscreen reader -->
+        <div class="pa-zine" id="pa-lookbook-open" role="button" tabindex="0" aria-label="Open the lookbook" style="position:relative;">
+          <img class="pa-chevrons-on-zine" src="assets/images/stickers/sticker-chevrons.png" alt="" loading="lazy" aria-hidden="true">
+          <div class="pa-zine__book">
+            <div class="pa-zine__pages">
+              <div class="pa-zine__page">
+                <img src="assets/images/editorial/pink-clean.png" alt="Pretty Absurd Lookbook SS26" loading="lazy">
+                <div class="pa-zine__cover">
+                  <div class="pa-zine__masthead">ABSURD</div>
+                  <div class="pa-zine__coverline">Issue No.01 — SS26</div>
+                  <div class="pa-zine__cover-meta">
+                    <span class="pa-zine__cover-price">SS26 — 2026</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="pa-zine__spine"></div>
+            <div class="pa-zine__thickness"></div>
+            <div class="pa-zine__thickness-2"></div>
+          </div>
+          <p class="pa-zine__cta">open the issue →</p>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ── Notify strip ── -->
+    <section class="home-notify section" aria-label="Notify me when orders open">
+      <div class="container">
+        <div class="home-notify__inner">
+          <div class="home-notify__text">
+            <h2 class="home-notify__headline">Be first to know.</h2>
+            <p class="home-notify__sub">Pre-ordering opens 25 July 2026. Leave your email and we'll tell you the moment it does.</p>
+          </div>
+          <form class="home-notify__form" action="https://formspree.io/f/placeholder" method="POST" aria-label="Email notification signup">
+            <label for="notify-email" class="sr-only">Email address</label>
+            <input
+              id="notify-email"
+              type="email"
+              name="email"
+              placeholder="your@email.com"
+              required
+              class="home-notify__input"
+              autocomplete="email"
+            >
+            <button type="submit" class="home-notify__btn">Notify me</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer__inner">
+      <div class="footer__top">
+        <div>
+          <div class="footer__brand">Pretty Absurd</div>
+          <div class="footer__tagline">Dresses made to be stared at.</div>
+        </div>
+        <nav class="footer__nav" aria-label="Footer navigation">
+          <a href="lookbook.html"    class="footer__nav-link">Lookbook</a>
+          <a href="collection.html"  class="footer__nav-link">The Dresses</a>
+          <a href="about.html"       class="footer__nav-link">About</a>
+          <a href="contact.html"     class="footer__nav-link">Contact</a>
+        </nav>
+      </div>
+      <div class="footer__bottom">
+        <span class="footer__copy">© 2026 Pretty Absurd. All rights reserved.</span>
+        <div class="footer__socials">
+          <a href="https://instagram.com/pretty_absurdd" class="footer__social" aria-label="Instagram" target="_blank" rel="noopener">Instagram</a>
+          <a href="https://tiktok.com/@pretty.absrudd" class="footer__social" aria-label="TikTok" target="_blank" rel="noopener">TikTok</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ── Lookbook overlay — full-screen 3D flip reader ── -->
+  <div id="pa-lookbook-overlay" style="display:none;">
+    <div class="lb-stage">
+      <div class="lb-brandlabel">Pretty Absurd &nbsp;— the lookbook &nbsp;— issue n&ordm;01</div>
+
+      <div class="lb-scalewrap" id="lb-wrap">
+        <div class="lb-shadow"></div>
+        <div class="lb-book" id="lb-book">
+
+          <!-- LEAF 0 : COVER -->
+          <div class="lb-leaf">
+            <div class="lb-face" style="background:#141414;">
+              <div class="lb-imgslot dark"><img id="mag-cover" src="assets/images/editorial/pink-clean.png" alt="" loading="lazy"></div>
+              <div style="position:absolute;inset:0;pointer-events:none;background:linear-gradient(180deg,rgba(0,0,0,.5) 0%,transparent 26%,transparent 55%,rgba(0,0,0,.62) 100%);"></div>
+              <div style="position:absolute;top:26px;left:0;right:0;text-align:center;font:400 11px 'Space Mono',monospace;letter-spacing:.4em;color:#f4f1ea;">SS26 &nbsp;/&nbsp; ISSUE N&ordm;01</div>
+              <div style="position:absolute;left:8%;right:8%;top:38%;transform:translateY(-50%);text-align:center;">
+                <div style="font:700 30px/1.15 'Space Mono',monospace;letter-spacing:.14em;color:#f4f1ea;">PRETTY<br>ABSURD</div>
+              </div>
+              <div style="position:absolute;left:0;right:0;bottom:40px;text-align:center;color:#f4f1ea;">
+                <div style="font:400 15px 'Poiret One',sans-serif;letter-spacing:.42em;">THE DRESS</div>
+                <div style="font:italic 400 18px 'Cormorant Garamond',serif;color:#e7d3d9;margin-top:6px;">feminine, but feral…</div>
+              </div>
+              <div class="lb-spineL" style="background:linear-gradient(90deg,rgba(0,0,0,.32),transparent);"></div>
+            </div>
+            <div class="lb-face lb-face--back" style="padding:46px 44px;">
+              <div style="font:400 10px 'Space Mono',monospace;letter-spacing:.34em;color:#8a8478;">PRETTY ABSURD — BY, KAYLAH</div>
+              <div style="width:34px;height:1.5px;background:#1c1a17;margin:20px 0;"></div>
+              <div style="font:italic 500 26px/1.25 'Cormorant Garamond',serif;">an editorial in one act, on the making of a dress that refuses to behave.</div>
+              <div style="margin-top:38px;font:400 10px/2.1 'Space Mono',monospace;letter-spacing:.06em;color:#4a463f;">
+                CREATIVE DIRECTION &nbsp; KAYLAH<br>PHOTOGRAPHY &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; KAYLAH<br>DESIGN &amp; WEB &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="https://whitespacedesigns.co.za" target="_blank" rel="noopener" style="color:inherit;text-underline-offset:3px;">WHITE SPACE DESIGNS</a><br>STYLING &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; KAYLAH<br>MAKEUP &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; KAYLAH<br>SET &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; SOUTH AFRICA, 2026</div>
+              <div class="lb-pagenum"><span>PRETTY ABSURD</span><span>01</span></div>
+              <div class="lb-spineR"></div>
+            </div>
+          </div>
+
+          <!-- LEAF 1 : CONTENTS / EDITOR'S LETTER -->
+          <div class="lb-leaf">
+            <div class="lb-face" style="padding:52px 46px;">
+              <div style="font:400 11px 'Space Mono',monospace;letter-spacing:.34em;color:#8a8478;">IN THIS ISSUE</div>
+              <div style="font:400 46px/1 'Poiret One',sans-serif;letter-spacing:.06em;margin:14px 0 30px;">Contents</div>
+              <div style="display:flex;flex-direction:column;gap:15px;">
+                <div style="display:flex;align-items:baseline;gap:10px;"><span style="font:400 12px 'Space Mono',monospace;color:#b06a84;width:24px;">01</span><span style="font:500 19px 'Cormorant Garamond',serif;">from the atelier — a letter</span></div>
+                <div style="display:flex;align-items:baseline;gap:10px;"><span style="font:400 12px 'Space Mono',monospace;color:#b06a84;width:24px;">02</span><span style="font:500 19px 'Cormorant Garamond',serif;">the editorial</span></div>
+                <div style="display:flex;align-items:baseline;gap:10px;"><span style="font:400 12px 'Space Mono',monospace;color:#b06a84;width:24px;">03</span><span style="font:500 19px 'Cormorant Garamond',serif;">the collection</span></div>
+                <div style="display:flex;align-items:baseline;gap:10px;"><span style="font:400 12px 'Space Mono',monospace;color:#b06a84;width:24px;">04</span><span style="font:500 19px 'Cormorant Garamond',serif;">the dress</span></div>
+                <div style="display:flex;align-items:baseline;gap:10px;"><span style="font:400 12px 'Space Mono',monospace;color:#b06a84;width:24px;">05</span><span style="font:500 19px 'Cormorant Garamond',serif;">craft &amp; cloth</span></div>
+                <div style="display:flex;align-items:baseline;gap:10px;"><span style="font:400 12px 'Space Mono',monospace;color:#b06a84;width:24px;">06</span><span style="font:500 19px 'Cormorant Garamond',serif;">the campaign</span></div>
+                <div style="display:flex;align-items:baseline;gap:10px;"><span style="font:400 12px 'Space Mono',monospace;color:#b06a84;width:24px;">07</span><span style="font:500 19px 'Cormorant Garamond',serif;">reserve her — the waitlist</span></div>
+              </div>
+              <div class="lb-pagenum"><span>02</span><span>PRETTY ABSURD</span></div>
+              <div class="lb-spineL"></div>
+            </div>
+            <div class="lb-face lb-face--back" style="padding:52px 46px;">
+              <div style="text-align:center;font:400 44px/1 'Sacramento',cursive;">from Kaylah…</div>
+              <div style="width:40px;height:1.5px;background:#b06a84;margin:18px auto 24px;"></div>
+              <p style="font:400 15.5px/1.7 'Cormorant Garamond',serif;margin:0;text-align:justify;"><span style="float:left;font:500 58px/0.72 'Poiret One',sans-serif;padding:6px 10px 0 0;color:#b06a84;">s</span>he arrived late, unbothered, and slightly too much for the room… which is, of course, the entire point. this issue is a small love letter to the dress — the one you don't need but will absolutely buy — and to everyone who understands that being pretty is optional, but being absurd is a lifestyle.</p>
+              <p style="font:400 15.5px/1.7 'Cormorant Garamond',serif;margin:16px 0 0;text-align:justify;">we made her by hand, in small numbers, on purpose. what follows is how she came to be… and how you take her home.</p>
+              <div style="margin-top:26px;font:400 30px 'Sacramento',cursive;">Xo, Kaylah</div>
+              <div class="lb-pagenum"><span>PRETTY ABSURD</span><span>03</span></div>
+              <div class="lb-spineR"></div>
+            </div>
+          </div>
+
+          <!-- LEAF 2 : EDITORIAL / PULL-QUOTE -->
+          <div class="lb-leaf">
+            <div class="lb-face" style="background:#141414;">
+              <div class="lb-imgslot dark"><img id="mag-editorial" src="assets/images/editorial/dot-subway.png" alt="" loading="lazy"></div>
+              <div style="position:absolute;left:26px;bottom:26px;font:400 9px 'Space Mono',monospace;letter-spacing:.24em;color:#f4f1ea;text-shadow:0 1px 3px rgba(0,0,0,.6);">THE EDITORIAL &nbsp;/&nbsp; 01</div>
+              <div class="lb-spineL" style="background:linear-gradient(90deg,rgba(0,0,0,.3),transparent);"></div>
+            </div>
+            <div class="lb-face lb-face--back" style="background:#f2c9d6;color:#3a1f2a;padding:56px 48px;display:flex;flex-direction:column;justify-content:center;">
+              <div style="font:400 66px/0.9 'Poiret One',sans-serif;opacity:.5;">&ldquo;</div>
+              <p style="font:italic 500 30px/1.32 'Cormorant Garamond',serif;margin:0;">she doesn't ask for the room. she simply refuses to leave it.</p>
+              <div style="margin-top:28px;font:400 10px 'Space Mono',monospace;letter-spacing:.24em;">— ON THE DRESS, SS26</div>
+              <div class="lb-pagenum" style="color:#8a5a6c;"><span>PRETTY ABSURD</span><span>05</span></div>
+              <div class="lb-spineR"></div>
+            </div>
+          </div>
+
+          <!-- LEAF 3 : COLLECTION DIVIDER / LOOKS -->
+          <div class="lb-leaf">
+            <div class="lb-face" style="padding:48px;display:flex;flex-direction:column;justify-content:center;">
+              <div style="font:400 11px 'Space Mono',monospace;letter-spacing:.34em;color:#8a8478;">SECTION 03</div>
+              <div style="font:400 58px/0.98 'Poiret One',sans-serif;letter-spacing:.04em;margin:12px 0 0;">The<br>Collection</div>
+              <div style="width:44px;height:1.5px;background:#7fa9cf;margin:24px 0;"></div>
+              <p style="font:italic 400 18px/1.5 'Cormorant Garamond',serif;max-width:78%;">a tight edit for SS26 — hand-cut, hand-finished, made in small numbers so she never turns up twice at the same party.</p>
+              <div class="lb-pagenum"><span>06</span><span>PRETTY ABSURD</span></div>
+              <div class="lb-spineL"></div>
+            </div>
+            <div class="lb-face lb-face--back" style="padding:40px 34px;">
+              <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px 14px;height:calc(100% - 40px);">
+                <div style="display:flex;flex-direction:column;gap:6px;"><div style="flex:1;min-height:0;"><div class="lb-imgslot" style="background:#f5f1ea;"><img id="mag-look-1" src="assets/images/product-detail/pink-hero.png" alt="" loading="lazy" style="object-fit:contain;padding:6px;"></div></div><div style="font:400 9px 'Space Mono',monospace;letter-spacing:.16em;color:#6a655c;">LOOK 01 — THE PINK</div></div>
+                <div style="display:flex;flex-direction:column;gap:6px;"><div style="flex:1;min-height:0;"><div class="lb-imgslot" style="background:#f5f1ea;"><img id="mag-look-2" src="assets/images/product-detail/blue-hero.png" alt="" loading="lazy" style="object-fit:contain;padding:6px;"></div></div><div style="font:400 9px 'Space Mono',monospace;letter-spacing:.16em;color:#6a655c;">LOOK 02 — THE BLUE</div></div>
+                <div style="grid-column:1 / span 2;display:flex;flex-direction:column;gap:6px;"><div style="flex:1;min-height:0;"><div class="lb-imgslot" style="background:#f5f1ea;"><img id="mag-look-3" src="assets/images/product-detail/dot-hero.png" alt="" loading="lazy" style="object-fit:contain;padding:6px;"></div></div><div style="font:400 9px 'Space Mono',monospace;letter-spacing:.16em;color:#6a655c;">LOOK 03 — THE DOT</div></div>
+              </div>
+              <div class="lb-pagenum" style="bottom:14px;left:34px;right:34px;"><span>PRETTY ABSURD</span><span>07</span></div>
+              <div class="lb-spineR"></div>
+            </div>
+          </div>
+
+          <!-- LEAF 4 : THE DRESS FEATURE -->
+          <div class="lb-leaf">
+            <div class="lb-face" style="background:#141414;">
+              <div class="lb-imgslot dark"><img id="mag-dress-hero" src="assets/images/editorial/blue-newspaper.png" alt="" loading="lazy"></div>
+              <div style="position:absolute;inset:0;pointer-events:none;background:linear-gradient(0deg,rgba(0,0,0,.55) 0%,transparent 34%);"></div>
+              <div style="position:absolute;left:30px;bottom:30px;color:#f4f1ea;">
+                <div style="font:400 11px 'Space Mono',monospace;letter-spacing:.34em;">SECTION 04</div>
+                <div style="font:400 52px/0.95 'Poiret One',sans-serif;letter-spacing:.04em;margin-top:6px;">The Dress</div>
+              </div>
+              <div class="lb-spineL" style="background:linear-gradient(90deg,rgba(0,0,0,.3),transparent);"></div>
+            </div>
+            <div class="lb-face lb-face--back" style="padding:46px;display:flex;flex-direction:column;">
+              <div style="font:400 10px 'Space Mono',monospace;letter-spacing:.34em;color:#8a8478;">SECTION 04 — THE DRESS</div>
+              <div style="font:italic 500 34px/1.1 'Cormorant Garamond',serif;margin-top:14px;">she's the one.</div>
+              <div style="width:32px;height:1.5px;background:#b06a84;margin:16px 0 18px;"></div>
+              <p style="font:400 14.5px/1.72 'Cormorant Garamond',serif;margin:0;flex:1;">cut on the bias so she moves before you do. a neckline that means it. made to order — in a run so small she's practically a rumour. wear her to the thing you're overthinking… she'll handle it.</p>
+              <div style="border-top:1.5px solid #1c1a17;margin-top:24px;">
+                <div style="font:400 10.5px/1 'Space Mono',monospace;letter-spacing:.05em;color:#3a362f;padding-top:14px;">
+                  <div style="display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px solid rgba(28,26,23,.1);"><span>CLOTH</span><span>silk-blend cr&ecirc;pe</span></div>
+                  <div style="display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px solid rgba(28,26,23,.1);"><span>MAKE</span><span>made to order</span></div>
+                  <div style="display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px solid rgba(28,26,23,.1);"><span>SIZES</span><span>XS — XL / MTM</span></div>
+                  <div style="display:flex;justify-content:space-between;padding:10px 0 0;font-weight:700;font-size:12px;color:#1c1a17;"><span>PRICE</span><span>R1,950</span></div>
+                </div>
+              </div>
+              <div class="lb-pagenum"><span>PRETTY ABSURD</span><span>09</span></div>
+              <div class="lb-spineR"></div>
+            </div>
+          </div>
+
+          <!-- LEAF 5 : CAMPAIGN / RECEIPT -->
+          <div class="lb-leaf">
+            <div class="lb-face" style="background:#0e0e0e;">
+              <div style="position:absolute;inset:22px;"><div class="lb-imgslot dark"><img id="mag-campaign" src="assets/images/editorial/pink-butterfly.png" alt="" loading="lazy"></div></div>
+              <div style="position:absolute;top:26px;left:0;right:0;text-align:center;font:400 10px 'Space Mono',monospace;letter-spacing:.4em;color:#f4f1ea;">THE CAMPAIGN</div>
+              <div style="position:absolute;bottom:24px;left:0;right:0;text-align:center;font:italic 400 15px 'Cormorant Garamond',serif;color:#e7d3d9;">absurd, on purpose.</div>
+              <div class="lb-spineL" style="background:linear-gradient(90deg,rgba(0,0,0,.4),transparent);"></div>
+            </div>
+            <div class="lb-face lb-face--back" style="background:#f5f1ea;padding:48px 44px;display:flex;flex-direction:column;justify-content:center;">
+              <div style="font:400 10px 'Space Mono',monospace;letter-spacing:.34em;color:#8a8478;margin-bottom:20px;">SECTION 07 — RESERVE HER</div>
+              <div style="font:400 54px/0.95 'Poiret One',sans-serif;letter-spacing:.03em;">Reserve<br>Her.</div>
+              <div style="width:36px;height:1.5px;background:#b06a84;margin:20px 0;"></div>
+              <p style="font:400 14.5px/1.72 'Cormorant Garamond',serif;margin:0 0 28px;">she is made to order, in limited numbers. there is no queue, no drama — just her, held for you until the moment she's yours.</p>
+              <div style="border:1.5px solid #1c1a17;border-radius:2px;padding:16px 18px;font-family:'Space Mono',monospace;">
+                <div style="font:700 10px 'Space Mono',monospace;letter-spacing:.12em;margin-bottom:8px;">PRE-ORDER — 25 JULY 2026</div>
+                <div style="font:400 10px/1.7 'Space Mono',monospace;letter-spacing:.04em;color:#6a655c;">Join the waitlist and be<br>first in line when the drop opens.</div>
+              </div>
+              <div class="lb-pagenum"><span>PRETTY ABSURD</span><span>11</span></div>
+              <div class="lb-spineR"></div>
+            </div>
+          </div>
+
+          <!-- LEAF 6 : RESERVE CTA / BACK COVER -->
+          <div class="lb-leaf">
+            <div class="lb-face" style="background:#1c1a17;color:#f5f1ea;padding:44px 40px;display:flex;flex-direction:column;">
+              <div style="font:400 10px 'Space Mono',monospace;letter-spacing:.34em;color:#8a8478;margin-bottom:18px;">THE WAITLIST</div>
+              <div style="font:italic 400 44px/1 'Sacramento',cursive;color:#f5f1ea;">reserve her…</div>
+              <div style="width:36px;height:1.5px;background:#b06a84;margin:16px 0 18px;"></div>
+              <div style="flex:1;min-height:0;border-radius:2px;overflow:hidden;"><div class="lb-imgslot dark"><img id="mag-cta" src="assets/images/product-detail/pink-hero.png" alt="" loading="lazy" style="object-fit:contain;padding:8px;background:#f5f1ea;"></div></div>
+              <div style="display:flex;justify-content:space-between;align-items:baseline;margin:16px 0 14px;font-family:'Space Mono',monospace;">
+                <span style="font-size:12px;font-weight:700;letter-spacing:.04em;color:#f5f1ea;">THE DRESS</span>
+                <span style="font-size:12px;font-weight:700;color:#f5f1ea;">R1,950</span>
+              </div>
+              <a href="contact.html" style="display:block;text-align:center;background:#f5f1ea;color:#1c1a17;text-decoration:none;padding:13px;border-radius:2px;font:700 11px 'Space Mono',monospace;letter-spacing:.08em;">JOIN THE WAITLIST →</a>
+              <a href="collection.html" style="display:block;text-align:center;background:transparent;color:#f5f1ea;text-decoration:none;padding:11px;margin-top:9px;border:1.5px solid rgba(245,241,234,.25);border-radius:2px;font:700 10px 'Space Mono',monospace;letter-spacing:.06em;">SHOP THE COLLECTION →</a>
+              <div class="lb-spineL" style="background:linear-gradient(90deg,rgba(0,0,0,.3),transparent);"></div>
+            </div>
+            <div class="lb-face lb-face--back" style="background:#141414;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:48px;color:#f4f1ea;">
+              <div style="font:700 28px/1.2 'Space Mono',monospace;letter-spacing:.14em;text-align:center;">PRETTY<br>ABSURD</div>
+              <div style="font:italic 400 17px 'Cormorant Garamond',serif;color:#e7d3d9;margin-top:8px;">pretty. absurd. hers.</div>
+              <div style="margin-top:40px;font:400 11px/2 'Space Mono',monospace;letter-spacing:.24em;text-align:center;color:#c9c4ba;">@PRETTYABSURD<br>#PRETTYABSURD &nbsp; #FYP</div>
+              <div style="position:absolute;bottom:30px;left:0;right:0;text-align:center;font:400 9px 'Space Mono',monospace;letter-spacing:.2em;color:#7a756b;">PRETTY ABSURD — SS26 — ISSUE N&ordm;01</div>
+              <div class="lb-spineR" style="background:linear-gradient(270deg,rgba(0,0,0,.3),transparent);"></div>
+            </div>
+          </div>
+
+        </div><!-- /lb-book -->
+
+        <div class="lb-zone left"  id="lb-zoneL"></div>
+        <div class="lb-zone right" id="lb-zoneR"></div>
+      </div><!-- /lb-scalewrap -->
+
+      <div class="lb-idlehint" id="lb-idlehint"><span>TAP TO OPEN THE ISSUE</span></div>
+      <button class="lb-closebtn" id="lb-closebtn" aria-label="Close lookbook">✕</button>
+      <div class="lb-navpill" id="lb-navpill">
+        <b><span id="lb-pPrev">PREV</span><span id="lb-pCount" style="opacity:.5;letter-spacing:.24em;">01 / 07</span><span id="lb-pNext">NEXT</span></b>
+      </div>
+    </div><!-- /lb-stage -->
+  </div><!-- /pa-lookbook-overlay -->
+
+  <script>
+  (function(){
+    var overlay = document.getElementById('pa-lookbook-overlay');
+    var N = 7, PAGEW = 380, PAGEH = 520;
+    var state = { mode: 'idle', leaf: 0 };
+    var wrap   = document.getElementById('lb-wrap');
+    var book   = document.getElementById('lb-book');
+    var leaves = book.querySelectorAll('.lb-leaf');
+    var closebtn = document.getElementById('lb-closebtn');
+    var navpill  = document.getElementById('lb-navpill');
+    var idlehint = document.getElementById('lb-idlehint');
+    var zoneL    = document.getElementById('lb-zoneL');
+    var zoneR    = document.getElementById('lb-zoneR');
+    var pCount   = document.getElementById('lb-pCount');
+    var pPrev    = document.getElementById('lb-pPrev');
+    var pNext    = document.getElementById('lb-pNext');
+
+    function fitScale(){
+      return Math.min(1, (window.innerWidth * 0.92) / (PAGEW * 2), (window.innerHeight * 0.80) / PAGEH);
+    }
+
+    function render(){
+      var reading = state.mode === 'reading';
+      var c = state.leaf;
+      var fit = fitScale();
+      var scale = reading ? fit : fit * 0.46;
+
+      wrap.style.transform = 'scale(' + scale + ')';
+      wrap.classList.toggle('reading', reading);
+
+      var shift = c === 0 ? -PAGEW / 2 : c === N ? PAGEW / 2 : 0;
+      book.style.transform = 'translateX(' + shift + 'px)';
+
+      leaves.forEach(function(leaf, i){
+        var flipped = i < c;
+        leaf.style.transform = 'rotateY(' + (flipped ? -180 : 0) + 'deg)';
+        leaf.style.zIndex = flipped ? i : (100 - i);
+        leaf.style.animation = reading ? 'none' : ('lbRiffle 3.6s ' + (i * 0.16).toFixed(2) + 's infinite');
+      });
+
+      idlehint.style.display = reading ? 'none' : 'block';
+      closebtn.style.display = reading ? 'flex' : 'none';
+      navpill.style.display  = reading ? 'block' : 'none';
+      zoneL.style.display    = reading ? 'block' : 'none';
+      zoneR.style.display    = reading ? 'block' : 'none';
+
+      pCount.textContent = String(Math.min(c + 1, N)).padStart(2, '0') + ' / ' + String(N).padStart(2, '0');
+      pPrev.style.opacity = c === 0 ? .25 : 1;
+      pNext.style.opacity = c === N ? .25 : 1;
+    }
+
+    function go(d){ state.leaf = Math.max(0, Math.min(N, state.leaf + d)); render(); }
+
+    function closeOverlay(){
+      state.mode = 'idle';
+      state.leaf = 0;
+      render();
+      overlay.style.display = 'none';
+      document.body.style.overflow = '';
+      if (window._lenis) window._lenis.start();
+    }
+
+    wrap.addEventListener('click', function(){
+      if (state.mode !== 'reading'){ state.mode = 'reading'; render(); }
+    });
+    zoneL.addEventListener('click', function(e){ e.stopPropagation(); go(-1); });
+    zoneR.addEventListener('click', function(e){ e.stopPropagation(); go(1); });
+    pPrev.addEventListener('click', function(e){ e.stopPropagation(); go(-1); });
+    pNext.addEventListener('click', function(e){ e.stopPropagation(); go(1); });
+    closebtn.addEventListener('click', function(e){ e.stopPropagation(); closeOverlay(); });
+
+    window.addEventListener('keydown', function(e){
+      if (overlay.style.display === 'none') return;
+      if (e.key === 'ArrowRight') go(1);
+      else if (e.key === 'ArrowLeft') go(-1);
+      else if (e.key === 'Escape') closeOverlay();
+    });
+    window.addEventListener('resize', function(){
+      if (overlay.style.display !== 'none') render();
+    });
+
+    render();
+
+    window.PA_LOOKBOOK = {
+      open: function(){
+        state.mode = 'reading';
+        state.leaf = 0;
+        overlay.style.display = 'block';
+        document.body.style.overflow = 'hidden';
+        if (window._lenis) window._lenis.stop();
+        render();
+      }
+    };
+  })();
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+  <script src="js/i18n.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

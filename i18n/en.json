@@ -1,0 +1,104 @@
+{
+  "lang": "en",
+  "nav": {
+    "brand":     "Pretty Absurd",
+    "lookbook":  "Lookbook",
+    "collection":"The Dresses",
+    "about":     "About",
+    "brandWorld":"Brand World",
+    "contact":   "Contact"
+  },
+  "home": {
+    "hero": {
+      "headline":    "Pretty Absurd.",
+      "sub":         "Three dresses. One absurd idea.",
+      "cta_lookbook":"View the lookbook",
+      "cta_collection":"See the dresses"
+    },
+    "intro": {
+      "label": "Prelaunch",
+      "text":  "A brand on its way. An independent designer making clothes that shouldn't work — but do.",
+      "cta":   "Meet the designer"
+    },
+    "teaser": {
+      "label":    "The collection",
+      "headline": "Three dresses. Each one deliberately off."
+    }
+  },
+  "lookbook": {
+    "label":        "Issue 01",
+    "headline":     "The Lookbook.",
+    "sub":          "A fashion magazine you scroll through.",
+    "credits_label":"Credits",
+    "spread_label": "Spread"
+  },
+  "collection": {
+    "label":       "The Collection",
+    "headline":    "Three Dresses.",
+    "sub":         "Each one made to be stared at.",
+    "cta_inquire": "Inquire",
+    "cta_notify":  "Notify me",
+    "pieces": {
+      "pink": {
+        "name":  "The Pink Satin",
+        "desc":  "A corset bodice that means business. A pleated skirt that means none.",
+        "price": 3800
+      },
+      "blue": {
+        "name":  "The Ice Blue",
+        "desc":  "Powder blue satin. Sweetheart neckline. Structurally absurd.",
+        "price": 3800
+      },
+      "polkadot": {
+        "name":  "The Polka Dot",
+        "desc":  "Black dots on white. Old-school charm. New-school chaos.",
+        "price": 3500
+      }
+    }
+  },
+  "about": {
+    "label":            "The Designer",
+    "headline":         "Behind Pretty Absurd.",
+    "sub":              "An independent designer making clothes that look like they shouldn't exist — but once you see them, you can't imagine they don't.",
+    "story_label":      "The Story",
+    "philosophy_label": "The Philosophy",
+    "process_label":    "The Process"
+  },
+  "brandWorld": {
+    "label":    "Brand World",
+    "headline": "The Universe of Pretty Absurd.",
+    "sub":      "Where the references live.",
+    "intro":    "Polka dots on subways. Grass in living rooms. A perfectly pressed dress in an entirely wrong place. This is the world the clothes come from."
+  },
+  "contact": {
+    "label":    "Get in Touch",
+    "headline": "Let's Talk.",
+    "sub":      "Press, stockists, and general obsessives welcome.",
+    "form": {
+      "name":          "Your name",
+      "email":         "Email address",
+      "country":       "Country",
+      "type":          "What is this about?",
+      "type_press":    "Press inquiry",
+      "type_stockist": "Stockist inquiry",
+      "type_general":  "General",
+      "message":       "Your message",
+      "submit":        "Send it",
+      "success":       "Sent. We'll be in touch soon.",
+      "error":         "Something went wrong. Try again."
+    }
+  },
+  "footer": {
+    "tagline": "Dresses made to be stared at.",
+    "copy":    "© 2026 Pretty Absurd. All rights reserved.",
+    "links": {
+      "lookbook":   "Lookbook",
+      "collection": "The Dresses",
+      "about":      "About",
+      "contact":    "Contact"
+    }
+  },
+  "currency": {
+    "note": "approx. — final pricing in ZAR"
+  }
+}

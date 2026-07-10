@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Pretty Absurd Lookbook — Issue 01. Three dresses. One absurd idea.">
+  <meta name="theme-color" content="#F7F2EE">
+  <title>Lookbook Issue 01 — Pretty Absurd</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/nav.css">
+  <link rel="stylesheet" href="css/lookbook.css">
+</head>
+<body data-page="lookbook" class="page-lookbook">
+
+  <nav class="site-nav" role="navigation" aria-label="Main navigation">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__brand">Pretty Absurd</a>
+      <ul class="nav__links" role="list">
+        <li><a href="lookbook.html"    class="nav__link is-active">Lookbook</a></li>
+        <li><a href="collection.html"  class="nav__link">The Dresses</a></li>
+        <li><a href="about.html"       class="nav__link">About</a></li>
+        <li><a href="brand-world.html" class="nav__link">Brand World</a></li>
+        <li><a href="contact.html"     class="nav__link">Contact</a></li>
+      </ul>
+      <div class="nav__lang" role="group" aria-label="Language">
+        <button class="nav__lang-btn is-active" data-lang="en">EN</button>
+        <button class="nav__lang-btn"            data-lang="fr">FR</button>
+        <button class="nav__lang-btn"            data-lang="it">IT</button>
+      </div>
+      <button class="nav__toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-overlay">
+        <span class="nav__toggle-line" aria-hidden="true"></span>
+        <span class="nav__toggle-line" aria-hidden="true"></span>
+        <span class="nav__toggle-line" aria-hidden="true"></span>
+      </button>
+    </div>
+    <div class="nav__overlay" id="nav-overlay" role="dialog" aria-label="Mobile navigation">
+      <ul class="nav__overlay-links" role="list">
+        <li><a href="lookbook.html"    class="nav__overlay-link">Lookbook</a></li>
+        <li><a href="collection.html"  class="nav__overlay-link">The Dresses</a></li>
+        <li><a href="about.html"       class="nav__overlay-link">About</a></li>
+        <li><a href="brand-world.html" class="nav__overlay-link">Brand World</a></li>
+        <li><a href="contact.html"     class="nav__overlay-link">Contact</a></li>
+      </ul>
+      <div class="nav__overlay-bottom">
+        <button class="nav__lang-btn is-active" data-lang="en">EN</button>
+        <button class="nav__lang-btn"            data-lang="fr">FR</button>
+        <button class="nav__lang-btn"            data-lang="it">IT</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ═══════════════════════════════════════════════
+       LOOKBOOK STAGE — full-screen magazine spreads
+       ═══════════════════════════════════════════════ -->
+  <main class="lookbook-stage" id="lookbook-stage" aria-label="Lookbook Issue 01">
+
+    <!-- ── Spread 0: Cover ── -->
+    <article class="spread spread--cover" data-index="0" aria-label="Cover — Issue 01">
+      <div class="spread__cover-bg-num" aria-hidden="true">01</div>
+      <span class="spread__cover-issue">Issue 01 &mdash; SS26</span>
+      <h1 class="spread__cover-title">Pretty<br>Absurd.</h1>
+      <p class="spread__cover-sub">A fashion magazine you scroll through.</p>
+      <button class="spread__cover-cta lb-next-btn" aria-label="Begin lookbook">
+        Begin &rarr;
+      </button>
+    </article>
+
+    <!-- ── Spread 1: The Pink Satin ── -->
+    <article class="spread spread--pink" data-index="1" aria-label="The Pink Satin dress">
+      <div class="spread__image-pane">
+        <img
+          src="assets/images/lookbook/pink-vogue.png"
+          alt="Model in pink satin corset dress — editorial"
+          class="spread__img"
+          loading="eager"
+        >
+      </div>
+      <div class="spread__text-pane">
+        <span class="spread__piece-num">01 &mdash; 03</span>
+        <h2 class="spread__piece-title">The<br>Pink<br>Satin.</h2>
+        <p class="spread__piece-desc">A corset bodice that means business. A pleated skirt that means none.</p>
+        <a href="collection.html" class="spread__piece-cta">Inquire &rarr;</a>
+        <p class="spread__credits">Photography &mdash; Reve AI &nbsp;&middot;&nbsp; Design &mdash; Pretty Absurd</p>
+      </div>
+      <p class="spread__swipe-hint" aria-hidden="true">Swipe to explore</p>
+    </article>
+
+    <!-- ── Spread 2: The Ice Blue ── -->
+    <article class="spread spread--blue spread--image-right" data-index="2" aria-label="The Ice Blue dress">
+      <div class="spread__text-pane">
+        <span class="spread__piece-num">02 &mdash; 03</span>
+        <h2 class="spread__piece-title">The<br>Ice<br>Blue.</h2>
+        <p class="spread__piece-desc">Powder blue satin. Sweetheart neckline. Structurally absurd.</p>
+        <a href="collection.html" class="spread__piece-cta">Inquire &rarr;</a>
+        <p class="spread__credits">Photography &mdash; Reve AI &nbsp;&middot;&nbsp; Design &mdash; Pretty Absurd</p>
+      </div>
+      <div class="spread__image-pane">
+        <img
+          src="assets/images/lookbook/blue-walking.png"
+          alt="Model in ice blue satin corset dress — editorial"
+          class="spread__img"
+          loading="lazy"
+        >
+      </div>
+    </article>
+
+    <!-- ── Spread 3: The Polka Dot ── -->
+    <article class="spread spread--dot" data-index="3" aria-label="The Polka Dot dress">
+      <div class="spread__image-pane">
+        <img
+          src="assets/images/lookbook/polkadot-subway.png"
+          alt="Model in polka dot corset dress, ironing on subway — editorial"
+          class="spread__img"
+          loading="lazy"
+        >
+      </div>
+      <div class="spread__text-pane">
+        <span class="spread__piece-num">03 &mdash; 03</span>
+        <h2 class="spread__piece-title">The<br>Polka<br>Dot.</h2>
+        <p class="spread__piece-desc">Black dots on white. Old-school charm. New-school chaos.</p>
+        <a href="collection.html" class="spread__piece-cta">Inquire &rarr;</a>
+        <p class="spread__credits">Photography &mdash; Reve AI &nbsp;&middot;&nbsp; Design &mdash; Pretty Absurd</p>
+      </div>
+    </article>
+
+    <!-- ── Spread 4: Close-up editorial ── -->
+    <article class="spread spread--detail spread--image-right" data-index="4" aria-label="Detail — Pink Satin bodice">
+      <div class="spread__text-pane">
+        <span class="spread__piece-num">Detail</span>
+        <h2 class="spread__piece-title">Corseted.<br>Considered.</h2>
+        <p class="spread__piece-desc">Every seam placed with intention. The chaos is in the wearing, not the making.</p>
+        <a href="collection.html" class="spread__piece-cta">See the collection &rarr;</a>
+        <p class="spread__credits">Photography &mdash; Reve AI &nbsp;&middot;&nbsp; Design &mdash; Pretty Absurd</p>
+      </div>
+      <div class="spread__image-pane">
+        <img
+          src="assets/images/lookbook/pink-bodice.png"
+          alt="Close-up of pink satin corset bodice detail"
+          class="spread__img"
+          loading="lazy"
+        >
+      </div>
+    </article>
+
+    <!-- ── Spread 5: Closing spread ── -->
+    <article class="spread spread--closing" data-index="5" aria-label="Closing spread">
+      <div class="spread__image-pane">
+        <img
+          src="assets/images/editorial/grass-room.png"
+          alt="Model in pink dress in surreal grass-filled room — editorial"
+          class="spread__img"
+          loading="lazy"
+        >
+      </div>
+      <div class="spread__text-pane">
+        <span class="spread__piece-num">End</span>
+        <h2 class="spread__piece-title">Dresses<br>made to<br>be stared<br>at.</h2>
+        <p class="spread__piece-desc">Pretty Absurd. Prelaunch 2026.</p>
+        <a href="collection.html" class="spread__piece-cta">View the collection &rarr;</a>
+        <p class="spread__credits">&copy; 2026 Pretty Absurd</p>
+      </div>
+    </article>
+
+  </main>
+
+  <!-- ═══════════════════════════════════════
+       LOOKBOOK CONTROLS
+       ═══════════════════════════════════════ -->
+  <div class="lookbook-controls" role="navigation" aria-label="Lookbook navigation">
+    <button class="lb-btn lb-prev" aria-label="Previous spread">&#8592;</button>
+    <div class="lb-dots" role="tablist" aria-label="Spreads">
+      <button class="lb-dot" role="tab" aria-selected="true"  data-goto="0" aria-label="Cover"></button>
+      <button class="lb-dot" role="tab" aria-selected="false" data-goto="1" aria-label="The Pink Satin"></button>
+      <button class="lb-dot" role="tab" aria-selected="false" data-goto="2" aria-label="The Ice Blue"></button>
+      <button class="lb-dot" role="tab" aria-selected="false" data-goto="3" aria-label="The Polka Dot"></button>
+      <button class="lb-dot" role="tab" aria-selected="false" data-goto="4" aria-label="Detail"></button>
+      <button class="lb-dot" role="tab" aria-selected="false" data-goto="5" aria-label="Closing"></button>
+    </div>
+    <span class="lb-counter" aria-live="polite">01 / 06</span>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+  <script src="js/i18n.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/lookbook.js"></script>
+</body>
+</html>

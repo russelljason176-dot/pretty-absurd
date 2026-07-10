@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Pretty Absurd — Get in touch. Press, stockist inquiries, and general obsessives welcome.">
+  <meta name="theme-color" content="#F7F2EE">
+  <title>Contact — Pretty Absurd</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/nav.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/contact.css">
+</head>
+<body data-page="contact">
+
+  <nav class="site-nav" role="navigation" aria-label="Main navigation">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__brand">Pretty Absurd</a>
+      <ul class="nav__links" role="list">
+        <li><a href="lookbook.html"    class="nav__link">Lookbook</a></li>
+        <li><a href="collection.html"  class="nav__link">The Dresses</a></li>
+        <li><a href="about.html"       class="nav__link">About</a></li>
+        <li><a href="brand-world.html" class="nav__link">Brand World</a></li>
+        <li><a href="contact.html"     class="nav__link is-active">Contact</a></li>
+      </ul>
+      <div class="nav__lang" role="group" aria-label="Language">
+        <button class="nav__lang-btn is-active" data-lang="en">EN</button>
+        <button class="nav__lang-btn"            data-lang="fr">FR</button>
+        <button class="nav__lang-btn"            data-lang="it">IT</button>
+      </div>
+      <button class="nav__toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-overlay">
+        <span class="nav__toggle-line" aria-hidden="true"></span>
+        <span class="nav__toggle-line" aria-hidden="true"></span>
+        <span class="nav__toggle-line" aria-hidden="true"></span>
+      </button>
+    </div>
+    <div class="nav__overlay" id="nav-overlay" role="dialog" aria-label="Mobile navigation">
+      <ul class="nav__overlay-links" role="list">
+        <li><a href="lookbook.html"    class="nav__overlay-link">Lookbook</a></li>
+        <li><a href="collection.html"  class="nav__overlay-link">The Dresses</a></li>
+        <li><a href="about.html"       class="nav__overlay-link">About</a></li>
+        <li><a href="brand-world.html" class="nav__overlay-link">Brand World</a></li>
+        <li><a href="contact.html"     class="nav__overlay-link">Contact</a></li>
+      </ul>
+      <div class="nav__overlay-bottom">
+        <button class="nav__lang-btn is-active" data-lang="en">EN</button>
+        <button class="nav__lang-btn"            data-lang="fr">FR</button>
+        <button class="nav__lang-btn"            data-lang="it">IT</button>
+      </div>
+    </div>
+  </nav>
+
+  <main id="main-content">
+    <div class="nav-spacer"></div>
+
+    <div class="container">
+
+      <div class="contact-layout section--lg">
+
+        <!-- ── Left: header + info ── -->
+        <div class="contact-info">
+          <span class="contact-info__label">Get in Touch</span>
+          <h1 class="contact-info__headline">Let's<br><em>Talk.</em></h1>
+          <p class="contact-info__sub">Press inquiries, stockist conversations, and general obsessives all welcome.</p>
+
+          <div class="contact-info__list">
+            <div class="contact-info__item">
+              <span class="contact-info__item-label">Pre-order</span>
+              <span class="contact-info__item-val">Opens 25 July 2026 — Drops 25 July 2026</span>
+            </div>
+            <div class="contact-info__item">
+              <span class="contact-info__item-label">Inquiries</span>
+              <span class="contact-info__item-val">Use the form — we respond within 48 hours</span>
+            </div>
+            <div class="contact-info__item">
+              <span class="contact-info__item-label">Stockists</span>
+              <span class="contact-info__item-val">Currently accepting enquiries</span>
+            </div>
+          </div>
+
+          <!-- Early access perk card -->
+          <div class="contact-early-access">
+            <div class="contact-early-access__tag">Inner Circle</div>
+            <p class="contact-early-access__headline">Get her before everyone else.</p>
+            <ul class="contact-early-access__perks">
+              <li>
+                <span class="contact-early-access__perk-icon">01</span>
+                <span>Pre-order access opens <strong>25 July</strong> — before the public drop</span>
+              </li>
+              <li>
+                <span class="contact-early-access__perk-icon">02</span>
+                <span><strong>15% off</strong> your first dress, applied at checkout</span>
+              </li>
+            </ul>
+            <p class="contact-early-access__nudge">Select "Join early access" in the form →</p>
+          </div>
+
+          <div class="contact-info__editorial" aria-hidden="true">
+            <img
+              src="assets/images/lookbook/puzzle-portrait-blue.png"
+              alt=""
+              loading="lazy"
+            >
+          </div>
+        </div>
+
+        <!-- ── Right: form ── -->
+        <div class="contact-form-wrap">
+          <form
+            class="contact-form"
+            action="https://formspree.io/f/placeholder"
+            method="POST"
+            novalidate
+            aria-label="Contact form"
+            id="contact-form"
+          >
+            <div class="contact-form__row">
+              <div class="contact-form__field">
+                <label for="cf-name" class="contact-form__label">Your name</label>
+                <input
+                  id="cf-name"
+                  type="text"
+                  name="name"
+                  class="contact-form__input"
+                  required
+                  autocomplete="name"
+                >
+              </div>
+              <div class="contact-form__field">
+                <label for="cf-email" class="contact-form__label">Email address</label>
+                <input
+                  id="cf-email"
+                  type="email"
+                  name="email"
+                  class="contact-form__input"
+                  required
+                  autocomplete="email"
+                >
+              </div>
+            </div>
+
+            <div class="contact-form__row">
+              <div class="contact-form__field">
+                <label for="cf-country" class="contact-form__label">Country</label>
+                <input
+                  id="cf-country"
+                  type="text"
+                  name="country"
+                  class="contact-form__input"
+                  autocomplete="country-name"
+                >
+              </div>
+              <div class="contact-form__field">
+                <label for="cf-type" class="contact-form__label">What is this about?</label>
+                <select id="cf-type" name="type" class="contact-form__input contact-form__select">
+                  <option value="" disabled selected>Choose one</option>
+                  <option value="early-access">Join early access — 15% off</option>
+                  <option value="notify">Notify me when orders open</option>
+                  <option value="dress">Dress inquiry</option>
+                  <option value="press">Press inquiry</option>
+                  <option value="stockist">Stockist inquiry</option>
+                  <option value="general">General</option>
+                </select>
+                <p class="contact-form__early-note" id="early-access-note" hidden>You're joining the inner circle — we'll send your 15% code the moment pre-orders open on 25 July.</p>
+              </div>
+            </div>
+
+            <div class="contact-form__field contact-form__field--full">
+              <label for="cf-message" class="contact-form__label">Your message</label>
+              <textarea
+                id="cf-message"
+                name="message"
+                class="contact-form__input contact-form__textarea"
+                rows="6"
+              ></textarea>
+            </div>
+
+            <div class="contact-form__footer">
+              <button type="submit" class="contact-form__submit">Send it</button>
+              <p class="contact-form__note">We'll be in touch within 48 hours.</p>
+            </div>
+
+            <div class="contact-form__success" id="form-success" hidden aria-live="polite">
+              <p>Sent. We'll be in touch soon.</p>
+            </div>
+          </form>
+        </div>
+
+      </div>
+
+    </div>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer__inner">
+      <div class="footer__top">
+        <div>
+          <div class="footer__brand">Pretty Absurd</div>
+          <div class="footer__tagline">Dresses made to be stared at.</div>
+        </div>
+        <nav class="footer__nav" aria-label="Footer navigation">
+          <a href="lookbook.html"    class="footer__nav-link">Lookbook</a>
+          <a href="collection.html"  class="footer__nav-link">The Dresses</a>
+          <a href="about.html"       class="footer__nav-link">About</a>
+          <a href="contact.html"     class="footer__nav-link">Contact</a>
+        </nav>
+      </div>
+      <div class="footer__bottom">
+        <span class="footer__copy">© 2026 Pretty Absurd. All rights reserved.</span>
+        <div class="footer__socials">
+          <a href="https://instagram.com/pretty_absurdd" class="footer__social" aria-label="Instagram" target="_blank" rel="noopener">Instagram</a>
+          <a href="https://tiktok.com/@pretty.absrudd" class="footer__social" aria-label="TikTok" target="_blank" rel="noopener">TikTok</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+  <script src="js/i18n.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    // Early access select reveal
+    const typeSelect = document.getElementById('cf-type');
+    const earlyNote  = document.getElementById('early-access-note');
+    const submitBtn  = document.querySelector('.contact-form__submit');
+    typeSelect.addEventListener('change', function() {
+      const isEarly = this.value === 'early-access';
+      earlyNote.hidden = !isEarly;
+      submitBtn.textContent = isEarly ? 'Join early access' : 'Send it';
+    });
+
+    document.getElementById('contact-form').addEventListener('submit', async function(e) {
+      e.preventDefault();
+      const btn = this.querySelector('.contact-form__submit');
+      btn.textContent = 'Sending…';
+      btn.disabled = true;
+      try {
+        const res = await fetch(this.action, {
+          method: 'POST',
+          body: new FormData(this),
+          headers: { Accept: 'application/json' },
+        });
+        if (res.ok) {
+          const isEarly = document.getElementById('cf-type').value === 'early-access';
+          this.reset();
+          earlyNote.hidden = true;
+          submitBtn.textContent = 'Send it';
+          const successEl = document.getElementById('form-success');
+          successEl.querySelector('p').textContent = isEarly
+            ? 'You\'re in the inner circle. Your 15% code arrives the moment pre-orders open — 25 July.'
+            : 'Sent. We\'ll be in touch soon.';
+          successEl.hidden = false;
+          btn.textContent = 'Sent';
+        } else {
+          btn.textContent = 'Try again';
+          btn.disabled = false;
+        }
+      } catch {
+        btn.textContent = 'Try again';
+        btn.disabled = false;
+      }
+    });
+  </script>
+</body>
+</html>
