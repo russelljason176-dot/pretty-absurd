@@ -5,13 +5,28 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Pretty Absurd — an independent fashion designer. Three dresses. One absurd idea. Prelaunch 2026.">
   <meta name="theme-color" content="#F7F2EE">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="assets/favicon-32.png" type="image/png" sizes="32x32">
+  <link rel="icon" href="assets/favicon-16.png" type="image/png" sizes="16x16">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
   <meta property="og:title" content="Pretty Absurd">
   <meta property="og:description" content="Three dresses. One absurd idea.">
   <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/images/brand/og-image.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Pretty Absurd">
+  <meta name="twitter:description" content="Three dresses. One absurd idea.">
+  <meta name="twitter:image" content="assets/images/brand/og-image.jpg">
   <title>Pretty Absurd</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600&family=DM+Sans:wght@400;500;700&family=Poiret+One&family=Sacramento&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Critical fonts for the visible hero/nav — render-blocking on purpose -->
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <!-- Magazine-only fonts (Poiret One, Sacramento, Space Mono) — not needed until the
+       lookbook overlay is opened, so load them without blocking first paint. -->
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Poiret+One&family=Sacramento&family=Space+Mono:wght@400;700&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poiret+One&family=Sacramento&family=Space+Mono:wght@400;700&display=swap" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poiret+One&family=Sacramento&family=Space+Mono:wght@400;700&display=swap"></noscript>
   <link rel="stylesheet" href="css/tokens.css">
   <link rel="stylesheet" href="css/base.css">
   <link rel="stylesheet" href="css/nav.css">
@@ -23,18 +38,21 @@
 
   <nav class="site-nav" role="navigation" aria-label="Main navigation">
     <div class="nav__inner">
-      <a href="index.html" class="nav__brand">Pretty Absurd</a>
+      <a href="index.html" class="nav__brand" data-i18n="nav.brand">Pretty Absurd</a>
       <ul class="nav__links" role="list">
-        <li><a href="lookbook.html"    class="nav__link">Lookbook</a></li>
-        <li><a href="collection.html"  class="nav__link">The Dresses</a></li>
-        <li><a href="about.html"       class="nav__link">About</a></li>
-        <li><a href="brand-world.html" class="nav__link">Brand World</a></li>
-        <li><a href="contact.html"     class="nav__link">Contact</a></li>
+        <li><a href="lookbook.html"    class="nav__link" data-i18n="nav.lookbook">Lookbook</a></li>
+        <li><a href="collection.html"  class="nav__link" data-i18n="nav.collection">The Dresses</a></li>
+        <li><a href="about.html"       class="nav__link" data-i18n="nav.about">About</a></li>
+        <li><a href="brand-world.html" class="nav__link" data-i18n="nav.brandWorld">Brand World</a></li>
+        <li><a href="contact.html"     class="nav__link" data-i18n="nav.contact">Contact</a></li>
       </ul>
       <div class="nav__lang" role="group" aria-label="Language">
         <button class="nav__lang-btn is-active" data-lang="en">EN</button>
         <button class="nav__lang-btn"            data-lang="fr">FR</button>
         <button class="nav__lang-btn"            data-lang="it">IT</button>
+        <button class="nav__lang-btn"            data-lang="es">ES</button>
+        <button class="nav__lang-btn"            data-lang="de">DE</button>
+        <button class="nav__lang-btn"            data-lang="pt">PT</button>
       </div>
       <button class="nav__toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-overlay">
         <span class="nav__toggle-line" aria-hidden="true"></span>
@@ -44,16 +62,19 @@
     </div>
     <div class="nav__overlay" id="nav-overlay" role="dialog" aria-label="Mobile navigation">
       <ul class="nav__overlay-links" role="list">
-        <li><a href="lookbook.html"    class="nav__overlay-link">Lookbook</a></li>
-        <li><a href="collection.html"  class="nav__overlay-link">The Dresses</a></li>
-        <li><a href="about.html"       class="nav__overlay-link">About</a></li>
-        <li><a href="brand-world.html" class="nav__overlay-link">Brand World</a></li>
-        <li><a href="contact.html"     class="nav__overlay-link">Contact</a></li>
+        <li><a href="lookbook.html"    class="nav__overlay-link" data-i18n="nav.lookbook">Lookbook</a></li>
+        <li><a href="collection.html"  class="nav__overlay-link" data-i18n="nav.collection">The Dresses</a></li>
+        <li><a href="about.html"       class="nav__overlay-link" data-i18n="nav.about">About</a></li>
+        <li><a href="brand-world.html" class="nav__overlay-link" data-i18n="nav.brandWorld">Brand World</a></li>
+        <li><a href="contact.html"     class="nav__overlay-link" data-i18n="nav.contact">Contact</a></li>
       </ul>
       <div class="nav__overlay-bottom">
         <button class="nav__lang-btn is-active" data-lang="en">EN</button>
         <button class="nav__lang-btn"            data-lang="fr">FR</button>
         <button class="nav__lang-btn"            data-lang="it">IT</button>
+        <button class="nav__lang-btn"            data-lang="es">ES</button>
+        <button class="nav__lang-btn"            data-lang="de">DE</button>
+        <button class="nav__lang-btn"            data-lang="pt">PT</button>
       </div>
     </div>
   </nav>
@@ -65,7 +86,7 @@
       <div class="nav-spacer" aria-hidden="true"></div>
       <div class="home-hero__img-wrap">
         <img
-          src="assets/images/editorial/dot-subway.png"
+          src="assets/images/editorial/dot-subway.webp"
           alt="Editorial — model in polka dot corset dress ironing on the subway — Pretty Absurd"
           class="home-hero__img"
           loading="eager"
@@ -74,20 +95,33 @@
         <div class="home-hero__overlay" aria-hidden="true"></div>
       </div>
       <div class="home-hero__content">
-        <div class="home-hero__text" data-parallax="0.06">
-          <h1 class="home-hero__headline">Pretty<br>Absurd.</h1>
-          <p class="home-hero__sub">Too much is the whole point.</p>
+        <div class="home-hero__text">
+          <h1 class="home-hero__headline">
+            <picture>
+              <source media="(max-width: 640px)" srcset="assets/images/brand/pretty-absurd-wordmark-cream-sm.webp">
+              <img
+                src="assets/images/brand/pretty-absurd-wordmark-cream.webp"
+                alt="Pretty ¿Absurd? By, Kaylah"
+                class="home-hero__wordmark"
+                loading="eager"
+                fetchpriority="high"
+                width="1400"
+                height="668"
+              >
+            </picture>
+          </h1>
+          <p class="home-hero__sub" data-i18n="home.hero.sub">Too much is the whole point.</p>
           <div class="home-hero__ctas">
-            <a href="#" class="home-hero__cta home-hero__cta--primary" id="pa-hero-lookbook-btn">Enter the lookbook</a>
-            <a href="collection.html" class="home-hero__cta home-hero__cta--ghost">See the dresses</a>
+            <a href="#" class="home-hero__cta home-hero__cta--primary" id="pa-hero-lookbook-btn" data-i18n="home.hero.cta_lookbook">Enter the lookbook</a>
+            <a href="collection.html" class="home-hero__cta home-hero__cta--ghost" data-i18n="home.hero.cta_collection">See the dresses</a>
           </div>
         </div>
       </div>
       <!-- ── Prelaunch strip ── -->
       <div class="home-prelaunch" role="banner" aria-label="Prelaunch announcement">
-        <span class="home-prelaunch__label">Prelaunch</span>
-        <p class="home-prelaunch__text">Pre-ordering opens 25 July — Collection drops 25 July 2026</p>
-        <a href="contact.html" class="home-prelaunch__cta">Notify me →</a>
+        <span class="home-prelaunch__label" data-i18n="home.prelaunch.label">Prelaunch</span>
+        <p class="home-prelaunch__text" data-i18n="home.prelaunch.text">Pre-ordering opens 25 July — Collection drops 25 July 2026</p>
+        <a href="contact.html" class="home-prelaunch__cta" data-i18n="home.prelaunch.cta">Notify me →</a>
       </div>
 
     </section>
@@ -96,63 +130,60 @@
     <section class="home-ephemera">
 
       <!-- Scattered stickers -->
-      <img class="pa-sticker" data-s="2" data-sparallax="0.15" src="assets/images/stickers/sticker-blue-star.png"  alt="" loading="lazy" aria-hidden="true">
-      <video class="pa-sticker" data-s="3" autoplay loop muted playsinline aria-hidden="true">
-        <source src="assets/images/stickers/discoball.webm" type="video/webm">
-        <source src="assets/images/stickers/discoball.mp4" type="video/mp4">
-      </video>
-      <img class="pa-sticker" data-s="4" data-sparallax="0.08" src="assets/images/stickers/sticker-camera.png"     alt="" loading="lazy" aria-hidden="true">
-      <img class="pa-sticker" data-s="5" data-sparallax="0.18" src="assets/images/stickers/sticker-stars.png"      alt="" loading="lazy" aria-hidden="true">
-      <img class="pa-sticker" data-s="6" data-sparallax="0.11" src="assets/images/stickers/sticker-megaphone.png"  alt="" loading="lazy" aria-hidden="true">
-      <img class="pa-sticker" data-s="7" src="assets/images/stickers/sticker-chevrons.png"   alt="" loading="lazy" aria-hidden="true">
+      <img class="pa-sticker" data-s="2" data-sparallax="0.15" src="assets/images/stickers/sticker-blue-star.webp"  alt="" loading="lazy" aria-hidden="true">
+      <img class="pa-sticker" data-s="3" src="assets/images/stickers/discoball.gif" alt="" loading="lazy" aria-hidden="true">
+      <img class="pa-sticker" data-s="4" data-sparallax="0.08" src="assets/images/stickers/sticker-camera.webp"     alt="" loading="lazy" aria-hidden="true">
+      <img class="pa-sticker" data-s="5" data-sparallax="0.18" src="assets/images/stickers/sticker-stars.webp"      alt="" loading="lazy" aria-hidden="true">
+      <img class="pa-sticker" data-s="6" data-sparallax="0.11" src="assets/images/stickers/sticker-megaphone.webp"  alt="" loading="lazy" aria-hidden="true">
+      <img class="pa-sticker" data-s="7" src="assets/images/stickers/sticker-chevrons.webp"   alt="" loading="lazy" aria-hidden="true">
 
       <div class="home-ephemera__inner">
 
         <!-- Slot 1: Receipt / waitlist card -->
         <a class="pa-receipt" href="contact.html">
           <div class="pa-curl"></div>
-          <span class="pa-logo-text">PRETTY ABSURD</span>
+          <span class="pa-logo-text" data-i18n="home.receipt.brand">PRETTY ABSURD</span>
           <div class="pa-rule">------------------------------</div>
 
           <div class="pa-dress-item">
-            <img class="pa-dress-thumb" src="assets/images/product-detail/pink-hero.png" alt="The Pink Satin" loading="lazy">
+            <img class="pa-dress-thumb" src="assets/images/product-detail/pink-hero.webp" alt="The Pink Satin" loading="lazy">
             <div class="pa-dress-info">
-              <span class="pa-dress-name">The Pink Satin</span>
+              <span class="pa-dress-name" data-i18n="home.receipt.pink">The Pink Satin</span>
               <span class="pa-dress-price" data-price="1950">R1,950</span>
             </div>
           </div>
 
           <div class="pa-dress-item">
-            <img class="pa-dress-thumb" src="assets/images/product-detail/blue-hero.png" alt="The Ice Blue" loading="lazy">
+            <img class="pa-dress-thumb" src="assets/images/product-detail/blue-hero.webp" alt="The Ice Blue" loading="lazy">
             <div class="pa-dress-info">
-              <span class="pa-dress-name">The Ice Blue</span>
+              <span class="pa-dress-name" data-i18n="home.receipt.blue">The Ice Blue</span>
               <span class="pa-dress-price" data-price="1950">R1,950</span>
             </div>
           </div>
 
           <div class="pa-dress-item">
-            <img class="pa-dress-thumb" src="assets/images/product-detail/dot-hero.png" alt="The Polka Dot" loading="lazy">
+            <img class="pa-dress-thumb" src="assets/images/product-detail/dot-hero.webp" alt="The Polka Dot" loading="lazy">
             <div class="pa-dress-info">
-              <span class="pa-dress-name">The Polka Dot</span>
+              <span class="pa-dress-name" data-i18n="home.receipt.dot">The Polka Dot</span>
               <span class="pa-dress-price" data-price="1950">R1,950</span>
             </div>
           </div>
 
           <div class="pa-rule">------------------------------</div>
-          <div class="pa-line pa-total"><span>TOTAL</span><span data-price="1950">R1,950</span></div>
+          <div class="pa-line pa-total"><span data-i18n="home.receipt.total">TOTAL</span><span data-price="1950">R1,950</span></div>
           <div class="pa-rule">------------------------------</div>
-          <div class="pa-meta">STATUS … coming soon<br>WAITLIST … now open</div>
-          <div class="pa-cta"><b>TAP TO RESERVE HER</b><span>join the waitlist — xo</span></div>
+          <div class="pa-meta" data-i18n-html="home.receipt.status_line">STATUS … coming soon<br>WAITLIST … now open</div>
+          <div class="pa-cta"><b data-i18n="home.receipt.cta_main">TAP TO RESERVE HER</b><span data-i18n="home.receipt.cta_sub">join the waitlist — xo</span></div>
           <div class="pa-barcode"></div>
         </a>
 
         <!-- Slot 2: Lookbook preview — click to open fullscreen reader -->
         <div class="pa-zine" id="pa-lookbook-open" role="button" tabindex="0" aria-label="Open the lookbook" style="position:relative;">
-          <img class="pa-chevrons-on-zine" src="assets/images/stickers/sticker-chevrons.png" alt="" loading="lazy" aria-hidden="true">
+          <img class="pa-chevrons-on-zine" src="assets/images/stickers/sticker-chevrons.webp" alt="" loading="lazy" aria-hidden="true">
           <div class="pa-zine__book">
             <div class="pa-zine__pages">
               <div class="pa-zine__page">
-                <img src="assets/images/editorial/pink-clean.png" alt="Pretty Absurd Lookbook SS26" loading="lazy">
+                <img src="assets/images/editorial/pink-clean.webp" alt="Pretty Absurd Lookbook SS26" loading="lazy">
                 <div class="pa-zine__cover">
                   <div class="pa-zine__masthead">ABSURD</div>
                   <div class="pa-zine__coverline">Issue No.01 — SS26</div>
@@ -172,17 +203,38 @@
       </div>
     </section>
 
+    <!-- ── Designer teaser ── -->
+    <section class="home-designer section" aria-label="Meet the designer">
+      <div class="container">
+        <div class="home-designer__inner">
+          <div class="home-designer__portrait reveal-item">
+            <img
+              src="assets/images/designer-portrait.webp"
+              alt="Kaylah — designer and founder of Pretty Absurd"
+              loading="lazy"
+            >
+          </div>
+          <div class="home-designer__text reveal-item">
+            <span class="home-designer__label" data-i18n="home.designer.label">The Designer</span>
+            <h2 class="home-designer__headline" data-i18n="home.designer.headline">Meet Kaylah.</h2>
+            <p class="home-designer__sub" data-i18n="home.designer.sub">An independent designer making clothes that look impossible — until you see them in person.</p>
+            <a href="about.html" class="home-designer__cta" data-i18n="home.designer.cta">Read her story →</a>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- ── Notify strip ── -->
     <section class="home-notify section" aria-label="Notify me when orders open">
       <div class="container">
         <div class="home-notify__inner">
           <div class="home-notify__text">
-            <h2 class="home-notify__headline">Be first to know.</h2>
-            <p class="home-notify__sub">Pre-ordering opens 25 July 2026. Leave your email and we'll tell you the moment it does.</p>
+            <h2 class="home-notify__headline" data-i18n="home.notify.headline">Be first to know.</h2>
+            <p class="home-notify__sub" data-i18n="home.notify.sub">Pre-ordering opens 25 July 2026. Leave your email and we'll tell you the moment it does.</p>
           </div>
-          <form class="home-notify__form" action="https://formspree.io/f/placeholder" method="POST" aria-label="Email notification signup">
-            <label for="notify-email" class="sr-only">Email address</label>
+          <form class="home-notify__form" action="https://formspree.io/f/mnjejwqz" method="POST" aria-label="Email notification signup">
+            <input type="hidden" name="_subject" value="Pretty Absurd — Waitlist signup">
+            <label for="notify-email" class="sr-only" data-i18n="contact.form.email">Email address</label>
             <input
               id="notify-email"
               type="email"
@@ -191,8 +243,9 @@
               required
               class="home-notify__input"
               autocomplete="email"
+              data-i18n-placeholder="home.notify.placeholder"
             >
-            <button type="submit" class="home-notify__btn">Notify me</button>
+            <button type="submit" class="home-notify__btn" data-i18n="home.notify.btn">Notify me</button>
           </form>
         </div>
       </div>
@@ -204,18 +257,18 @@
     <div class="footer__inner">
       <div class="footer__top">
         <div>
-          <div class="footer__brand">Pretty Absurd</div>
-          <div class="footer__tagline">Dresses made to be stared at.</div>
+          <div class="footer__brand" data-i18n="nav.brand">Pretty Absurd</div>
+          <div class="footer__tagline" data-i18n="footer.tagline">Dresses made to be stared at.</div>
         </div>
         <nav class="footer__nav" aria-label="Footer navigation">
-          <a href="lookbook.html"    class="footer__nav-link">Lookbook</a>
-          <a href="collection.html"  class="footer__nav-link">The Dresses</a>
-          <a href="about.html"       class="footer__nav-link">About</a>
-          <a href="contact.html"     class="footer__nav-link">Contact</a>
+          <a href="lookbook.html"    class="footer__nav-link" data-i18n="footer.links.lookbook">Lookbook</a>
+          <a href="collection.html"  class="footer__nav-link" data-i18n="footer.links.collection">The Dresses</a>
+          <a href="about.html"       class="footer__nav-link" data-i18n="footer.links.about">About</a>
+          <a href="contact.html"     class="footer__nav-link" data-i18n="footer.links.contact">Contact</a>
         </nav>
       </div>
       <div class="footer__bottom">
-        <span class="footer__copy">© 2026 Pretty Absurd. All rights reserved.</span>
+        <span class="footer__copy" data-i18n="footer.copy">© 2026 Pretty Absurd. All rights reserved.</span>
         <div class="footer__socials">
           <a href="https://instagram.com/pretty_absurdd" class="footer__social" aria-label="Instagram" target="_blank" rel="noopener">Instagram</a>
           <a href="https://tiktok.com/@pretty.absrudd" class="footer__social" aria-label="TikTok" target="_blank" rel="noopener">TikTok</a>
@@ -227,7 +280,7 @@
   <!-- ── Lookbook overlay — full-screen 3D flip reader ── -->
   <div id="pa-lookbook-overlay" style="display:none;">
     <div class="lb-stage">
-      <div class="lb-brandlabel">Pretty Absurd &nbsp;— the lookbook &nbsp;— issue n&ordm;01</div>
+      <div class="lb-brandlabel" data-i18n-html="lookbook.brandlabel">Pretty Absurd &nbsp;— the lookbook &nbsp;— issue n&ordm;01</div>
 
       <div class="lb-scalewrap" id="lb-wrap">
         <div class="lb-shadow"></div>
@@ -236,25 +289,25 @@
           <!-- LEAF 0 : COVER -->
           <div class="lb-leaf">
             <div class="lb-face" style="background:#141414;">
-              <div class="lb-imgslot dark"><img id="mag-cover" src="assets/images/editorial/pink-clean.png" alt="" loading="lazy"></div>
+              <div class="lb-imgslot dark"><img id="mag-cover" src="assets/images/editorial/pink-clean.webp" alt="" loading="lazy"></div>
               <div style="position:absolute;inset:0;pointer-events:none;background:linear-gradient(180deg,rgba(0,0,0,.5) 0%,transparent 26%,transparent 55%,rgba(0,0,0,.62) 100%);"></div>
-              <div style="position:absolute;top:26px;left:0;right:0;text-align:center;font:400 11px 'Space Mono',monospace;letter-spacing:.4em;color:#f4f1ea;">SS26 &nbsp;/&nbsp; ISSUE N&ordm;01</div>
+              <div style="position:absolute;top:26px;left:0;right:0;text-align:center;font:400 11px 'Space Mono',monospace;letter-spacing:.4em;color:#f4f1ea;" data-i18n="lookbook.cover.top_label">SS26 &nbsp;/&nbsp; ISSUE N&ordm;01</div>
               <div style="position:absolute;left:8%;right:8%;top:38%;transform:translateY(-50%);text-align:center;">
-                <div style="font:700 30px/1.15 'Space Mono',monospace;letter-spacing:.14em;color:#f4f1ea;">PRETTY<br>ABSURD</div>
+                <div style="font:700 30px/1.15 'Space Mono',monospace;letter-spacing:.14em;color:#f4f1ea;" data-i18n="lookbook.cover.title">PRETTY<br>ABSURD</div>
               </div>
               <div style="position:absolute;left:0;right:0;bottom:40px;text-align:center;color:#f4f1ea;">
                 <div style="font:400 15px 'Poiret One',sans-serif;letter-spacing:.42em;">THE DRESS</div>
-                <div style="font:italic 400 18px 'Cormorant Garamond',serif;color:#e7d3d9;margin-top:6px;">feminine, but feral…</div>
+                <div style="font:italic 400 18px 'Cormorant Garamond',serif;color:#e7d3d9;margin-top:6px;" data-i18n="lookbook.cover.tagline">feminine, but feral…</div>
               </div>
               <div class="lb-spineL" style="background:linear-gradient(90deg,rgba(0,0,0,.32),transparent);"></div>
             </div>
             <div class="lb-face lb-face--back" style="padding:46px 44px;">
-              <div style="font:400 10px 'Space Mono',monospace;letter-spacing:.34em;color:#8a8478;">PRETTY ABSURD — BY, KAYLAH</div>
+              <div style="font:400 10px 'Space Mono',monospace;letter-spacing:.34em;color:#8a8478;" data-i18n="lookbook.cover.credit_label">PRETTY ABSURD — BY, KAYLAH</div>
               <div style="width:34px;height:1.5px;background:#1c1a17;margin:20px 0;"></div>
-              <div style="font:italic 500 26px/1.25 'Cormorant Garamond',serif;">an editorial in one act, on the making of a dress that refuses to behave.</div>
+              <div style="font:italic 500 26px/1.25 'Cormorant Garamond',serif;" data-i18n="lookbook.cover.credit_body">an editorial in one act, on the making of a dress that refuses to behave.</div>
               <div style="margin-top:38px;font:400 10px/2.1 'Space Mono',monospace;letter-spacing:.06em;color:#4a463f;">
                 CREATIVE DIRECTION &nbsp; KAYLAH<br>PHOTOGRAPHY &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; KAYLAH<br>DESIGN &amp; WEB &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="https://whitespacedesigns.co.za" target="_blank" rel="noopener" style="color:inherit;text-underline-offset:3px;">WHITE SPACE DESIGNS</a><br>STYLING &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; KAYLAH<br>MAKEUP &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; KAYLAH<br>SET &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; SOUTH AFRICA, 2026</div>
-              <div class="lb-pagenum"><span>PRETTY ABSURD</span><span>01</span></div>
+              <div class="lb-pagenum"><span data-i18n="nav.brand">PRETTY ABSURD</span><span>01</span></div>
               <div class="lb-spineR"></div>
             </div>
           </div>
@@ -262,26 +315,26 @@
           <!-- LEAF 1 : CONTENTS / EDITOR'S LETTER -->
           <div class="lb-leaf">
             <div class="lb-face" style="padding:52px 46px;">
-              <div style="font:400 11px 'Space Mono',monospace;letter-spacing:.34em;color:#8a8478;">IN THIS ISSUE</div>
-              <div style="font:400 46px/1 'Poiret One',sans-serif;letter-spacing:.06em;margin:14px 0 30px;">Contents</div>
+              <div style="font:400 11px 'Space Mono',monospace;letter-spacing:.34em;color:#8a8478;" data-i18n="lookbook.contents.label">IN THIS ISSUE</div>
+              <div style="font:400 46px/1 'Poiret One',sans-serif;letter-spacing:.06em;margin:14px 0 30px;" data-i18n="lookbook.contents.headline">Contents</div>
               <div style="display:flex;flex-direction:column;gap:15px;">
-                <div style="display:flex;align-items:baseline;gap:10px;"><span style="font:400 12px 'Space Mono',monospace;color:#b06a84;width:24px;">01</span><span style="font:500 19px 'Cormorant Garamond',serif;">from the atelier — a letter</span></div>
-                <div style="display:flex;align-items:baseline;gap:10px;"><span style="font:400 12px 'Space Mono',monospace;color:#b06a84;width:24px;">02</span><span style="font:500 19px 'Cormorant Garamond',serif;">the editorial</span></div>
-                <div style="display:flex;align-items:baseline;gap:10px;"><span style="font:400 12px 'Space Mono',monospace;color:#b06a84;width:24px;">03</span><span style="font:500 19px 'Cormorant Garamond',serif;">the collection</span></div>
-                <div style="display:flex;align-items:baseline;gap:10px;"><span style="font:400 12px 'Space Mono',monospace;color:#b06a84;width:24px;">04</span><span style="font:500 19px 'Cormorant Garamond',serif;">the dress</span></div>
-                <div style="display:flex;align-items:baseline;gap:10px;"><span style="font:400 12px 'Space Mono',monospace;color:#b06a84;width:24px;">05</span><span style="font:500 19px 'Cormorant Garamond',serif;">craft &amp; cloth</span></div>
-                <div style="display:flex;align-items:baseline;gap:10px;"><span style="font:400 12px 'Space Mono',monospace;color:#b06a84;width:24px;">06</span><span style="font:500 19px 'Cormorant Garamond',serif;">the campaign</span></div>
-                <div style="display:flex;align-items:baseline;gap:10px;"><span style="font:400 12px 'Space Mono',monospace;color:#b06a84;width:24px;">07</span><span style="font:500 19px 'Cormorant Garamond',serif;">reserve her — the waitlist</span></div>
+                <div style="display:flex;align-items:baseline;gap:10px;"><span style="font:400 12px 'Space Mono',monospace;color:#b06a84;width:24px;">01</span><span style="font:500 19px 'Cormorant Garamond',serif;" data-i18n="lookbook.contents.item1">from the atelier — a letter</span></div>
+                <div style="display:flex;align-items:baseline;gap:10px;"><span style="font:400 12px 'Space Mono',monospace;color:#b06a84;width:24px;">02</span><span style="font:500 19px 'Cormorant Garamond',serif;" data-i18n="lookbook.contents.item2">the editorial</span></div>
+                <div style="display:flex;align-items:baseline;gap:10px;"><span style="font:400 12px 'Space Mono',monospace;color:#b06a84;width:24px;">03</span><span style="font:500 19px 'Cormorant Garamond',serif;" data-i18n="lookbook.contents.item3">the collection</span></div>
+                <div style="display:flex;align-items:baseline;gap:10px;"><span style="font:400 12px 'Space Mono',monospace;color:#b06a84;width:24px;">04</span><span style="font:500 19px 'Cormorant Garamond',serif;" data-i18n="lookbook.contents.item4">the dress</span></div>
+                <div style="display:flex;align-items:baseline;gap:10px;"><span style="font:400 12px 'Space Mono',monospace;color:#b06a84;width:24px;">05</span><span style="font:500 19px 'Cormorant Garamond',serif;" data-i18n="lookbook.contents.item5">craft &amp; cloth</span></div>
+                <div style="display:flex;align-items:baseline;gap:10px;"><span style="font:400 12px 'Space Mono',monospace;color:#b06a84;width:24px;">06</span><span style="font:500 19px 'Cormorant Garamond',serif;" data-i18n="lookbook.contents.item6">the campaign</span></div>
+                <div style="display:flex;align-items:baseline;gap:10px;"><span style="font:400 12px 'Space Mono',monospace;color:#b06a84;width:24px;">07</span><span style="font:500 19px 'Cormorant Garamond',serif;" data-i18n="lookbook.contents.item7">reserve her — the waitlist</span></div>
               </div>
               <div class="lb-pagenum"><span>02</span><span>PRETTY ABSURD</span></div>
               <div class="lb-spineL"></div>
             </div>
             <div class="lb-face lb-face--back" style="padding:52px 46px;">
-              <div style="text-align:center;font:400 44px/1 'Sacramento',cursive;">from Kaylah…</div>
+              <div style="text-align:center;font:400 44px/1 'Sacramento',cursive;" data-i18n="lookbook.letter.title">from Kaylah…</div>
               <div style="width:40px;height:1.5px;background:#b06a84;margin:18px auto 24px;"></div>
-              <p style="font:400 15.5px/1.7 'Cormorant Garamond',serif;margin:0;text-align:justify;"><span style="float:left;font:500 58px/0.72 'Poiret One',sans-serif;padding:6px 10px 0 0;color:#b06a84;">s</span>he arrived late, unbothered, and slightly too much for the room… which is, of course, the entire point. this issue is a small love letter to the dress — the one you don't need but will absolutely buy — and to everyone who understands that being pretty is optional, but being absurd is a lifestyle.</p>
-              <p style="font:400 15.5px/1.7 'Cormorant Garamond',serif;margin:16px 0 0;text-align:justify;">we made her by hand, in small numbers, on purpose. what follows is how she came to be… and how you take her home.</p>
-              <div style="margin-top:26px;font:400 30px 'Sacramento',cursive;">Xo, Kaylah</div>
+              <p style="font:400 15.5px/1.7 'Cormorant Garamond',serif;margin:0;text-align:justify;" data-i18n="lookbook.letter.p1">she arrived late, unbothered, and slightly too much for the room… which is, of course, the entire point. this issue is a small love letter to the dress — the one you don't need but will absolutely buy — and to everyone who understands that being pretty is optional, but being absurd is a lifestyle.</p>
+              <p style="font:400 15.5px/1.7 'Cormorant Garamond',serif;margin:16px 0 0;text-align:justify;" data-i18n="lookbook.letter.p2">we made her by hand, in small numbers, on purpose. what follows is how she came to be… and how you take her home.</p>
+              <div style="margin-top:26px;font:400 30px 'Sacramento',cursive;" data-i18n="lookbook.letter.sign">Xo Xo, Kaylah</div>
               <div class="lb-pagenum"><span>PRETTY ABSURD</span><span>03</span></div>
               <div class="lb-spineR"></div>
             </div>
@@ -290,14 +343,14 @@
           <!-- LEAF 2 : EDITORIAL / PULL-QUOTE -->
           <div class="lb-leaf">
             <div class="lb-face" style="background:#141414;">
-              <div class="lb-imgslot dark"><img id="mag-editorial" src="assets/images/editorial/dot-subway.png" alt="" loading="lazy"></div>
-              <div style="position:absolute;left:26px;bottom:26px;font:400 9px 'Space Mono',monospace;letter-spacing:.24em;color:#f4f1ea;text-shadow:0 1px 3px rgba(0,0,0,.6);">THE EDITORIAL &nbsp;/&nbsp; 01</div>
+              <div class="lb-imgslot dark"><img id="mag-editorial" src="assets/images/editorial/dot-subway.webp" alt="" loading="lazy"></div>
+              <div style="position:absolute;left:26px;bottom:26px;font:400 9px 'Space Mono',monospace;letter-spacing:.24em;color:#f4f1ea;text-shadow:0 1px 3px rgba(0,0,0,.6);" data-i18n="lookbook.editorial.tag">THE EDITORIAL &nbsp;/&nbsp; 01</div>
               <div class="lb-spineL" style="background:linear-gradient(90deg,rgba(0,0,0,.3),transparent);"></div>
             </div>
             <div class="lb-face lb-face--back" style="background:#f2c9d6;color:#3a1f2a;padding:56px 48px;display:flex;flex-direction:column;justify-content:center;">
               <div style="font:400 66px/0.9 'Poiret One',sans-serif;opacity:.5;">&ldquo;</div>
-              <p style="font:italic 500 30px/1.32 'Cormorant Garamond',serif;margin:0;">she doesn't ask for the room. she simply refuses to leave it.</p>
-              <div style="margin-top:28px;font:400 10px 'Space Mono',monospace;letter-spacing:.24em;">— ON THE DRESS, SS26</div>
+              <p style="font:italic 500 30px/1.32 'Cormorant Garamond',serif;margin:0;" data-i18n="lookbook.editorial.quote">she doesn't ask for the room. she simply refuses to leave it.</p>
+              <div style="margin-top:28px;font:400 10px 'Space Mono',monospace;letter-spacing:.24em;" data-i18n="lookbook.editorial.quote_attr">— ON THE DRESS, SS26</div>
               <div class="lb-pagenum" style="color:#8a5a6c;"><span>PRETTY ABSURD</span><span>05</span></div>
               <div class="lb-spineR"></div>
             </div>
@@ -306,18 +359,18 @@
           <!-- LEAF 3 : COLLECTION DIVIDER / LOOKS -->
           <div class="lb-leaf">
             <div class="lb-face" style="padding:48px;display:flex;flex-direction:column;justify-content:center;">
-              <div style="font:400 11px 'Space Mono',monospace;letter-spacing:.34em;color:#8a8478;">SECTION 03</div>
-              <div style="font:400 58px/0.98 'Poiret One',sans-serif;letter-spacing:.04em;margin:12px 0 0;">The<br>Collection</div>
+              <div style="font:400 11px 'Space Mono',monospace;letter-spacing:.34em;color:#8a8478;" data-i18n="lookbook.section3.label">SECTION 03</div>
+              <div style="font:400 58px/0.98 'Poiret One',sans-serif;letter-spacing:.04em;margin:12px 0 0;"><span data-i18n="lookbook.section3.title">The</span><br><span data-i18n="lookbook.section3.title2">Collection</span></div>
               <div style="width:44px;height:1.5px;background:#7fa9cf;margin:24px 0;"></div>
-              <p style="font:italic 400 18px/1.5 'Cormorant Garamond',serif;max-width:78%;">a tight edit for SS26 — hand-cut, hand-finished, made in small numbers so she never turns up twice at the same party.</p>
+              <p style="font:italic 400 18px/1.5 'Cormorant Garamond',serif;max-width:78%;" data-i18n="lookbook.section3.body">a tight edit for SS26 — hand-cut, hand-finished, made in small numbers so she never turns up twice at the same party.</p>
               <div class="lb-pagenum"><span>06</span><span>PRETTY ABSURD</span></div>
               <div class="lb-spineL"></div>
             </div>
             <div class="lb-face lb-face--back" style="padding:40px 34px;">
               <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px 14px;height:calc(100% - 40px);">
-                <div style="display:flex;flex-direction:column;gap:6px;"><div style="flex:1;min-height:0;"><div class="lb-imgslot" style="background:#f5f1ea;"><img id="mag-look-1" src="assets/images/product-detail/pink-hero.png" alt="" loading="lazy" style="object-fit:contain;padding:6px;"></div></div><div style="font:400 9px 'Space Mono',monospace;letter-spacing:.16em;color:#6a655c;">LOOK 01 — THE PINK</div></div>
-                <div style="display:flex;flex-direction:column;gap:6px;"><div style="flex:1;min-height:0;"><div class="lb-imgslot" style="background:#f5f1ea;"><img id="mag-look-2" src="assets/images/product-detail/blue-hero.png" alt="" loading="lazy" style="object-fit:contain;padding:6px;"></div></div><div style="font:400 9px 'Space Mono',monospace;letter-spacing:.16em;color:#6a655c;">LOOK 02 — THE BLUE</div></div>
-                <div style="grid-column:1 / span 2;display:flex;flex-direction:column;gap:6px;"><div style="flex:1;min-height:0;"><div class="lb-imgslot" style="background:#f5f1ea;"><img id="mag-look-3" src="assets/images/product-detail/dot-hero.png" alt="" loading="lazy" style="object-fit:contain;padding:6px;"></div></div><div style="font:400 9px 'Space Mono',monospace;letter-spacing:.16em;color:#6a655c;">LOOK 03 — THE DOT</div></div>
+                <div style="display:flex;flex-direction:column;gap:6px;"><div style="flex:1;min-height:0;"><div class="lb-imgslot" style="background:#f5f1ea;"><img id="mag-look-1" src="assets/images/product-detail/pink-hero.webp" alt="" loading="lazy" style="object-fit:contain;padding:6px;"></div></div><div style="font:400 9px 'Space Mono',monospace;letter-spacing:.16em;color:#6a655c;" data-i18n="lookbook.section3.look1">LOOK 01 — THE PINK</div></div>
+                <div style="display:flex;flex-direction:column;gap:6px;"><div style="flex:1;min-height:0;"><div class="lb-imgslot" style="background:#f5f1ea;"><img id="mag-look-2" src="assets/images/product-detail/blue-hero.webp" alt="" loading="lazy" style="object-fit:contain;padding:6px;"></div></div><div style="font:400 9px 'Space Mono',monospace;letter-spacing:.16em;color:#6a655c;" data-i18n="lookbook.section3.look2">LOOK 02 — THE BLUE</div></div>
+                <div style="grid-column:1 / span 2;display:flex;flex-direction:column;gap:6px;"><div style="flex:1;min-height:0;"><div class="lb-imgslot" style="background:#f5f1ea;"><img id="mag-look-3" src="assets/images/product-detail/dot-hero.webp" alt="" loading="lazy" style="object-fit:contain;padding:6px;"></div></div><div style="font:400 9px 'Space Mono',monospace;letter-spacing:.16em;color:#6a655c;" data-i18n="lookbook.section3.look3">LOOK 03 — THE DOT</div></div>
               </div>
               <div class="lb-pagenum" style="bottom:14px;left:34px;right:34px;"><span>PRETTY ABSURD</span><span>07</span></div>
               <div class="lb-spineR"></div>
@@ -327,28 +380,28 @@
           <!-- LEAF 4 : THE DRESS FEATURE -->
           <div class="lb-leaf">
             <div class="lb-face" style="background:#141414;">
-              <div class="lb-imgslot dark"><img id="mag-dress-hero" src="assets/images/editorial/blue-newspaper.png" alt="" loading="lazy"></div>
+              <div class="lb-imgslot dark"><img id="mag-dress-hero" src="assets/images/editorial/blue-newspaper.webp" alt="" loading="lazy"></div>
               <div style="position:absolute;inset:0;pointer-events:none;background:linear-gradient(0deg,rgba(0,0,0,.55) 0%,transparent 34%);"></div>
               <div style="position:absolute;left:30px;bottom:30px;color:#f4f1ea;">
-                <div style="font:400 11px 'Space Mono',monospace;letter-spacing:.34em;">SECTION 04</div>
-                <div style="font:400 52px/0.95 'Poiret One',sans-serif;letter-spacing:.04em;margin-top:6px;">The Dress</div>
+                <div style="font:400 11px 'Space Mono',monospace;letter-spacing:.34em;" data-i18n="lookbook.dress.section">SECTION 04</div>
+                <div style="font:400 52px/0.95 'Poiret One',sans-serif;letter-spacing:.04em;margin-top:6px;" data-i18n="lookbook.dress.title">The Dress</div>
               </div>
               <div class="lb-spineL" style="background:linear-gradient(90deg,rgba(0,0,0,.3),transparent);"></div>
             </div>
             <div class="lb-face lb-face--back" style="padding:46px;display:flex;flex-direction:column;">
-              <div style="font:400 10px 'Space Mono',monospace;letter-spacing:.34em;color:#8a8478;">SECTION 04 — THE DRESS</div>
-              <div style="font:italic 500 34px/1.1 'Cormorant Garamond',serif;margin-top:14px;">she's the one.</div>
+              <div style="font:400 10px 'Space Mono',monospace;letter-spacing:.34em;color:#8a8478;" data-i18n="lookbook.dress.tag">SECTION 04 — THE DRESS</div>
+              <div style="font:italic 500 34px/1.1 'Cormorant Garamond',serif;margin-top:14px;" data-i18n="lookbook.dress.headline">she's the one.</div>
               <div style="width:32px;height:1.5px;background:#b06a84;margin:16px 0 18px;"></div>
-              <p style="font:400 14.5px/1.72 'Cormorant Garamond',serif;margin:0;flex:1;">cut on the bias so she moves before you do. a neckline that means it. made to order — in a run so small she's practically a rumour. wear her to the thing you're overthinking… she'll handle it.</p>
+              <p style="font:400 14.5px/1.72 'Cormorant Garamond',serif;margin:0;flex:1;" data-i18n="lookbook.dress.body">cut on the bias so she moves before you do. a neckline that means it. made to order — in a run so small she's practically a rumour. wear her to the thing you're overthinking… she'll handle it.</p>
               <div style="border-top:1.5px solid #1c1a17;margin-top:24px;">
                 <div style="font:400 10.5px/1 'Space Mono',monospace;letter-spacing:.05em;color:#3a362f;padding-top:14px;">
-                  <div style="display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px solid rgba(28,26,23,.1);"><span>CLOTH</span><span>silk-blend cr&ecirc;pe</span></div>
-                  <div style="display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px solid rgba(28,26,23,.1);"><span>MAKE</span><span>made to order</span></div>
-                  <div style="display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px solid rgba(28,26,23,.1);"><span>SIZES</span><span>XS — XL / MTM</span></div>
-                  <div style="display:flex;justify-content:space-between;padding:10px 0 0;font-weight:700;font-size:12px;color:#1c1a17;"><span>PRICE</span><span>R1,950</span></div>
+                  <div style="display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px solid rgba(28,26,23,.1);"><span data-i18n="lookbook.dress.spec_cloth_label">CLOTH</span><span data-i18n="lookbook.dress.spec_cloth_val">silk-blend cr&ecirc;pe</span></div>
+                  <div style="display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px solid rgba(28,26,23,.1);"><span data-i18n="lookbook.dress.spec_make_label">MAKE</span><span data-i18n="lookbook.dress.spec_make_val">made to order</span></div>
+                  <div style="display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px solid rgba(28,26,23,.1);"><span data-i18n="lookbook.dress.spec_sizes_label">SIZES</span><span data-i18n="lookbook.dress.spec_sizes_val">S, M, L</span></div>
+                  <div style="display:flex;justify-content:space-between;padding:10px 0 0;font-weight:700;font-size:12px;color:#1c1a17;"><span data-i18n="lookbook.dress.spec_price_label">PRICE</span><span data-price="1950">R1,950</span></div>
                 </div>
               </div>
-              <div class="lb-pagenum"><span>PRETTY ABSURD</span><span>09</span></div>
+              <div class="lb-pagenum"><span data-i18n="nav.brand">PRETTY ABSURD</span><span>09</span></div>
               <div class="lb-spineR"></div>
             </div>
           </div>
@@ -356,21 +409,21 @@
           <!-- LEAF 5 : CAMPAIGN / RECEIPT -->
           <div class="lb-leaf">
             <div class="lb-face" style="background:#0e0e0e;">
-              <div style="position:absolute;inset:22px;"><div class="lb-imgslot dark"><img id="mag-campaign" src="assets/images/editorial/pink-butterfly.png" alt="" loading="lazy"></div></div>
-              <div style="position:absolute;top:26px;left:0;right:0;text-align:center;font:400 10px 'Space Mono',monospace;letter-spacing:.4em;color:#f4f1ea;">THE CAMPAIGN</div>
-              <div style="position:absolute;bottom:24px;left:0;right:0;text-align:center;font:italic 400 15px 'Cormorant Garamond',serif;color:#e7d3d9;">absurd, on purpose.</div>
+              <div style="position:absolute;inset:22px;"><div class="lb-imgslot dark"><img id="mag-campaign" src="assets/images/editorial/pink-butterfly.webp" alt="" loading="lazy"></div></div>
+              <div style="position:absolute;top:26px;left:0;right:0;text-align:center;font:400 10px 'Space Mono',monospace;letter-spacing:.4em;color:#f4f1ea;" data-i18n="lookbook.campaign.tag">THE CAMPAIGN</div>
+              <div style="position:absolute;bottom:24px;left:0;right:0;text-align:center;font:italic 400 15px 'Cormorant Garamond',serif;color:#e7d3d9;" data-i18n="lookbook.campaign.line">absurd, on purpose.</div>
               <div class="lb-spineL" style="background:linear-gradient(90deg,rgba(0,0,0,.4),transparent);"></div>
             </div>
             <div class="lb-face lb-face--back" style="background:#f5f1ea;padding:48px 44px;display:flex;flex-direction:column;justify-content:center;">
-              <div style="font:400 10px 'Space Mono',monospace;letter-spacing:.34em;color:#8a8478;margin-bottom:20px;">SECTION 07 — RESERVE HER</div>
-              <div style="font:400 54px/0.95 'Poiret One',sans-serif;letter-spacing:.03em;">Reserve<br>Her.</div>
+              <div style="font:400 10px 'Space Mono',monospace;letter-spacing:.34em;color:#8a8478;margin-bottom:20px;" data-i18n="lookbook.campaign.reserve_label">SECTION 07 — RESERVE HER</div>
+              <div style="font:400 54px/0.95 'Poiret One',sans-serif;letter-spacing:.03em;"><span data-i18n="lookbook.campaign.reserve_title">Reserve</span><br><span data-i18n="lookbook.campaign.reserve_title2">Her.</span></div>
               <div style="width:36px;height:1.5px;background:#b06a84;margin:20px 0;"></div>
-              <p style="font:400 14.5px/1.72 'Cormorant Garamond',serif;margin:0 0 28px;">she is made to order, in limited numbers. there is no queue, no drama — just her, held for you until the moment she's yours.</p>
+              <p style="font:400 14.5px/1.72 'Cormorant Garamond',serif;margin:0 0 28px;" data-i18n="lookbook.campaign.reserve_body">she is made to order, in limited numbers. there is no queue, no drama — just her, held for you until the moment she's yours.</p>
               <div style="border:1.5px solid #1c1a17;border-radius:2px;padding:16px 18px;font-family:'Space Mono',monospace;">
-                <div style="font:700 10px 'Space Mono',monospace;letter-spacing:.12em;margin-bottom:8px;">PRE-ORDER — 25 JULY 2026</div>
-                <div style="font:400 10px/1.7 'Space Mono',monospace;letter-spacing:.04em;color:#6a655c;">Join the waitlist and be<br>first in line when the drop opens.</div>
+                <div style="font:700 10px 'Space Mono',monospace;letter-spacing:.12em;margin-bottom:8px;" data-i18n="lookbook.campaign.preorder_tag">PRE-ORDER — 25 JULY 2026</div>
+                <div style="font:400 10px/1.7 'Space Mono',monospace;letter-spacing:.04em;color:#6a655c;" data-i18n-html="lookbook.campaign.preorder_note">Join the waitlist and be<br>first in line when the drop opens.</div>
               </div>
-              <div class="lb-pagenum"><span>PRETTY ABSURD</span><span>11</span></div>
+              <div class="lb-pagenum"><span data-i18n="nav.brand">PRETTY ABSURD</span><span>11</span></div>
               <div class="lb-spineR"></div>
             </div>
           </div>
@@ -378,23 +431,23 @@
           <!-- LEAF 6 : RESERVE CTA / BACK COVER -->
           <div class="lb-leaf">
             <div class="lb-face" style="background:#1c1a17;color:#f5f1ea;padding:44px 40px;display:flex;flex-direction:column;">
-              <div style="font:400 10px 'Space Mono',monospace;letter-spacing:.34em;color:#8a8478;margin-bottom:18px;">THE WAITLIST</div>
-              <div style="font:italic 400 44px/1 'Sacramento',cursive;color:#f5f1ea;">reserve her…</div>
+              <div style="font:400 10px 'Space Mono',monospace;letter-spacing:.34em;color:#8a8478;margin-bottom:18px;" data-i18n="lookbook.waitlist.tag">THE WAITLIST</div>
+              <div style="font:italic 400 44px/1 'Sacramento',cursive;color:#f5f1ea;" data-i18n="lookbook.waitlist.title">reserve her…</div>
               <div style="width:36px;height:1.5px;background:#b06a84;margin:16px 0 18px;"></div>
-              <div style="flex:1;min-height:0;border-radius:2px;overflow:hidden;"><div class="lb-imgslot dark"><img id="mag-cta" src="assets/images/product-detail/pink-hero.png" alt="" loading="lazy" style="object-fit:contain;padding:8px;background:#f5f1ea;"></div></div>
+              <div style="flex:1;min-height:0;border-radius:2px;overflow:hidden;"><div class="lb-imgslot dark"><img id="mag-cta" src="assets/images/product-detail/pink-hero.webp" alt="" loading="lazy" style="object-fit:contain;padding:8px;background:#f5f1ea;"></div></div>
               <div style="display:flex;justify-content:space-between;align-items:baseline;margin:16px 0 14px;font-family:'Space Mono',monospace;">
-                <span style="font-size:12px;font-weight:700;letter-spacing:.04em;color:#f5f1ea;">THE DRESS</span>
-                <span style="font-size:12px;font-weight:700;color:#f5f1ea;">R1,950</span>
+                <span style="font-size:12px;font-weight:700;letter-spacing:.04em;color:#f5f1ea;" data-i18n="lookbook.waitlist.the_dress">THE DRESS</span>
+                <span style="font-size:12px;font-weight:700;color:#f5f1ea;" data-price="1950">R1,950</span>
               </div>
-              <a href="contact.html" style="display:block;text-align:center;background:#f5f1ea;color:#1c1a17;text-decoration:none;padding:13px;border-radius:2px;font:700 11px 'Space Mono',monospace;letter-spacing:.08em;">JOIN THE WAITLIST →</a>
-              <a href="collection.html" style="display:block;text-align:center;background:transparent;color:#f5f1ea;text-decoration:none;padding:11px;margin-top:9px;border:1.5px solid rgba(245,241,234,.25);border-radius:2px;font:700 10px 'Space Mono',monospace;letter-spacing:.06em;">SHOP THE COLLECTION →</a>
+              <a href="contact.html" style="display:block;text-align:center;background:#f5f1ea;color:#1c1a17;text-decoration:none;padding:13px;border-radius:2px;font:700 11px 'Space Mono',monospace;letter-spacing:.08em;" data-i18n="lookbook.waitlist.cta_waitlist">JOIN THE WAITLIST →</a>
+              <a href="collection.html" style="display:block;text-align:center;background:transparent;color:#f5f1ea;text-decoration:none;padding:11px;margin-top:9px;border:1.5px solid rgba(245,241,234,.25);border-radius:2px;font:700 10px 'Space Mono',monospace;letter-spacing:.06em;" data-i18n="lookbook.waitlist.cta_collection">SHOP THE COLLECTION →</a>
               <div class="lb-spineL" style="background:linear-gradient(90deg,rgba(0,0,0,.3),transparent);"></div>
             </div>
             <div class="lb-face lb-face--back" style="background:#141414;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:48px;color:#f4f1ea;">
-              <div style="font:700 28px/1.2 'Space Mono',monospace;letter-spacing:.14em;text-align:center;">PRETTY<br>ABSURD</div>
-              <div style="font:italic 400 17px 'Cormorant Garamond',serif;color:#e7d3d9;margin-top:8px;">pretty. absurd. hers.</div>
+              <div style="font:700 28px/1.2 'Space Mono',monospace;letter-spacing:.14em;text-align:center;" data-i18n="nav.brand">PRETTY<br>ABSURD</div>
+              <div style="font:italic 400 17px 'Cormorant Garamond',serif;color:#e7d3d9;margin-top:8px;" data-i18n="lookbook.waitlist.back_tagline">pretty. absurd. hers.</div>
               <div style="margin-top:40px;font:400 11px/2 'Space Mono',monospace;letter-spacing:.24em;text-align:center;color:#c9c4ba;">@PRETTYABSURD<br>#PRETTYABSURD &nbsp; #FYP</div>
-              <div style="position:absolute;bottom:30px;left:0;right:0;text-align:center;font:400 9px 'Space Mono',monospace;letter-spacing:.2em;color:#7a756b;">PRETTY ABSURD — SS26 — ISSUE N&ordm;01</div>
+              <div style="position:absolute;bottom:30px;left:0;right:0;text-align:center;font:400 9px 'Space Mono',monospace;letter-spacing:.2em;color:#7a756b;" data-i18n="lookbook.waitlist.back_footer">PRETTY ABSURD — SS26 — ISSUE N&ordm;01</div>
               <div class="lb-spineR" style="background:linear-gradient(270deg,rgba(0,0,0,.3),transparent);"></div>
             </div>
           </div>
@@ -405,10 +458,10 @@
         <div class="lb-zone right" id="lb-zoneR"></div>
       </div><!-- /lb-scalewrap -->
 
-      <div class="lb-idlehint" id="lb-idlehint"><span>TAP TO OPEN THE ISSUE</span></div>
+      <div class="lb-idlehint" id="lb-idlehint"><span data-i18n="lookbook.tap_hint">TAP TO OPEN THE ISSUE</span></div>
       <button class="lb-closebtn" id="lb-closebtn" aria-label="Close lookbook">✕</button>
       <div class="lb-navpill" id="lb-navpill">
-        <b><span id="lb-pPrev">PREV</span><span id="lb-pCount" style="opacity:.5;letter-spacing:.24em;">01 / 07</span><span id="lb-pNext">NEXT</span></b>
+        <b><span id="lb-pPrev" data-i18n="lookbook.nav_prev">PREV</span><span id="lb-pCount" style="opacity:.5;letter-spacing:.24em;">01 / 07</span><span id="lb-pNext" data-i18n="lookbook.nav_next">NEXT</span></b>
       </div>
     </div><!-- /lb-stage -->
   </div><!-- /pa-lookbook-overlay -->

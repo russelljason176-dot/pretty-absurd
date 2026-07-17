@@ -73,8 +73,30 @@
 .pa-sticker[data-s="7"] { display: none; }
 
 
+/* Mobile: receipt + zine stack vertically, so re-anchor stickers to the
+   four corners (clear of the stacked cards) instead of hiding them. */
 @media (max-width: 900px) {
-  .pa-sticker { display: none; }
+  .pa-sticker[data-s="2"] {
+    width: clamp(80px, 22vw, 120px);
+    top: 1%;
+    left: 1%;
+  }
+  .pa-sticker[data-s="3"] {
+    width: clamp(90px, 24vw, 130px);
+  }
+  .pa-sticker[data-s="4"] {
+    display: none; /* sits mid-height — collides with stacked cards on narrow screens */
+  }
+  .pa-sticker[data-s="5"] {
+    width: clamp(80px, 22vw, 120px);
+    bottom: 1%;
+    right: 1%;
+  }
+  .pa-sticker[data-s="6"] {
+    width: clamp(70px, 18vw, 100px);
+    bottom: 1.5%;
+    left: 1%;
+  }
 }
 
 .home-ephemera__inner {

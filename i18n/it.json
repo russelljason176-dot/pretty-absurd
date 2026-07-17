@@ -2,104 +2,290 @@
   "_draft": "TODO: native Italian review required before launch",
   "lang": "it",
   "nav": {
-    "brand":      "Pretty Absurd",
-    "lookbook":   "Lookbook",
+    "brand": "Pretty Absurd",
+    "lookbook": "Lookbook",
     "collection": "Gli Abiti",
-    "about":      "Chi Siamo",
+    "about": "Chi Siamo",
     "brandWorld": "L'Universo",
-    "contact":    "Contatti"
+    "contact": "Contatti"
   },
   "home": {
     "hero": {
-      "headline":      "Pretty Absurd.",
-      "sub":           "Tre abiti. Un'idea assurda.",
-      "cta_lookbook":  "Scopri il lookbook",
-      "cta_collection":"Scopri gli abiti"
+      "sub": "Troppo è proprio il punto.",
+      "cta_lookbook": "Scopri il lookbook",
+      "cta_collection": "Scopri gli abiti"
     },
-    "intro": {
+    "prelaunch": {
       "label": "Prelaunch",
-      "text":  "Un brand in arrivo. Una stilista indipendente che crea abiti che non dovrebbero funzionare — eppure funzionano.",
-      "cta":   "Incontra la stilista"
+      "text": "Preordini aperti dal 25 luglio — Collezione disponibile dal 25 luglio 2026",
+      "cta": "Avvisami →"
     },
-    "teaser": {
-      "label":    "La collezione",
-      "headline": "Tre abiti. Ognuno deliberatamente fuori posto."
+    "receipt": {
+      "brand": "PRETTY ABSURD",
+      "pink": "Il Raso Rosa",
+      "blue": "L'Azzurro Ghiaccio",
+      "dot": "Il Pois",
+      "total": "TOTALE",
+      "status_line": "STATO … in arrivo<br>LISTA D'ATTESA … aperta",
+      "cta_main": "TOCCA PER PRENOTARLO",
+      "cta_sub": "unisciti alla lista d'attesa — xo"
+    },
+    "designer": {
+      "label": "La Stilista",
+      "headline": "Conosci Kaylah.",
+      "sub": "Una stilista indipendente che crea abiti che sembrerebbero non dover esistere — ma che, una volta visti, non si riesce più a immaginare assenti.",
+      "cta": "Scopri la sua storia →"
+    },
+    "notify": {
+      "headline": "Sii la prima a saperlo.",
+      "sub": "Preordini aperti dal 25 luglio 2026. Lascia la tua e-mail, ti avviseremo appena aprono.",
+      "placeholder": "tua@email.com",
+      "btn": "Avvisami"
     }
   },
-  "lookbook": {
-    "label":         "Numero 01",
-    "headline":      "Il Lookbook.",
-    "sub":           "Un magazine di moda da scorrere.",
-    "credits_label": "Credits",
-    "spread_label":  "Pagina"
-  },
   "collection": {
-    "label":       "La Collezione",
-    "headline":    "Tre Abiti.",
-    "sub":         "Ognuno fatto per essere guardato.",
-    "cta_inquire": "Richiedi info",
-    "cta_notify":  "Avvisami",
+    "label": "La Collezione",
+    "headline": "Tre Abiti.",
+    "sub": "Ognuno fatto per essere guardato. Preordini aperti dal 25 luglio — Collezione disponibile dal 25 luglio 2026.",
+    "view_dress": "Guarda l'abito ↓",
+    "price_label": "Prezzo",
+    "cta_inquire": "Richiedi info su questo abito",
+    "launch_note": "Preordini aperti dal 25 luglio — Disponibile dal 25 luglio 2026",
     "pieces": {
       "pink": {
-        "name":  "Il Raso Rosa",
-        "desc":  "Un corsetto che fa sul serio. Una gonna plissettata che no.",
-        "price": 3800
+        "num": "01 — 03",
+        "name": "Il Raso Rosa",
+        "desc": "Un corsetto che fa sul serio. Una gonna plissettata che no. Realizzato in morbido raso rosa lilla con struttura a stecche, scollatura a cuore e un laccio sul retro che prende il suo tempo.",
+        "details": [
+          "Raso con struttura a stecche",
+          "Scollatura a cuore con rouches",
+          "Chiusura con laccio sul retro",
+          "Zip invisibile laterale",
+          "Minigonna plissettata"
+        ],
+        "price": 1950
       },
       "blue": {
-        "name":  "L'Azzurro Ghiaccio",
-        "desc":  "Raso azzurro cipria. Scollatura a cuore. Strutturalmente assurdo.",
-        "price": 3800
+        "num": "02 — 03",
+        "name": "L'Azzurro Ghiaccio",
+        "desc": "Raso azzurro cipria. Scollatura a cuore. Strutturalmente assurdo. Stessa silhouette del rosa — stessa struttura, umore diverso. Più discreto, finché non lo vedi muoversi.",
+        "details": [
+          "Raso azzurro ghiaccio con struttura a stecche",
+          "Scollatura a cuore con rouches",
+          "Laccio in nastro sul retro, in tono",
+          "Zip invisibile laterale",
+          "Minigonna plissettata"
+        ],
+        "price": 1950
       },
       "polkadot": {
-        "name":  "Il Pois",
-        "desc":  "Puntini neri su bianco. Fascino d'altri tempi. Caos contemporaneo.",
-        "price": 3500
+        "num": "03 — 03",
+        "name": "Il Pois",
+        "desc": "Puntini neri su bianco. Fascino d'altri tempi. Caos contemporaneo. Stessa silhouette, stessa struttura — ma il pois cambia tutto. È quello che fa guardare due volte.",
+        "details": [
+          "Tessuto strutturato bianco a pois neri",
+          "Scollatura a cuore con rouches",
+          "Chiusura con laccio sul retro",
+          "Zip invisibile laterale",
+          "Minigonna plissettata"
+        ],
+        "price": 1950
       }
     }
   },
   "about": {
-    "label":            "La Stilista",
-    "headline":         "Dietro Pretty Absurd.",
-    "sub":              "Una stilista indipendente che crea abiti che sembrerebbero non dover esistere — ma che, una volta visti, non si riesce più a immaginare assenti.",
-    "story_label":      "La Storia",
-    "philosophy_label": "La Filosofia",
-    "process_label":    "Il Processo"
+    "label": "La Stilista",
+    "headline_1": "Dietro",
+    "headline_2": "Pretty Absurd.",
+    "sub": "Una stilista indipendente che crea abiti che sembrerebbero non dover esistere — ma che, una volta visti, non si riesce più a immaginare assenti.",
+    "portrait_caption": "Kaylah — Stilista & Fondatrice",
+    "story": {
+      "label": "La Storia",
+      "headline": "Abiti degni di un film che non riesci a collocare.",
+      "p1": "Gli abiti da donna di solito scelgono una strada: invisibili, oppure troppo appariscenti. Kaylah ha evitato la scelta e ha creato tre abiti al suo posto.",
+      "p2": "Ognuno condivide la stessa struttura — corsetto, scollatura a cuore, gonna plissettata — e racconta una storia diversa. Il raso rosa che sembra un sogno da Barbie. L'azzurro ghiaccio degno di una passerella parigina. I pois che fanno pensare a Marilyn Monroe su un tetto.",
+      "p3": "Il nome dice tutto. Pretty Absurd è moda deliberatamente, gioiosamente fuori posto. Abiti che fanno guardare — non perché sono strani, ma perché sono esattamente giusti in tutti i modi sbagliati."
+    },
+    "philosophy": {
+      "label": "La Filosofia",
+      "quote": "\"Pretty Absurd si basa su un'unica idea: i vestiti devono farti sentire la persona più interessante della stanza. Non la più elegante. La più interessante.\"",
+      "body": "Femminile o seria. Giocosa o curata. Alle donne viene imposta di continuo questa scelta. Kaylah l'ha ignorata. Le stecche del corsetto sono serie. I pois sono giocosi. Entrambi, insieme, di proposito."
+    },
+    "studio_caption": "Lo studio — dove tutto inizia",
+    "process": {
+      "label": "Il Processo",
+      "headline_1": "Ogni cucitura posizionata con intenzione.",
+      "headline_2": "Il caos sta nell'indossarlo, non nel crearlo.",
+      "step1_title": "Prima la struttura",
+      "step1_text": "Ogni abito parte dalla struttura. Le stecche del corsetto definiscono la silhouette prima ancora di tagliare un solo pezzo di raso. La struttura non è mai un ripensamento.",
+      "step2_title": "Il tessuto come carattere",
+      "step2_text": "Il tessuto non è mai solo un rivestimento — è la personalità del capo. Il raso cattura la luce in modo diverso. I pois cambiano la conversazione prima ancora di dire una parola.",
+      "step3_title": "Dettagli che si guadagnano il loro posto",
+      "step3_text": "Il rouches sulla scollatura a cuore. Il laccio sul retro. La zip invisibile sul lato. Niente è lì per decorazione — ogni dettaglio ha un compito."
+    },
+    "cta_strip": {
+      "text": "Tre abiti. Preordini aperti dal 25 luglio — Collezione disponibile dal 25 luglio 2026.",
+      "cta_collection": "Scopri gli abiti →",
+      "cta_lookbook": "Scopri il lookbook →"
+    }
   },
   "brandWorld": {
-    "label":    "L'Universo",
-    "headline": "L'Universo di Pretty Absurd.",
-    "sub":      "Dove vivono i riferimenti.",
-    "intro":    "Pois in metropolitana. Erba nei salotti. Un abito perfettamente stirato in un posto completamente sbagliato. Questo è il mondo da cui vengono questi vestiti."
+    "label": "L'Universo",
+    "headline_1": "L'Universo di",
+    "headline_2": "Pretty Absurd.",
+    "intro": "Pois in metropolitana. Erba nei salotti. Un abito perfettamente stirato in un posto completamente sbagliato. Questo è il mondo da cui vengono questi vestiti.",
+    "manifesto": {
+      "one": "L'abito che non si intona all'ambiente. Il tessuto troppo bello per l'occasione. La silhouette che ferma la stanza. Nessuno pianifica di ricordare un outfit. Pretty Absurd ci pensa lei.",
+      "two": "I riferimenti sono ovunque: Marilyn Monroe su una grata della metropolitana, Barbie in una dream house leggermente storta, un editoriale di Vogue scattato dove Vogue non andrebbe mai. Pretty Absurd prende in prestito tutto questo — e lo infila in un corsetto.",
+      "three": "Non è una moda che vuole sparire nell'armadio. Vuole essere indossata, guardata, e indossata ancora."
+    },
+    "captions": {
+      "dot_subway": "Pois in metropolitana — Numero 01",
+      "pink_butterfly": "Raso Rosa — dettaglio",
+      "blue_armchair": "Azzurro Ghiaccio — ambientazione retrò",
+      "pink_street": "Raso Rosa — strada",
+      "dot_highway": "Il Pois — lettino autostradale",
+      "blue_newspaper": "Azzurro Ghiaccio — editoriale",
+      "blue_playful": "Azzurro Ghiaccio — Numero 01",
+      "dot_crosswalk": "Il Pois — strisce pedonali B&N",
+      "dot_navy": "Il Pois — ritratto"
+    },
+    "quote": "\"Abiti fatti per essere guardati.\"",
+    "quote_attr": "— Pretty Absurd, SS26",
+    "cta_lookbook": "Scopri il lookbook →",
+    "cta_collection": "Scopri la collezione →"
   },
   "contact": {
-    "label":    "Contattaci",
-    "headline": "Parliamoci.",
-    "sub":      "Stampa, rivenditori e curiosi appassionati sono benvenuti.",
+    "label": "Contattaci",
+    "headline_1": "Parliamo-",
+    "headline_2": "ne.",
+    "sub": "Richieste stampa, conversazioni con rivenditori e curiosi appassionati: tutti benvenuti.",
+    "preorder_label": "Preordine",
+    "preorder_val": "Apre il 25 luglio 2026 — Disponibile dal 25 luglio 2026",
+    "inquiries_label": "Richieste",
+    "inquiries_val": "Usa il modulo — rispondiamo entro 48 ore",
+    "stockists_label": "Rivenditori",
+    "stockists_val": "Candidature attualmente accettate",
+    "early_access": {
+      "tag": "Cerchia Ristretta",
+      "headline": "Ottienilo prima di tutti.",
+      "perk1": "Accesso al preordine dal <strong>25 luglio</strong> — prima del lancio pubblico",
+      "perk2": "<strong>15% di sconto</strong> sul tuo primo abito, applicato al checkout",
+      "nudge": "Seleziona \"Accesso anticipato\" nel modulo →"
+    },
     "form": {
-      "name":          "Il tuo nome",
-      "email":         "Indirizzo e-mail",
-      "country":       "Paese",
-      "type":          "Di cosa si tratta?",
-      "type_press":    "Richiesta stampa",
+      "name": "Il tuo nome",
+      "email": "Indirizzo e-mail",
+      "country": "Paese",
+      "type": "Di cosa si tratta?",
+      "type_choose": "Scegli un'opzione",
+      "type_early": "Accesso anticipato — 15% di sconto",
+      "type_notify": "Avvisami all'apertura degli ordini",
+      "type_dress": "Richiesta su un abito",
+      "type_press": "Richiesta stampa",
       "type_stockist": "Richiesta rivenditore",
-      "type_general":  "Generale",
-      "message":       "Il tuo messaggio",
-      "submit":        "Invia",
-      "success":       "Inviato. Ti ricontatteremo presto.",
-      "error":         "Qualcosa è andato storto. Riprova."
+      "type_general": "Generale",
+      "early_note": "Stai entrando nella cerchia ristretta — ti invieremo il codice sconto del 15% appena aprono i preordini, il 25 luglio.",
+      "message": "Il tuo messaggio",
+      "submit": "Invia",
+      "submit_early": "Accesso anticipato",
+      "sending": "Invio…",
+      "sent": "Inviato",
+      "try_again": "Riprova",
+      "footer_note": "Ti risponderemo entro 48 ore.",
+      "success": "Inviato. Ti ricontatteremo presto.",
+      "success_early": "Sei nella cerchia ristretta. Il tuo codice del 15% arriva appena aprono i preordini — il 25 luglio."
     }
+  },
+  "lookbook": {
+    "label": "Numero 01",
+    "headline": "Il Lookbook.",
+    "sub": "Un magazine di moda da scorrere.",
+    "tap_hint": "TOCCA PER APRIRE IL NUMERO",
+    "brandlabel": "Pretty Absurd — il lookbook — numero n°01",
+    "cover": {
+      "top_label": "SS26 / NUMERO N°01",
+      "title": "L'ABITO",
+      "tagline": "femminile, ma feroce…",
+      "credit_label": "PRETTY ABSURD — DI, KAYLAH",
+      "credit_body": "un editoriale in un atto unico, sulla creazione di un abito che si rifiuta di comportarsi bene.",
+      "credits": "DIREZIONE CREATIVA   KAYLAH<br>FOTOGRAFIA        KAYLAH<br>DESIGN & WEB      WHITE SPACE DESIGNS<br>STYLING            KAYLAH<br>TRUCCO             KAYLAH<br>SET                SUDAFRICA, 2026"
+    },
+    "contents": {
+      "label": "IN QUESTO NUMERO",
+      "headline": "Sommario",
+      "item1": "dall'atelier — una lettera",
+      "item2": "l'editoriale",
+      "item3": "la collezione",
+      "item4": "l'abito",
+      "item5": "artigianalità & tessuto",
+      "item6": "la campagna",
+      "item7": "prenotalo — la lista d'attesa"
+    },
+    "letter": {
+      "title": "da Kaylah…",
+      "p1": "è arrivata in ritardo, impassibile, e leggermente troppo per la stanza… il che, ovviamente, è tutto il punto. questo numero è una piccola lettera d'amore all'abito — quello di cui non hai bisogno ma che comprerai sicuramente — e a chiunque capisca che essere carina è facoltativo, ma essere assurda è uno stile di vita.",
+      "p2": "l'abbiamo fatta a mano, in piccoli numeri, di proposito. quello che segue è come è nata… e come portarla a casa.",
+      "sign": "Xo Xo, Kaylah"
+    },
+    "editorial": {
+      "tag": "L'EDITORIALE / 01",
+      "quote": "non chiede la stanza. si rifiuta semplicemente di lasciarla.",
+      "quote_attr": "— SULL'ABITO, SS26"
+    },
+    "section3": {
+      "label": "SEZIONE 03",
+      "title": "La",
+      "title2": "Collezione",
+      "body": "una selezione ristretta per la SS26 — tagliata a mano, rifinita a mano, prodotta in piccoli numeri perché non si ripeta mai alla stessa festa.",
+      "look1": "LOOK 01 — IL ROSA",
+      "look2": "LOOK 02 — L'AZZURRO",
+      "look3": "LOOK 03 — IL POIS"
+    },
+    "dress": {
+      "section": "SEZIONE 04",
+      "title": "L'Abito",
+      "tag": "SEZIONE 04 — L'ABITO",
+      "headline": "è quello giusto.",
+      "body": "tagliato di sbieco perché si muova prima di te. una scollatura che fa sul serio. realizzato su ordinazione — in una serie così piccola da essere quasi una voce. indossalo per l'evento che ti preoccupa… ci penserà lei.",
+      "spec_cloth_label": "TESSUTO",
+      "spec_cloth_val": "crêpe misto seta",
+      "spec_make_label": "REALIZZAZIONE",
+      "spec_make_val": "su ordinazione",
+      "spec_sizes_label": "TAGLIE",
+      "spec_sizes_val": "S, M, L",
+      "spec_price_label": "PREZZO"
+    },
+    "campaign": {
+      "tag": "LA CAMPAGNA",
+      "line": "assurdo, di proposito.",
+      "reserve_label": "SEZIONE 07 — PRENOTALO",
+      "reserve_title": "Prenota-",
+      "reserve_title2": "lo.",
+      "reserve_body": "è realizzato su ordinazione, in numeri limitati. niente fila, niente drammi — solo lui, tenuto da parte per te fino al momento in cui sarà tuo.",
+      "preorder_tag": "PREORDINE — 25 LUGLIO 2026",
+      "preorder_note": "Iscriviti alla lista d'attesa e sii<br>la prima ad essere avvisata all'apertura."
+    },
+    "waitlist": {
+      "tag": "LA LISTA D'ATTESA",
+      "title": "prenotalo…",
+      "the_dress": "L'ABITO",
+      "cta_waitlist": "ISCRIVITI ALLA LISTA D'ATTESA →",
+      "cta_collection": "SCOPRI LA COLLEZIONE →",
+      "back_tagline": "carino. assurdo. tuo.",
+      "back_footer": "PRETTY ABSURD — SS26 — NUMERO N°01"
+    },
+    "nav_prev": "PREC",
+    "nav_next": "SUCC"
   },
   "footer": {
     "tagline": "Abiti fatti per essere guardati.",
-    "copy":    "© 2026 Pretty Absurd. Tutti i diritti riservati.",
+    "copy": "© 2026 Pretty Absurd. Tutti i diritti riservati.",
     "links": {
-      "lookbook":   "Lookbook",
+      "lookbook": "Lookbook",
       "collection": "Gli Abiti",
-      "about":      "Chi Siamo",
-      "contact":    "Contatti"
+      "about": "Chi Siamo",
+      "contact": "Contatti"
     }
-  },
-  "currency": {
-    "note": "ca. — prezzo definitivo in ZAR"
   }
 }

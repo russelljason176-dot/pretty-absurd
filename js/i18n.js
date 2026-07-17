@@ -1,5 +1,5 @@
 const I18N = (() => {
-  const SUPPORTED = ['en', 'fr', 'it'];
+  const SUPPORTED = ['en', 'fr', 'it', 'es', 'de', 'pt'];
   const DEFAULT   = 'en';
   let lang         = DEFAULT;
   let t            = {};
@@ -25,6 +25,10 @@ const I18N = (() => {
     document.querySelectorAll('[data-i18n]').forEach(el => {
       const val = get(el.dataset.i18n);
       if (typeof val === 'string') el.textContent = val;
+    });
+    document.querySelectorAll('[data-i18n-html]').forEach(el => {
+      const val = get(el.dataset.i18nHtml);
+      if (typeof val === 'string') el.innerHTML = val;
     });
     document.querySelectorAll('[data-i18n-placeholder]').forEach(el => {
       const val = get(el.dataset.i18nPlaceholder);

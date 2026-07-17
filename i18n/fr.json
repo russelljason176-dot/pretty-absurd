@@ -2,104 +2,290 @@
   "_draft": "TODO: native French review required before launch",
   "lang": "fr",
   "nav": {
-    "brand":      "Pretty Absurd",
-    "lookbook":   "Lookbook",
+    "brand": "Pretty Absurd",
+    "lookbook": "Lookbook",
     "collection": "Les Robes",
-    "about":      "À Propos",
-    "brandWorld": "L'Univers",
-    "contact":    "Contact"
+    "about": "À propos",
+    "brandWorld": "Univers de marque",
+    "contact": "Contact"
   },
   "home": {
     "hero": {
-      "headline":      "Pretty Absurd.",
-      "sub":           "Trois robes. Une idée absurde.",
-      "cta_lookbook":  "Voir le lookbook",
-      "cta_collection":"Voir les robes"
+      "sub": "Trop, c'est justement le but.",
+      "cta_lookbook": "Découvrir le lookbook",
+      "cta_collection": "Voir les robes"
     },
-    "intro": {
-      "label": "Prélancement",
-      "text":  "Une marque en devenir. Une créatrice indépendante qui confectionne des vêtements qui ne devraient pas fonctionner — mais qui fonctionnent.",
-      "cta":   "Rencontrer la créatrice"
+    "prelaunch": {
+      "label": "Avant-lancement",
+      "text": "Précommandes ouvertes le 25 juillet — Collection disponible le 25 juillet 2026",
+      "cta": "M'avertir →"
     },
-    "teaser": {
-      "label":    "La collection",
-      "headline": "Trois robes. Chacune délibérément décalée."
+    "receipt": {
+      "brand": "PRETTY ABSURD",
+      "pink": "La Rose Satinée",
+      "blue": "Le Bleu Glacé",
+      "dot": "Le Pois",
+      "total": "TOTAL",
+      "status_line": "STATUT … bientôt<br>LISTE D'ATTENTE … ouverte",
+      "cta_main": "TOUCHEZ POUR LA RÉSERVER",
+      "cta_sub": "rejoindre la liste d'attente — xo"
+    },
+    "designer": {
+      "label": "La Créatrice",
+      "headline": "Rencontrez Kaylah.",
+      "sub": "Une créatrice indépendante qui fabrique des vêtements qui semblent ne pas pouvoir exister — et pourtant, une fois qu'on les voit, impossible d'imaginer leur absence.",
+      "cta": "Découvrir son histoire →"
+    },
+    "notify": {
+      "headline": "Soyez la première informée.",
+      "sub": "Précommandes ouvertes le 25 juillet 2026. Laissez votre e-mail, on vous prévient dès l'ouverture.",
+      "placeholder": "votre@email.com",
+      "btn": "M'avertir"
     }
   },
-  "lookbook": {
-    "label":         "Numéro 01",
-    "headline":      "Le Lookbook.",
-    "sub":           "Un magazine de mode que l'on fait défiler.",
-    "credits_label": "Crédits",
-    "spread_label":  "Planche"
-  },
   "collection": {
-    "label":       "La Collection",
-    "headline":    "Trois Robes.",
-    "sub":         "Chacune faite pour être admirée.",
-    "cta_inquire": "Renseignements",
-    "cta_notify":  "M'avertir",
+    "label": "La Collection",
+    "headline": "Trois Robes.",
+    "sub": "Chacune faite pour qu'on la regarde. Précommandes ouvertes le 25 juillet — Collection disponible le 25 juillet 2026.",
+    "view_dress": "Voir la robe ↓",
+    "price_label": "Prix",
+    "cta_inquire": "Se renseigner sur cette robe",
+    "launch_note": "Précommandes ouvertes le 25 juillet — Disponible le 25 juillet 2026",
     "pieces": {
       "pink": {
-        "name":  "Le Satin Rose",
-        "desc":  "Un corsage structuré sérieux. Une jupe plissée qui ne l'est pas.",
-        "price": 3800
+        "num": "01 — 03",
+        "name": "La Rose Satinée",
+        "desc": "Un bustier corset qui ne plaisante pas. Une jupe plissée qui ne prend rien au sérieux. En satin rose lilas doux, avec baleinage structuré, décolleté cœur et un laçage dans le dos qui prend son temps.",
+        "details": [
+          "Satin avec structure baleinée",
+          "Décolleté cœur avec volant",
+          "Fermeture laçage dans le dos",
+          "Fermeture éclair invisible sur le côté",
+          "Jupe courte plissée"
+        ],
+        "price": 1950
       },
       "blue": {
-        "name":  "Le Bleu Glacier",
-        "desc":  "Satin bleu poudre. Encolure en cœur. Structurellement absurde.",
-        "price": 3800
+        "num": "02 — 03",
+        "name": "Le Bleu Glacé",
+        "desc": "Satin bleu poudré. Décolleté cœur. Structurellement absurde. La même silhouette que la rose — les mêmes lignes, une autre humeur. Plus discrète, jusqu'à ce qu'on la voie bouger.",
+        "details": [
+          "Satin bleu glacé avec structure baleinée",
+          "Décolleté cœur avec volant",
+          "Laçage ruban dans le dos, ton sur ton",
+          "Fermeture éclair invisible sur le côté",
+          "Jupe courte plissée"
+        ],
+        "price": 1950
       },
       "polkadot": {
-        "name":  "Les Pois",
-        "desc":  "Points noirs sur blanc. Charme rétro. Chaos contemporain.",
-        "price": 3500
+        "num": "03 — 03",
+        "name": "Le Pois",
+        "desc": "Pois noirs sur fond blanc. Charme rétro. Chaos contemporain. Même silhouette, même structure — mais le pois change tout. C'est celle qui fait qu'on regarde deux fois.",
+        "details": [
+          "Tissu structuré blanc à pois noirs",
+          "Décolleté cœur avec volant",
+          "Fermeture laçage dans le dos",
+          "Fermeture éclair invisible sur le côté",
+          "Jupe courte plissée"
+        ],
+        "price": 1950
       }
     }
   },
   "about": {
-    "label":            "La Créatrice",
-    "headline":         "Derrière Pretty Absurd.",
-    "sub":              "Une créatrice indépendante qui confectionne des vêtements qui semblent ne pas devoir exister — mais qu'on ne peut plus imaginer absents.",
-    "story_label":      "L'Histoire",
-    "philosophy_label": "La Philosophie",
-    "process_label":    "Le Processus"
+    "label": "La Créatrice",
+    "headline_1": "Derrière",
+    "headline_2": "Pretty Absurd.",
+    "sub": "Une créatrice indépendante qui fabrique des vêtements qui semblent ne pas pouvoir exister — et pourtant, une fois qu'on les voit, impossible d'imaginer leur absence.",
+    "portrait_caption": "Kaylah — Créatrice & Fondatrice",
+    "story": {
+      "label": "L'Histoire",
+      "headline": "Des vêtements sortis d'un film qu'on n'arrive pas à situer.",
+      "p1": "Les vêtements pour femmes choisissent en général un camp : invisibles, ou trop voyants. Kaylah a refusé de choisir et a créé trois robes à la place.",
+      "p2": "Chacune partage la même ossature — bustier corset, décolleté cœur, jupe plissée — et raconte une histoire différente. Le satin rose qui évoque un rêve de poupée. Le bleu glacé digne d'un défilé parisien. Les pois qui font penser à Marilyn Monroe sur un toit.",
+      "p3": "Le nom dit tout. Pretty Absurd est une mode volontairement, joyeusement décalée. Des vêtements qui font qu'on regarde — pas parce qu'ils sont étranges, mais parce qu'ils sont exactement justes dans tout ce qu'ils ont de travers."
+    },
+    "philosophy": {
+      "label": "La Philosophie",
+      "quote": "« Pretty Absurd repose sur une seule idée : les vêtements doivent vous donner l'impression d'être la personne la plus intéressante de la pièce. Pas la plus élégante. La plus intéressante. »",
+      "body": "Féminine ou sérieuse. Ludique ou soignée. On impose sans cesse ce choix aux femmes. Kaylah l'a ignoré. Le baleinage du corset est sérieux. Les pois sont ludiques. Les deux, en même temps, volontairement."
+    },
+    "studio_caption": "L'atelier — là où tout commence",
+    "process": {
+      "label": "Le Processus",
+      "headline_1": "Chaque couture placée avec intention.",
+      "headline_2": "Le chaos est dans le port, pas dans la fabrication.",
+      "step1_title": "La structure d'abord",
+      "step1_text": "Chaque robe commence par l'ossature. Le baleinage du corset définit la silhouette avant même qu'un seul morceau de satin soit coupé. La structure n'est jamais une réflexion après coup.",
+      "step2_title": "Le tissu comme caractère",
+      "step2_text": "Le tissu n'est jamais un simple revêtement — il est la personnalité de la pièce. Le satin capte la lumière différemment. Les pois changent la conversation avant même qu'on ait dit un mot.",
+      "step3_title": "Des détails qui méritent leur place",
+      "step3_text": "Le volant au décolleté cœur. Le laçage dans le dos. La fermeture éclair invisible sur le côté. Rien n'est là pour décorer — chaque détail a un rôle."
+    },
+    "cta_strip": {
+      "text": "Trois robes. Précommandes ouvertes le 25 juillet — Collection disponible le 25 juillet 2026.",
+      "cta_collection": "Voir les robes →",
+      "cta_lookbook": "Découvrir le lookbook →"
+    }
   },
   "brandWorld": {
-    "label":    "L'Univers",
-    "headline": "L'Univers de Pretty Absurd.",
-    "sub":      "Là où vivent les références.",
-    "intro":    "Des pois dans le métro. De l'herbe dans les salons. Une robe parfaitement repassée dans un endroit totalement incongru. Voilà le monde dont viennent ces vêtements."
+    "label": "Univers de marque",
+    "headline_1": "L'Univers de",
+    "headline_2": "Pretty Absurd.",
+    "intro": "Des pois dans le métro. De l'herbe dans un salon. Une robe parfaitement repassée au mauvais endroit. C'est l'univers d'où viennent ces vêtements.",
+    "manifesto": {
+      "one": "La robe qui ne correspond pas au décor. Le tissu trop beau pour l'occasion. La silhouette qui arrête la pièce. Personne ne prévoit de se souvenir d'une tenue. Pretty Absurd s'en assure.",
+      "two": "Les références sont partout : Marilyn Monroe sur une bouche de métro, Barbie dans une maison de rêve légèrement de travers, un éditorial Vogue photographié là où Vogue n'irait jamais. Pretty Absurd emprunte à tout cela — et le glisse dans un corset.",
+      "three": "Ce n'est pas une mode qui veut disparaître dans la penderie. Elle veut être portée, regardée, et portée encore."
+    },
+    "captions": {
+      "dot_subway": "Pois dans le métro — Numéro 01",
+      "pink_butterfly": "Rose Satinée — détail",
+      "blue_armchair": "Bleu Glacé — décor rétro",
+      "pink_street": "Rose Satinée — rue",
+      "dot_highway": "Le Pois — bord d'autoroute",
+      "blue_newspaper": "Bleu Glacé — éditorial",
+      "blue_playful": "Bleu Glacé — Numéro 01",
+      "dot_crosswalk": "Le Pois — passage piéton N&B",
+      "dot_navy": "Le Pois — portrait"
+    },
+    "quote": "« Des robes faites pour qu'on les regarde. »",
+    "quote_attr": "— Pretty Absurd, SS26",
+    "cta_lookbook": "Découvrir le lookbook →",
+    "cta_collection": "Voir la collection →"
   },
   "contact": {
-    "label":    "Nous Contacter",
-    "headline": "Parlons-en.",
-    "sub":      "Presse, revendeurs et amateurs passionnés bienvenus.",
+    "label": "Nous Contacter",
+    "headline_1": "Parlons-",
+    "headline_2": "en.",
+    "sub": "Demandes presse, échanges revendeurs, et curieux en tous genres bienvenus.",
+    "preorder_label": "Précommande",
+    "preorder_val": "Ouverture le 25 juillet 2026 — Disponible le 25 juillet 2026",
+    "inquiries_label": "Demandes",
+    "inquiries_val": "Utilisez le formulaire — réponse sous 48 heures",
+    "stockists_label": "Revendeurs",
+    "stockists_val": "Candidatures actuellement acceptées",
+    "early_access": {
+      "tag": "Cercle Privé",
+      "headline": "Obtenez-la avant tout le monde.",
+      "perk1": "Accès précommande dès le <strong>25 juillet</strong> — avant l'ouverture publique",
+      "perk2": "<strong>15% de réduction</strong> sur votre première robe, appliqué au paiement",
+      "nudge": "Sélectionnez « Rejoindre l'accès anticipé » dans le formulaire →"
+    },
     "form": {
-      "name":          "Votre nom",
-      "email":         "Adresse e-mail",
-      "country":       "Pays",
-      "type":          "De quoi s'agit-il ?",
-      "type_press":    "Demande presse",
+      "name": "Votre nom",
+      "email": "Adresse e-mail",
+      "country": "Pays",
+      "type": "De quoi s'agit-il ?",
+      "type_choose": "Choisissez une option",
+      "type_early": "Rejoindre l'accès anticipé — 15% de réduction",
+      "type_notify": "M'avertir à l'ouverture des commandes",
+      "type_dress": "Question sur une robe",
+      "type_press": "Demande presse",
       "type_stockist": "Demande revendeur",
-      "type_general":  "Général",
-      "message":       "Votre message",
-      "submit":        "Envoyer",
-      "success":       "Envoyé. Nous vous recontacterons bientôt.",
-      "error":         "Une erreur s'est produite. Veuillez réessayer."
+      "type_general": "Général",
+      "early_note": "Vous rejoignez le cercle privé — votre code de réduction de 15% arrive dès l'ouverture des précommandes le 25 juillet.",
+      "message": "Votre message",
+      "submit": "Envoyer",
+      "submit_early": "Rejoindre l'accès anticipé",
+      "sending": "Envoi…",
+      "sent": "Envoyé",
+      "try_again": "Réessayer",
+      "footer_note": "Nous vous répondrons sous 48 heures.",
+      "success": "Envoyé. Nous vous répondrons bientôt.",
+      "success_early": "Vous êtes dans le cercle privé. Votre code de 15% arrive dès l'ouverture des précommandes — le 25 juillet."
     }
+  },
+  "lookbook": {
+    "label": "Numéro 01",
+    "headline": "Le Lookbook.",
+    "sub": "Un magazine de mode que l'on fait défiler.",
+    "tap_hint": "TOUCHEZ POUR OUVRIR LE NUMÉRO",
+    "brandlabel": "Pretty Absurd — le lookbook — numéro n°01",
+    "cover": {
+      "top_label": "SS26 / NUMÉRO N°01",
+      "title": "LA ROBE",
+      "tagline": "féminine, mais féroce…",
+      "credit_label": "PRETTY ABSURD — PAR, KAYLAH",
+      "credit_body": "un éditorial en un acte, sur la fabrication d'une robe qui refuse de se tenir tranquille.",
+      "credits": "DIRECTION CRÉATIVE   KAYLAH<br>PHOTOGRAPHIE      KAYLAH<br>DESIGN & WEB      WHITE SPACE DESIGNS<br>STYLISME           KAYLAH<br>MAQUILLAGE         KAYLAH<br>DÉCOR              AFRIQUE DU SUD, 2026"
+    },
+    "contents": {
+      "label": "DANS CE NUMÉRO",
+      "headline": "Sommaire",
+      "item1": "depuis l'atelier — une lettre",
+      "item2": "l'éditorial",
+      "item3": "la collection",
+      "item4": "la robe",
+      "item5": "savoir-faire & tissu",
+      "item6": "la campagne",
+      "item7": "réservez-la — la liste d'attente"
+    },
+    "letter": {
+      "title": "de Kaylah…",
+      "p1": "elle est arrivée en retard, imperturbable, et légèrement trop présente pour la pièce… ce qui, bien sûr, est tout l'intérêt. ce numéro est une petite lettre d'amour à la robe — celle dont vous n'avez pas besoin mais que vous achèterez à coup sûr — et à tous ceux qui comprennent qu'être jolie est optionnel, mais qu'être absurde est un mode de vie.",
+      "p2": "nous l'avons faite à la main, en petite quantité, exprès. voici comment elle est née… et comment la ramener chez vous.",
+      "sign": "Xo Xo, Kaylah"
+    },
+    "editorial": {
+      "tag": "L'ÉDITORIAL / 01",
+      "quote": "elle ne demande pas la pièce. elle refuse simplement de la quitter.",
+      "quote_attr": "— SUR LA ROBE, SS26"
+    },
+    "section3": {
+      "label": "SECTION 03",
+      "title": "La",
+      "title2": "Collection",
+      "body": "une sélection resserrée pour SS26 — coupée main, finie main, produite en petite quantité pour qu'elle ne se répète jamais à la même soirée.",
+      "look1": "LOOK 01 — LA ROSE",
+      "look2": "LOOK 02 — LE BLEU",
+      "look3": "LOOK 03 — LE POIS"
+    },
+    "dress": {
+      "section": "SECTION 04",
+      "title": "La Robe",
+      "tag": "SECTION 04 — LA ROBE",
+      "headline": "c'est elle, la bonne.",
+      "body": "coupée dans le biais pour qu'elle bouge avant vous. un décolleté qui ne plaisante pas. faite sur commande — en série si restreinte qu'elle relève presque de la rumeur. portez-la pour l'événement qui vous angoisse… elle s'en chargera.",
+      "spec_cloth_label": "TISSU",
+      "spec_cloth_val": "crêpe mélangé soie",
+      "spec_make_label": "FABRICATION",
+      "spec_make_val": "sur commande",
+      "spec_sizes_label": "TAILLES",
+      "spec_sizes_val": "S, M, L",
+      "spec_price_label": "PRIX"
+    },
+    "campaign": {
+      "tag": "LA CAMPAGNE",
+      "line": "absurde, exprès.",
+      "reserve_label": "SECTION 07 — RÉSERVEZ-LA",
+      "reserve_title": "Réservez-",
+      "reserve_title2": "la.",
+      "reserve_body": "elle est faite sur commande, en série limitée. pas de file d'attente, pas de drame — juste elle, gardée pour vous jusqu'au moment où elle sera vôtre.",
+      "preorder_tag": "PRÉCOMMANDE — 25 JUILLET 2026",
+      "preorder_note": "Rejoignez la liste d'attente et soyez<br>la première prévenue à l'ouverture."
+    },
+    "waitlist": {
+      "tag": "LA LISTE D'ATTENTE",
+      "title": "réservez-la…",
+      "the_dress": "LA ROBE",
+      "cta_waitlist": "REJOINDRE LA LISTE D'ATTENTE →",
+      "cta_collection": "VOIR LA COLLECTION →",
+      "back_tagline": "jolie. absurde. la vôtre.",
+      "back_footer": "PRETTY ABSURD — SS26 — NUMÉRO N°01"
+    },
+    "nav_prev": "PRÉC",
+    "nav_next": "SUIV"
   },
   "footer": {
-    "tagline": "Des robes faites pour être admirées.",
-    "copy":    "© 2026 Pretty Absurd. Tous droits réservés.",
+    "tagline": "Des robes faites pour qu'on les regarde.",
+    "copy": "© 2026 Pretty Absurd. Tous droits réservés.",
     "links": {
-      "lookbook":   "Lookbook",
+      "lookbook": "Lookbook",
       "collection": "Les Robes",
-      "about":      "À Propos",
-      "contact":    "Contact"
+      "about": "À propos",
+      "contact": "Contact"
     }
-  },
-  "currency": {
-    "note": "approx. — prix définitif en ZAR"
   }
 }

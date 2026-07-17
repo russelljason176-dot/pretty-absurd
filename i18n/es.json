@@ -1,0 +1,291 @@
+{
+  "_draft": "TODO: native Spanish review required before launch",
+  "lang": "es",
+  "nav": {
+    "brand": "Pretty Absurd",
+    "lookbook": "Lookbook",
+    "collection": "Los Vestidos",
+    "about": "Sobre Nosotros",
+    "brandWorld": "Universo de Marca",
+    "contact": "Contacto"
+  },
+  "home": {
+    "hero": {
+      "sub": "El exceso es justamente el punto.",
+      "cta_lookbook": "Entrar al lookbook",
+      "cta_collection": "Ver los vestidos"
+    },
+    "prelaunch": {
+      "label": "Prelanzamiento",
+      "text": "Los pedidos anticipados abren el 25 de julio — Colección disponible el 25 de julio de 2026",
+      "cta": "Avísame →"
+    },
+    "receipt": {
+      "brand": "PRETTY ABSURD",
+      "pink": "El Satén Rosa",
+      "blue": "El Azul Hielo",
+      "dot": "El Lunar",
+      "total": "TOTAL",
+      "status_line": "ESTADO … próximamente<br>LISTA DE ESPERA … abierta",
+      "cta_main": "TOCA PARA RESERVARLO",
+      "cta_sub": "únete a la lista de espera — xo"
+    },
+    "designer": {
+      "label": "La Diseñadora",
+      "headline": "Conoce a Kaylah.",
+      "sub": "Una diseñadora independiente que crea prendas que parecen no poder existir — y sin embargo, una vez que las ves, no puedes imaginar que no existan.",
+      "cta": "Conoce su historia →"
+    },
+    "notify": {
+      "headline": "Sé la primera en saberlo.",
+      "sub": "Los pedidos anticipados abren el 25 de julio de 2026. Deja tu correo y te avisamos en cuanto abran.",
+      "placeholder": "tu@email.com",
+      "btn": "Avísame"
+    }
+  },
+  "collection": {
+    "label": "La Colección",
+    "headline": "Tres Vestidos.",
+    "sub": "Cada uno hecho para ser mirado. Los pedidos anticipados abren el 25 de julio — Colección disponible el 25 de julio de 2026.",
+    "view_dress": "Ver el vestido ↓",
+    "price_label": "Precio",
+    "cta_inquire": "Preguntar por este vestido",
+    "launch_note": "Los pedidos anticipados abren el 25 de julio — Disponible el 25 de julio de 2026",
+    "pieces": {
+      "pink": {
+        "num": "01 — 03",
+        "name": "El Satén Rosa",
+        "desc": "Un corsé que va en serio. Una falda plisada que no. Confeccionado en suave satén rosa lila con varillaje estructurado, escote corazón y un cordón trasero que se toma su tiempo.",
+        "details": [
+          "Satén con estructura de varillaje",
+          "Escote corazón con volante",
+          "Cierre de cordón trasero",
+          "Cremallera invisible lateral",
+          "Minifalda plisada"
+        ],
+        "price": 1950
+      },
+      "blue": {
+        "num": "02 — 03",
+        "name": "El Azul Hielo",
+        "desc": "Satén azul empolvado. Escote corazón. Estructuralmente absurdo. La misma silueta que el rosa — mismos huesos, distinto ánimo. Es más discreto, hasta que lo ves moverse.",
+        "details": [
+          "Satén azul hielo con estructura de varillaje",
+          "Escote corazón con volante",
+          "Cordón trasero de cinta a juego",
+          "Cremallera invisible lateral",
+          "Minifalda plisada"
+        ],
+        "price": 1950
+      },
+      "polkadot": {
+        "num": "03 — 03",
+        "name": "El Lunar",
+        "desc": "Lunares negros sobre blanco. Encanto clásico. Caos contemporáneo. Misma silueta, misma estructura — pero el lunar lo cambia todo. Es el que hace que te giren a mirar dos veces.",
+        "details": [
+          "Tela estructurada blanca con lunares negros",
+          "Escote corazón con volante",
+          "Cierre de cordón trasero",
+          "Cremallera invisible lateral",
+          "Minifalda plisada"
+        ],
+        "price": 1950
+      }
+    }
+  },
+  "about": {
+    "label": "La Diseñadora",
+    "headline_1": "Detrás de",
+    "headline_2": "Pretty Absurd.",
+    "sub": "Una diseñadora independiente que crea prendas que parecen no poder existir — y sin embargo, una vez que las ves, no puedes imaginar que no existan.",
+    "portrait_caption": "Kaylah — Diseñadora y Fundadora",
+    "story": {
+      "label": "La Historia",
+      "headline": "Prendas que pertenecen a una película que no logras ubicar.",
+      "p1": "La ropa de mujer suele elegir un bando: invisible, o esforzándose demasiado. Kaylah se saltó esa elección y creó tres vestidos en su lugar.",
+      "p2": "Cada uno comparte la misma base — corsé, escote corazón, falda plisada — y cuenta una historia distinta. El satén rosa que parece un sueño de Barbie. El azul hielo digno de una pasarela parisina. Los lunares que evocan a Marilyn Monroe en una azotea.",
+      "p3": "El nombre lo dice todo. Pretty Absurd es moda deliberada y alegremente fuera de lugar. Prendas que hacen que la gente mire — no porque sean extrañas, sino porque están exactamente bien en todo lo que tienen de incorrecto."
+    },
+    "philosophy": {
+      "label": "La Filosofía",
+      "quote": "«Pretty Absurd se basa en una sola idea: la ropa debe hacerte sentir la persona más interesante de la sala. No la más elegante. La más interesante.»",
+      "body": "Femenina o seria. Divertida o pulida. A las mujeres se les impone constantemente esa elección. Kaylah la ignoró. El varillaje del corsé va en serio. Los lunares son divertidos. Ambas cosas, a la vez, a propósito."
+    },
+    "studio_caption": "El estudio — donde todo empieza",
+    "process": {
+      "label": "El Proceso",
+      "headline_1": "Cada costura colocada con intención.",
+      "headline_2": "El caos está en llevarlo puesto, no en hacerlo.",
+      "step1_title": "Primero la estructura",
+      "step1_text": "Cada vestido empieza por los huesos. El varillaje del corsé define la silueta antes de cortar un solo trozo de satén. La estructura nunca es una idea de último momento.",
+      "step2_title": "La tela como carácter",
+      "step2_text": "La tela nunca es solo un revestimiento — es la personalidad de la prenda. El satén capta la luz de forma distinta. Los lunares cambian la conversación antes de que digas una palabra.",
+      "step3_title": "Detalles que se ganan su lugar",
+      "step3_text": "El volante en el escote corazón. El cordón en la espalda. La cremallera invisible al costado. Nada está ahí por decoración — cada detalle cumple una función."
+    },
+    "cta_strip": {
+      "text": "Tres vestidos. Los pedidos anticipados abren el 25 de julio — Colección disponible el 25 de julio de 2026.",
+      "cta_collection": "Ver los vestidos →",
+      "cta_lookbook": "Entrar al lookbook →"
+    }
+  },
+  "brandWorld": {
+    "label": "Universo de Marca",
+    "headline_1": "El Universo de",
+    "headline_2": "Pretty Absurd.",
+    "intro": "Lunares en el metro. Césped en la sala de estar. Un vestido perfectamente planchado en el lugar equivocado. Este es el mundo del que vienen las prendas.",
+    "manifesto": {
+      "one": "El vestido que no combina con el entorno. La tela demasiado bella para la ocasión. La silueta que detiene la sala. Nadie planea recordar un look. Pretty Absurd se asegura de que lo hagan.",
+      "two": "Las referencias están en todas partes: Marilyn Monroe sobre una rejilla del metro, Barbie en una casa de ensueño ligeramente torcida, un editorial de Vogue fotografiado donde Vogue jamás iría. Pretty Absurd toma prestado de todo eso — y lo mete en un corsé.",
+      "three": "Esta no es una moda que quiera desaparecer en el armario. Quiere ser usada, mirada, y usada otra vez."
+    },
+    "captions": {
+      "dot_subway": "Lunares en el metro — Número 01",
+      "pink_butterfly": "Satén Rosa — detalle",
+      "blue_armchair": "Azul Hielo — ambiente retro",
+      "pink_street": "Satén Rosa — calle",
+      "dot_highway": "El Lunar — tumbona de autopista",
+      "blue_newspaper": "Azul Hielo — editorial",
+      "blue_playful": "Azul Hielo — Número 01",
+      "dot_crosswalk": "El Lunar — paso de cebra B&N",
+      "dot_navy": "El Lunar — retrato"
+    },
+    "quote": "«Vestidos hechos para ser mirados.»",
+    "quote_attr": "— Pretty Absurd, SS26",
+    "cta_lookbook": "Entrar al lookbook →",
+    "cta_collection": "Ver la colección →"
+  },
+  "contact": {
+    "label": "Ponte en Contacto",
+    "headline_1": "Hablemos",
+    "headline_2": ".",
+    "sub": "Consultas de prensa, conversaciones con tiendas y curiosos de todo tipo son bienvenidos.",
+    "preorder_label": "Pedido anticipado",
+    "preorder_val": "Abre el 25 de julio de 2026 — Disponible el 25 de julio de 2026",
+    "inquiries_label": "Consultas",
+    "inquiries_val": "Usa el formulario — respondemos en 48 horas",
+    "stockists_label": "Tiendas",
+    "stockists_val": "Actualmente aceptando solicitudes",
+    "early_access": {
+      "tag": "Círculo Interno",
+      "headline": "Consíguelo antes que nadie.",
+      "perk1": "Acceso a pedidos anticipados el <strong>25 de julio</strong> — antes del lanzamiento público",
+      "perk2": "<strong>15% de descuento</strong> en tu primer vestido, aplicado al pagar",
+      "nudge": "Selecciona \"Unirme al acceso anticipado\" en el formulario →"
+    },
+    "form": {
+      "name": "Tu nombre",
+      "email": "Correo electrónico",
+      "country": "País",
+      "type": "¿De qué se trata?",
+      "type_choose": "Elige una opción",
+      "type_early": "Unirme al acceso anticipado — 15% de descuento",
+      "type_notify": "Avisarme cuando abran los pedidos",
+      "type_dress": "Consulta sobre un vestido",
+      "type_press": "Consulta de prensa",
+      "type_stockist": "Consulta de tienda",
+      "type_general": "General",
+      "early_note": "Te estás uniendo al círculo interno — te enviaremos tu código del 15% en cuanto abran los pedidos anticipados, el 25 de julio.",
+      "message": "Tu mensaje",
+      "submit": "Enviar",
+      "submit_early": "Unirme al acceso anticipado",
+      "sending": "Enviando…",
+      "sent": "Enviado",
+      "try_again": "Intentar de nuevo",
+      "footer_note": "Te responderemos en un plazo de 48 horas.",
+      "success": "Enviado. Te contactaremos pronto.",
+      "success_early": "Ya estás en el círculo interno. Tu código del 15% llega en cuanto abran los pedidos anticipados — el 25 de julio."
+    }
+  },
+  "lookbook": {
+    "label": "Número 01",
+    "headline": "El Lookbook.",
+    "sub": "Una revista de moda que se recorre con el dedo.",
+    "tap_hint": "TOCA PARA ABRIR EL NÚMERO",
+    "brandlabel": "Pretty Absurd — el lookbook — número n.º 01",
+    "cover": {
+      "top_label": "SS26 / NÚMERO N.º 01",
+      "title": "EL VESTIDO",
+      "tagline": "femenina, pero feroz…",
+      "credit_label": "PRETTY ABSURD — POR, KAYLAH",
+      "credit_body": "un editorial en un acto, sobre la creación de un vestido que se niega a comportarse.",
+      "credits": "DIRECCIÓN CREATIVA   KAYLAH<br>FOTOGRAFÍA        KAYLAH<br>DISEÑO Y WEB      WHITE SPACE DESIGNS<br>ESTILISMO          KAYLAH<br>MAQUILLAJE         KAYLAH<br>ESCENOGRAFÍA       SUDÁFRICA, 2026"
+    },
+    "contents": {
+      "label": "EN ESTE NÚMERO",
+      "headline": "Índice",
+      "item1": "desde el taller — una carta",
+      "item2": "el editorial",
+      "item3": "la colección",
+      "item4": "el vestido",
+      "item5": "oficio y tela",
+      "item6": "la campaña",
+      "item7": "resérvalo — la lista de espera"
+    },
+    "letter": {
+      "title": "de Kaylah…",
+      "p1": "llegó tarde, imperturbable, y un poco demasiado para la sala… lo cual, por supuesto, es todo el punto. este número es una pequeña carta de amor al vestido — el que no necesitas pero comprarás sin duda — y a todos los que entienden que ser bonita es opcional, pero ser absurda es un estilo de vida.",
+      "p2": "lo hicimos a mano, en pocas unidades, a propósito. lo que sigue es cómo llegó a existir… y cómo llevártelo a casa.",
+      "sign": "Xo Xo, Kaylah"
+    },
+    "editorial": {
+      "tag": "EL EDITORIAL / 01",
+      "quote": "no pide la sala. simplemente se niega a dejarla.",
+      "quote_attr": "— SOBRE EL VESTIDO, SS26"
+    },
+    "section3": {
+      "label": "SECCIÓN 03",
+      "title": "La",
+      "title2": "Colección",
+      "body": "una selección precisa para SS26 — cortada a mano, terminada a mano, hecha en pocas unidades para que nunca se repita en la misma fiesta.",
+      "look1": "LOOK 01 — EL ROSA",
+      "look2": "LOOK 02 — EL AZUL",
+      "look3": "LOOK 03 — EL LUNAR"
+    },
+    "dress": {
+      "section": "SECCIÓN 04",
+      "title": "El Vestido",
+      "tag": "SECCIÓN 04 — EL VESTIDO",
+      "headline": "es el indicado.",
+      "body": "cortado al bies para que se mueva antes que tú. un escote que va en serio. hecho por encargo — en una tirada tan pequeña que casi es un rumor. llévalo al plan que te tiene nerviosa… él se encarga.",
+      "spec_cloth_label": "TELA",
+      "spec_cloth_val": "crepé mezcla de seda",
+      "spec_make_label": "FABRICACIÓN",
+      "spec_make_val": "por encargo",
+      "spec_sizes_label": "TALLAS",
+      "spec_sizes_val": "S, M, L",
+      "spec_price_label": "PRECIO"
+    },
+    "campaign": {
+      "tag": "LA CAMPAÑA",
+      "line": "absurdo, a propósito.",
+      "reserve_label": "SECCIÓN 07 — RESÉRVALO",
+      "reserve_title": "Resérva-",
+      "reserve_title2": "lo.",
+      "reserve_body": "está hecho por encargo, en unidades limitadas. sin fila, sin drama — solo él, guardado para ti hasta el momento en que sea tuyo.",
+      "preorder_tag": "PEDIDO ANTICIPADO — 25 DE JULIO DE 2026",
+      "preorder_note": "Únete a la lista de espera y sé<br>la primera en enterarte cuando abra."
+    },
+    "waitlist": {
+      "tag": "LA LISTA DE ESPERA",
+      "title": "resérvalo…",
+      "the_dress": "EL VESTIDO",
+      "cta_waitlist": "UNIRME A LA LISTA DE ESPERA →",
+      "cta_collection": "VER LA COLECCIÓN →",
+      "back_tagline": "bonito. absurdo. tuyo.",
+      "back_footer": "PRETTY ABSURD — SS26 — NÚMERO N.º 01"
+    },
+    "nav_prev": "ANT",
+    "nav_next": "SIG"
+  },
+  "footer": {
+    "tagline": "Vestidos hechos para ser mirados.",
+    "copy": "© 2026 Pretty Absurd. Todos los derechos reservados.",
+    "links": {
+      "lookbook": "Lookbook",
+      "collection": "Los Vestidos",
+      "about": "Sobre Nosotros",
+      "contact": "Contacto"
+    }
+  }
+}

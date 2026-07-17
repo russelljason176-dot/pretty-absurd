@@ -5,6 +5,18 @@
   right: 0;
   height: var(--nav-height);
   z-index: var(--z-nav);
+  /* Solid background only — no backdrop-filter here. filter/backdrop-filter
+     on this element would create a new containing block for its
+     position:fixed descendant (.nav__overlay, the mobile menu), which
+     squishes the full-screen menu down into the nav bar's own height. */
+  background: rgba(247, 242, 238, 0.92);
+  border-bottom: var(--border-thin);
+  transition: background 0.3s ease, border-color 0.3s ease;
+}
+
+/* Over the hero photo: no backdrop needed, but keep text legible
+   against whatever part of the photo sits behind it. */
+.site-nav.nav--on-hero {
   background: transparent;
   border-bottom: none;
 }
@@ -35,6 +47,7 @@
 
 .site-nav.nav--on-hero .nav__brand {
   color: #ffffff;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.45);
 }
 
 .site-nav.nav--open .nav__brand {

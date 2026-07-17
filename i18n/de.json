@@ -1,0 +1,291 @@
+{
+  "_draft": "TODO: native German review required before launch",
+  "lang": "de",
+  "nav": {
+    "brand": "Pretty Absurd",
+    "lookbook": "Lookbook",
+    "collection": "Die Kleider",
+    "about": "Über uns",
+    "brandWorld": "Markenwelt",
+    "contact": "Kontakt"
+  },
+  "home": {
+    "hero": {
+      "sub": "Zu viel ist genau der Punkt.",
+      "cta_lookbook": "Lookbook entdecken",
+      "cta_collection": "Kleider ansehen"
+    },
+    "prelaunch": {
+      "label": "Prelaunch",
+      "text": "Vorbestellung ab 25. Juli — Kollektion erscheint am 25. Juli 2026",
+      "cta": "Benachrichtigen →"
+    },
+    "receipt": {
+      "brand": "PRETTY ABSURD",
+      "pink": "Das Rosa Satin",
+      "blue": "Das Eisblau",
+      "dot": "Das Tupfenkleid",
+      "total": "GESAMT",
+      "status_line": "STATUS … demnächst<br>WARTELISTE … jetzt offen",
+      "cta_main": "TIPPEN, UM ES ZU RESERVIEREN",
+      "cta_sub": "zur Warteliste — xo"
+    },
+    "designer": {
+      "label": "Die Designerin",
+      "headline": "Lerne Kaylah kennen.",
+      "sub": "Eine unabhängige Designerin, die Kleider entwirft, die es eigentlich nicht geben dürfte — und die man sich, einmal gesehen, nicht mehr wegdenken kann.",
+      "cta": "Ihre Geschichte lesen →"
+    },
+    "notify": {
+      "headline": "Erfahre es als Erste.",
+      "sub": "Vorbestellung ab 25. Juli 2026. Hinterlasse deine E-Mail, wir sagen dir sofort Bescheid.",
+      "placeholder": "deine@email.com",
+      "btn": "Benachrichtigen"
+    }
+  },
+  "collection": {
+    "label": "Die Kollektion",
+    "headline": "Drei Kleider.",
+    "sub": "Jedes gemacht, um angestarrt zu werden. Vorbestellung ab 25. Juli — Kollektion erscheint am 25. Juli 2026.",
+    "view_dress": "Kleid ansehen ↓",
+    "price_label": "Preis",
+    "cta_inquire": "Zu diesem Kleid anfragen",
+    "launch_note": "Vorbestellung ab 25. Juli — Erscheint am 25. Juli 2026",
+    "pieces": {
+      "pink": {
+        "num": "01 — 03",
+        "name": "Das Rosa Satin",
+        "desc": "Ein Korsagen-Oberteil, das es ernst meint. Ein Faltenrock, der das nicht tut. Gefertigt aus weichem lila-rosa Satin mit stützender Verstärkung, Herzausschnitt und einer Rückenschnürung, die sich Zeit lässt.",
+        "details": [
+          "Satin mit Korsettverstärkung",
+          "Herzausschnitt mit Rüschenbesatz",
+          "Schnürung am Rücken",
+          "Unsichtbarer Seitenreißverschluss",
+          "Plissierter Minirock"
+        ],
+        "price": 1950
+      },
+      "blue": {
+        "num": "02 — 03",
+        "name": "Das Eisblau",
+        "desc": "Puderblauer Satin. Herzausschnitt. Strukturell absurd. Die gleiche Silhouette wie beim Rosa — gleiches Gerüst, andere Stimmung. Zurückhaltender, bis man es in Bewegung sieht.",
+        "details": [
+          "Eisblauer Satin mit Korsettverstärkung",
+          "Herzausschnitt mit Rüschenbesatz",
+          "Bandschnürung am Rücken, farblich passend",
+          "Unsichtbarer Seitenreißverschluss",
+          "Plissierter Minirock"
+        ],
+        "price": 1950
+      },
+      "polkadot": {
+        "num": "03 — 03",
+        "name": "Das Tupfenkleid",
+        "desc": "Schwarze Punkte auf Weiß. Charme von damals. Chaos von heute. Gleiche Silhouette, gleiche Struktur — aber die Punkte verändern alles. Das ist das Kleid, bei dem man zweimal hinschaut.",
+        "details": [
+          "Strukturierter weißer Stoff mit schwarzen Punkten",
+          "Herzausschnitt mit Rüschenbesatz",
+          "Schnürung am Rücken",
+          "Unsichtbarer Seitenreißverschluss",
+          "Plissierter Minirock"
+        ],
+        "price": 1950
+      }
+    }
+  },
+  "about": {
+    "label": "Die Designerin",
+    "headline_1": "Hinter",
+    "headline_2": "Pretty Absurd.",
+    "sub": "Eine unabhängige Designerin, die Kleider entwirft, die es eigentlich nicht geben dürfte — und die man sich, einmal gesehen, nicht mehr wegdenken kann.",
+    "portrait_caption": "Kaylah — Designerin & Gründerin",
+    "story": {
+      "label": "Die Geschichte",
+      "headline": "Kleider, die in einen Film gehören, den man nicht ganz einordnen kann.",
+      "p1": "Frauenkleidung entscheidet sich meist für eine Richtung: unsichtbar oder überzogen. Kaylah hat sich der Wahl verweigert und stattdessen drei Kleider entworfen.",
+      "p2": "Jedes teilt dieselbe Grundstruktur — Korsagen-Oberteil, Herzausschnitt, Faltenrock — und erzählt trotzdem eine andere Geschichte. Rosa Satin, der sich wie ein Barbie-Traum anfühlt. Eisblau, das auf einen Pariser Laufsteg gehört. Tupfen, die an Marilyn Monroe auf einem Dach erinnern.",
+      "p3": "Der Name sagt alles. Pretty Absurd ist Mode, die bewusst und mit Freude aus dem Rahmen fällt. Kleider, die Blicke auf sich ziehen — nicht weil sie seltsam sind, sondern weil sie in allem, was falsch ist, genau richtig liegen."
+    },
+    "philosophy": {
+      "label": "Die Philosophie",
+      "quote": "„Pretty Absurd basiert auf einer einzigen Idee: Kleidung soll dich wie die interessanteste Person im Raum fühlen lassen. Nicht die geschmackvollste. Die interessanteste.“",
+      "body": "Feminin oder ernsthaft. Verspielt oder makellos. Frauen wird diese Wahl ständig aufgezwungen. Kaylah hat sie ignoriert. Die Korsettverstärkung ist ernst gemeint. Die Tupfen sind verspielt. Beides gleichzeitig, ganz bewusst."
+    },
+    "studio_caption": "Das Studio — wo alles beginnt",
+    "process": {
+      "label": "Der Prozess",
+      "headline_1": "Jede Naht mit Absicht gesetzt.",
+      "headline_2": "Das Chaos liegt im Tragen, nicht im Machen.",
+      "step1_title": "Erst die Struktur",
+      "step1_text": "Jedes Kleid beginnt mit dem Gerüst. Die Korsettverstärkung bestimmt die Silhouette, bevor auch nur ein Stück Satin zugeschnitten wird. Struktur ist nie ein nachträglicher Gedanke.",
+      "step2_title": "Stoff als Charakter",
+      "step2_text": "Der Stoff ist nie nur eine Hülle — er ist die Persönlichkeit des Stücks. Satin fängt das Licht anders ein. Tupfen verändern das Gespräch, noch bevor ein Wort fällt.",
+      "step3_title": "Details, die ihren Platz verdienen",
+      "step3_text": "Die Rüsche am Herzausschnitt. Die Schnürung am Rücken. Der unsichtbare Reißverschluss an der Seite. Nichts ist bloße Dekoration — jedes Detail hat eine Aufgabe."
+    },
+    "cta_strip": {
+      "text": "Drei Kleider. Vorbestellung ab 25. Juli — Kollektion erscheint am 25. Juli 2026.",
+      "cta_collection": "Kleider ansehen →",
+      "cta_lookbook": "Lookbook entdecken →"
+    }
+  },
+  "brandWorld": {
+    "label": "Markenwelt",
+    "headline_1": "Das Universum von",
+    "headline_2": "Pretty Absurd.",
+    "intro": "Tupfen in der U-Bahn. Gras im Wohnzimmer. Ein perfekt gebügeltes Kleid am komplett falschen Ort. Das ist die Welt, aus der diese Kleider stammen.",
+    "manifesto": {
+      "one": "Das Kleid, das nicht zum Rahmen passt. Der Stoff, der zu schön ist für den Anlass. Die Silhouette, die den Raum verstummen lässt. Niemand plant, sich an ein Outfit zu erinnern. Pretty Absurd sorgt dafür, dass es trotzdem passiert.",
+      "two": "Die Referenzen sind überall: Marilyn Monroe über einem U-Bahn-Gitter, Barbie in einem Traumhaus, das nicht ganz stimmt, ein Vogue-Editorial an einem Ort, an den Vogue nie gehen würde. Pretty Absurd leiht sich von allem etwas — und steckt es in ein Korsett.",
+      "three": "Das ist keine Mode, die im Kleiderschrank verschwinden will. Sie will getragen, angeschaut und wieder getragen werden."
+    },
+    "captions": {
+      "dot_subway": "Tupfen in der U-Bahn — Ausgabe 01",
+      "pink_butterfly": "Rosa Satin — Detail",
+      "blue_armchair": "Eisblau — Retro-Setting",
+      "pink_street": "Rosa Satin — Straße",
+      "dot_highway": "Tupfenkleid — Liegestuhl an der Autobahn",
+      "blue_newspaper": "Eisblau — Editorial",
+      "blue_playful": "Eisblau — Ausgabe 01",
+      "dot_crosswalk": "Tupfenkleid — Zebrastreifen, S/W",
+      "dot_navy": "Tupfenkleid — Porträt"
+    },
+    "quote": "„Kleider, die man anstarren muss.“",
+    "quote_attr": "— Pretty Absurd, SS26",
+    "cta_lookbook": "Lookbook entdecken →",
+    "cta_collection": "Kollektion ansehen →"
+  },
+  "contact": {
+    "label": "Kontakt aufnehmen",
+    "headline_1": "Lass uns",
+    "headline_2": "reden.",
+    "sub": "Presseanfragen, Gespräche mit Händlern und alle, die einfach neugierig sind — herzlich willkommen.",
+    "preorder_label": "Vorbestellung",
+    "preorder_val": "Ab 25. Juli 2026 — Erscheint am 25. Juli 2026",
+    "inquiries_label": "Anfragen",
+    "inquiries_val": "Nutze das Formular — wir antworten innerhalb von 48 Stunden",
+    "stockists_label": "Händler",
+    "stockists_val": "Anfragen werden aktuell entgegengenommen",
+    "early_access": {
+      "tag": "Inner Circle",
+      "headline": "Hol es dir vor allen anderen.",
+      "perk1": "Vorbestellzugang ab dem <strong>25. Juli</strong> — vor dem öffentlichen Verkaufsstart",
+      "perk2": "<strong>15 % Rabatt</strong> auf dein erstes Kleid, direkt an der Kasse",
+      "nudge": "Wähle im Formular „Früher Zugang“ →"
+    },
+    "form": {
+      "name": "Dein Name",
+      "email": "E-Mail-Adresse",
+      "country": "Land",
+      "type": "Worum geht es?",
+      "type_choose": "Bitte wählen",
+      "type_early": "Früher Zugang — 15 % Rabatt",
+      "type_notify": "Benachrichtigen, sobald Bestellungen möglich sind",
+      "type_dress": "Anfrage zu einem Kleid",
+      "type_press": "Presseanfrage",
+      "type_stockist": "Händleranfrage",
+      "type_general": "Allgemein",
+      "early_note": "Du trittst dem Inner Circle bei — deinen 15-%-Code schicken wir dir, sobald die Vorbestellung am 25. Juli öffnet.",
+      "message": "Deine Nachricht",
+      "submit": "Absenden",
+      "submit_early": "Frühen Zugang sichern",
+      "sending": "Wird gesendet…",
+      "sent": "Gesendet",
+      "try_again": "Erneut versuchen",
+      "footer_note": "Wir melden uns innerhalb von 48 Stunden.",
+      "success": "Gesendet. Wir melden uns bald.",
+      "success_early": "Du bist im Inner Circle. Dein 15-%-Code kommt, sobald die Vorbestellung öffnet — am 25. Juli."
+    }
+  },
+  "lookbook": {
+    "label": "Ausgabe 01",
+    "headline": "Das Lookbook.",
+    "sub": "Ein Modemagazin zum Durchscrollen.",
+    "tap_hint": "TIPPEN, UM DIE AUSGABE ZU ÖFFNEN",
+    "brandlabel": "Pretty Absurd — das Lookbook — Ausgabe Nr. 01",
+    "cover": {
+      "top_label": "SS26 / AUSGABE NR. 01",
+      "title": "DAS KLEID",
+      "tagline": "feminin, aber wild…",
+      "credit_label": "PRETTY ABSURD — VON, KAYLAH",
+      "credit_body": "ein Editorial in einem Akt, über die Entstehung eines Kleides, das sich weigert, sich zu benehmen.",
+      "credits": "KREATIVDIREKTION   KAYLAH<br>FOTOGRAFIE      KAYLAH<br>DESIGN & WEB     WHITE SPACE DESIGNS<br>STYLING           KAYLAH<br>MAKE-UP           KAYLAH<br>SET               SÜDAFRIKA, 2026"
+    },
+    "contents": {
+      "label": "IN DIESER AUSGABE",
+      "headline": "Inhalt",
+      "item1": "aus dem Atelier — ein Brief",
+      "item2": "das Editorial",
+      "item3": "die Kollektion",
+      "item4": "das Kleid",
+      "item5": "Handwerk & Stoff",
+      "item6": "die Kampagne",
+      "item7": "reservieren — die Warteliste"
+    },
+    "letter": {
+      "title": "von Kaylah…",
+      "p1": "sie kam zu spät, unbeeindruckt, und ein bisschen zu viel für den Raum… was natürlich genau der Punkt ist. diese Ausgabe ist ein kleiner Liebesbrief an das Kleid — das, das man nicht braucht, aber garantiert kauft — und an alle, die verstehen, dass hübsch sein optional ist, absurd sein aber eine Lebenseinstellung.",
+      "p2": "wir haben sie von Hand gefertigt, in kleiner Stückzahl, mit Absicht. es folgt, wie sie entstanden ist… und wie du sie nach Hause holst.",
+      "sign": "Xo Xo, Kaylah"
+    },
+    "editorial": {
+      "tag": "DAS EDITORIAL / 01",
+      "quote": "sie bittet nicht um den Raum. sie weigert sich einfach, ihn zu verlassen.",
+      "quote_attr": "— ÜBER DAS KLEID, SS26"
+    },
+    "section3": {
+      "label": "ABSCHNITT 03",
+      "title": "Die",
+      "title2": "Kollektion",
+      "body": "eine straffe Auswahl für SS26 — handgeschnitten, handgefertigt, in kleiner Stückzahl, damit sie nie zweimal auf derselben Party auftaucht.",
+      "look1": "LOOK 01 — DAS ROSA",
+      "look2": "LOOK 02 — DAS BLAU",
+      "look3": "LOOK 03 — DIE TUPFEN"
+    },
+    "dress": {
+      "section": "ABSCHNITT 04",
+      "title": "Das Kleid",
+      "tag": "ABSCHNITT 04 — DAS KLEID",
+      "headline": "das ist es.",
+      "body": "im Schrägschnitt gefertigt, damit es sich bewegt, bevor du es tust. ein Ausschnitt, der es ernst meint. auf Bestellung gefertigt — in einer so kleinen Auflage, dass sie fast schon ein Gerücht ist. trag es zu dem Anlass, über den du zu viel nachdenkst… es übernimmt das.",
+      "spec_cloth_label": "STOFF",
+      "spec_cloth_val": "Seidenmix-Crêpe",
+      "spec_make_label": "FERTIGUNG",
+      "spec_make_val": "auf Bestellung",
+      "spec_sizes_label": "GRÖSSEN",
+      "spec_sizes_val": "S, M, L",
+      "spec_price_label": "PREIS"
+    },
+    "campaign": {
+      "tag": "DIE KAMPAGNE",
+      "line": "absurd, mit Absicht.",
+      "reserve_label": "ABSCHNITT 07 — RESERVIEREN",
+      "reserve_title": "Reservier",
+      "reserve_title2": "es dir.",
+      "reserve_body": "es wird auf Bestellung gefertigt, in limitierter Stückzahl. keine Warteschlange, kein Drama — nur das Kleid, für dich zurückgelegt, bis es dir gehört.",
+      "preorder_tag": "VORBESTELLUNG — 25. JULI 2026",
+      "preorder_note": "Trag dich in die Warteliste ein und sei<br>die Erste, die es erfährt, wenn der Verkauf startet."
+    },
+    "waitlist": {
+      "tag": "DIE WARTELISTE",
+      "title": "jetzt reservieren…",
+      "the_dress": "DAS KLEID",
+      "cta_waitlist": "ZUR WARTELISTE →",
+      "cta_collection": "KOLLEKTION ANSEHEN →",
+      "back_tagline": "hübsch. absurd. deins.",
+      "back_footer": "PRETTY ABSURD — SS26 — AUSGABE NR. 01"
+    },
+    "nav_prev": "ZURÜCK",
+    "nav_next": "WEITER"
+  },
+  "footer": {
+    "tagline": "Kleider, die man anstarren muss.",
+    "copy": "© 2026 Pretty Absurd. Alle Rechte vorbehalten.",
+    "links": {
+      "lookbook": "Lookbook",
+      "collection": "Die Kleider",
+      "about": "Über uns",
+      "contact": "Kontakt"
+    }
+  }
+}

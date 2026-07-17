@@ -1,104 +1,290 @@
 {
   "lang": "en",
   "nav": {
-    "brand":     "Pretty Absurd",
-    "lookbook":  "Lookbook",
-    "collection":"The Dresses",
-    "about":     "About",
-    "brandWorld":"Brand World",
-    "contact":   "Contact"
+    "brand": "Pretty Absurd",
+    "lookbook": "Lookbook",
+    "collection": "The Dresses",
+    "about": "About",
+    "brandWorld": "Brand World",
+    "contact": "Contact"
   },
   "home": {
     "hero": {
-      "headline":    "Pretty Absurd.",
-      "sub":         "Three dresses. One absurd idea.",
-      "cta_lookbook":"View the lookbook",
-      "cta_collection":"See the dresses"
+      "sub": "Too much is the whole point.",
+      "cta_lookbook": "Enter the lookbook",
+      "cta_collection": "See the dresses"
     },
-    "intro": {
+    "prelaunch": {
       "label": "Prelaunch",
-      "text":  "A brand on its way. An independent designer making clothes that shouldn't work — but do.",
-      "cta":   "Meet the designer"
+      "text": "Pre-ordering opens 25 July — Collection drops 25 July 2026",
+      "cta": "Notify me →"
     },
-    "teaser": {
-      "label":    "The collection",
-      "headline": "Three dresses. Each one deliberately off."
+    "receipt": {
+      "brand": "PRETTY ABSURD",
+      "pink": "The Pink Satin",
+      "blue": "The Ice Blue",
+      "dot": "The Polka Dot",
+      "total": "TOTAL",
+      "status_line": "STATUS … coming soon<br>WAITLIST … now open",
+      "cta_main": "TAP TO RESERVE HER",
+      "cta_sub": "join the waitlist — xo"
+    },
+    "designer": {
+      "label": "The Designer",
+      "headline": "Meet Kaylah.",
+      "sub": "An independent designer making clothes that look impossible — until you see them in person.",
+      "cta": "Read her story →"
+    },
+    "notify": {
+      "headline": "Be first to know.",
+      "sub": "Pre-ordering opens 25 July 2026. Leave your email and we'll tell you the moment it does.",
+      "placeholder": "your@email.com",
+      "btn": "Notify me"
     }
   },
-  "lookbook": {
-    "label":        "Issue 01",
-    "headline":     "The Lookbook.",
-    "sub":          "A fashion magazine you scroll through.",
-    "credits_label":"Credits",
-    "spread_label": "Spread"
-  },
   "collection": {
-    "label":       "The Collection",
-    "headline":    "Three Dresses.",
-    "sub":         "Each one made to be stared at.",
-    "cta_inquire": "Inquire",
-    "cta_notify":  "Notify me",
+    "label": "The Collection",
+    "headline": "Three Dresses.",
+    "sub": "Each one made to be stared at. Pre-ordering opens 25 July — Collection drops 25 July 2026.",
+    "view_dress": "View the dress ↓",
+    "price_label": "Price",
+    "cta_inquire": "Inquire about this dress",
+    "launch_note": "Pre-ordering opens 25 July — Drops 25 July 2026",
     "pieces": {
       "pink": {
-        "name":  "The Pink Satin",
-        "desc":  "A corset bodice that means business. A pleated skirt that means none.",
-        "price": 3800
+        "num": "01 — 03",
+        "name": "The Pink Satin",
+        "desc": "A corset bodice that means business. A pleated skirt that means none. Made in soft lilac-pink satin with a structured boning, sweetheart neckline, and a back lacing that takes its time.",
+        "details": [
+          "Satin with boning structure",
+          "Sweetheart neckline with ruffle trim",
+          "Back lace-up closure",
+          "Side invisible zip",
+          "Pleated mini skirt"
+        ],
+        "price": 1950
       },
       "blue": {
-        "name":  "The Ice Blue",
-        "desc":  "Powder blue satin. Sweetheart neckline. Structurally absurd.",
-        "price": 3800
+        "num": "02 — 03",
+        "name": "The Ice Blue",
+        "desc": "Powder blue satin. Sweetheart neckline. Structurally absurd. The same silhouette as the pink — same bones, different mood. This one is quieter, until you see it move.",
+        "details": [
+          "Ice blue satin with boning structure",
+          "Sweetheart neckline with ruffle trim",
+          "Back ribbon lacing in matching blue",
+          "Side invisible zip",
+          "Pleated mini skirt"
+        ],
+        "price": 1950
       },
       "polkadot": {
-        "name":  "The Polka Dot",
-        "desc":  "Black dots on white. Old-school charm. New-school chaos.",
-        "price": 3500
+        "num": "03 — 03",
+        "name": "The Polka Dot",
+        "desc": "Black dots on white. Old-school charm. New-school chaos. Same silhouette, same structure — but the polka dot changes everything. It's the one that makes people stare a second time.",
+        "details": [
+          "White structured fabric with black polka dots",
+          "Sweetheart neckline with ruffle trim",
+          "Back lace-up closure",
+          "Side invisible zip",
+          "Pleated mini skirt"
+        ],
+        "price": 1950
       }
     }
   },
   "about": {
-    "label":            "The Designer",
-    "headline":         "Behind Pretty Absurd.",
-    "sub":              "An independent designer making clothes that look like they shouldn't exist — but once you see them, you can't imagine they don't.",
-    "story_label":      "The Story",
-    "philosophy_label": "The Philosophy",
-    "process_label":    "The Process"
+    "label": "The Designer",
+    "headline_1": "Behind",
+    "headline_2": "Pretty Absurd.",
+    "sub": "An independent designer making clothes that look impossible — until you see them in person.",
+    "portrait_caption": "Kaylah — Designer & Founder",
+    "story": {
+      "label": "The Story",
+      "headline": "Clothes that belong in a film you can't quite place.",
+      "p1": "Women's clothes usually pick a lane: invisible, or trying too hard. Kaylah skipped the choice and built three dresses instead.",
+      "p2": "Each one shares the same bones — a corset bodice, a sweetheart neckline, a pleated skirt — and tells a different story. Pink satin that feels like a Barbie dream. Ice blue that belongs on a catwalk in Paris. Polka dots that make you think of Marilyn Monroe on a rooftop.",
+      "p3": "The name says it all. Pretty Absurd is fashion that's deliberately, joyfully out of place. Clothes that make people stare — not because they're strange, but because they're exactly right in all the wrong ways."
+    },
+    "philosophy": {
+      "label": "The Philosophy",
+      "quote": "\"Pretty Absurd is built on one idea: clothes should make you feel like the most interesting person in the room. Not the most tasteful. The most interesting.\"",
+      "body": "Feminine or serious. Playful or polished. Women hear that split constantly. Kaylah ignored it. The corset boning is serious. The polka dots are playful. Both, at once, on purpose."
+    },
+    "studio_caption": "The studio — where it begins",
+    "process": {
+      "label": "The Process",
+      "headline_1": "Every seam placed with intention.",
+      "headline_2": "The chaos happens when you wear it, not when we make it.",
+      "step1_title": "Structure first",
+      "step1_text": "Every dress starts with the bones. The corset boning defines the silhouette before a single piece of satin is cut.",
+      "step2_title": "Fabric as character",
+      "step2_text": "The fabric is the personality of the piece. Satin catches the light differently. Polka dots change the conversation before you say a word.",
+      "step3_title": "Details that earn their place",
+      "step3_text": "The ruffle at the sweetheart neckline. The lacing at the back. The invisible zip at the side."
+    },
+    "cta_strip": {
+      "text": "Three dresses. Pre-ordering opens 25 July — Collection drops 25 July 2026.",
+      "cta_collection": "See the dresses →",
+      "cta_lookbook": "Enter the lookbook →"
+    }
   },
   "brandWorld": {
-    "label":    "Brand World",
-    "headline": "The Universe of Pretty Absurd.",
-    "sub":      "Where the references live.",
-    "intro":    "Polka dots on subways. Grass in living rooms. A perfectly pressed dress in an entirely wrong place. This is the world the clothes come from."
+    "label": "Brand World",
+    "headline_1": "The Universe of",
+    "headline_2": "Pretty Absurd.",
+    "intro": "Polka dots on subways. Grass in living rooms. A perfectly pressed dress in an entirely wrong place. This is the world the clothes come from.",
+    "manifesto": {
+      "one": "The dress that doesn't match the setting. The fabric too beautiful for the occasion. The silhouette that stops the room. Nobody plans to remember an outfit. Pretty Absurd makes sure they do.",
+      "two": "The references are everywhere: Marilyn Monroe on a subway grate, Barbie in a dream house that isn't quite right, a Vogue editorial shot in a place Vogue would never go. Pretty Absurd borrows from all of it — and puts it in a corset.",
+      "three": "This isn't fashion that wants to disappear into the wardrobe. It wants to be worn, looked at, and worn again."
+    },
+    "captions": {
+      "dot_subway": "Polka dots on a subway — Issue 01",
+      "pink_butterfly": "Pink Satin — detail",
+      "blue_armchair": "Ice Blue — retro setting",
+      "pink_street": "Pink Satin — street",
+      "dot_highway": "Polka Dot — highway lounger",
+      "blue_newspaper": "Ice Blue — editorial",
+      "blue_playful": "Ice Blue — Issue 01",
+      "dot_crosswalk": "Polka Dot — crosswalk B&W",
+      "dot_navy": "Polka Dot — portrait"
+    },
+    "quote": "\"Dresses made to be stared at.\"",
+    "quote_attr": "— Pretty Absurd, SS26",
+    "cta_lookbook": "Enter the lookbook →",
+    "cta_collection": "See the collection →"
   },
   "contact": {
-    "label":    "Get in Touch",
-    "headline": "Let's Talk.",
-    "sub":      "Press, stockists, and general obsessives welcome.",
+    "label": "Get in Touch",
+    "headline_1": "Let's",
+    "headline_2": "Talk.",
+    "sub": "Press inquiries, stockist conversations, and general obsessives all welcome.",
+    "preorder_label": "Pre-order",
+    "preorder_val": "Opens 25 July 2026 — Drops 25 July 2026",
+    "inquiries_label": "Inquiries",
+    "inquiries_val": "Use the form — we respond within 48 hours",
+    "stockists_label": "Stockists",
+    "stockists_val": "Currently accepting enquiries",
+    "early_access": {
+      "tag": "Inner Circle",
+      "headline": "Get her before everyone else.",
+      "perk1": "Pre-order access opens <strong>25 July</strong> — before the public drop",
+      "perk2": "<strong>15% off</strong> your first dress, applied at checkout",
+      "nudge": "Select \"Join early access\" in the form →"
+    },
     "form": {
-      "name":          "Your name",
-      "email":         "Email address",
-      "country":       "Country",
-      "type":          "What is this about?",
-      "type_press":    "Press inquiry",
+      "name": "Your name",
+      "email": "Email address",
+      "country": "Country",
+      "type": "What is this about?",
+      "type_choose": "Choose one",
+      "type_early": "Join early access — 15% off",
+      "type_notify": "Notify me when orders open",
+      "type_dress": "Dress inquiry",
+      "type_press": "Press inquiry",
       "type_stockist": "Stockist inquiry",
-      "type_general":  "General",
-      "message":       "Your message",
-      "submit":        "Send it",
-      "success":       "Sent. We'll be in touch soon.",
-      "error":         "Something went wrong. Try again."
+      "type_general": "General",
+      "early_note": "You're joining the inner circle — we'll send your 15% code the moment pre-orders open on 25 July.",
+      "message": "Your message",
+      "submit": "Send it",
+      "submit_early": "Join early access",
+      "sending": "Sending…",
+      "sent": "Sent",
+      "try_again": "Try again",
+      "footer_note": "We'll be in touch within 48 hours.",
+      "success": "Sent. We'll be in touch soon.",
+      "success_early": "You're in the inner circle. Your 15% code arrives the moment pre-orders open — 25 July."
     }
+  },
+  "lookbook": {
+    "label": "Issue 01",
+    "headline": "The Lookbook.",
+    "sub": "A fashion magazine you scroll through.",
+    "tap_hint": "TAP TO OPEN THE ISSUE",
+    "brandlabel": "Pretty Absurd — the lookbook — issue №01",
+    "cover": {
+      "top_label": "SS26 / ISSUE №01",
+      "title": "THE DRESS",
+      "tagline": "feminine, but feral…",
+      "credit_label": "PRETTY ABSURD — BY, KAYLAH",
+      "credit_body": "an editorial in one act, on the making of a dress that refuses to behave.",
+      "credits": "CREATIVE DIRECTION   KAYLAH<br>PHOTOGRAPHY      KAYLAH<br>DESIGN & WEB      WHITE SPACE DESIGNS<br>STYLING            KAYLAH<br>MAKEUP             KAYLAH<br>SET                SOUTH AFRICA, 2026"
+    },
+    "contents": {
+      "label": "IN THIS ISSUE",
+      "headline": "Contents",
+      "item1": "from the atelier — a letter",
+      "item2": "the editorial",
+      "item3": "the collection",
+      "item4": "the dress",
+      "item5": "craft & cloth",
+      "item6": "the campaign",
+      "item7": "reserve her — the waitlist"
+    },
+    "letter": {
+      "title": "from Kaylah…",
+      "p1": "she arrived late, unbothered, and slightly too much for the room… which is, of course, the entire point. this issue is a small love letter to the dress — the one you don't need but will absolutely buy — and to everyone who understands that being pretty is optional, but being absurd is a lifestyle.",
+      "p2": "we made her by hand, in small numbers, on purpose. what follows is how she came to be… and how you take her home.",
+      "sign": "Xo Xo, Kaylah"
+    },
+    "editorial": {
+      "tag": "THE EDITORIAL / 01",
+      "quote": "she doesn't ask for the room. she simply refuses to leave it.",
+      "quote_attr": "— ON THE DRESS, SS26"
+    },
+    "section3": {
+      "label": "SECTION 03",
+      "title": "The",
+      "title2": "Collection",
+      "body": "a tight edit for SS26 — hand-cut, hand-finished, made in small numbers so she never turns up twice at the same party.",
+      "look1": "LOOK 01 — THE PINK",
+      "look2": "LOOK 02 — THE BLUE",
+      "look3": "LOOK 03 — THE DOT"
+    },
+    "dress": {
+      "section": "SECTION 04",
+      "title": "The Dress",
+      "tag": "SECTION 04 — THE DRESS",
+      "headline": "she's the one.",
+      "body": "cut on the bias so she moves before you do. a neckline that means it. made to order — in a run so small she's practically a rumour. wear her to the thing you're overthinking… she'll handle it.",
+      "spec_cloth_label": "CLOTH",
+      "spec_cloth_val": "silk-blend crêpe",
+      "spec_make_label": "MAKE",
+      "spec_make_val": "made to order",
+      "spec_sizes_label": "SIZES",
+      "spec_sizes_val": "S, M, L",
+      "spec_price_label": "PRICE"
+    },
+    "campaign": {
+      "tag": "THE CAMPAIGN",
+      "line": "absurd, on purpose.",
+      "reserve_label": "SECTION 07 — RESERVE HER",
+      "reserve_title": "Reserve",
+      "reserve_title2": "Her.",
+      "reserve_body": "she is made to order, in limited numbers. there is no queue, no drama — just her, held for you until the moment she's yours.",
+      "preorder_tag": "PRE-ORDER — 25 JULY 2026",
+      "preorder_note": "Join the waitlist and be<br>first in line when the drop opens."
+    },
+    "waitlist": {
+      "tag": "THE WAITLIST",
+      "title": "reserve her…",
+      "the_dress": "THE DRESS",
+      "cta_waitlist": "JOIN THE WAITLIST →",
+      "cta_collection": "SHOP THE COLLECTION →",
+      "back_tagline": "pretty. absurd. hers.",
+      "back_footer": "PRETTY ABSURD — SS26 — ISSUE №01"
+    },
+    "nav_prev": "PREV",
+    "nav_next": "NEXT"
   },
   "footer": {
     "tagline": "Dresses made to be stared at.",
-    "copy":    "© 2026 Pretty Absurd. All rights reserved.",
+    "copy": "© 2026 Pretty Absurd. All rights reserved.",
     "links": {
-      "lookbook":   "Lookbook",
+      "lookbook": "Lookbook",
       "collection": "The Dresses",
-      "about":      "About",
-      "contact":    "Contact"
+      "about": "About",
+      "contact": "Contact"
     }
-  },
-  "currency": {
-    "note": "approx. — final pricing in ZAR"
   }
 }

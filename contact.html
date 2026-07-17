@@ -5,6 +5,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Pretty Absurd — Get in touch. Press, stockist inquiries, and general obsessives welcome.">
   <meta name="theme-color" content="#F7F2EE">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="assets/favicon-32.png" type="image/png" sizes="32x32">
+  <link rel="icon" href="assets/favicon-16.png" type="image/png" sizes="16x16">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <meta property="og:title" content="Contact — Pretty Absurd">
+  <meta property="og:description" content="Get in touch. Press, stockist inquiries, and general obsessives welcome.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/images/brand/og-image.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Contact — Pretty Absurd">
+  <meta name="twitter:description" content="Get in touch. Press, stockist inquiries, and general obsessives welcome.">
+  <meta name="twitter:image" content="assets/images/brand/og-image.jpg">
   <title>Contact — Pretty Absurd</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,18 +31,21 @@
 
   <nav class="site-nav" role="navigation" aria-label="Main navigation">
     <div class="nav__inner">
-      <a href="index.html" class="nav__brand">Pretty Absurd</a>
+      <a href="index.html" class="nav__brand" data-i18n="nav.brand">Pretty Absurd</a>
       <ul class="nav__links" role="list">
-        <li><a href="lookbook.html"    class="nav__link">Lookbook</a></li>
-        <li><a href="collection.html"  class="nav__link">The Dresses</a></li>
-        <li><a href="about.html"       class="nav__link">About</a></li>
-        <li><a href="brand-world.html" class="nav__link">Brand World</a></li>
-        <li><a href="contact.html"     class="nav__link is-active">Contact</a></li>
+        <li><a href="lookbook.html"    class="nav__link" data-i18n="nav.lookbook">Lookbook</a></li>
+        <li><a href="collection.html"  class="nav__link" data-i18n="nav.collection">The Dresses</a></li>
+        <li><a href="about.html"       class="nav__link" data-i18n="nav.about">About</a></li>
+        <li><a href="brand-world.html" class="nav__link" data-i18n="nav.brandWorld">Brand World</a></li>
+        <li><a href="contact.html"     class="nav__link is-active" data-i18n="nav.contact">Contact</a></li>
       </ul>
       <div class="nav__lang" role="group" aria-label="Language">
         <button class="nav__lang-btn is-active" data-lang="en">EN</button>
         <button class="nav__lang-btn"            data-lang="fr">FR</button>
         <button class="nav__lang-btn"            data-lang="it">IT</button>
+        <button class="nav__lang-btn"            data-lang="es">ES</button>
+        <button class="nav__lang-btn"            data-lang="de">DE</button>
+        <button class="nav__lang-btn"            data-lang="pt">PT</button>
       </div>
       <button class="nav__toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-overlay">
         <span class="nav__toggle-line" aria-hidden="true"></span>
@@ -40,16 +55,19 @@
     </div>
     <div class="nav__overlay" id="nav-overlay" role="dialog" aria-label="Mobile navigation">
       <ul class="nav__overlay-links" role="list">
-        <li><a href="lookbook.html"    class="nav__overlay-link">Lookbook</a></li>
-        <li><a href="collection.html"  class="nav__overlay-link">The Dresses</a></li>
-        <li><a href="about.html"       class="nav__overlay-link">About</a></li>
-        <li><a href="brand-world.html" class="nav__overlay-link">Brand World</a></li>
-        <li><a href="contact.html"     class="nav__overlay-link">Contact</a></li>
+        <li><a href="lookbook.html"    class="nav__overlay-link" data-i18n="nav.lookbook">Lookbook</a></li>
+        <li><a href="collection.html"  class="nav__overlay-link" data-i18n="nav.collection">The Dresses</a></li>
+        <li><a href="about.html"       class="nav__overlay-link" data-i18n="nav.about">About</a></li>
+        <li><a href="brand-world.html" class="nav__overlay-link" data-i18n="nav.brandWorld">Brand World</a></li>
+        <li><a href="contact.html"     class="nav__overlay-link" data-i18n="nav.contact">Contact</a></li>
       </ul>
       <div class="nav__overlay-bottom">
         <button class="nav__lang-btn is-active" data-lang="en">EN</button>
         <button class="nav__lang-btn"            data-lang="fr">FR</button>
         <button class="nav__lang-btn"            data-lang="it">IT</button>
+        <button class="nav__lang-btn"            data-lang="es">ES</button>
+        <button class="nav__lang-btn"            data-lang="de">DE</button>
+        <button class="nav__lang-btn"            data-lang="pt">PT</button>
       </div>
     </div>
   </nav>
@@ -63,45 +81,45 @@
 
         <!-- ── Left: header + info ── -->
         <div class="contact-info">
-          <span class="contact-info__label">Get in Touch</span>
-          <h1 class="contact-info__headline">Let's<br><em>Talk.</em></h1>
-          <p class="contact-info__sub">Press inquiries, stockist conversations, and general obsessives all welcome.</p>
+          <span class="contact-info__label" data-i18n="contact.label">Get in Touch</span>
+          <h1 class="contact-info__headline"><span data-i18n="contact.headline_1">Let's</span><br><em data-i18n="contact.headline_2">Talk.</em></h1>
+          <p class="contact-info__sub" data-i18n="contact.sub">Press inquiries, stockist conversations, and general obsessives all welcome.</p>
 
           <div class="contact-info__list">
             <div class="contact-info__item">
-              <span class="contact-info__item-label">Pre-order</span>
-              <span class="contact-info__item-val">Opens 25 July 2026 — Drops 25 July 2026</span>
+              <span class="contact-info__item-label" data-i18n="contact.preorder_label">Pre-order</span>
+              <span class="contact-info__item-val" data-i18n="contact.preorder_val">Opens 25 July 2026 — Drops 25 July 2026</span>
             </div>
             <div class="contact-info__item">
-              <span class="contact-info__item-label">Inquiries</span>
-              <span class="contact-info__item-val">Use the form — we respond within 48 hours</span>
+              <span class="contact-info__item-label" data-i18n="contact.inquiries_label">Inquiries</span>
+              <span class="contact-info__item-val" data-i18n="contact.inquiries_val">Use the form — we respond within 48 hours</span>
             </div>
             <div class="contact-info__item">
-              <span class="contact-info__item-label">Stockists</span>
-              <span class="contact-info__item-val">Currently accepting enquiries</span>
+              <span class="contact-info__item-label" data-i18n="contact.stockists_label">Stockists</span>
+              <span class="contact-info__item-val" data-i18n="contact.stockists_val">Currently accepting enquiries</span>
             </div>
           </div>
 
           <!-- Early access perk card -->
           <div class="contact-early-access">
-            <div class="contact-early-access__tag">Inner Circle</div>
-            <p class="contact-early-access__headline">Get her before everyone else.</p>
+            <div class="contact-early-access__tag" data-i18n="contact.early_access.tag">Inner Circle</div>
+            <p class="contact-early-access__headline" data-i18n="contact.early_access.headline">Get her before everyone else.</p>
             <ul class="contact-early-access__perks">
               <li>
                 <span class="contact-early-access__perk-icon">01</span>
-                <span>Pre-order access opens <strong>25 July</strong> — before the public drop</span>
+                <span data-i18n-html="contact.early_access.perk1">Pre-order access opens <strong>25 July</strong> — before the public drop</span>
               </li>
               <li>
                 <span class="contact-early-access__perk-icon">02</span>
-                <span><strong>15% off</strong> your first dress, applied at checkout</span>
+                <span data-i18n-html="contact.early_access.perk2"><strong>15% off</strong> your first dress, applied at checkout</span>
               </li>
             </ul>
-            <p class="contact-early-access__nudge">Select "Join early access" in the form →</p>
+            <p class="contact-early-access__nudge" data-i18n="contact.early_access.nudge">Select "Join early access" in the form →</p>
           </div>
 
           <div class="contact-info__editorial" aria-hidden="true">
             <img
-              src="assets/images/lookbook/puzzle-portrait-blue.png"
+              src="assets/images/lookbook/puzzle-portrait-blue.webp"
               alt=""
               loading="lazy"
             >
@@ -112,15 +130,16 @@
         <div class="contact-form-wrap">
           <form
             class="contact-form"
-            action="https://formspree.io/f/placeholder"
+            action="https://formspree.io/f/mnjejwqz"
             method="POST"
             novalidate
             aria-label="Contact form"
             id="contact-form"
           >
+            <input type="hidden" name="_subject" value="Pretty Absurd — Contact form submission">
             <div class="contact-form__row">
               <div class="contact-form__field">
-                <label for="cf-name" class="contact-form__label">Your name</label>
+                <label for="cf-name" class="contact-form__label" data-i18n="contact.form.name">Your name</label>
                 <input
                   id="cf-name"
                   type="text"
@@ -131,7 +150,7 @@
                 >
               </div>
               <div class="contact-form__field">
-                <label for="cf-email" class="contact-form__label">Email address</label>
+                <label for="cf-email" class="contact-form__label" data-i18n="contact.form.email">Email address</label>
                 <input
                   id="cf-email"
                   type="email"
@@ -145,7 +164,7 @@
 
             <div class="contact-form__row">
               <div class="contact-form__field">
-                <label for="cf-country" class="contact-form__label">Country</label>
+                <label for="cf-country" class="contact-form__label" data-i18n="contact.form.country">Country</label>
                 <input
                   id="cf-country"
                   type="text"
@@ -155,22 +174,22 @@
                 >
               </div>
               <div class="contact-form__field">
-                <label for="cf-type" class="contact-form__label">What is this about?</label>
+                <label for="cf-type" class="contact-form__label" data-i18n="contact.form.type">What is this about?</label>
                 <select id="cf-type" name="type" class="contact-form__input contact-form__select">
-                  <option value="" disabled selected>Choose one</option>
-                  <option value="early-access">Join early access — 15% off</option>
-                  <option value="notify">Notify me when orders open</option>
-                  <option value="dress">Dress inquiry</option>
-                  <option value="press">Press inquiry</option>
-                  <option value="stockist">Stockist inquiry</option>
-                  <option value="general">General</option>
+                  <option value="" disabled selected data-i18n="contact.form.type_choose">Choose one</option>
+                  <option value="early-access" data-i18n="contact.form.type_early">Join early access — 15% off</option>
+                  <option value="notify" data-i18n="contact.form.type_notify">Notify me when orders open</option>
+                  <option value="dress" data-i18n="contact.form.type_dress">Dress inquiry</option>
+                  <option value="press" data-i18n="contact.form.type_press">Press inquiry</option>
+                  <option value="stockist" data-i18n="contact.form.type_stockist">Stockist inquiry</option>
+                  <option value="general" data-i18n="contact.form.type_general">General</option>
                 </select>
-                <p class="contact-form__early-note" id="early-access-note" hidden>You're joining the inner circle — we'll send your 15% code the moment pre-orders open on 25 July.</p>
+                <p class="contact-form__early-note" id="early-access-note" hidden data-i18n="contact.form.early_note">You're joining the inner circle — we'll send your 15% code the moment pre-orders open on 25 July.</p>
               </div>
             </div>
 
             <div class="contact-form__field contact-form__field--full">
-              <label for="cf-message" class="contact-form__label">Your message</label>
+              <label for="cf-message" class="contact-form__label" data-i18n="contact.form.message">Your message</label>
               <textarea
                 id="cf-message"
                 name="message"
@@ -180,12 +199,12 @@
             </div>
 
             <div class="contact-form__footer">
-              <button type="submit" class="contact-form__submit">Send it</button>
-              <p class="contact-form__note">We'll be in touch within 48 hours.</p>
+              <button type="submit" class="contact-form__submit" data-i18n="contact.form.submit">Send it</button>
+              <p class="contact-form__note" data-i18n="contact.form.footer_note">We'll be in touch within 48 hours.</p>
             </div>
 
             <div class="contact-form__success" id="form-success" hidden aria-live="polite">
-              <p>Sent. We'll be in touch soon.</p>
+              <p data-i18n="contact.form.success">Sent. We'll be in touch soon.</p>
             </div>
           </form>
         </div>
@@ -200,18 +219,18 @@
     <div class="footer__inner">
       <div class="footer__top">
         <div>
-          <div class="footer__brand">Pretty Absurd</div>
-          <div class="footer__tagline">Dresses made to be stared at.</div>
+          <div class="footer__brand" data-i18n="nav.brand">Pretty Absurd</div>
+          <div class="footer__tagline" data-i18n="footer.tagline">Dresses made to be stared at.</div>
         </div>
         <nav class="footer__nav" aria-label="Footer navigation">
-          <a href="lookbook.html"    class="footer__nav-link">Lookbook</a>
-          <a href="collection.html"  class="footer__nav-link">The Dresses</a>
-          <a href="about.html"       class="footer__nav-link">About</a>
-          <a href="contact.html"     class="footer__nav-link">Contact</a>
+          <a href="lookbook.html"    class="footer__nav-link" data-i18n="footer.links.lookbook">Lookbook</a>
+          <a href="collection.html"  class="footer__nav-link" data-i18n="footer.links.collection">The Dresses</a>
+          <a href="about.html"       class="footer__nav-link" data-i18n="footer.links.about">About</a>
+          <a href="contact.html"     class="footer__nav-link" data-i18n="footer.links.contact">Contact</a>
         </nav>
       </div>
       <div class="footer__bottom">
-        <span class="footer__copy">© 2026 Pretty Absurd. All rights reserved.</span>
+        <span class="footer__copy" data-i18n="footer.copy">© 2026 Pretty Absurd. All rights reserved.</span>
         <div class="footer__socials">
           <a href="https://instagram.com/pretty_absurdd" class="footer__social" aria-label="Instagram" target="_blank" rel="noopener">Instagram</a>
           <a href="https://tiktok.com/@pretty.absrudd" class="footer__social" aria-label="TikTok" target="_blank" rel="noopener">TikTok</a>
@@ -231,13 +250,13 @@
     typeSelect.addEventListener('change', function() {
       const isEarly = this.value === 'early-access';
       earlyNote.hidden = !isEarly;
-      submitBtn.textContent = isEarly ? 'Join early access' : 'Send it';
+      submitBtn.textContent = isEarly ? I18N.get('contact.form.submit_early') : I18N.get('contact.form.submit');
     });
 
     document.getElementById('contact-form').addEventListener('submit', async function(e) {
       e.preventDefault();
       const btn = this.querySelector('.contact-form__submit');
-      btn.textContent = 'Sending…';
+      btn.textContent = I18N.get('contact.form.sending');
       btn.disabled = true;
       try {
         const res = await fetch(this.action, {
@@ -249,19 +268,19 @@
           const isEarly = document.getElementById('cf-type').value === 'early-access';
           this.reset();
           earlyNote.hidden = true;
-          submitBtn.textContent = 'Send it';
+          submitBtn.textContent = I18N.get('contact.form.submit');
           const successEl = document.getElementById('form-success');
           successEl.querySelector('p').textContent = isEarly
-            ? 'You\'re in the inner circle. Your 15% code arrives the moment pre-orders open — 25 July.'
-            : 'Sent. We\'ll be in touch soon.';
+            ? I18N.get('contact.form.success_early')
+            : I18N.get('contact.form.success');
           successEl.hidden = false;
-          btn.textContent = 'Sent';
+          btn.textContent = I18N.get('contact.form.sent');
         } else {
-          btn.textContent = 'Try again';
+          btn.textContent = I18N.get('contact.form.try_again');
           btn.disabled = false;
         }
       } catch {
-        btn.textContent = 'Try again';
+        btn.textContent = I18N.get('contact.form.try_again');
         btn.disabled = false;
       }
     });

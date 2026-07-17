@@ -4,3 +4,4 @@ Thumbs.db
 *.log
 assets/source/
 .env
+.claude/

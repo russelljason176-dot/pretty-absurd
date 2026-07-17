@@ -72,14 +72,15 @@
 }
 
 .home-hero__headline {
-  font-family: var(--font-display);
-  font-style: italic;
-  font-weight: 600;
-  font-size: var(--text-hero);
-  line-height: var(--leading-tight);
-  letter-spacing: var(--tracking-tight);
-  color: var(--cream);
-  margin-bottom: var(--space-6);
+  margin: 0 0 var(--space-10);
+  line-height: 0;
+}
+
+.home-hero__wordmark {
+  display: block;
+  width: clamp(220px, 34vw, 560px);
+  height: auto;
+  filter: drop-shadow(0 6px 22px rgba(0, 0, 0, 0.28));
 }
 
 .home-hero__sub {
@@ -487,6 +488,84 @@
 
 @media (hover: hover) and (pointer: fine) {
   .home-editorial-strip__img:hover { transform: scale(1.03); }
+}
+
+/* ── Designer teaser ── */
+.home-designer {
+  border-top: var(--border-thin);
+}
+
+.home-designer__inner {
+  display: grid;
+  grid-template-columns: minmax(180px, 280px) 1fr;
+  gap: clamp(2rem, 5vw, 4rem);
+  align-items: center;
+}
+
+.home-designer__portrait {
+  aspect-ratio: 3 / 4;
+  overflow: hidden;
+  border-radius: var(--radius-md);
+}
+
+.home-designer__portrait img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.home-designer__label {
+  display: block;
+  font-family: var(--font-body);
+  font-size: var(--text-caption);
+  letter-spacing: var(--tracking-widest);
+  text-transform: uppercase;
+  color: var(--ink-faint);
+  margin-bottom: var(--space-4);
+}
+
+.home-designer__headline {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-weight: 600;
+  font-size: var(--text-heading);
+  color: var(--ink);
+  margin-bottom: var(--space-5);
+}
+
+.home-designer__sub {
+  font-size: var(--text-body-lg);
+  color: var(--ink-muted);
+  line-height: var(--leading-loose);
+  max-width: 48ch;
+  margin-bottom: var(--space-6);
+}
+
+.home-designer__cta {
+  display: inline-block;
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: var(--text-caption);
+  letter-spacing: var(--tracking-wide);
+  text-transform: uppercase;
+  color: var(--ink);
+  border-bottom: 1px solid var(--ink);
+  padding-bottom: 2px;
+  transition: color var(--dur-fast) var(--ease-out), border-color var(--dur-fast) var(--ease-out);
+}
+@media (hover: hover) and (pointer: fine) {
+  .home-designer__cta:hover { color: var(--pink-dark); border-color: var(--pink-dark); }
+}
+
+@media (max-width: 640px) {
+  .home-designer__inner {
+    grid-template-columns: 1fr;
+  }
+  .home-designer__portrait {
+    max-width: 220px;
+    margin-inline: auto;
+  }
 }
 
 /* ── Notify strip ── */
