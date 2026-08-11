@@ -26,6 +26,7 @@
   <link rel="stylesheet" href="css/nav.css">
   <link rel="stylesheet" href="css/footer.css">
   <link rel="stylesheet" href="css/collection.css">
+  <link rel="stylesheet" href="css/components.css">
 </head>
 <body data-page="collection">
 
@@ -37,6 +38,7 @@
         <li><a href="collection.html"  class="nav__link is-active" data-i18n="nav.collection">The Dresses</a></li>
         <li><a href="about.html"       class="nav__link" data-i18n="nav.about">About</a></li>
         <li><a href="brand-world.html" class="nav__link" data-i18n="nav.brandWorld">Brand World</a></li>
+        <li><a href="faq.html" class="nav__link">FAQ</a></li>
         <li><a href="contact.html"     class="nav__link" data-i18n="nav.contact">Contact</a></li>
       </ul>
       <div class="nav__lang" role="group" aria-label="Language">
@@ -59,6 +61,7 @@
         <li><a href="collection.html"  class="nav__overlay-link" data-i18n="nav.collection">The Dresses</a></li>
         <li><a href="about.html"       class="nav__overlay-link" data-i18n="nav.about">About</a></li>
         <li><a href="brand-world.html" class="nav__overlay-link" data-i18n="nav.brandWorld">Brand World</a></li>
+        <li><a href="faq.html" class="nav__overlay-link">FAQ</a></li>
         <li><a href="contact.html"     class="nav__overlay-link" data-i18n="nav.contact">Contact</a></li>
       </ul>
       <div class="nav__overlay-bottom">
@@ -74,6 +77,16 @@
 
   <main id="main-content">
     <div class="nav-spacer"></div>
+    <div class="container">
+      <nav class="breadcrumbs" aria-label="Breadcrumb">
+        <ol class="breadcrumbs__list">
+          <li><a href="index.html" class="breadcrumbs__link">Home</a></li>
+          <li class="breadcrumbs__sep">/</li>
+          <li class="breadcrumbs__current" aria-current="page">The Dresses</li>
+        </ol>
+      </nav>
+    </div>
+
 
     <!-- ── Collection header ── -->
     <div class="container">
@@ -236,6 +249,7 @@
           <a href="lookbook.html"    class="footer__nav-link" data-i18n="footer.links.lookbook">Lookbook</a>
           <a href="collection.html"  class="footer__nav-link" data-i18n="footer.links.collection">The Dresses</a>
           <a href="about.html"       class="footer__nav-link" data-i18n="footer.links.about">About</a>
+          <a href="faq.html" class="footer__nav-link">FAQ</a>
           <a href="contact.html"     class="footer__nav-link" data-i18n="footer.links.contact">Contact</a>
         </nav>
       </div>
@@ -252,5 +266,10 @@
   <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
   <script src="js/i18n.js"></script>
   <script src="js/main.js"></script>
+  <div class="sticky-cta">
+    <a href="contact.html" class="sticky-cta__link">Get Early Access</a>
+  </div>
+
+  <script src="js/components.js"></script>
 </body>
 </html>
