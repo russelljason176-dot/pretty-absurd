@@ -1,4 +1,4 @@
-# Pretty Absurd — prettyabsurd.com (domain pending)
+# Pretty Absurd — prettyabsurd.co.za
 
 User-agent: *
 Allow: /
@@ -52,4 +52,4 @@ Disallow: /
 User-agent: YouBot
 Disallow: /
 
-Sitemap: https://prettyabsurd.com/sitemap.xml
+Sitemap: https://prettyabsurd.co.za/sitemap.xml
