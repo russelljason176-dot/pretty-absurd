@@ -17,7 +17,7 @@
     },
     "prelaunch": {
       "label": "Prelanzamiento",
-      "text": "Los pedidos anticipados abren el 25 de julio — Colección disponible el 25 de julio de 2026",
+      "text": "Los pedidos anticipados abren el 22 de agosto — Colección disponible el 22 de agosto de 2026",
       "cta": "Avísame →"
     },
     "receipt": {
@@ -38,7 +38,7 @@
     },
     "notify": {
       "headline": "Sé la primera en saberlo.",
-      "sub": "Los pedidos anticipados abren el 25 de julio de 2026. Deja tu correo y te avisamos en cuanto abran.",
+      "sub": "Los pedidos anticipados abren el 22 de agosto de 2026. Deja tu correo y te avisamos en cuanto abran.",
       "placeholder": "tu@email.com",
       "btn": "Avísame"
     }
@@ -46,11 +46,11 @@
   "collection": {
     "label": "La Colección",
     "headline": "Tres Vestidos.",
-    "sub": "Cada uno hecho para ser mirado. Los pedidos anticipados abren el 25 de julio — Colección disponible el 25 de julio de 2026.",
+    "sub": "Cada uno hecho para ser mirado. Los pedidos anticipados abren el 22 de agosto — Colección disponible el 22 de agosto de 2026.",
     "view_dress": "Ver el vestido ↓",
     "price_label": "Precio",
     "cta_inquire": "Preguntar por este vestido",
-    "launch_note": "Los pedidos anticipados abren el 25 de julio — Disponible el 25 de julio de 2026",
+    "launch_note": "Los pedidos anticipados abren el 22 de agosto — Disponible el 22 de agosto de 2026",
     "pieces": {
       "pink": {
         "num": "01 — 03",
@@ -124,7 +124,7 @@
       "step3_text": "El volante en el escote corazón. El cordón en la espalda. La cremallera invisible al costado. Nada está ahí por decoración — cada detalle cumple una función."
     },
     "cta_strip": {
-      "text": "Tres vestidos. Los pedidos anticipados abren el 25 de julio — Colección disponible el 25 de julio de 2026.",
+      "text": "Tres vestidos. Los pedidos anticipados abren el 22 de agosto — Colección disponible el 22 de agosto de 2026.",
       "cta_collection": "Ver los vestidos →",
       "cta_lookbook": "Entrar al lookbook →"
     }
@@ -161,7 +161,7 @@
     "headline_2": ".",
     "sub": "Consultas de prensa, conversaciones con tiendas y curiosos de todo tipo son bienvenidos.",
     "preorder_label": "Pedido anticipado",
-    "preorder_val": "Abre el 25 de julio de 2026 — Disponible el 25 de julio de 2026",
+    "preorder_val": "Abre el 22 de agosto de 2026 — Disponible el 22 de agosto de 2026",
     "inquiries_label": "Consultas",
     "inquiries_val": "Usa el formulario — respondemos en 48 horas",
     "stockists_label": "Tiendas",
@@ -169,7 +169,7 @@
     "early_access": {
       "tag": "Círculo Interno",
       "headline": "Consíguelo antes que nadie.",
-      "perk1": "Acceso a pedidos anticipados el <strong>25 de julio</strong> — antes del lanzamiento público",
+      "perk1": "Acceso a pedidos anticipados el <strong>22 de agosto</strong> — antes del lanzamiento público",
       "perk2": "<strong>10% de descuento</strong> en tu primer vestido, aplicado al pagar",
       "nudge": "Selecciona \"Unirme al acceso anticipado\" en el formulario →"
     },
@@ -185,7 +185,7 @@
       "type_press": "Consulta de prensa",
       "type_stockist": "Consulta de tienda",
       "type_general": "General",
-      "early_note": "Te estás uniendo al círculo interno — te enviaremos tu código del 10% en cuanto abran los pedidos anticipados, el 25 de julio.",
+      "early_note": "Te estás uniendo al círculo interno — te enviaremos tu código del 10% en cuanto abran los pedidos anticipados, el 22 de agosto.",
       "message": "Tu mensaje",
       "submit": "Enviar",
       "submit_early": "Unirme al acceso anticipado",
@@ -194,7 +194,7 @@
       "try_again": "Intentar de nuevo",
       "footer_note": "Te responderemos en un plazo de 48 horas.",
       "success": "Enviado. Te contactaremos pronto.",
-      "success_early": "Ya estás en el círculo interno. Tu código del 10% llega en cuanto abran los pedidos anticipados — el 25 de julio."
+      "success_early": "Ya estás en el círculo interno. Tu código del 10% llega en cuanto abran los pedidos anticipados — el 22 de agosto."
     }
   },
   "lookbook": {

@@ -16,7 +16,7 @@
     },
     "prelaunch": {
       "label": "Prelaunch",
-      "text": "Pre-ordering opens 25 July — Collection drops 25 July 2026",
+      "text": "Pre-ordering opens 22 August — Collection drops 22 August 2026",
       "cta": "Notify me →"
     },
     "receipt": {
@@ -37,7 +37,7 @@
     },
     "notify": {
       "headline": "Be first to know.",
-      "sub": "Pre-ordering opens 25 July 2026. Leave your email and we'll tell you the moment it does.",
+      "sub": "Pre-ordering opens 22 August 2026. Leave your email and we'll tell you the moment it does.",
       "placeholder": "your@email.com",
       "btn": "Notify me"
     }
@@ -45,11 +45,11 @@
   "collection": {
     "label": "The Collection",
     "headline": "Three Dresses.",
-    "sub": "Each one made to be stared at. Pre-ordering opens 25 July — Collection drops 25 July 2026.",
+    "sub": "Each one made to be stared at. Pre-ordering opens 22 August — Collection drops 22 August 2026.",
     "view_dress": "View the dress ↓",
     "price_label": "Price",
     "cta_inquire": "Inquire about this dress",
-    "launch_note": "Pre-ordering opens 25 July — Drops 25 July 2026",
+    "launch_note": "Pre-ordering opens 22 August — Drops 22 August 2026",
     "pieces": {
       "pink": {
         "num": "01 — 03",
@@ -123,7 +123,7 @@
       "step3_text": "The ruffle at the sweetheart neckline. The lacing at the back. The invisible zip at the side."
     },
     "cta_strip": {
-      "text": "Three dresses. Pre-ordering opens 25 July — Collection drops 25 July 2026.",
+      "text": "Three dresses. Pre-ordering opens 22 August — Collection drops 22 August 2026.",
       "cta_collection": "See the dresses →",
       "cta_lookbook": "Enter the lookbook →"
     }
@@ -160,7 +160,7 @@
     "headline_2": "Talk.",
     "sub": "Press inquiries, stockist conversations, and general obsessives all welcome.",
     "preorder_label": "Pre-order",
-    "preorder_val": "Opens 25 July 2026 — Drops 25 July 2026",
+    "preorder_val": "Opens 22 August 2026 — Drops 22 August 2026",
     "inquiries_label": "Inquiries",
     "inquiries_val": "Use the form — we respond within 48 hours",
     "stockists_label": "Stockists",
@@ -168,7 +168,7 @@
     "early_access": {
       "tag": "Inner Circle",
       "headline": "Get her before everyone else.",
-      "perk1": "Pre-order access opens <strong>25 July</strong> — before the public drop",
+      "perk1": "Pre-order access opens <strong>22 August</strong> — before the public drop",
       "perk2": "<strong>10% off</strong> your first dress, applied at checkout",
       "nudge": "Select \"Join early access\" in the form →"
     },
@@ -184,7 +184,7 @@
       "type_press": "Press inquiry",
       "type_stockist": "Stockist inquiry",
       "type_general": "General",
-      "early_note": "You're joining the inner circle — we'll send your 10% code the moment pre-orders open on 25 July.",
+      "early_note": "You're joining the inner circle — we'll send your 10% code the moment pre-orders open on 22 August.",
       "message": "Your message",
       "submit": "Send it",
       "submit_early": "Join early access",
@@ -193,7 +193,7 @@
       "try_again": "Try again",
       "footer_note": "We'll be in touch within 48 hours.",
       "success": "Sent. We'll be in touch soon.",
-      "success_early": "You're in the inner circle. Your 10% code arrives the moment pre-orders open — 25 July."
+      "success_early": "You're in the inner circle. Your 10% code arrives the moment pre-orders open — 22 August."
     }
   },
   "lookbook": {
@@ -262,7 +262,7 @@
       "reserve_title": "Reserve",
       "reserve_title2": "Her.",
       "reserve_body": "she is made to order, in limited numbers. there is no queue, no drama — just her, held for you until the moment she's yours.",
-      "preorder_tag": "PRE-ORDER — 25 JULY 2026",
+      "preorder_tag": "PRE-ORDER — 22 AUGUST 2026",
       "preorder_note": "Join the waitlist and be<br>first in line when the drop opens."
     },
     "waitlist": {

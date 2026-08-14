@@ -17,7 +17,7 @@
     },
     "prelaunch": {
       "label": "Pré-lançamento",
-      "text": "Pré-venda abre em 25 de julho — Coleção chega em 25 de julho de 2026",
+      "text": "Pré-venda abre em 22 de agosto — Coleção chega em 22 de agosto de 2026",
       "cta": "Avise-me →"
     },
     "receipt": {
@@ -38,7 +38,7 @@
     },
     "notify": {
       "headline": "Seja a primeira a saber.",
-      "sub": "Pré-venda abre em 25 de julho de 2026. Deixe seu e-mail e avisamos assim que abrir.",
+      "sub": "Pré-venda abre em 22 de agosto de 2026. Deixe seu e-mail e avisamos assim que abrir.",
       "placeholder": "seu@email.com",
       "btn": "Avise-me"
     }
@@ -46,11 +46,11 @@
   "collection": {
     "label": "A Coleção",
     "headline": "Três Vestidos.",
-    "sub": "Cada um feito para ser admirado. Pré-venda abre em 25 de julho — Coleção chega em 25 de julho de 2026.",
+    "sub": "Cada um feito para ser admirado. Pré-venda abre em 22 de agosto — Coleção chega em 22 de agosto de 2026.",
     "view_dress": "Ver o vestido ↓",
     "price_label": "Preço",
     "cta_inquire": "Perguntar sobre este vestido",
-    "launch_note": "Pré-venda abre em 25 de julho — Chega em 25 de julho de 2026",
+    "launch_note": "Pré-venda abre em 22 de agosto — Chega em 22 de agosto de 2026",
     "pieces": {
       "pink": {
         "num": "01 — 03",
@@ -124,7 +124,7 @@
       "step3_text": "O babado no decote coração. O cadarço nas costas. O zíper invisível na lateral. Nada está ali por decoração — cada detalhe cumpre uma função."
     },
     "cta_strip": {
-      "text": "Três vestidos. Pré-venda abre em 25 de julho — Coleção chega em 25 de julho de 2026.",
+      "text": "Três vestidos. Pré-venda abre em 22 de agosto — Coleção chega em 22 de agosto de 2026.",
       "cta_collection": "Ver os vestidos →",
       "cta_lookbook": "Entrar no lookbook →"
     }
@@ -161,7 +161,7 @@
     "headline_2": "conversar.",
     "sub": "Solicitações de imprensa, conversas com lojistas e curiosos em geral são bem-vindos.",
     "preorder_label": "Pré-venda",
-    "preorder_val": "Abre em 25 de julho de 2026 — Chega em 25 de julho de 2026",
+    "preorder_val": "Abre em 22 de agosto de 2026 — Chega em 22 de agosto de 2026",
     "inquiries_label": "Solicitações",
     "inquiries_val": "Use o formulário — respondemos em até 48 horas",
     "stockists_label": "Lojistas",
@@ -169,7 +169,7 @@
     "early_access": {
       "tag": "Círculo Interno",
       "headline": "Garanta antes de todo mundo.",
-      "perk1": "Acesso à pré-venda em <strong>25 de julho</strong> — antes do lançamento público",
+      "perk1": "Acesso à pré-venda em <strong>22 de agosto</strong> — antes do lançamento público",
       "perk2": "<strong>10% de desconto</strong> no seu primeiro vestido, aplicado no checkout",
       "nudge": "Selecione \"Entrar no acesso antecipado\" no formulário →"
     },
@@ -185,7 +185,7 @@
       "type_press": "Solicitação de imprensa",
       "type_stockist": "Solicitação de lojista",
       "type_general": "Geral",
-      "early_note": "Você está entrando no círculo interno — enviaremos seu código de 10% assim que a pré-venda abrir, em 25 de julho.",
+      "early_note": "Você está entrando no círculo interno — enviaremos seu código de 10% assim que a pré-venda abrir, em 22 de agosto.",
       "message": "Sua mensagem",
       "submit": "Enviar",
       "submit_early": "Entrar no acesso antecipado",
@@ -194,7 +194,7 @@
       "try_again": "Tentar novamente",
       "footer_note": "Responderemos em até 48 horas.",
       "success": "Enviado. Entraremos em contato em breve.",
-      "success_early": "Você está no círculo interno. Seu código de 10% chega assim que a pré-venda abrir — em 25 de julho."
+      "success_early": "Você está no círculo interno. Seu código de 10% chega assim que a pré-venda abrir — em 22 de agosto."
     }
   },
   "lookbook": {

@@ -17,7 +17,7 @@
     },
     "prelaunch": {
       "label": "Prelaunch",
-      "text": "Preordini aperti dal 25 luglio — Collezione disponibile dal 25 luglio 2026",
+      "text": "Preordini aperti dal 22 agosto — Collezione disponibile dal 22 agosto 2026",
       "cta": "Avvisami →"
     },
     "receipt": {
@@ -38,7 +38,7 @@
     },
     "notify": {
       "headline": "Sii la prima a saperlo.",
-      "sub": "Preordini aperti dal 25 luglio 2026. Lascia la tua e-mail, ti avviseremo appena aprono.",
+      "sub": "Preordini aperti dal 22 agosto 2026. Lascia la tua e-mail, ti avviseremo appena aprono.",
       "placeholder": "tua@email.com",
       "btn": "Avvisami"
     }
@@ -46,11 +46,11 @@
   "collection": {
     "label": "La Collezione",
     "headline": "Tre Abiti.",
-    "sub": "Ognuno fatto per essere guardato. Preordini aperti dal 25 luglio — Collezione disponibile dal 25 luglio 2026.",
+    "sub": "Ognuno fatto per essere guardato. Preordini aperti dal 22 agosto — Collezione disponibile dal 22 agosto 2026.",
     "view_dress": "Guarda l'abito ↓",
     "price_label": "Prezzo",
     "cta_inquire": "Richiedi info su questo abito",
-    "launch_note": "Preordini aperti dal 25 luglio — Disponibile dal 25 luglio 2026",
+    "launch_note": "Preordini aperti dal 22 agosto — Disponibile dal 22 agosto 2026",
     "pieces": {
       "pink": {
         "num": "01 — 03",
@@ -124,7 +124,7 @@
       "step3_text": "Il rouches sulla scollatura a cuore. Il laccio sul retro. La zip invisibile sul lato. Niente è lì per decorazione — ogni dettaglio ha un compito."
     },
     "cta_strip": {
-      "text": "Tre abiti. Preordini aperti dal 25 luglio — Collezione disponibile dal 25 luglio 2026.",
+      "text": "Tre abiti. Preordini aperti dal 22 agosto — Collezione disponibile dal 22 agosto 2026.",
       "cta_collection": "Scopri gli abiti →",
       "cta_lookbook": "Scopri il lookbook →"
     }
@@ -161,7 +161,7 @@
     "headline_2": "ne.",
     "sub": "Richieste stampa, conversazioni con rivenditori e curiosi appassionati: tutti benvenuti.",
     "preorder_label": "Preordine",
-    "preorder_val": "Apre il 25 luglio 2026 — Disponibile dal 25 luglio 2026",
+    "preorder_val": "Apre il 22 agosto 2026 — Disponibile dal 22 agosto 2026",
     "inquiries_label": "Richieste",
     "inquiries_val": "Usa il modulo — rispondiamo entro 48 ore",
     "stockists_label": "Rivenditori",
@@ -169,7 +169,7 @@
     "early_access": {
       "tag": "Cerchia Ristretta",
       "headline": "Ottienilo prima di tutti.",
-      "perk1": "Accesso al preordine dal <strong>25 luglio</strong> — prima del lancio pubblico",
+      "perk1": "Accesso al preordine dal <strong>22 agosto</strong> — prima del lancio pubblico",
       "perk2": "<strong>10% di sconto</strong> sul tuo primo abito, applicato al checkout",
       "nudge": "Seleziona \"Accesso anticipato\" nel modulo →"
     },
@@ -185,7 +185,7 @@
       "type_press": "Richiesta stampa",
       "type_stockist": "Richiesta rivenditore",
       "type_general": "Generale",
-      "early_note": "Stai entrando nella cerchia ristretta — ti invieremo il codice sconto del 10% appena aprono i preordini, il 25 luglio.",
+      "early_note": "Stai entrando nella cerchia ristretta — ti invieremo il codice sconto del 10% appena aprono i preordini, il 22 agosto.",
       "message": "Il tuo messaggio",
       "submit": "Invia",
       "submit_early": "Accesso anticipato",
@@ -194,7 +194,7 @@
       "try_again": "Riprova",
       "footer_note": "Ti risponderemo entro 48 ore.",
       "success": "Inviato. Ti ricontatteremo presto.",
-      "success_early": "Sei nella cerchia ristretta. Il tuo codice del 10% arriva appena aprono i preordini — il 25 luglio."
+      "success_early": "Sei nella cerchia ristretta. Il tuo codice del 10% arriva appena aprono i preordini — il 22 agosto."
     }
   },
   "lookbook": {

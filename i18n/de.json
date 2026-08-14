@@ -17,7 +17,7 @@
     },
     "prelaunch": {
       "label": "Prelaunch",
-      "text": "Vorbestellung ab 25. Juli — Kollektion erscheint am 25. Juli 2026",
+      "text": "Vorbestellung ab 22. August — Kollektion erscheint am 22. August 2026",
       "cta": "Benachrichtigen →"
     },
     "receipt": {
@@ -38,7 +38,7 @@
     },
     "notify": {
       "headline": "Erfahre es als Erste.",
-      "sub": "Vorbestellung ab 25. Juli 2026. Hinterlasse deine E-Mail, wir sagen dir sofort Bescheid.",
+      "sub": "Vorbestellung ab 22. August 2026. Hinterlasse deine E-Mail, wir sagen dir sofort Bescheid.",
       "placeholder": "deine@email.com",
       "btn": "Benachrichtigen"
     }
@@ -46,11 +46,11 @@
   "collection": {
     "label": "Die Kollektion",
     "headline": "Drei Kleider.",
-    "sub": "Jedes gemacht, um angestarrt zu werden. Vorbestellung ab 25. Juli — Kollektion erscheint am 25. Juli 2026.",
+    "sub": "Jedes gemacht, um angestarrt zu werden. Vorbestellung ab 22. August — Kollektion erscheint am 22. August 2026.",
     "view_dress": "Kleid ansehen ↓",
     "price_label": "Preis",
     "cta_inquire": "Zu diesem Kleid anfragen",
-    "launch_note": "Vorbestellung ab 25. Juli — Erscheint am 25. Juli 2026",
+    "launch_note": "Vorbestellung ab 22. August — Erscheint am 22. August 2026",
     "pieces": {
       "pink": {
         "num": "01 — 03",
@@ -124,7 +124,7 @@
       "step3_text": "Die Rüsche am Herzausschnitt. Die Schnürung am Rücken. Der unsichtbare Reißverschluss an der Seite. Nichts ist bloße Dekoration — jedes Detail hat eine Aufgabe."
     },
     "cta_strip": {
-      "text": "Drei Kleider. Vorbestellung ab 25. Juli — Kollektion erscheint am 25. Juli 2026.",
+      "text": "Drei Kleider. Vorbestellung ab 22. August — Kollektion erscheint am 22. August 2026.",
       "cta_collection": "Kleider ansehen →",
       "cta_lookbook": "Lookbook entdecken →"
     }
@@ -161,7 +161,7 @@
     "headline_2": "reden.",
     "sub": "Presseanfragen, Gespräche mit Händlern und alle, die einfach neugierig sind — herzlich willkommen.",
     "preorder_label": "Vorbestellung",
-    "preorder_val": "Ab 25. Juli 2026 — Erscheint am 25. Juli 2026",
+    "preorder_val": "Ab 22. August 2026 — Erscheint am 22. August 2026",
     "inquiries_label": "Anfragen",
     "inquiries_val": "Nutze das Formular — wir antworten innerhalb von 48 Stunden",
     "stockists_label": "Händler",
@@ -169,7 +169,7 @@
     "early_access": {
       "tag": "Inner Circle",
       "headline": "Hol es dir vor allen anderen.",
-      "perk1": "Vorbestellzugang ab dem <strong>25. Juli</strong> — vor dem öffentlichen Verkaufsstart",
+      "perk1": "Vorbestellzugang ab dem <strong>22. August</strong> — vor dem öffentlichen Verkaufsstart",
       "perk2": "<strong>10 % Rabatt</strong> auf dein erstes Kleid, direkt an der Kasse",
       "nudge": "Wähle im Formular „Früher Zugang“ →"
     },
@@ -185,7 +185,7 @@
       "type_press": "Presseanfrage",
       "type_stockist": "Händleranfrage",
       "type_general": "Allgemein",
-      "early_note": "Du trittst dem Inner Circle bei — deinen 15-%-Code schicken wir dir, sobald die Vorbestellung am 25. Juli öffnet.",
+      "early_note": "Du trittst dem Inner Circle bei — deinen 10-%-Code schicken wir dir, sobald die Vorbestellung am 22. August öffnet.",
       "message": "Deine Nachricht",
       "submit": "Absenden",
       "submit_early": "Frühen Zugang sichern",
@@ -194,7 +194,7 @@
       "try_again": "Erneut versuchen",
       "footer_note": "Wir melden uns innerhalb von 48 Stunden.",
       "success": "Gesendet. Wir melden uns bald.",
-      "success_early": "Du bist im Inner Circle. Dein 15-%-Code kommt, sobald die Vorbestellung öffnet — am 25. Juli."
+      "success_early": "Du bist im Inner Circle. Dein 10-%-Code kommt, sobald die Vorbestellung öffnet — am 22. August."
     }
   },
   "lookbook": {

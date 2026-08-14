@@ -17,7 +17,7 @@
     },
     "prelaunch": {
       "label": "Avant-lancement",
-      "text": "Précommandes ouvertes le 25 juillet — Collection disponible le 25 juillet 2026",
+      "text": "Précommandes ouvertes le 22 août — Collection disponible le 22 août 2026",
       "cta": "M'avertir →"
     },
     "receipt": {
@@ -38,7 +38,7 @@
     },
     "notify": {
       "headline": "Soyez la première informée.",
-      "sub": "Précommandes ouvertes le 25 juillet 2026. Laissez votre e-mail, on vous prévient dès l'ouverture.",
+      "sub": "Précommandes ouvertes le 22 août 2026. Laissez votre e-mail, on vous prévient dès l'ouverture.",
       "placeholder": "votre@email.com",
       "btn": "M'avertir"
     }
@@ -46,11 +46,11 @@
   "collection": {
     "label": "La Collection",
     "headline": "Trois Robes.",
-    "sub": "Chacune faite pour qu'on la regarde. Précommandes ouvertes le 25 juillet — Collection disponible le 25 juillet 2026.",
+    "sub": "Chacune faite pour qu'on la regarde. Précommandes ouvertes le 22 août — Collection disponible le 22 août 2026.",
     "view_dress": "Voir la robe ↓",
     "price_label": "Prix",
     "cta_inquire": "Se renseigner sur cette robe",
-    "launch_note": "Précommandes ouvertes le 25 juillet — Disponible le 25 juillet 2026",
+    "launch_note": "Précommandes ouvertes le 22 août — Disponible le 22 août 2026",
     "pieces": {
       "pink": {
         "num": "01 — 03",
@@ -124,7 +124,7 @@
       "step3_text": "Le volant au décolleté cœur. Le laçage dans le dos. La fermeture éclair invisible sur le côté. Rien n'est là pour décorer — chaque détail a un rôle."
     },
     "cta_strip": {
-      "text": "Trois robes. Précommandes ouvertes le 25 juillet — Collection disponible le 25 juillet 2026.",
+      "text": "Trois robes. Précommandes ouvertes le 22 août — Collection disponible le 22 août 2026.",
       "cta_collection": "Voir les robes →",
       "cta_lookbook": "Découvrir le lookbook →"
     }
@@ -161,7 +161,7 @@
     "headline_2": "en.",
     "sub": "Demandes presse, échanges revendeurs, et curieux en tous genres bienvenus.",
     "preorder_label": "Précommande",
-    "preorder_val": "Ouverture le 25 juillet 2026 — Disponible le 25 juillet 2026",
+    "preorder_val": "Ouverture le 22 août 2026 — Disponible le 22 août 2026",
     "inquiries_label": "Demandes",
     "inquiries_val": "Utilisez le formulaire — réponse sous 48 heures",
     "stockists_label": "Revendeurs",
@@ -169,7 +169,7 @@
     "early_access": {
       "tag": "Cercle Privé",
       "headline": "Obtenez-la avant tout le monde.",
-      "perk1": "Accès précommande dès le <strong>25 juillet</strong> — avant l'ouverture publique",
+      "perk1": "Accès précommande dès le <strong>22 août</strong> — avant l'ouverture publique",
       "perk2": "<strong>10% de réduction</strong> sur votre première robe, appliqué au paiement",
       "nudge": "Sélectionnez « Rejoindre l'accès anticipé » dans le formulaire →"
     },
@@ -185,7 +185,7 @@
       "type_press": "Demande presse",
       "type_stockist": "Demande revendeur",
       "type_general": "Général",
-      "early_note": "Vous rejoignez le cercle privé — votre code de réduction de 10% arrive dès l'ouverture des précommandes le 25 juillet.",
+      "early_note": "Vous rejoignez le cercle privé — votre code de réduction de 10% arrive dès l'ouverture des précommandes le 22 août.",
       "message": "Votre message",
       "submit": "Envoyer",
       "submit_early": "Rejoindre l'accès anticipé",
@@ -194,7 +194,7 @@
       "try_again": "Réessayer",
       "footer_note": "Nous vous répondrons sous 48 heures.",
       "success": "Envoyé. Nous vous répondrons bientôt.",
-      "success_early": "Vous êtes dans le cercle privé. Votre code de 10% arrive dès l'ouverture des précommandes — le 25 juillet."
+      "success_early": "Vous êtes dans le cercle privé. Votre code de 10% arrive dès l'ouverture des précommandes — le 22 août."
     }
   },
   "lookbook": {
