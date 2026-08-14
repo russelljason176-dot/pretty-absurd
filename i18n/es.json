@@ -170,7 +170,7 @@
       "tag": "Círculo Interno",
       "headline": "Consíguelo antes que nadie.",
       "perk1": "Acceso a pedidos anticipados el <strong>25 de julio</strong> — antes del lanzamiento público",
-      "perk2": "<strong>15% de descuento</strong> en tu primer vestido, aplicado al pagar",
+      "perk2": "<strong>10% de descuento</strong> en tu primer vestido, aplicado al pagar",
       "nudge": "Selecciona \"Unirme al acceso anticipado\" en el formulario →"
     },
     "form": {
@@ -179,13 +179,13 @@
       "country": "País",
       "type": "¿De qué se trata?",
       "type_choose": "Elige una opción",
-      "type_early": "Unirme al acceso anticipado — 15% de descuento",
+      "type_early": "Unirme al acceso anticipado — 10% de descuento",
       "type_notify": "Avisarme cuando abran los pedidos",
       "type_dress": "Consulta sobre un vestido",
       "type_press": "Consulta de prensa",
       "type_stockist": "Consulta de tienda",
       "type_general": "General",
-      "early_note": "Te estás uniendo al círculo interno — te enviaremos tu código del 15% en cuanto abran los pedidos anticipados, el 25 de julio.",
+      "early_note": "Te estás uniendo al círculo interno — te enviaremos tu código del 10% en cuanto abran los pedidos anticipados, el 25 de julio.",
       "message": "Tu mensaje",
       "submit": "Enviar",
       "submit_early": "Unirme al acceso anticipado",
@@ -194,7 +194,7 @@
       "try_again": "Intentar de nuevo",
       "footer_note": "Te responderemos en un plazo de 48 horas.",
       "success": "Enviado. Te contactaremos pronto.",
-      "success_early": "Ya estás en el círculo interno. Tu código del 15% llega en cuanto abran los pedidos anticipados — el 25 de julio."
+      "success_early": "Ya estás en el círculo interno. Tu código del 10% llega en cuanto abran los pedidos anticipados — el 25 de julio."
     }
   },
   "lookbook": {

@@ -170,7 +170,7 @@
       "tag": "Inner Circle",
       "headline": "Hol es dir vor allen anderen.",
       "perk1": "Vorbestellzugang ab dem <strong>25. Juli</strong> — vor dem öffentlichen Verkaufsstart",
-      "perk2": "<strong>15 % Rabatt</strong> auf dein erstes Kleid, direkt an der Kasse",
+      "perk2": "<strong>10 % Rabatt</strong> auf dein erstes Kleid, direkt an der Kasse",
       "nudge": "Wähle im Formular „Früher Zugang“ →"
     },
     "form": {
@@ -179,7 +179,7 @@
       "country": "Land",
       "type": "Worum geht es?",
       "type_choose": "Bitte wählen",
-      "type_early": "Früher Zugang — 15 % Rabatt",
+      "type_early": "Früher Zugang — 10 % Rabatt",
       "type_notify": "Benachrichtigen, sobald Bestellungen möglich sind",
       "type_dress": "Anfrage zu einem Kleid",
       "type_press": "Presseanfrage",

@@ -170,7 +170,7 @@
       "tag": "Cerchia Ristretta",
       "headline": "Ottienilo prima di tutti.",
       "perk1": "Accesso al preordine dal <strong>25 luglio</strong> — prima del lancio pubblico",
-      "perk2": "<strong>15% di sconto</strong> sul tuo primo abito, applicato al checkout",
+      "perk2": "<strong>10% di sconto</strong> sul tuo primo abito, applicato al checkout",
       "nudge": "Seleziona \"Accesso anticipato\" nel modulo →"
     },
     "form": {
@@ -179,13 +179,13 @@
       "country": "Paese",
       "type": "Di cosa si tratta?",
       "type_choose": "Scegli un'opzione",
-      "type_early": "Accesso anticipato — 15% di sconto",
+      "type_early": "Accesso anticipato — 10% di sconto",
       "type_notify": "Avvisami all'apertura degli ordini",
       "type_dress": "Richiesta su un abito",
       "type_press": "Richiesta stampa",
       "type_stockist": "Richiesta rivenditore",
       "type_general": "Generale",
-      "early_note": "Stai entrando nella cerchia ristretta — ti invieremo il codice sconto del 15% appena aprono i preordini, il 25 luglio.",
+      "early_note": "Stai entrando nella cerchia ristretta — ti invieremo il codice sconto del 10% appena aprono i preordini, il 25 luglio.",
       "message": "Il tuo messaggio",
       "submit": "Invia",
       "submit_early": "Accesso anticipato",
@@ -194,7 +194,7 @@
       "try_again": "Riprova",
       "footer_note": "Ti risponderemo entro 48 ore.",
       "success": "Inviato. Ti ricontatteremo presto.",
-      "success_early": "Sei nella cerchia ristretta. Il tuo codice del 15% arriva appena aprono i preordini — il 25 luglio."
+      "success_early": "Sei nella cerchia ristretta. Il tuo codice del 10% arriva appena aprono i preordini — il 25 luglio."
     }
   },
   "lookbook": {

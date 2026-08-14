@@ -170,7 +170,7 @@
       "tag": "Cercle Privé",
       "headline": "Obtenez-la avant tout le monde.",
       "perk1": "Accès précommande dès le <strong>25 juillet</strong> — avant l'ouverture publique",
-      "perk2": "<strong>15% de réduction</strong> sur votre première robe, appliqué au paiement",
+      "perk2": "<strong>10% de réduction</strong> sur votre première robe, appliqué au paiement",
       "nudge": "Sélectionnez « Rejoindre l'accès anticipé » dans le formulaire →"
     },
     "form": {
@@ -179,13 +179,13 @@
       "country": "Pays",
       "type": "De quoi s'agit-il ?",
       "type_choose": "Choisissez une option",
-      "type_early": "Rejoindre l'accès anticipé — 15% de réduction",
+      "type_early": "Rejoindre l'accès anticipé — 10% de réduction",
       "type_notify": "M'avertir à l'ouverture des commandes",
       "type_dress": "Question sur une robe",
       "type_press": "Demande presse",
       "type_stockist": "Demande revendeur",
       "type_general": "Général",
-      "early_note": "Vous rejoignez le cercle privé — votre code de réduction de 15% arrive dès l'ouverture des précommandes le 25 juillet.",
+      "early_note": "Vous rejoignez le cercle privé — votre code de réduction de 10% arrive dès l'ouverture des précommandes le 25 juillet.",
       "message": "Votre message",
       "submit": "Envoyer",
       "submit_early": "Rejoindre l'accès anticipé",
@@ -194,7 +194,7 @@
       "try_again": "Réessayer",
       "footer_note": "Nous vous répondrons sous 48 heures.",
       "success": "Envoyé. Nous vous répondrons bientôt.",
-      "success_early": "Vous êtes dans le cercle privé. Votre code de 15% arrive dès l'ouverture des précommandes — le 25 juillet."
+      "success_early": "Vous êtes dans le cercle privé. Votre code de 10% arrive dès l'ouverture des précommandes — le 25 juillet."
     }
   },
   "lookbook": {

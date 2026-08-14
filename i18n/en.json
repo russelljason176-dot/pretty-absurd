@@ -169,7 +169,7 @@
       "tag": "Inner Circle",
       "headline": "Get her before everyone else.",
       "perk1": "Pre-order access opens <strong>25 July</strong> — before the public drop",
-      "perk2": "<strong>15% off</strong> your first dress, applied at checkout",
+      "perk2": "<strong>10% off</strong> your first dress, applied at checkout",
       "nudge": "Select \"Join early access\" in the form →"
     },
     "form": {
@@ -178,13 +178,13 @@
       "country": "Country",
       "type": "What is this about?",
       "type_choose": "Choose one",
-      "type_early": "Join early access — 15% off",
+      "type_early": "Join early access — 10% off",
       "type_notify": "Notify me when orders open",
       "type_dress": "Dress inquiry",
       "type_press": "Press inquiry",
       "type_stockist": "Stockist inquiry",
       "type_general": "General",
-      "early_note": "You're joining the inner circle — we'll send your 15% code the moment pre-orders open on 25 July.",
+      "early_note": "You're joining the inner circle — we'll send your 10% code the moment pre-orders open on 25 July.",
       "message": "Your message",
       "submit": "Send it",
       "submit_early": "Join early access",
@@ -193,7 +193,7 @@
       "try_again": "Try again",
       "footer_note": "We'll be in touch within 48 hours.",
       "success": "Sent. We'll be in touch soon.",
-      "success_early": "You're in the inner circle. Your 15% code arrives the moment pre-orders open — 25 July."
+      "success_early": "You're in the inner circle. Your 10% code arrives the moment pre-orders open — 25 July."
     }
   },
   "lookbook": {
