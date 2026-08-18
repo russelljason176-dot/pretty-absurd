@@ -496,6 +496,9 @@
   transition: transform .8s cubic-bezier(.2, .72, .2, 1);
   box-shadow: 0 10px 26px rgba(0,0,0,.14);
 }
+#pa-lookbook-overlay .lb-leaf.lb-noTransition {
+  transition: none;
+}
 #pa-lookbook-overlay .lb-face {
   position: absolute;
   inset: 0;

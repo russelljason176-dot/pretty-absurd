@@ -126,9 +126,11 @@
 }
 
 .home-hero__cta--ghost {
-  background: transparent;
+  background: rgba(17, 17, 17, 0.22);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
   color: var(--cream);
-  border: 1px solid rgba(247, 242, 238, 0.4);
+  border: 1px solid rgba(247, 242, 238, 0.55);
   will-change: transform;
   transition:
     transform 0.45s cubic-bezier(0.25, 0.46, 0.45, 0.94),

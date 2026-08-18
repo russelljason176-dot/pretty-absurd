@@ -364,6 +364,7 @@
         var flipped = i < c;
         leaf.style.transform = 'rotateY(' + (flipped ? -180 : 0) + 'deg)';
         leaf.style.zIndex = flipped ? i : (100 - i);
+        leaf.classList.toggle('lb-noTransition', !reading);
         leaf.style.animation = reading ? 'none' : ('lbRiffle 3.6s ' + (i * 0.16).toFixed(2) + 's infinite');
       });
 
@@ -397,6 +398,7 @@
       book.style.transform = 'translateX(0px)';
 
       leaves.forEach(function(leaf, i){
+        leaf.classList.add('lb-noTransition');
         leaf.style.transform = 'rotateY(0deg)';
         leaf.style.zIndex = leaves.length - i;
         leaf.style.animation = 'lbRiffle 1s ' + (i * 0.16).toFixed(2) + 's 1 both';
@@ -404,7 +406,10 @@
 
       var duration = (leaves.length * 0.16 + 1) * 1000;
       setTimeout(function(){
-        leaves.forEach(function(leaf){ leaf.style.animation = 'none'; });
+        leaves.forEach(function(leaf){
+          leaf.style.animation = 'none';
+          leaf.classList.remove('lb-noTransition');
+        });
         state.mode = 'reading';
         render();
       }, duration);
