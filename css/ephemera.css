@@ -116,25 +116,6 @@
    Slot 1 — Receipt card
    ============================================================ */
 
-/* Print-out reveal: receipt starts clipped away (as if still inside
-   the printer) and grows downward into view once scrolled to. The
-   generous horizontal/bottom allowance keeps the card's own
-   drop-shadow from being clipped once fully "printed". */
-.pa-receipt-print {
-  clip-path: inset(-10px -50px 100% -50px);
-  transition: clip-path 0.45s cubic-bezier(.36, .07, .19, 1);
-  will-change: clip-path;
-}
-.pa-receipt-print.is-printed {
-  clip-path: inset(-10px -50px -60px -50px);
-}
-@media (prefers-reduced-motion: reduce) {
-  .pa-receipt-print {
-    clip-path: none !important;
-    transition: none;
-  }
-}
-
 .pa-receipt {
   position: relative; display: block; width: 300px; box-sizing: border-box;
   background: #ffffff; color: #171717; text-decoration: none;
