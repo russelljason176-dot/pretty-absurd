@@ -62,7 +62,6 @@ function initActiveNav() {
     lookbook:      ['lookbook.html'],
     collection:    ['collection.html'],
     about:         ['about.html'],
-    'brand-world': ['brand-world.html'],
     contact:       ['contact.html'],
   };
   const targets = map[page] || [];
@@ -161,6 +160,25 @@ function initPrices() {
 /* === Reveal on scroll === */
 function initReveal() {
   observeReveal('.reveal-item', { threshold: 0.1 });
+}
+
+/* === Receipt "prints out" once scrolled into view === */
+function initReceiptPrint() {
+  const el = document.querySelector('.pa-receipt-print');
+  if (!el) return;
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    el.classList.add('is-printed');
+    return;
+  }
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.classList.add('is-printed');
+        io.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.2 });
+  io.observe(el);
 }
 
 /* === Zine / magazine flip-through === */
@@ -375,6 +393,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initStickerParallax();
   initPrices();
   initReveal();
+  initReceiptPrint();
   initMagneticButton();
   initCursor();
   initLookbookOverlay();

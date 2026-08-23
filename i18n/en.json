@@ -5,7 +5,6 @@
     "lookbook": "Lookbook",
     "collection": "The Dresses",
     "about": "About",
-    "brandWorld": "Brand World",
     "contact": "Contact"
   },
   "home": {
@@ -15,9 +14,9 @@
       "cta_collection": "See the dresses"
     },
     "prelaunch": {
-      "label": "Prelaunch",
-      "text": "Pre-ordering opens 22 August — Collection drops 22 August 2026",
-      "cta": "Notify me →"
+      "label": "Now Live",
+      "text": "Preordering is open — launched 22 August 2026",
+      "cta": "Preorder now →"
     },
     "receipt": {
       "brand": "PRETTY ABSURD",
@@ -25,9 +24,14 @@
       "blue": "The Ice Blue",
       "dot": "The Polka Dot",
       "total": "TOTAL",
-      "status_line": "STATUS … coming soon<br>WAITLIST … now open",
-      "cta_main": "TAP TO RESERVE HER",
-      "cta_sub": "join the waitlist — xo"
+      "status_line": "STATUS … now open<br>PREORDER … now open",
+      "cta_main": "TAP TO PREORDER",
+      "cta_sub": "join the preorder — xo"
+    },
+    "shop": {
+      "label": "The Collection",
+      "headline": "Three Dresses. Nine Looks.",
+      "cta": "See the full collection →"
     },
     "designer": {
       "label": "The Designer",
@@ -36,20 +40,20 @@
       "cta": "Read her story →"
     },
     "notify": {
-      "headline": "Be first to know.",
-      "sub": "Pre-ordering opens 22 August 2026. Leave your email and we'll tell you the moment it does.",
+      "headline": "Don't miss a drop.",
+      "sub": "Preordering is open now. Leave your email and we'll keep you posted on new drops and restocks.",
       "placeholder": "your@email.com",
-      "btn": "Notify me"
+      "btn": "Keep me posted"
     }
   },
   "collection": {
     "label": "The Collection",
     "headline": "Three Dresses.",
-    "sub": "Each one made to be stared at. Pre-ordering opens 22 August — Collection drops 22 August 2026.",
+    "sub": "Each one made to be stared at. Preordering is open now.",
     "view_dress": "View the dress ↓",
     "price_label": "Price",
     "cta_inquire": "Inquire about this dress",
-    "launch_note": "Pre-ordering opens 22 August — Drops 22 August 2026",
+    "launch_note": "Preordering is open now",
     "pieces": {
       "pink": {
         "num": "01 — 03",
@@ -123,77 +127,40 @@
       "step3_text": "A ruffle finishes the sweetheart neckline, lacing runs up the back, and the zip stays invisible at the side."
     },
     "cta_strip": {
-      "text": "Three dresses. Pre-order opens 22 August. Collection drops the same day.",
+      "text": "Three dresses. Preordering is open now.",
       "cta_collection": "See the dresses →",
       "cta_lookbook": "Enter the lookbook →"
     }
-  },
-  "brandWorld": {
-    "label": "Brand World",
-    "headline_1": "The Universe of",
-    "headline_2": "Pretty Absurd.",
-    "intro": "Polka dots on subways. Grass in living rooms. A perfectly pressed dress in an entirely wrong place. This is the world the clothes come from.",
-    "manifesto": {
-      "one": "The dress that doesn't match the setting. The fabric too beautiful for the occasion. The silhouette that stops the room. Nobody plans to remember an outfit. Pretty Absurd makes sure they do.",
-      "two": "The references are everywhere: Marilyn Monroe on a subway grate, Barbie in a dream house that isn't quite right, a Vogue editorial shot in a place Vogue would never go. Pretty Absurd borrows from all of it — and puts it in a corset.",
-      "three": "This isn't fashion that wants to disappear into the wardrobe. It wants to be worn, looked at, and worn again."
-    },
-    "captions": {
-      "dot_subway": "Polka dots on a subway — Issue 01",
-      "pink_butterfly": "Pink Satin — detail",
-      "blue_armchair": "Ice Blue — retro setting",
-      "pink_street": "Pink Satin — street",
-      "dot_highway": "Polka Dot — highway lounger",
-      "blue_newspaper": "Ice Blue — editorial",
-      "blue_playful": "Ice Blue — Issue 01",
-      "dot_crosswalk": "Polka Dot — crosswalk B&W",
-      "dot_navy": "Polka Dot — portrait"
-    },
-    "quote": "\"Dresses made to be stared at.\"",
-    "quote_attr": "— Pretty Absurd, SS26",
-    "cta_lookbook": "Enter the lookbook →",
-    "cta_collection": "See the collection →"
   },
   "contact": {
     "label": "Get in Touch",
     "headline_1": "Let's",
     "headline_2": "Talk.",
     "sub": "Press inquiries, stockist conversations, and general obsessives all welcome.",
-    "preorder_label": "Pre-order",
-    "preorder_val": "Opens 22 August 2026 — Drops 22 August 2026",
+    "preorder_label": "Preorder",
+    "preorder_val": "Open now",
     "inquiries_label": "Inquiries",
     "inquiries_val": "Use the form — we respond within 48 hours",
     "stockists_label": "Stockists",
     "stockists_val": "Currently accepting enquiries",
-    "early_access": {
-      "tag": "Inner Circle",
-      "headline": "Get her before everyone else.",
-      "perk1": "Pre-order access opens <strong>22 August</strong> — before the public drop",
-      "perk2": "<strong>10% off</strong> your first dress, applied at checkout",
-      "nudge": "Select \"Join early access\" in the form →"
-    },
     "form": {
       "name": "Your name",
       "email": "Email address",
       "country": "Country",
       "type": "What is this about?",
       "type_choose": "Choose one",
-      "type_early": "Join early access — 10% off",
-      "type_notify": "Notify me when orders open",
+      "type_notify": "Preorder a dress",
       "type_dress": "Dress inquiry",
       "type_press": "Press inquiry",
       "type_stockist": "Stockist inquiry",
       "type_general": "General",
-      "early_note": "You're joining the inner circle — we'll send your 10% code the moment pre-orders open on 22 August.",
       "message": "Your message",
       "submit": "Send it",
-      "submit_early": "Join early access",
       "sending": "Sending…",
       "sent": "Sent",
       "try_again": "Try again",
       "footer_note": "We'll be in touch within 48 hours.",
-      "success": "Sent. We'll be in touch soon.",
-      "success_early": "You're in the inner circle. Your 10% code arrives the moment pre-orders open — 22 August."
+      "success": "Sent. We'll be in touch soon."
     }
   },
   "lookbook": {
@@ -219,7 +186,7 @@
       "item4": "the dress",
       "item5": "craft & cloth",
       "item6": "the campaign",
-      "item7": "reserve her — the waitlist"
+      "item7": "reserve her — preorder now"
     },
     "letter": {
       "title": "from Kaylah…",
@@ -262,14 +229,14 @@
       "reserve_title": "Reserve",
       "reserve_title2": "Her.",
       "reserve_body": "she is made to order, in limited numbers. there is no queue, no drama — just her, held for you until the moment she's yours.",
-      "preorder_tag": "PRE-ORDER — 22 AUGUST 2026",
-      "preorder_note": "Join the waitlist and be<br>first in line when the drop opens."
+      "preorder_tag": "PRE-ORDER — OPEN NOW",
+      "preorder_note": "Preordering is open —<br>get yours before she's gone."
     },
     "waitlist": {
-      "tag": "THE WAITLIST",
+      "tag": "THE PREORDER",
       "title": "reserve her…",
       "the_dress": "THE DRESS",
-      "cta_waitlist": "JOIN THE WAITLIST →",
+      "cta_waitlist": "PRE-ORDER NOW →",
       "cta_collection": "SHOP THE COLLECTION →",
       "back_tagline": "pretty. absurd. hers.",
       "back_footer": "PRETTY ABSURD — SS26 — ISSUE №01"

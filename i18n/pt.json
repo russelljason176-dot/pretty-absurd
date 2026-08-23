@@ -6,7 +6,6 @@
     "lookbook": "Lookbook",
     "collection": "Os Vestidos",
     "about": "Sobre",
-    "brandWorld": "Universo da Marca",
     "contact": "Contato"
   },
   "home": {
@@ -16,8 +15,8 @@
       "cta_collection": "Ver os vestidos"
     },
     "prelaunch": {
-      "label": "Pré-lançamento",
-      "text": "Pré-venda abre em 22 de agosto — Coleção chega em 22 de agosto de 2026",
+      "label": "Lançamento",
+      "text": "Pré-venda abre em 22 de agosto de 2026",
       "cta": "Avise-me →"
     },
     "receipt": {
@@ -26,9 +25,14 @@
       "blue": "O Azul Gelo",
       "dot": "A Poá",
       "total": "TOTAL",
-      "status_line": "STATUS … em breve<br>LISTA DE ESPERA … aberta",
-      "cta_main": "TOQUE PARA RESERVAR",
-      "cta_sub": "entrar na lista de espera — xo"
+      "status_line": "STATUS … aberto<br>PRÉ-VENDA … aberta",
+      "cta_main": "TOQUE PARA PRÉ-ENCOMENDAR",
+      "cta_sub": "entrar na pré-venda — xo"
+    },
+    "shop": {
+      "label": "A Coleção",
+      "headline": "Três Vestidos. Nove Looks.",
+      "cta": "Ver a coleção completa →"
     },
     "designer": {
       "label": "A Estilista",
@@ -129,32 +133,6 @@
       "cta_lookbook": "Entrar no lookbook →"
     }
   },
-  "brandWorld": {
-    "label": "Universo da Marca",
-    "headline_1": "O Universo da",
-    "headline_2": "Pretty Absurd.",
-    "intro": "Poás no metrô. Grama na sala de estar. Um vestido perfeitamente passado no lugar totalmente errado. Este é o mundo de onde vêm essas roupas.",
-    "manifesto": {
-      "one": "O vestido que não combina com o ambiente. O tecido bom demais para a ocasião. A silhueta que para a sala. Ninguém planeja lembrar de um look. A Pretty Absurd garante que isso aconteça.",
-      "two": "As referências estão em todo lugar: Marilyn Monroe sobre uma grade de metrô, Barbie em uma casa dos sonhos um pouco torta, um editorial da Vogue fotografado onde a Vogue jamais iria. A Pretty Absurd pega emprestado de tudo isso — e coloca dentro de um corpete.",
-      "three": "Essa não é uma moda que quer desaparecer no armário. Ela quer ser usada, admirada, e usada de novo."
-    },
-    "captions": {
-      "dot_subway": "Poás no metrô — Edição 01",
-      "pink_butterfly": "Cetim Rosa — detalhe",
-      "blue_armchair": "Azul Gelo — cenário retrô",
-      "pink_street": "Cetim Rosa — rua",
-      "dot_highway": "A Poá — espreguiçadeira na estrada",
-      "blue_newspaper": "Azul Gelo — editorial",
-      "blue_playful": "Azul Gelo — Edição 01",
-      "dot_crosswalk": "A Poá — faixa de pedestre P&B",
-      "dot_navy": "A Poá — retrato"
-    },
-    "quote": "\"Vestidos feitos para serem admirados.\"",
-    "quote_attr": "— Pretty Absurd, SS26",
-    "cta_lookbook": "Entrar no lookbook →",
-    "cta_collection": "Ver a coleção →"
-  },
   "contact": {
     "label": "Fale Conosco",
     "headline_1": "Vamos",
@@ -166,35 +144,24 @@
     "inquiries_val": "Use o formulário — respondemos em até 48 horas",
     "stockists_label": "Lojistas",
     "stockists_val": "Aceitando solicitações no momento",
-    "early_access": {
-      "tag": "Círculo Interno",
-      "headline": "Garanta antes de todo mundo.",
-      "perk1": "Acesso à pré-venda em <strong>22 de agosto</strong> — antes do lançamento público",
-      "perk2": "<strong>10% de desconto</strong> no seu primeiro vestido, aplicado no checkout",
-      "nudge": "Selecione \"Entrar no acesso antecipado\" no formulário →"
-    },
     "form": {
       "name": "Seu nome",
       "email": "E-mail",
       "country": "País",
       "type": "Sobre o que é isso?",
       "type_choose": "Escolha uma opção",
-      "type_early": "Entrar no acesso antecipado — 10% de desconto",
       "type_notify": "Avisar quando os pedidos abrirem",
       "type_dress": "Dúvida sobre um vestido",
       "type_press": "Solicitação de imprensa",
       "type_stockist": "Solicitação de lojista",
       "type_general": "Geral",
-      "early_note": "Você está entrando no círculo interno — enviaremos seu código de 10% assim que a pré-venda abrir, em 22 de agosto.",
       "message": "Sua mensagem",
       "submit": "Enviar",
-      "submit_early": "Entrar no acesso antecipado",
       "sending": "Enviando…",
       "sent": "Enviado",
       "try_again": "Tentar novamente",
       "footer_note": "Responderemos em até 48 horas.",
-      "success": "Enviado. Entraremos em contato em breve.",
-      "success_early": "Você está no círculo interno. Seu código de 10% chega assim que a pré-venda abrir — em 22 de agosto."
+      "success": "Enviado. Entraremos em contato em breve."
     }
   },
   "lookbook": {

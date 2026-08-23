@@ -6,7 +6,6 @@
     "lookbook": "Lookbook",
     "collection": "Die Kleider",
     "about": "Über uns",
-    "brandWorld": "Markenwelt",
     "contact": "Kontakt"
   },
   "home": {
@@ -16,8 +15,8 @@
       "cta_collection": "Kleider ansehen"
     },
     "prelaunch": {
-      "label": "Prelaunch",
-      "text": "Vorbestellung ab 22. August — Kollektion erscheint am 22. August 2026",
+      "label": "Launch",
+      "text": "Vorbestellung ab 22. August 2026",
       "cta": "Benachrichtigen →"
     },
     "receipt": {
@@ -26,9 +25,14 @@
       "blue": "Das Eisblau",
       "dot": "Das Tupfenkleid",
       "total": "GESAMT",
-      "status_line": "STATUS … demnächst<br>WARTELISTE … jetzt offen",
-      "cta_main": "TIPPEN, UM ES ZU RESERVIEREN",
-      "cta_sub": "zur Warteliste — xo"
+      "status_line": "STATUS … jetzt offen<br>VORBESTELLUNG … jetzt offen",
+      "cta_main": "TIPPEN, UM VORZUBESTELLEN",
+      "cta_sub": "zur Vorbestellung — xo"
+    },
+    "shop": {
+      "label": "Die Kollektion",
+      "headline": "Drei Kleider. Neun Looks.",
+      "cta": "Die ganze Kollektion ansehen →"
     },
     "designer": {
       "label": "Die Designerin",
@@ -129,32 +133,6 @@
       "cta_lookbook": "Lookbook entdecken →"
     }
   },
-  "brandWorld": {
-    "label": "Markenwelt",
-    "headline_1": "Das Universum von",
-    "headline_2": "Pretty Absurd.",
-    "intro": "Tupfen in der U-Bahn. Gras im Wohnzimmer. Ein perfekt gebügeltes Kleid am komplett falschen Ort. Das ist die Welt, aus der diese Kleider stammen.",
-    "manifesto": {
-      "one": "Das Kleid, das nicht zum Rahmen passt. Der Stoff, der zu schön ist für den Anlass. Die Silhouette, die den Raum verstummen lässt. Niemand plant, sich an ein Outfit zu erinnern. Pretty Absurd sorgt dafür, dass es trotzdem passiert.",
-      "two": "Die Referenzen sind überall: Marilyn Monroe über einem U-Bahn-Gitter, Barbie in einem Traumhaus, das nicht ganz stimmt, ein Vogue-Editorial an einem Ort, an den Vogue nie gehen würde. Pretty Absurd leiht sich von allem etwas — und steckt es in ein Korsett.",
-      "three": "Das ist keine Mode, die im Kleiderschrank verschwinden will. Sie will getragen, angeschaut und wieder getragen werden."
-    },
-    "captions": {
-      "dot_subway": "Tupfen in der U-Bahn — Ausgabe 01",
-      "pink_butterfly": "Rosa Satin — Detail",
-      "blue_armchair": "Eisblau — Retro-Setting",
-      "pink_street": "Rosa Satin — Straße",
-      "dot_highway": "Tupfenkleid — Liegestuhl an der Autobahn",
-      "blue_newspaper": "Eisblau — Editorial",
-      "blue_playful": "Eisblau — Ausgabe 01",
-      "dot_crosswalk": "Tupfenkleid — Zebrastreifen, S/W",
-      "dot_navy": "Tupfenkleid — Porträt"
-    },
-    "quote": "„Kleider, die man anstarren muss.“",
-    "quote_attr": "— Pretty Absurd, SS26",
-    "cta_lookbook": "Lookbook entdecken →",
-    "cta_collection": "Kollektion ansehen →"
-  },
   "contact": {
     "label": "Kontakt aufnehmen",
     "headline_1": "Lass uns",
@@ -166,35 +144,24 @@
     "inquiries_val": "Nutze das Formular — wir antworten innerhalb von 48 Stunden",
     "stockists_label": "Händler",
     "stockists_val": "Anfragen werden aktuell entgegengenommen",
-    "early_access": {
-      "tag": "Inner Circle",
-      "headline": "Hol es dir vor allen anderen.",
-      "perk1": "Vorbestellzugang ab dem <strong>22. August</strong> — vor dem öffentlichen Verkaufsstart",
-      "perk2": "<strong>10 % Rabatt</strong> auf dein erstes Kleid, direkt an der Kasse",
-      "nudge": "Wähle im Formular „Früher Zugang“ →"
-    },
     "form": {
       "name": "Dein Name",
       "email": "E-Mail-Adresse",
       "country": "Land",
       "type": "Worum geht es?",
       "type_choose": "Bitte wählen",
-      "type_early": "Früher Zugang — 10 % Rabatt",
       "type_notify": "Benachrichtigen, sobald Bestellungen möglich sind",
       "type_dress": "Anfrage zu einem Kleid",
       "type_press": "Presseanfrage",
       "type_stockist": "Händleranfrage",
       "type_general": "Allgemein",
-      "early_note": "Du trittst dem Inner Circle bei — deinen 10-%-Code schicken wir dir, sobald die Vorbestellung am 22. August öffnet.",
       "message": "Deine Nachricht",
       "submit": "Absenden",
-      "submit_early": "Frühen Zugang sichern",
       "sending": "Wird gesendet…",
       "sent": "Gesendet",
       "try_again": "Erneut versuchen",
       "footer_note": "Wir melden uns innerhalb von 48 Stunden.",
-      "success": "Gesendet. Wir melden uns bald.",
-      "success_early": "Du bist im Inner Circle. Dein 10-%-Code kommt, sobald die Vorbestellung öffnet — am 22. August."
+      "success": "Gesendet. Wir melden uns bald."
     }
   },
   "lookbook": {

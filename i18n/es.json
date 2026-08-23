@@ -6,7 +6,6 @@
     "lookbook": "Lookbook",
     "collection": "Los Vestidos",
     "about": "Sobre Nosotros",
-    "brandWorld": "Universo de Marca",
     "contact": "Contacto"
   },
   "home": {
@@ -16,8 +15,8 @@
       "cta_collection": "Ver los vestidos"
     },
     "prelaunch": {
-      "label": "Prelanzamiento",
-      "text": "Los pedidos anticipados abren el 22 de agosto — Colección disponible el 22 de agosto de 2026",
+      "label": "Lanzamiento",
+      "text": "Los pedidos anticipados abren el 22 de agosto de 2026",
       "cta": "Avísame →"
     },
     "receipt": {
@@ -26,9 +25,14 @@
       "blue": "El Azul Hielo",
       "dot": "El Lunar",
       "total": "TOTAL",
-      "status_line": "ESTADO … próximamente<br>LISTA DE ESPERA … abierta",
-      "cta_main": "TOCA PARA RESERVARLO",
-      "cta_sub": "únete a la lista de espera — xo"
+      "status_line": "ESTADO … abierto<br>PEDIDO ANTICIPADO … abierto",
+      "cta_main": "TOCA PARA PREORDENAR",
+      "cta_sub": "únete al pedido anticipado — xo"
+    },
+    "shop": {
+      "label": "La Colección",
+      "headline": "Tres Vestidos. Nueve Looks.",
+      "cta": "Ver la colección completa →"
     },
     "designer": {
       "label": "La Diseñadora",
@@ -129,32 +133,6 @@
       "cta_lookbook": "Entrar al lookbook →"
     }
   },
-  "brandWorld": {
-    "label": "Universo de Marca",
-    "headline_1": "El Universo de",
-    "headline_2": "Pretty Absurd.",
-    "intro": "Lunares en el metro. Césped en la sala de estar. Un vestido perfectamente planchado en el lugar equivocado. Este es el mundo del que vienen las prendas.",
-    "manifesto": {
-      "one": "El vestido que no combina con el entorno. La tela demasiado bella para la ocasión. La silueta que detiene la sala. Nadie planea recordar un look. Pretty Absurd se asegura de que lo hagan.",
-      "two": "Las referencias están en todas partes: Marilyn Monroe sobre una rejilla del metro, Barbie en una casa de ensueño ligeramente torcida, un editorial de Vogue fotografiado donde Vogue jamás iría. Pretty Absurd toma prestado de todo eso — y lo mete en un corsé.",
-      "three": "Esta no es una moda que quiera desaparecer en el armario. Quiere ser usada, mirada, y usada otra vez."
-    },
-    "captions": {
-      "dot_subway": "Lunares en el metro — Número 01",
-      "pink_butterfly": "Satén Rosa — detalle",
-      "blue_armchair": "Azul Hielo — ambiente retro",
-      "pink_street": "Satén Rosa — calle",
-      "dot_highway": "El Lunar — tumbona de autopista",
-      "blue_newspaper": "Azul Hielo — editorial",
-      "blue_playful": "Azul Hielo — Número 01",
-      "dot_crosswalk": "El Lunar — paso de cebra B&N",
-      "dot_navy": "El Lunar — retrato"
-    },
-    "quote": "«Vestidos hechos para ser mirados.»",
-    "quote_attr": "— Pretty Absurd, SS26",
-    "cta_lookbook": "Entrar al lookbook →",
-    "cta_collection": "Ver la colección →"
-  },
   "contact": {
     "label": "Ponte en Contacto",
     "headline_1": "Hablemos",
@@ -166,35 +144,24 @@
     "inquiries_val": "Usa el formulario — respondemos en 48 horas",
     "stockists_label": "Tiendas",
     "stockists_val": "Actualmente aceptando solicitudes",
-    "early_access": {
-      "tag": "Círculo Interno",
-      "headline": "Consíguelo antes que nadie.",
-      "perk1": "Acceso a pedidos anticipados el <strong>22 de agosto</strong> — antes del lanzamiento público",
-      "perk2": "<strong>10% de descuento</strong> en tu primer vestido, aplicado al pagar",
-      "nudge": "Selecciona \"Unirme al acceso anticipado\" en el formulario →"
-    },
     "form": {
       "name": "Tu nombre",
       "email": "Correo electrónico",
       "country": "País",
       "type": "¿De qué se trata?",
       "type_choose": "Elige una opción",
-      "type_early": "Unirme al acceso anticipado — 10% de descuento",
       "type_notify": "Avisarme cuando abran los pedidos",
       "type_dress": "Consulta sobre un vestido",
       "type_press": "Consulta de prensa",
       "type_stockist": "Consulta de tienda",
       "type_general": "General",
-      "early_note": "Te estás uniendo al círculo interno — te enviaremos tu código del 10% en cuanto abran los pedidos anticipados, el 22 de agosto.",
       "message": "Tu mensaje",
       "submit": "Enviar",
-      "submit_early": "Unirme al acceso anticipado",
       "sending": "Enviando…",
       "sent": "Enviado",
       "try_again": "Intentar de nuevo",
       "footer_note": "Te responderemos en un plazo de 48 horas.",
-      "success": "Enviado. Te contactaremos pronto.",
-      "success_early": "Ya estás en el círculo interno. Tu código del 10% llega en cuanto abran los pedidos anticipados — el 22 de agosto."
+      "success": "Enviado. Te contactaremos pronto."
     }
   },
   "lookbook": {

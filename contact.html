@@ -48,7 +48,6 @@
         <li><a href="lookbook.html"    class="nav__link" data-i18n="nav.lookbook">Lookbook</a></li>
         <li><a href="collection.html"  class="nav__link" data-i18n="nav.collection">The Dresses</a></li>
         <li><a href="about.html"       class="nav__link" data-i18n="nav.about">About</a></li>
-        <li><a href="brand-world.html" class="nav__link" data-i18n="nav.brandWorld">Brand World</a></li>
         <li><a href="faq.html" class="nav__link">FAQ</a></li>
         <li><a href="contact.html"     class="nav__link is-active" data-i18n="nav.contact">Contact</a></li>
       </ul>
@@ -71,7 +70,6 @@
         <li><a href="lookbook.html"    class="nav__overlay-link" data-i18n="nav.lookbook">Lookbook</a></li>
         <li><a href="collection.html"  class="nav__overlay-link" data-i18n="nav.collection">The Dresses</a></li>
         <li><a href="about.html"       class="nav__overlay-link" data-i18n="nav.about">About</a></li>
-        <li><a href="brand-world.html" class="nav__overlay-link" data-i18n="nav.brandWorld">Brand World</a></li>
         <li><a href="faq.html" class="nav__overlay-link">FAQ</a></li>
         <li><a href="contact.html"     class="nav__overlay-link" data-i18n="nav.contact">Contact</a></li>
       </ul>
@@ -112,7 +110,7 @@
           <div class="contact-info__list">
             <div class="contact-info__item">
               <span class="contact-info__item-label" data-i18n="contact.preorder_label">Pre-order</span>
-              <span class="contact-info__item-val" data-i18n="contact.preorder_val">Opens 22 August 2026 — Drops 22 August 2026</span>
+              <span class="contact-info__item-val" data-i18n="contact.preorder_val">Open now</span>
             </div>
             <div class="contact-info__item">
               <span class="contact-info__item-label" data-i18n="contact.inquiries_label">Inquiries</span>
@@ -122,23 +120,6 @@
               <span class="contact-info__item-label" data-i18n="contact.stockists_label">Stockists</span>
               <span class="contact-info__item-val" data-i18n="contact.stockists_val">Currently accepting enquiries</span>
             </div>
-          </div>
-
-          <!-- Early access perk card -->
-          <div class="contact-early-access">
-            <div class="contact-early-access__tag" data-i18n="contact.early_access.tag">Inner Circle</div>
-            <p class="contact-early-access__headline" data-i18n="contact.early_access.headline">Get her before everyone else.</p>
-            <ul class="contact-early-access__perks">
-              <li>
-                <span class="contact-early-access__perk-icon">01</span>
-                <span data-i18n-html="contact.early_access.perk1">Pre-order access opens <strong>22 August</strong> — before the public drop</span>
-              </li>
-              <li>
-                <span class="contact-early-access__perk-icon">02</span>
-                <span data-i18n-html="contact.early_access.perk2"><strong>10% off</strong> your first dress, applied at checkout</span>
-              </li>
-            </ul>
-            <p class="contact-early-access__nudge" data-i18n="contact.early_access.nudge">Select "Join early access" in the form →</p>
           </div>
 
           <div class="contact-info__editorial" aria-hidden="true">
@@ -201,14 +182,12 @@
                 <label for="cf-type" class="contact-form__label" data-i18n="contact.form.type">What is this about?</label>
                 <select id="cf-type" name="type" class="contact-form__input contact-form__select">
                   <option value="" disabled selected data-i18n="contact.form.type_choose">Choose one</option>
-                  <option value="early-access" data-i18n="contact.form.type_early">Join early access — 10% off</option>
-                  <option value="notify" data-i18n="contact.form.type_notify">Notify me when orders open</option>
+                  <option value="notify" data-i18n="contact.form.type_notify">Preorder a dress</option>
                   <option value="dress" data-i18n="contact.form.type_dress">Dress inquiry</option>
                   <option value="press" data-i18n="contact.form.type_press">Press inquiry</option>
                   <option value="stockist" data-i18n="contact.form.type_stockist">Stockist inquiry</option>
                   <option value="general" data-i18n="contact.form.type_general">General</option>
                 </select>
-                <p class="contact-form__early-note" id="early-access-note" hidden data-i18n="contact.form.early_note">You're joining the inner circle — we'll send your 10% code the moment pre-orders open on 22 August.</p>
               </div>
             </div>
 
@@ -268,16 +247,6 @@
   <script src="js/i18n.js"></script>
   <script src="js/main.js"></script>
   <script>
-    // Early access select reveal
-    const typeSelect = document.getElementById('cf-type');
-    const earlyNote  = document.getElementById('early-access-note');
-    const submitBtn  = document.querySelector('.contact-form__submit');
-    typeSelect.addEventListener('change', function() {
-      const isEarly = this.value === 'early-access';
-      earlyNote.hidden = !isEarly;
-      submitBtn.textContent = isEarly ? I18N.get('contact.form.submit_early') : I18N.get('contact.form.submit');
-    });
-
     document.getElementById('contact-form').addEventListener('submit', async function(e) {
       e.preventDefault();
       const btn = this.querySelector('.contact-form__submit');
@@ -290,14 +259,9 @@
           headers: { Accept: 'application/json' },
         });
         if (res.ok) {
-          const isEarly = document.getElementById('cf-type').value === 'early-access';
           this.reset();
-          earlyNote.hidden = true;
-          submitBtn.textContent = I18N.get('contact.form.submit');
           const successEl = document.getElementById('form-success');
-          successEl.querySelector('p').textContent = isEarly
-            ? I18N.get('contact.form.success_early')
-            : I18N.get('contact.form.success');
+          successEl.querySelector('p').textContent = I18N.get('contact.form.success');
           successEl.hidden = false;
           btn.textContent = I18N.get('contact.form.sent');
         } else {
@@ -311,7 +275,7 @@
     });
   </script>
   <div class="sticky-cta">
-    <a href="contact.html" class="sticky-cta__link">Get Early Access</a>
+    <a href="contact.html" class="sticky-cta__link">Preorder Now</a>
   </div>
 
   <script src="js/components.js"></script>

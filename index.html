@@ -11,7 +11,7 @@
   </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Pretty Absurd — an independent fashion designer. Three dresses. One absurd idea. Prelaunch 2026.">
+  <meta name="description" content="Pretty Absurd — an independent fashion designer. Three dresses. One absurd idea. Preordering is open now.">
   <link rel="canonical" href="https://prettyabsurd.co.za/">
   <meta name="theme-color" content="#F7F2EE">
   <link rel="icon" href="/favicon.ico" sizes="any">
@@ -74,7 +74,6 @@
         <li><a href="lookbook.html"    class="nav__link" data-i18n="nav.lookbook">Lookbook</a></li>
         <li><a href="collection.html"  class="nav__link" data-i18n="nav.collection">The Dresses</a></li>
         <li><a href="about.html"       class="nav__link" data-i18n="nav.about">About</a></li>
-        <li><a href="brand-world.html" class="nav__link" data-i18n="nav.brandWorld">Brand World</a></li>
         <li><a href="faq.html" class="nav__link">FAQ</a></li>
         <li><a href="contact.html"     class="nav__link" data-i18n="nav.contact">Contact</a></li>
       </ul>
@@ -97,7 +96,6 @@
         <li><a href="lookbook.html"    class="nav__overlay-link" data-i18n="nav.lookbook">Lookbook</a></li>
         <li><a href="collection.html"  class="nav__overlay-link" data-i18n="nav.collection">The Dresses</a></li>
         <li><a href="about.html"       class="nav__overlay-link" data-i18n="nav.about">About</a></li>
-        <li><a href="brand-world.html" class="nav__overlay-link" data-i18n="nav.brandWorld">Brand World</a></li>
         <li><a href="faq.html" class="nav__overlay-link">FAQ</a></li>
         <li><a href="contact.html"     class="nav__overlay-link" data-i18n="nav.contact">Contact</a></li>
       </ul>
@@ -117,10 +115,18 @@
     <!-- ── Hero ── -->
     <section class="home-hero" aria-label="Hero">
       <div class="nav-spacer" aria-hidden="true"></div>
+      <div class="home-hero__bg" aria-hidden="true">
+        <img
+          src="assets/images/editorial/home-hero-bg-pattern.jpg"
+          alt=""
+          class="home-hero__bg-img"
+          loading="eager"
+        >
+      </div>
       <div class="home-hero__img-wrap">
         <img
-          src="assets/images/editorial/home-hero-group.webp"
-          alt="Three models wearing the Pretty Absurd SS26 collection — Pink Satin, Ice Blue, and Polka Dot — together against a pine forest"
+          src="assets/images/editorial/home-hero-collage.jpg"
+          alt="Pretty Absurd SS26 collection — Polka Dot, Ice Blue, and Pink Satin styled looks"
           class="home-hero__img"
           loading="eager"
           fetchpriority="high"
@@ -152,9 +158,9 @@
       </div>
       <!-- ── Prelaunch strip ── -->
       <div class="home-prelaunch" role="banner" aria-label="Prelaunch announcement">
-        <span class="home-prelaunch__label" data-i18n="home.prelaunch.label">Prelaunch</span>
-        <p class="home-prelaunch__text" data-i18n="home.prelaunch.text">Pre-ordering opens 22 August — Collection drops 22 August 2026</p>
-        <a href="contact.html" class="home-prelaunch__cta" data-i18n="home.prelaunch.cta">Notify me →</a>
+        <span class="home-prelaunch__label" data-i18n="home.prelaunch.label">Now Live</span>
+        <p class="home-prelaunch__text" data-i18n="home.prelaunch.text">Preordering is open — launched 22 August 2026</p>
+        <a href="contact.html" class="home-prelaunch__cta" data-i18n="home.prelaunch.cta">Preorder now →</a>
       </div>
 
     </section>
@@ -173,6 +179,7 @@
       <div class="home-ephemera__inner">
 
         <!-- Slot 1: Receipt / waitlist card -->
+        <div class="pa-receipt-print">
         <a class="pa-receipt" href="contact.html">
           <div class="pa-curl"></div>
           <span class="pa-logo-text" data-i18n="home.receipt.brand">PRETTY ABSURD</span>
@@ -205,10 +212,11 @@
           <div class="pa-rule">------------------------------</div>
           <div class="pa-line pa-total"><span data-i18n="home.receipt.total">TOTAL</span><span data-price="1950">R1,950</span></div>
           <div class="pa-rule">------------------------------</div>
-          <div class="pa-meta" data-i18n-html="home.receipt.status_line">STATUS … coming soon<br>WAITLIST … now open</div>
-          <div class="pa-cta"><b data-i18n="home.receipt.cta_main">TAP TO RESERVE HER</b><span data-i18n="home.receipt.cta_sub">join the waitlist — xo</span></div>
+          <div class="pa-meta" data-i18n-html="home.receipt.status_line">STATUS … now open<br>PREORDER … now open</div>
+          <div class="pa-cta"><b data-i18n="home.receipt.cta_main">TAP TO PREORDER</b><span data-i18n="home.receipt.cta_sub">join the preorder — xo</span></div>
           <div class="pa-barcode"></div>
         </a>
+        </div>
 
         <!-- Slot 2: Lookbook preview — click to open fullscreen reader -->
         <div class="pa-zine" id="pa-lookbook-open" role="button" tabindex="0" aria-label="Open the lookbook" style="position:relative;">
@@ -236,6 +244,56 @@
       </div>
     </section>
 
+    <!-- ── Shop the collection ── -->
+    <section class="home-shop section" aria-label="Shop the collection">
+      <div class="container">
+        <div class="home-shop__header reveal-item">
+          <span class="home-shop__label" data-i18n="home.shop.label">The Collection</span>
+          <h2 class="home-shop__headline" data-i18n="home.shop.headline">Three Dresses. Nine Looks.</h2>
+        </div>
+
+        <div class="home-shop__grid">
+          <a class="home-shop__dress reveal-item" href="collection.html#pink">
+            <div class="home-shop__imgs">
+              <img src="assets/images/product-detail/pink-hero.webp" alt="The Pink Satin" loading="lazy">
+              <img src="assets/images/product-detail/pink-side.webp" alt="The Pink Satin worn" loading="lazy">
+              <img src="assets/images/product-detail/pink-fabric.webp" alt="The Pink Satin fabric detail" loading="lazy">
+            </div>
+            <div class="home-shop__info">
+              <span class="home-shop__name" data-i18n="home.receipt.pink">The Pink Satin</span>
+              <span class="home-shop__price" data-price="1950">R1,950</span>
+            </div>
+          </a>
+
+          <a class="home-shop__dress reveal-item" href="collection.html#blue">
+            <div class="home-shop__imgs">
+              <img src="assets/images/product-detail/blue-hero.webp" alt="The Ice Blue" loading="lazy">
+              <img src="assets/images/product-detail/blue-worn-back.webp" alt="The Ice Blue worn" loading="lazy">
+              <img src="assets/images/product-detail/blue-flat.webp" alt="The Ice Blue flat detail" loading="lazy">
+            </div>
+            <div class="home-shop__info">
+              <span class="home-shop__name" data-i18n="home.receipt.blue">The Ice Blue</span>
+              <span class="home-shop__price" data-price="1950">R1,950</span>
+            </div>
+          </a>
+
+          <a class="home-shop__dress reveal-item" href="collection.html#dot">
+            <div class="home-shop__imgs">
+              <img src="assets/images/product-detail/dot-hero.webp" alt="The Polka Dot" loading="lazy">
+              <img src="assets/images/product-detail/dot-worn-full.webp" alt="The Polka Dot worn" loading="lazy">
+              <img src="assets/images/product-detail/dot-fabric.webp" alt="The Polka Dot fabric detail" loading="lazy">
+            </div>
+            <div class="home-shop__info">
+              <span class="home-shop__name" data-i18n="home.receipt.dot">The Polka Dot</span>
+              <span class="home-shop__price" data-price="1950">R1,950</span>
+            </div>
+          </a>
+        </div>
+
+        <a href="collection.html" class="home-shop__cta reveal-item" data-i18n="home.shop.cta">See the full collection →</a>
+      </div>
+    </section>
+
     <!-- ── Designer teaser ── -->
     <section class="home-designer section" aria-label="Meet the designer">
       <div class="container">
@@ -258,15 +316,15 @@
     </section>
 
     <!-- ── Notify strip ── -->
-    <section class="home-notify section" aria-label="Notify me when orders open">
+    <section class="home-notify section" aria-label="Stay updated on new drops">
       <div class="container">
         <div class="home-notify__inner">
           <div class="home-notify__text">
-            <h2 class="home-notify__headline" data-i18n="home.notify.headline">Be first to know.</h2>
-            <p class="home-notify__sub" data-i18n="home.notify.sub">Pre-ordering opens 22 August 2026. Leave your email and we'll tell you the moment it does.</p>
+            <h2 class="home-notify__headline" data-i18n="home.notify.headline">Don't miss a drop.</h2>
+            <p class="home-notify__sub" data-i18n="home.notify.sub">Preordering is open now. Leave your email and we'll keep you posted on new drops and restocks.</p>
           </div>
-          <form class="home-notify__form" action="https://formspree.io/f/mnjejwqz" method="POST" aria-label="Email notification signup">
-            <input type="hidden" name="_subject" value="Pretty Absurd — Waitlist signup">
+          <form class="home-notify__form" action="https://formspree.io/f/mnjejwqz" method="POST" aria-label="Email updates signup">
+            <input type="hidden" name="_subject" value="Pretty Absurd — Email list signup">
             <label for="notify-email" class="sr-only" data-i18n="contact.form.email">Email address</label>
             <input
               id="notify-email"
@@ -326,9 +384,6 @@
               <div class="lb-imgslot dark"><img id="mag-cover" src="assets/images/editorial/blue-market-pole.webp" alt="" loading="lazy"></div>
               <div style="position:absolute;inset:0;pointer-events:none;background:linear-gradient(180deg,rgba(0,0,0,.5) 0%,transparent 26%,transparent 55%,rgba(0,0,0,.62) 100%);"></div>
               <div style="position:absolute;top:26px;left:0;right:0;text-align:center;font:400 11px 'Space Mono',monospace;letter-spacing:.4em;color:#f4f1ea;" data-i18n="lookbook.cover.top_label">SS26 &nbsp;/&nbsp; ISSUE N&ordm;01</div>
-              <div style="position:absolute;left:8%;right:8%;top:38%;transform:translateY(-50%);text-align:center;">
-                <div style="font:400 52px/0.98 'Poiret One',sans-serif;letter-spacing:.06em;color:#f4f1ea;" data-i18n="lookbook.cover.title">PRETTY<br>ABSURD</div>
-              </div>
               <div style="position:absolute;left:0;right:0;bottom:40px;text-align:center;color:#f4f1ea;">
                 <div style="font:400 15px 'Poiret One',sans-serif;letter-spacing:.42em;">THE DRESS</div>
                 <div style="font:italic 400 18px 'Cormorant Garamond',serif;color:#e7d3d9;margin-top:6px;" data-i18n="lookbook.cover.tagline">feminine, but feral…</div>
@@ -358,7 +413,7 @@
                 <div style="display:flex;align-items:baseline;gap:10px;"><span style="font:400 12px 'Space Mono',monospace;color:#b06a84;width:24px;">04</span><span style="font:500 19px 'Cormorant Garamond',serif;" data-i18n="lookbook.contents.item4">the dress</span></div>
                 <div style="display:flex;align-items:baseline;gap:10px;"><span style="font:400 12px 'Space Mono',monospace;color:#b06a84;width:24px;">05</span><span style="font:500 19px 'Cormorant Garamond',serif;" data-i18n="lookbook.contents.item5">craft &amp; cloth</span></div>
                 <div style="display:flex;align-items:baseline;gap:10px;"><span style="font:400 12px 'Space Mono',monospace;color:#b06a84;width:24px;">06</span><span style="font:500 19px 'Cormorant Garamond',serif;" data-i18n="lookbook.contents.item6">the campaign</span></div>
-                <div style="display:flex;align-items:baseline;gap:10px;"><span style="font:400 12px 'Space Mono',monospace;color:#b06a84;width:24px;">07</span><span style="font:500 19px 'Cormorant Garamond',serif;" data-i18n="lookbook.contents.item7">reserve her — the waitlist</span></div>
+                <div style="display:flex;align-items:baseline;gap:10px;"><span style="font:400 12px 'Space Mono',monospace;color:#b06a84;width:24px;">07</span><span style="font:500 19px 'Cormorant Garamond',serif;" data-i18n="lookbook.contents.item7">reserve her — preorder now</span></div>
               </div>
               <div class="lb-pagenum"><span>02</span><span>PRETTY ABSURD</span></div>
               <div class="lb-spineL"></div>
@@ -457,7 +512,7 @@
               <p style="font:400 14.5px/1.72 'Cormorant Garamond',serif;margin:0 0 28px;" data-i18n="lookbook.campaign.reserve_body">she is made to order, in limited numbers. there is no queue, no drama — just her, held for you until the moment she's yours.</p>
               <div style="border:1.5px solid #1c1a17;border-radius:2px;padding:16px 18px;font-family:'Space Mono',monospace;">
                 <div style="font:700 10px 'Space Mono',monospace;letter-spacing:.12em;margin-bottom:8px;" data-i18n="lookbook.campaign.preorder_tag">PRE-ORDER — 22 AUGUST 2026</div>
-                <div style="font:400 10px/1.7 'Space Mono',monospace;letter-spacing:.04em;color:#6a655c;" data-i18n-html="lookbook.campaign.preorder_note">Join the waitlist and be<br>first in line when the drop opens.</div>
+                <div style="font:400 10px/1.7 'Space Mono',monospace;letter-spacing:.04em;color:#6a655c;" data-i18n-html="lookbook.campaign.preorder_note">Preordering is open —<br>get yours before she's gone.</div>
               </div>
               <div class="lb-pagenum"><span data-i18n="nav.brand">PRETTY ABSURD</span><span>11</span></div>
               <div class="lb-spineR"></div>
@@ -467,7 +522,7 @@
           <!-- LEAF 6 : RESERVE CTA / BACK COVER -->
           <div class="lb-leaf">
             <div class="lb-face" style="background:#1c1a17;color:#f5f1ea;padding:44px 40px;display:flex;flex-direction:column;">
-              <div style="font:400 10px 'Space Mono',monospace;letter-spacing:.34em;color:#8a8478;margin-bottom:18px;" data-i18n="lookbook.waitlist.tag">THE WAITLIST</div>
+              <div style="font:400 10px 'Space Mono',monospace;letter-spacing:.34em;color:#8a8478;margin-bottom:18px;" data-i18n="lookbook.waitlist.tag">THE PREORDER</div>
               <div style="font:italic 400 44px/1 'Sacramento',cursive;color:#f5f1ea;" data-i18n="lookbook.waitlist.title">reserve her…</div>
               <div style="width:36px;height:1.5px;background:#b06a84;margin:16px 0 18px;"></div>
               <div style="flex:1;min-height:0;border-radius:2px;overflow:hidden;"><div class="lb-imgslot dark"><img id="mag-cta" src="assets/images/product-detail/pink-hero.webp" alt="" loading="lazy" style="object-fit:contain;padding:8px;background:#f5f1ea;"></div></div>
@@ -475,7 +530,7 @@
                 <span style="font-size:12px;font-weight:700;letter-spacing:.04em;color:#f5f1ea;" data-i18n="lookbook.waitlist.the_dress">THE DRESS</span>
                 <span style="font-size:12px;font-weight:700;color:#f5f1ea;" data-price="1950">R1,950</span>
               </div>
-              <a href="contact.html" style="display:block;text-align:center;background:#f5f1ea;color:#1c1a17;text-decoration:none;padding:13px;border-radius:2px;font:700 11px 'Space Mono',monospace;letter-spacing:.08em;" data-i18n="lookbook.waitlist.cta_waitlist">JOIN THE WAITLIST →</a>
+              <a href="contact.html" style="display:block;text-align:center;background:#f5f1ea;color:#1c1a17;text-decoration:none;padding:13px;border-radius:2px;font:700 11px 'Space Mono',monospace;letter-spacing:.08em;" data-i18n="lookbook.waitlist.cta_waitlist">PRE-ORDER NOW →</a>
               <a href="collection.html" style="display:block;text-align:center;background:transparent;color:#f5f1ea;text-decoration:none;padding:11px;margin-top:9px;border:1.5px solid rgba(245,241,234,.25);border-radius:2px;font:700 10px 'Space Mono',monospace;letter-spacing:.06em;" data-i18n="lookbook.waitlist.cta_collection">SHOP THE COLLECTION →</a>
               <div class="lb-spineL" style="background:linear-gradient(90deg,rgba(0,0,0,.3),transparent);"></div>
             </div>
@@ -632,7 +687,7 @@
   <script src="js/i18n.js"></script>
   <script src="js/main.js"></script>
   <div class="sticky-cta">
-    <a href="contact.html" class="sticky-cta__link">Get Early Access</a>
+    <a href="contact.html" class="sticky-cta__link">Preorder Now</a>
   </div>
 
   <script src="js/components.js"></script>

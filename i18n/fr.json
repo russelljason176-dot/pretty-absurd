@@ -6,7 +6,6 @@
     "lookbook": "Lookbook",
     "collection": "Les Robes",
     "about": "À propos",
-    "brandWorld": "Univers de marque",
     "contact": "Contact"
   },
   "home": {
@@ -16,8 +15,8 @@
       "cta_collection": "Voir les robes"
     },
     "prelaunch": {
-      "label": "Avant-lancement",
-      "text": "Précommandes ouvertes le 22 août — Collection disponible le 22 août 2026",
+      "label": "Lancement",
+      "text": "Précommandes ouvertes le 22 août 2026",
       "cta": "M'avertir →"
     },
     "receipt": {
@@ -26,9 +25,14 @@
       "blue": "Le Bleu Glacé",
       "dot": "Le Pois",
       "total": "TOTAL",
-      "status_line": "STATUT … bientôt<br>LISTE D'ATTENTE … ouverte",
-      "cta_main": "TOUCHEZ POUR LA RÉSERVER",
-      "cta_sub": "rejoindre la liste d'attente — xo"
+      "status_line": "STATUT … ouvert<br>PRÉCOMMANDE … ouverte",
+      "cta_main": "TOUCHEZ POUR PRÉCOMMANDER",
+      "cta_sub": "rejoindre la précommande — xo"
+    },
+    "shop": {
+      "label": "La Collection",
+      "headline": "Trois Robes. Neuf Allures.",
+      "cta": "Voir toute la collection →"
     },
     "designer": {
       "label": "La Créatrice",
@@ -129,32 +133,6 @@
       "cta_lookbook": "Découvrir le lookbook →"
     }
   },
-  "brandWorld": {
-    "label": "Univers de marque",
-    "headline_1": "L'Univers de",
-    "headline_2": "Pretty Absurd.",
-    "intro": "Des pois dans le métro. De l'herbe dans un salon. Une robe parfaitement repassée au mauvais endroit. C'est l'univers d'où viennent ces vêtements.",
-    "manifesto": {
-      "one": "La robe qui ne correspond pas au décor. Le tissu trop beau pour l'occasion. La silhouette qui arrête la pièce. Personne ne prévoit de se souvenir d'une tenue. Pretty Absurd s'en assure.",
-      "two": "Les références sont partout : Marilyn Monroe sur une bouche de métro, Barbie dans une maison de rêve légèrement de travers, un éditorial Vogue photographié là où Vogue n'irait jamais. Pretty Absurd emprunte à tout cela — et le glisse dans un corset.",
-      "three": "Ce n'est pas une mode qui veut disparaître dans la penderie. Elle veut être portée, regardée, et portée encore."
-    },
-    "captions": {
-      "dot_subway": "Pois dans le métro — Numéro 01",
-      "pink_butterfly": "Rose Satinée — détail",
-      "blue_armchair": "Bleu Glacé — décor rétro",
-      "pink_street": "Rose Satinée — rue",
-      "dot_highway": "Le Pois — bord d'autoroute",
-      "blue_newspaper": "Bleu Glacé — éditorial",
-      "blue_playful": "Bleu Glacé — Numéro 01",
-      "dot_crosswalk": "Le Pois — passage piéton N&B",
-      "dot_navy": "Le Pois — portrait"
-    },
-    "quote": "« Des robes faites pour qu'on les regarde. »",
-    "quote_attr": "— Pretty Absurd, SS26",
-    "cta_lookbook": "Découvrir le lookbook →",
-    "cta_collection": "Voir la collection →"
-  },
   "contact": {
     "label": "Nous Contacter",
     "headline_1": "Parlons-",
@@ -166,35 +144,24 @@
     "inquiries_val": "Utilisez le formulaire — réponse sous 48 heures",
     "stockists_label": "Revendeurs",
     "stockists_val": "Candidatures actuellement acceptées",
-    "early_access": {
-      "tag": "Cercle Privé",
-      "headline": "Obtenez-la avant tout le monde.",
-      "perk1": "Accès précommande dès le <strong>22 août</strong> — avant l'ouverture publique",
-      "perk2": "<strong>10% de réduction</strong> sur votre première robe, appliqué au paiement",
-      "nudge": "Sélectionnez « Rejoindre l'accès anticipé » dans le formulaire →"
-    },
     "form": {
       "name": "Votre nom",
       "email": "Adresse e-mail",
       "country": "Pays",
       "type": "De quoi s'agit-il ?",
       "type_choose": "Choisissez une option",
-      "type_early": "Rejoindre l'accès anticipé — 10% de réduction",
       "type_notify": "M'avertir à l'ouverture des commandes",
       "type_dress": "Question sur une robe",
       "type_press": "Demande presse",
       "type_stockist": "Demande revendeur",
       "type_general": "Général",
-      "early_note": "Vous rejoignez le cercle privé — votre code de réduction de 10% arrive dès l'ouverture des précommandes le 22 août.",
       "message": "Votre message",
       "submit": "Envoyer",
-      "submit_early": "Rejoindre l'accès anticipé",
       "sending": "Envoi…",
       "sent": "Envoyé",
       "try_again": "Réessayer",
       "footer_note": "Nous vous répondrons sous 48 heures.",
-      "success": "Envoyé. Nous vous répondrons bientôt.",
-      "success_early": "Vous êtes dans le cercle privé. Votre code de 10% arrive dès l'ouverture des précommandes — le 22 août."
+      "success": "Envoyé. Nous vous répondrons bientôt."
     }
   },
   "lookbook": {

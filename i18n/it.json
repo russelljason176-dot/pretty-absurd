@@ -6,7 +6,6 @@
     "lookbook": "Lookbook",
     "collection": "Gli Abiti",
     "about": "Chi Siamo",
-    "brandWorld": "L'Universo",
     "contact": "Contatti"
   },
   "home": {
@@ -16,8 +15,8 @@
       "cta_collection": "Scopri gli abiti"
     },
     "prelaunch": {
-      "label": "Prelaunch",
-      "text": "Preordini aperti dal 22 agosto — Collezione disponibile dal 22 agosto 2026",
+      "label": "Launch",
+      "text": "Preordini aperti dal 22 agosto 2026",
       "cta": "Avvisami →"
     },
     "receipt": {
@@ -26,9 +25,14 @@
       "blue": "L'Azzurro Ghiaccio",
       "dot": "Il Pois",
       "total": "TOTALE",
-      "status_line": "STATO … in arrivo<br>LISTA D'ATTESA … aperta",
-      "cta_main": "TOCCA PER PRENOTARLO",
-      "cta_sub": "unisciti alla lista d'attesa — xo"
+      "status_line": "STATO … aperto<br>PREORDINE … aperto",
+      "cta_main": "TOCCA PER PREORDINARE",
+      "cta_sub": "unisciti al preordine — xo"
+    },
+    "shop": {
+      "label": "La Collezione",
+      "headline": "Tre Abiti. Nove Look.",
+      "cta": "Vedi tutta la collezione →"
     },
     "designer": {
       "label": "La Stilista",
@@ -129,32 +133,6 @@
       "cta_lookbook": "Scopri il lookbook →"
     }
   },
-  "brandWorld": {
-    "label": "L'Universo",
-    "headline_1": "L'Universo di",
-    "headline_2": "Pretty Absurd.",
-    "intro": "Pois in metropolitana. Erba nei salotti. Un abito perfettamente stirato in un posto completamente sbagliato. Questo è il mondo da cui vengono questi vestiti.",
-    "manifesto": {
-      "one": "L'abito che non si intona all'ambiente. Il tessuto troppo bello per l'occasione. La silhouette che ferma la stanza. Nessuno pianifica di ricordare un outfit. Pretty Absurd ci pensa lei.",
-      "two": "I riferimenti sono ovunque: Marilyn Monroe su una grata della metropolitana, Barbie in una dream house leggermente storta, un editoriale di Vogue scattato dove Vogue non andrebbe mai. Pretty Absurd prende in prestito tutto questo — e lo infila in un corsetto.",
-      "three": "Non è una moda che vuole sparire nell'armadio. Vuole essere indossata, guardata, e indossata ancora."
-    },
-    "captions": {
-      "dot_subway": "Pois in metropolitana — Numero 01",
-      "pink_butterfly": "Raso Rosa — dettaglio",
-      "blue_armchair": "Azzurro Ghiaccio — ambientazione retrò",
-      "pink_street": "Raso Rosa — strada",
-      "dot_highway": "Il Pois — lettino autostradale",
-      "blue_newspaper": "Azzurro Ghiaccio — editoriale",
-      "blue_playful": "Azzurro Ghiaccio — Numero 01",
-      "dot_crosswalk": "Il Pois — strisce pedonali B&N",
-      "dot_navy": "Il Pois — ritratto"
-    },
-    "quote": "\"Abiti fatti per essere guardati.\"",
-    "quote_attr": "— Pretty Absurd, SS26",
-    "cta_lookbook": "Scopri il lookbook →",
-    "cta_collection": "Scopri la collezione →"
-  },
   "contact": {
     "label": "Contattaci",
     "headline_1": "Parliamo-",
@@ -166,35 +144,24 @@
     "inquiries_val": "Usa il modulo — rispondiamo entro 48 ore",
     "stockists_label": "Rivenditori",
     "stockists_val": "Candidature attualmente accettate",
-    "early_access": {
-      "tag": "Cerchia Ristretta",
-      "headline": "Ottienilo prima di tutti.",
-      "perk1": "Accesso al preordine dal <strong>22 agosto</strong> — prima del lancio pubblico",
-      "perk2": "<strong>10% di sconto</strong> sul tuo primo abito, applicato al checkout",
-      "nudge": "Seleziona \"Accesso anticipato\" nel modulo →"
-    },
     "form": {
       "name": "Il tuo nome",
       "email": "Indirizzo e-mail",
       "country": "Paese",
       "type": "Di cosa si tratta?",
       "type_choose": "Scegli un'opzione",
-      "type_early": "Accesso anticipato — 10% di sconto",
       "type_notify": "Avvisami all'apertura degli ordini",
       "type_dress": "Richiesta su un abito",
       "type_press": "Richiesta stampa",
       "type_stockist": "Richiesta rivenditore",
       "type_general": "Generale",
-      "early_note": "Stai entrando nella cerchia ristretta — ti invieremo il codice sconto del 10% appena aprono i preordini, il 22 agosto.",
       "message": "Il tuo messaggio",
       "submit": "Invia",
-      "submit_early": "Accesso anticipato",
       "sending": "Invio…",
       "sent": "Inviato",
       "try_again": "Riprova",
       "footer_note": "Ti risponderemo entro 48 ore.",
-      "success": "Inviato. Ti ricontatteremo presto.",
-      "success_early": "Sei nella cerchia ristretta. Il tuo codice del 10% arriva appena aprono i preordini — il 22 agosto."
+      "success": "Inviato. Ti ricontatteremo presto."
     }
   },
   "lookbook": {
