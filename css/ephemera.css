@@ -122,7 +122,7 @@
    drop-shadow from being clipped once fully "printed". */
 .pa-receipt-print {
   clip-path: inset(-10px -50px 100% -50px);
-  transition: clip-path 1.15s cubic-bezier(.36, .07, .19, 1);
+  transition: clip-path 0.45s cubic-bezier(.36, .07, .19, 1);
   will-change: clip-path;
 }
 .pa-receipt-print.is-printed {
