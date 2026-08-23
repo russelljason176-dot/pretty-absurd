@@ -243,11 +243,13 @@
         email_address: document.getElementById('co-email').value,
         m_payment_id: mPaymentId,
         amount: PaCart.total().toFixed(2),
-        item_name: 'Pretty Absurd order',
+        item_name: itemNames.slice(0, 100),
         item_description: itemNames.slice(0, 255),
         custom_str1: document.getElementById('co-address').value,
         custom_str2: document.getElementById('co-city').value + ' ' + document.getElementById('co-postal').value,
         custom_str3: document.getElementById('co-phone').value,
+        custom_str4: itemNames.slice(0, 255),
+        custom_str5: mPaymentId,
       };
 
       sessionStorage.setItem('pa-last-order', JSON.stringify({ mPaymentId, items, total: PaCart.total() }));
