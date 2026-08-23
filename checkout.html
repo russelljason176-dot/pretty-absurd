@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-EDPX2RL5Y9"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-EDPX2RL5Y9');
+  </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Pretty Absurd — Checkout.">
+  <meta name="robots" content="noindex">
+  <link rel="canonical" href="https://prettyabsurd.co.za/checkout.html">
+  <meta name="theme-color" content="#F7F2EE">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="assets/favicon-32.png" type="image/png" sizes="32x32">
+  <link rel="icon" href="assets/favicon-16.png" type="image/png" sizes="16x16">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <title>Checkout — Pretty Absurd</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600&family=DM+Sans:wght@400;500;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/nav.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/cart.css">
+</head>
+<body data-page="checkout">
+
+  <nav class="site-nav" role="navigation" aria-label="Main navigation">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__brand">Pretty Absurd</a>
+      <ul class="nav__links" role="list">
+        <li><a href="lookbook.html"    class="nav__link">Lookbook</a></li>
+        <li><a href="collection.html"  class="nav__link">The Dresses</a></li>
+        <li><a href="about.html"       class="nav__link">About</a></li>
+        <li><a href="faq.html"         class="nav__link">FAQ</a></li>
+        <li><a href="contact.html"     class="nav__link">Contact</a></li>
+      </ul>
+      <button class="pa-cart-toggle" aria-label="Open cart" type="button">
+        <svg class="pa-cart-toggle__icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 8h12l-1 12H7L6 8z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg>
+        <span class="pa-cart-toggle__count" hidden>0</span>
+      </button>
+      <button class="nav__toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-overlay">
+        <span class="nav__toggle-line" aria-hidden="true"></span>
+        <span class="nav__toggle-line" aria-hidden="true"></span>
+        <span class="nav__toggle-line" aria-hidden="true"></span>
+      </button>
+    </div>
+    <div class="nav__overlay" id="nav-overlay" role="dialog" aria-label="Mobile navigation">
+      <ul class="nav__overlay-links" role="list">
+        <li><a href="lookbook.html"    class="nav__overlay-link">Lookbook</a></li>
+        <li><a href="collection.html"  class="nav__overlay-link">The Dresses</a></li>
+        <li><a href="about.html"       class="nav__overlay-link">About</a></li>
+        <li><a href="faq.html"         class="nav__overlay-link">FAQ</a></li>
+        <li><a href="contact.html"     class="nav__overlay-link">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main id="main-content">
+    <div class="nav-spacer"></div>
+    <div class="container">
+      <nav class="breadcrumbs" aria-label="Breadcrumb">
+        <ol class="breadcrumbs__list">
+          <li><a href="index.html" class="breadcrumbs__link">Home</a></li>
+          <li class="breadcrumbs__sep">/</li>
+          <li class="breadcrumbs__current" aria-current="page">Checkout</li>
+        </ol>
+      </nav>
+    </div>
+
+    <div class="container" id="checkout-populated" hidden>
+      <div class="checkout-layout">
+        <div>
+          <h1 class="collection-header__headline" style="margin-bottom: var(--space-8);">Checkout.</h1>
+
+          <form id="checkout-form">
+            <div class="checkout-form__section">
+              <span class="checkout-form__label">Contact</span>
+              <div class="checkout-form__field">
+                <label for="co-email">Email address</label>
+                <input id="co-email" type="email" name="email_address" required autocomplete="email">
+              </div>
+            </div>
+
+            <div class="checkout-form__section">
+              <span class="checkout-form__label">Shipping to</span>
+              <div class="checkout-form__row">
+                <div class="checkout-form__field">
+                  <label for="co-first">First name</label>
+                  <input id="co-first" type="text" name="name_first" required autocomplete="given-name">
+                </div>
+                <div class="checkout-form__field">
+                  <label for="co-last">Last name</label>
+                  <input id="co-last" type="text" name="name_last" required autocomplete="family-name">
+                </div>
+              </div>
+              <div class="checkout-form__field">
+                <label for="co-address">Address</label>
+                <input id="co-address" type="text" required autocomplete="street-address">
+              </div>
+              <div class="checkout-form__row">
+                <div class="checkout-form__field">
+                  <label for="co-city">City</label>
+                  <input id="co-city" type="text" required autocomplete="address-level2">
+                </div>
+                <div class="checkout-form__field">
+                  <label for="co-postal">Postal code</label>
+                  <input id="co-postal" type="text" required autocomplete="postal-code">
+                </div>
+              </div>
+              <div class="checkout-form__field">
+                <label for="co-phone">Phone</label>
+                <input id="co-phone" type="tel" required autocomplete="tel">
+              </div>
+            </div>
+          </form>
+        </div>
+
+        <div class="checkout-summary">
+          <div class="checkout-summary__title">Order Summary</div>
+          <div id="checkout-summary-items"></div>
+          <div class="checkout-summary__totalrow"><span>Total</span><span id="checkout-summary-total">R0</span></div>
+          <p class="checkout-summary__note">Payment is handled securely by Payfast — your card details never touch this site. You'll be redirected to Payfast to complete payment, then brought back here.</p>
+          <button type="submit" form="checkout-form" class="checkout-pay-btn" id="checkout-pay-btn">Pay with Payfast</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="container checkout-empty" id="checkout-empty" hidden>
+      <p style="font-size: var(--text-subheading); margin-bottom: var(--space-4);">Your bag is empty.</p>
+      <a href="collection.html" class="error-404__link">See the dresses</a>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer__inner">
+      <div class="footer__top">
+        <div>
+          <div class="footer__brand">Pretty Absurd</div>
+          <div class="footer__tagline">Dresses made to be stared at.</div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span class="footer__copy">© 2026 Pretty Absurd. All rights reserved.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/cart.js"></script>
+
+  <!-- ── Cart drawer ── -->
+  <div class="pa-cart-scrim" id="pa-cart-scrim"></div>
+  <aside class="pa-cart-drawer" id="pa-cart-drawer" aria-label="Shopping cart">
+    <div class="pa-cart-drawer__head">
+      <span class="pa-cart-drawer__title">Your Bag</span>
+      <button class="pa-cart-drawer__close" id="pa-cart-close" aria-label="Close cart">&times;</button>
+    </div>
+    <div class="pa-cart-drawer__body">
+      <p class="pa-cart-empty" id="pa-cart-empty">Your bag is empty.</p>
+      <div id="pa-cart-items"></div>
+    </div>
+    <div class="pa-cart-drawer__foot">
+      <div class="pa-cart-drawer__totalrow"><span>Total</span><span id="pa-cart-total">R0</span></div>
+      <button class="pa-cart-drawer__checkout" id="pa-cart-checkout" type="button">Checkout</button>
+    </div>
+  </aside>
+
+  <script>
+    /* ============================================================
+       Payfast handoff — sandbox mode.
+       SWITCH TO LIVE: set PAYFAST_SANDBOX = false and fill in
+       PAYFAST_MERCHANT_ID (3661343, once verified) + PAYFAST_MERCHANT_KEY.
+       No backend on this site, so this uses Payfast's hosted checkout
+       redirect (no card data ever touches prettyabsurd.co.za) rather
+       than a signed API integration. NOTE: without a server, there's
+       no ITN webhook receiver, so orders won't auto-confirm server-side
+       yet — check the Payfast dashboard for order fulfillment until
+       that's built.
+       ============================================================ */
+    const PAYFAST_SANDBOX = true;
+    const PAYFAST_MERCHANT_ID = '10000100';   // sandbox test ID — swap for 3661343 once live
+    const PAYFAST_MERCHANT_KEY = '46f0cd694581a'; // sandbox test key — swap for the real key once live
+    const PAYFAST_PROCESS_URL = PAYFAST_SANDBOX
+      ? 'https://sandbox.payfast.co.za/eng/process'
+      : 'https://www.payfast.co.za/eng/process';
+
+    function renderCheckout() {
+      const items = PaCart.items();
+      const populated = document.getElementById('checkout-populated');
+      const empty = document.getElementById('checkout-empty');
+
+      if (!items.length) {
+        populated.hidden = true;
+        empty.hidden = false;
+        return;
+      }
+      populated.hidden = false;
+      empty.hidden = true;
+
+      const summary = document.getElementById('checkout-summary-items');
+      summary.innerHTML = items.map(i => `
+        <div class="checkout-summary__item">
+          <span>${i.name} (${i.size}) &times; ${i.qty}</span>
+          <span>${paCartFormatZAR(i.price * i.qty)}</span>
+        </div>
+      `).join('');
+      document.getElementById('checkout-summary-total').textContent = paCartFormatZAR(PaCart.total());
+    }
+
+    document.addEventListener('DOMContentLoaded', renderCheckout);
+    document.addEventListener('pa-cart-change', renderCheckout);
+
+    document.getElementById('checkout-form').addEventListener('submit', function (e) {
+      e.preventDefault();
+      const items = PaCart.items();
+      if (!items.length) return;
+
+      const btn = document.getElementById('checkout-pay-btn');
+      btn.disabled = true;
+      btn.textContent = 'Redirecting to Payfast…';
+
+      const itemNames = items.map(i => `${i.name} (${i.size}) x${i.qty}`).join(', ');
+      const mPaymentId = 'PA-' + Date.now();
+
+      const fields = {
+        merchant_id: PAYFAST_MERCHANT_ID,
+        merchant_key: PAYFAST_MERCHANT_KEY,
+        return_url: 'https://prettyabsurd.co.za/order-confirmation.html',
+        cancel_url: 'https://prettyabsurd.co.za/checkout.html',
+        notify_url: 'https://prettyabsurd.co.za/order-confirmation.html',
+        name_first: document.getElementById('co-first').value,
+        name_last: document.getElementById('co-last').value,
+        email_address: document.getElementById('co-email').value,
+        m_payment_id: mPaymentId,
+        amount: PaCart.total().toFixed(2),
+        item_name: 'Pretty Absurd order',
+        item_description: itemNames.slice(0, 255),
+        custom_str1: document.getElementById('co-address').value,
+        custom_str2: document.getElementById('co-city').value + ' ' + document.getElementById('co-postal').value,
+        custom_str3: document.getElementById('co-phone').value,
+      };
+
+      sessionStorage.setItem('pa-last-order', JSON.stringify({ mPaymentId, items, total: PaCart.total() }));
+
+      const form = document.createElement('form');
+      form.method = 'POST';
+      form.action = PAYFAST_PROCESS_URL;
+      Object.entries(fields).forEach(([key, value]) => {
+        const input = document.createElement('input');
+        input.type = 'hidden';
+        input.name = key;
+        input.value = value;
+        form.appendChild(input);
+      });
+      document.body.appendChild(form);
+      form.submit();
+    });
+  </script>
+</body>
+</html>

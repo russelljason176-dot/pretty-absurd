@@ -49,6 +49,7 @@
     #pa-lookbook-overlay .lb-stage { position: relative; min-height: 82vh; }
   </style>
   <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/cart.css">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -80,6 +81,10 @@
         <button class="nav__lang-btn"            data-lang="de">DE</button>
         <button class="nav__lang-btn"            data-lang="pt">PT</button>
       </div>
+      <button class="pa-cart-toggle" aria-label="Open cart" type="button">
+        <svg class="pa-cart-toggle__icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 8h12l-1 12H7L6 8z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg>
+        <span class="pa-cart-toggle__count" hidden>0</span>
+      </button>
       <button class="nav__toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-overlay">
         <span class="nav__toggle-line" aria-hidden="true"></span>
         <span class="nav__toggle-line" aria-hidden="true"></span>
@@ -448,5 +453,23 @@
   </div>
 
   <script src="js/components.js"></script>
+
+  <!-- ── Cart drawer ── -->
+  <div class="pa-cart-scrim" id="pa-cart-scrim"></div>
+  <aside class="pa-cart-drawer" id="pa-cart-drawer" aria-label="Shopping cart">
+    <div class="pa-cart-drawer__head">
+      <span class="pa-cart-drawer__title">Your Bag</span>
+      <button class="pa-cart-drawer__close" id="pa-cart-close" aria-label="Close cart">&times;</button>
+    </div>
+    <div class="pa-cart-drawer__body">
+      <p class="pa-cart-empty" id="pa-cart-empty">Your bag is empty.</p>
+      <div id="pa-cart-items"></div>
+    </div>
+    <div class="pa-cart-drawer__foot">
+      <div class="pa-cart-drawer__totalrow"><span>Total</span><span id="pa-cart-total">R0</span></div>
+      <button class="pa-cart-drawer__checkout" id="pa-cart-checkout" type="button">Checkout</button>
+    </div>
+  </aside>
+  <script src="js/cart.js"></script>
 </body>
 </html>
