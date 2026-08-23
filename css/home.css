@@ -80,7 +80,6 @@
   display: block;
   width: clamp(200px, 24vw, 400px);
   height: auto;
-  filter: drop-shadow(0 6px 22px rgba(0, 0, 0, 0.28));
 }
 
 .home-hero__sub {
