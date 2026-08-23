@@ -116,6 +116,16 @@
                 </div>
               </div>
               <div class="checkout-form__field">
+                <label for="co-country">Country</label>
+                <select id="co-country" required style="padding:12px 14px;border:var(--border-mid);background:var(--white);font-family:var(--font-body);font-size:var(--text-sm);color:var(--ink);">
+                  <option value="South Africa" selected>South Africa</option>
+                  <option value="other">Outside South Africa</option>
+                </select>
+              </div>
+              <p class="checkout-form__intl-note" id="checkout-intl-note" hidden style="font-size:var(--text-xs);color:var(--pink-dark);margin:-8px 0 16px;line-height:1.6;">
+                We currently only ship within South Africa through checkout. For international orders, please <a href="contact.html" style="color:inherit;text-decoration:underline;">get in touch</a> for a shipping quote before ordering — international freight isn't covered by the listed price.
+              </p>
+              <div class="checkout-form__field">
                 <label for="co-phone">Phone</label>
                 <input id="co-phone" type="tel" required autocomplete="tel">
               </div>
@@ -126,9 +136,9 @@
         <div class="checkout-summary">
           <div class="checkout-summary__title">Order Summary</div>
           <div id="checkout-summary-items"></div>
-          <div class="checkout-summary__item"><span>Shipping</span><span>Included</span></div>
+          <div class="checkout-summary__item"><span>Shipping</span><span>Included (South Africa)</span></div>
           <div class="checkout-summary__totalrow"><span>Total</span><span id="checkout-summary-total">R0</span></div>
-          <p class="checkout-summary__note">Shipping is included in the price — no extra charges at checkout. Payment is handled securely by Payfast — your card details never touch this site. You'll be redirected to Payfast to complete payment, then brought back here.</p>
+          <p class="checkout-summary__note">Shipping within South Africa is included in the price — no extra charges at checkout. International orders aren't available through checkout — contact us for a shipping quote first. Payment is handled securely by Payfast — your card details never touch this site.</p>
           <button type="submit" form="checkout-form" class="checkout-pay-btn" id="checkout-pay-btn">Pay with Payfast</button>
         </div>
       </div>
@@ -220,10 +230,21 @@
     document.addEventListener('DOMContentLoaded', renderCheckout);
     document.addEventListener('pa-cart-change', renderCheckout);
 
+    document.getElementById('co-country').addEventListener('change', function () {
+      document.getElementById('checkout-intl-note').hidden = this.value === 'South Africa';
+    });
+
     document.getElementById('checkout-form').addEventListener('submit', function (e) {
       e.preventDefault();
       const items = PaCart.items();
       if (!items.length) return;
+
+      const country = document.getElementById('co-country').value;
+      if (country !== 'South Africa') {
+        document.getElementById('checkout-intl-note').hidden = false;
+        document.getElementById('checkout-intl-note').scrollIntoView({ behavior: 'smooth', block: 'center' });
+        return;
+      }
 
       const btn = document.getElementById('checkout-pay-btn');
       btn.disabled = true;
