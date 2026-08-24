@@ -219,6 +219,66 @@
 
 
 /* ============================================================
+   Follow row — Instagram / TikTok, made prominent per client ask
+   ============================================================ */
+.pa-follow {
+  position: relative;
+  z-index: 1;
+  max-width: var(--container-max);
+  margin: 60px auto 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+.pa-follow__label {
+  font-family: 'Space Mono', monospace;
+  font-size: 11px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #6a655c;
+}
+.pa-follow__links {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.pa-follow__link {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 26px;
+  border: 1.5px solid #171717;
+  border-radius: 999px;
+  background: #ffffff;
+  color: #171717;
+  text-decoration: none;
+  font-family: 'Space Mono', monospace;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  transition: background 0.2s ease, color 0.2s ease, transform 0.2s ease;
+}
+.pa-follow__icon {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
+.pa-follow__icon--outline {
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.8;
+}
+@media (hover: hover) and (pointer: fine) {
+  .pa-follow__link:hover {
+    background: #171717;
+    color: #f5f1ea;
+    transform: translateY(-2px);
+  }
+}
+
+/* ============================================================
    Slot 2 — Zine / magazine flip-through
    ============================================================ */
 

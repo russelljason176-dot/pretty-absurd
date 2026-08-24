@@ -106,10 +106,11 @@
 
 .footer__social {
   font-family: var(--font-body);
-  font-size: var(--text-caption);
+  font-size: var(--text-sm);
+  font-weight: 700;
   letter-spacing: var(--tracking-wide);
   text-transform: uppercase;
-  color: rgba(247, 242, 238, 0.35);
+  color: rgba(247, 242, 238, 0.85);
   transition: color var(--dur-fast) var(--ease-out);
 }
 
