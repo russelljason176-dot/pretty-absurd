@@ -354,23 +354,32 @@
   text-shadow: 0 1px 4px rgba(0,0,0,0.5);
 }
 
-/* Spine */
+/* Spine — a shadowed crease (how a closed magazine's cover actually
+   catches light at the fold), not a pale highlight stripe */
 .pa-zine__spine {
   position: absolute;
   left: 0;
   top: 0;
   bottom: 0;
-  width: 11px;
+  width: 16px;
   background: linear-gradient(
     to right,
-    #a8a39c 0%,
-    #c4bfb8 45%,
-    #dedad3 75%,
-    #f5f1ea 100%
+    rgba(20, 18, 15, 0.5) 0%,
+    rgba(20, 18, 15, 0.28) 18%,
+    rgba(20, 18, 15, 0.1) 45%,
+    transparent 100%
   );
   z-index: 10;
-  border-radius: 2px 0 0 2px;
   pointer-events: none;
+}
+.pa-zine__spine::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: rgba(20, 18, 15, 0.55);
 }
 
 /* Page thickness (right edge stack) */
