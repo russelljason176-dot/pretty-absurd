@@ -160,6 +160,21 @@
   flex-wrap: wrap;
 }
 
+/* Scalloped top edge — ticket/receipt-style bite pattern instead of a
+   flat rule, matching the site's paper-and-scissors visual language */
+.home-prelaunch::before {
+  content: "";
+  position: absolute;
+  top: -11px;
+  left: -40px;
+  right: -40px;
+  height: 12px;
+  background-image: radial-gradient(circle at 10px 0, transparent 9.5px, rgba(17, 17, 17, 0.72) 10px);
+  background-size: 20px 12px;
+  background-repeat: repeat-x;
+  pointer-events: none;
+}
+
 .home-prelaunch__label {
   font-family: var(--font-body);
   font-size: var(--text-sm);
