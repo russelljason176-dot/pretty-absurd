@@ -416,6 +416,47 @@
   line-height: 1.6;
 }
 
+.checkout-promo {
+  display: flex;
+  gap: 8px;
+  margin-top: var(--space-5);
+}
+.checkout-promo input {
+  flex: 1;
+  min-width: 0;
+  padding: 11px 12px;
+  border: var(--border-mid);
+  background: var(--white);
+  font-family: var(--font-body);
+  font-size: 12px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--ink);
+  outline: none;
+}
+.checkout-promo input:focus { border-color: var(--ink); }
+.checkout-promo button {
+  padding: 11px 18px;
+  background: transparent;
+  border: var(--border-mid);
+  color: var(--ink);
+  font-family: var(--font-body);
+  font-size: 11px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background var(--dur-fast) var(--ease-out), color var(--dur-fast) var(--ease-out);
+}
+@media (hover: hover) and (pointer: fine) {
+  .checkout-promo button:hover { background: var(--ink); color: var(--cream); }
+}
+.checkout-promo__note {
+  margin-top: var(--space-3);
+  font-size: 10px;
+  color: var(--ink-muted);
+}
+
 .checkout-pay-btn {
   display: block;
   width: 100%;

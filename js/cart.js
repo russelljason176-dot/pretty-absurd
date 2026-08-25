@@ -146,6 +146,12 @@ function initPaCart() {
   paCartRenderBadge();
   paCartRenderDrawer();
 
+  /* Capture a ?promo=CODE link param on any page so a shared waitlist
+     link (e.g. collection.html?promo=ABSURDVIP1) pre-fills at checkout,
+     without needing the visitor to land on checkout.html directly. */
+  const promoParam = new URLSearchParams(window.location.search).get('promo');
+  if (promoParam) localStorage.setItem('pa-promo-code', promoParam.trim().toUpperCase());
+
   document.addEventListener('pa-cart-change', () => {
     paCartRenderBadge();
     paCartRenderDrawer();

@@ -137,6 +137,14 @@
           <div class="checkout-summary__title">Order Summary</div>
           <div id="checkout-summary-items"></div>
           <div class="checkout-summary__item"><span>Shipping</span><span>Included (South Africa)</span></div>
+          <div class="checkout-summary__item" id="checkout-summary-discount-row" hidden><span id="checkout-summary-discount-label">Promo</span><span id="checkout-summary-discount">&minus;R0</span></div>
+
+          <div class="checkout-promo">
+            <input type="text" id="checkout-promo-input" placeholder="Promo code" autocomplete="off" spellcheck="false">
+            <button type="button" id="checkout-promo-apply">Apply</button>
+          </div>
+          <p class="checkout-promo__note" id="checkout-promo-note" hidden></p>
+
           <div class="checkout-summary__totalrow"><span>Total</span><span id="checkout-summary-total">R0</span></div>
           <p class="checkout-summary__note">Each dress is made to order — please allow 4–5 weeks to be made, plus 3–4 days shipping.</p>
           <p class="checkout-summary__note">Shipping within South Africa is included in the price — no extra charges at checkout. International orders aren't available through checkout — contact us for a shipping quote first. Payment is handled securely by Payfast — your card details never touch this site.</p>
@@ -205,6 +213,45 @@
       ? 'https://sandbox.payfast.co.za/eng/process'
       : 'https://www.payfast.co.za/eng/process';
 
+    /* ============================================================
+       Waitlist promo codes — 10% off, one code per waitlist member.
+       Client-side only (no backend on this static site), so this
+       can't enforce a hard "used once" cap across devices/browsers —
+       Kaylah hands out one code per person and crosses it off her
+       list manually when they order, same honor-system approach as
+       the Payfast account recovery codes.
+       ============================================================ */
+    const PROMO_CODES = ['ABSURDVIP1', 'ABSURDVIP2', 'ABSURDVIP3', 'ABSURDVIP4', 'ABSURDVIP5'];
+    const PROMO_DISCOUNT = 0.10;
+    let appliedPromo = null;
+
+    function normalizePromo(code) {
+      return (code || '').trim().toUpperCase();
+    }
+
+    function currentTotal() {
+      const raw = PaCart.total();
+      return appliedPromo ? raw * (1 - PROMO_DISCOUNT) : raw;
+    }
+
+    function applyPromo(code, { silent } = {}) {
+      const note = document.getElementById('checkout-promo-note');
+      const normalized = normalizePromo(code);
+      if (!normalized) return;
+      if (PROMO_CODES.includes(normalized)) {
+        appliedPromo = normalized;
+        localStorage.setItem('pa-promo-code', normalized);
+        note.textContent = '10% waitlist discount applied.';
+        note.hidden = false;
+        note.style.color = '';
+      } else if (!silent) {
+        note.textContent = 'That code isn\'t valid.';
+        note.hidden = false;
+        note.style.color = 'var(--pink-dark)';
+      }
+      renderCheckout();
+    }
+
     function renderCheckout() {
       const items = PaCart.items();
       const populated = document.getElementById('checkout-populated');
@@ -225,11 +272,39 @@
           <span>${paCartFormatZAR(i.price * i.qty)}</span>
         </div>
       `).join('');
-      document.getElementById('checkout-summary-total').textContent = paCartFormatZAR(PaCart.total());
+
+      const discountRow = document.getElementById('checkout-summary-discount-row');
+      if (appliedPromo) {
+        discountRow.hidden = false;
+        document.getElementById('checkout-summary-discount-label').textContent = `Promo (${appliedPromo})`;
+        document.getElementById('checkout-summary-discount').textContent =
+          '−' + paCartFormatZAR(PaCart.total() * PROMO_DISCOUNT);
+      } else {
+        discountRow.hidden = true;
+      }
+
+      document.getElementById('checkout-summary-total').textContent = paCartFormatZAR(currentTotal());
     }
 
-    document.addEventListener('DOMContentLoaded', renderCheckout);
+    document.addEventListener('DOMContentLoaded', () => {
+      renderCheckout();
+      const savedPromo = localStorage.getItem('pa-promo-code');
+      if (savedPromo) {
+        document.getElementById('checkout-promo-input').value = savedPromo;
+        applyPromo(savedPromo, { silent: true });
+      }
+    });
     document.addEventListener('pa-cart-change', renderCheckout);
+
+    document.getElementById('checkout-promo-apply').addEventListener('click', () => {
+      applyPromo(document.getElementById('checkout-promo-input').value);
+    });
+    document.getElementById('checkout-promo-input').addEventListener('keydown', (e) => {
+      if (e.key === 'Enter') {
+        e.preventDefault();
+        applyPromo(e.target.value);
+      }
+    });
 
     document.getElementById('co-country').addEventListener('change', function () {
       document.getElementById('checkout-intl-note').hidden = this.value === 'South Africa';
@@ -264,8 +339,8 @@
         name_last: document.getElementById('co-last').value,
         email_address: document.getElementById('co-email').value,
         m_payment_id: mPaymentId,
-        amount: PaCart.total().toFixed(2),
-        item_name: itemNames.slice(0, 100),
+        amount: currentTotal().toFixed(2),
+        item_name: (appliedPromo ? itemNames + ` [${appliedPromo}]` : itemNames).slice(0, 100),
         item_description: itemNames.slice(0, 255),
         custom_str1: document.getElementById('co-address').value,
         custom_str2: document.getElementById('co-city').value + ' ' + document.getElementById('co-postal').value,
@@ -274,7 +349,8 @@
         custom_str5: mPaymentId,
       };
 
-      sessionStorage.setItem('pa-last-order', JSON.stringify({ mPaymentId, items, total: PaCart.total() }));
+      sessionStorage.setItem('pa-last-order', JSON.stringify({ mPaymentId, items, total: currentTotal(), promo: appliedPromo }));
+      if (appliedPromo) localStorage.removeItem('pa-promo-code');
 
       const form = document.createElement('form');
       form.method = 'POST';
