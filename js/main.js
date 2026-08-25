@@ -256,9 +256,9 @@ function initMagneticButton() {
         if (moveX < maxLeft) moveX = maxLeft;
       }
 
-      // Clamp downward movement so btn never overlaps the prelaunch strip
+      // Clamp downward movement so btn never overlaps the scalloped hero edge
       if (moveY > 0) {
-        const prelaunch = document.querySelector('.home-prelaunch');
+        const prelaunch = document.querySelector('.home-hero__scallop');
         if (prelaunch) {
           const plRect = prelaunch.getBoundingClientRect();
           const maxDown = plRect.top - (rect.bottom) - GAP_MIN;

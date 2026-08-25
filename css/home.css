@@ -143,109 +143,22 @@
   }
 }
 
-/* ── Prelaunch strip ── */
-.home-prelaunch {
+/* ── Scalloped hero edge ── */
+/* Standalone ticket/receipt-style bite pattern finishing the bottom of the
+   hero photo — replaces the old prelaunch banner strip entirely, sized up
+   to occupy roughly the same footprint it used to. */
+.home-hero__scallop {
   position: absolute;
   bottom: 0;
-  left: 0;
-  right: 0;
-  z-index: 2;
-  display: flex;
-  align-items: center;
-  gap: var(--space-6);
-  padding: var(--space-6) var(--container-pad);
-  background: rgba(17, 17, 17, 0.72);
-  backdrop-filter: blur(6px);
-  -webkit-backdrop-filter: blur(6px);
-  flex-wrap: wrap;
-}
-
-/* Scalloped top edge — ticket/receipt-style bite pattern instead of a
-   flat rule, matching the site's paper-and-scissors visual language */
-.home-prelaunch::before {
-  content: "";
-  position: absolute;
-  top: -17px;
   left: -40px;
   right: -40px;
-  height: 18px;
-  background-image: radial-gradient(circle at 15px 0, transparent 14.25px, rgba(17, 17, 17, 0.72) 15px);
-  background-size: 30px 18px;
+  z-index: 2;
+  height: 52px;
+  background-image: radial-gradient(circle at 32px 0, transparent 30px, rgba(17, 17, 17, 0.82) 31px);
+  background-size: 64px 52px;
   background-repeat: repeat-x;
+  background-position: bottom;
   pointer-events: none;
-}
-
-.home-prelaunch__label {
-  font-family: var(--font-body);
-  font-size: var(--text-sm);
-  letter-spacing: var(--tracking-widest);
-  text-transform: uppercase;
-  color: var(--pink);
-  flex-shrink: 0;
-}
-
-.home-prelaunch__text {
-  font-family: var(--font-body);
-  font-size: clamp(0.9rem, 1.4vw, 1.1rem);
-  flex: 1;
-  min-width: 0;
-  background: linear-gradient(
-    90deg,
-    rgba(247, 242, 238, 0.45) 0%,
-    rgba(247, 242, 238, 0.45) 35%,
-    #ffffff 50%,
-    rgba(247, 242, 238, 0.45) 65%,
-    rgba(247, 242, 238, 0.45) 100%
-  );
-  background-size: 250% auto;
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-  animation: shimmer-ltr 3s linear infinite;
-}
-
-@keyframes shimmer-ltr {
-  from { background-position: -150% center; }
-  to   { background-position: 150% center; }
-}
-
-.home-prelaunch__cta {
-  font-family: var(--font-body);
-  font-size: var(--text-sm);
-  letter-spacing: var(--tracking-wide);
-  text-transform: uppercase;
-  white-space: nowrap;
-  color: var(--cream);
-  border-bottom: 1px solid rgba(247, 242, 238, 0.3);
-  padding-bottom: 1px;
-  animation: notify-pulse 2.4s ease-in-out infinite;
-}
-@media (hover: hover) and (pointer: fine) {
-  .home-prelaunch__cta:hover {
-    animation: none;
-    color: var(--pink);
-    border-bottom-color: var(--pink);
-    text-shadow: none;
-  }
-}
-
-@keyframes notify-pulse {
-  0%, 100% {
-    color: #ffffff;
-    text-shadow:
-      0 0 6px  rgba(255, 255, 255, 1),
-      0 0 18px rgba(255, 255, 255, 0.8),
-      0 0 40px rgba(255, 255, 255, 0.4);
-    border-bottom-color: rgba(255, 255, 255, 0.6);
-  }
-  50% {
-    color: var(--pink-light);
-    text-shadow:
-      0 0 6px  rgba(237, 160, 190, 1),
-      0 0 18px rgba(237, 160, 190, 0.8),
-      0 0 40px rgba(237, 160, 190, 0.4);
-    border-bottom-color: rgba(237, 160, 190, 0.6);
-  }
 }
 
 /* ── Collection teaser ── */
@@ -819,5 +732,4 @@
   }
   .home-hero__ctas { flex-direction: column; align-items: flex-start; }
   .home-hero__content { padding-bottom: 240px; }
-  .home-prelaunch { flex-direction: column; align-items: flex-start; gap: var(--space-3); }
 }
