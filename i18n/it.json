@@ -54,9 +54,9 @@
       "pink": {
         "num": "01 — 03",
         "name": "Il Raso Rosa",
-        "desc": "Un corsetto che fa sul serio. Una gonna plissettata che no. Realizzato in morbido raso rosa lilla con struttura a stecche, scollatura a cuore e un laccio sul retro che prende il suo tempo.",
+        "desc": "Un corsetto che fa sul serio. Una gonna plissettata che no. Realizzato in morbido raso Duchesse rosa lilla con struttura a stecche, scollatura a cuore e un laccio sul retro che prende il suo tempo.",
         "details": [
-          "Raso con struttura a stecche",
+          "Raso Duchesse con struttura a stecche",
           "Scollatura a cuore con rouches",
           "Chiusura con laccio sul retro",
           "Zip invisibile laterale",
@@ -67,9 +67,9 @@
       "blue": {
         "num": "02 — 03",
         "name": "L'Azzurro Ghiaccio",
-        "desc": "Raso azzurro cipria. Scollatura a cuore. Strutturalmente assurdo. Stessa silhouette del rosa — stessa struttura, umore diverso. Più discreto, finché non lo vedi muoversi.",
+        "desc": "Raso Duchesse azzurro cipria. Scollatura a cuore. Strutturalmente assurdo. Stessa silhouette del rosa — stessa struttura, umore diverso. Più discreto, finché non lo vedi muoversi.",
         "details": [
-          "Raso azzurro ghiaccio con struttura a stecche",
+          "Raso Duchesse azzurro ghiaccio con struttura a stecche",
           "Scollatura a cuore con rouches",
           "Laccio in nastro sul retro, in tono",
           "Zip invisibile laterale",
@@ -82,7 +82,7 @@
         "name": "Il Pois",
         "desc": "Puntini neri su bianco. Fascino d'altri tempi. Caos contemporaneo. Stessa silhouette, stessa struttura — ma il pois cambia tutto. È quello che fa guardare due volte.",
         "details": [
-          "Tessuto strutturato bianco a pois neri",
+          "Raso Duchesse bianco a pois neri",
           "Scollatura a cuore con rouches",
           "Chiusura con laccio sul retro",
           "Zip invisibile laterale",
@@ -102,7 +102,7 @@
       "label": "La Storia",
       "headline": "Abiti degni di un film che non riesci a collocare.",
       "p1": "Gli abiti da donna di solito scelgono una strada: invisibili, oppure troppo appariscenti. Kaylah ha evitato la scelta e ha creato tre abiti al suo posto.",
-      "p2": "Ognuno condivide la stessa struttura — corsetto, scollatura a cuore, gonna plissettata — e racconta una storia diversa. Il raso rosa che sembra un sogno da Barbie. L'azzurro ghiaccio degno di una passerella parigina. I pois che fanno pensare a Marilyn Monroe su un tetto.",
+      "p2": "Ognuno condivide la stessa struttura — corsetto, scollatura a cuore, gonna plissettata — e racconta una storia diversa. Il raso Duchesse rosa che sembra un sogno da Barbie. L'azzurro ghiaccio degno di una passerella parigina. I pois che fanno pensare a Marilyn Monroe su un tetto.",
       "p3": "Il nome dice tutto. Pretty Absurd è moda deliberatamente, gioiosamente fuori posto. Abiti che fanno guardare — non perché sono strani, ma perché sono esattamente giusti in tutti i modi sbagliati."
     },
     "philosophy": {
@@ -116,9 +116,9 @@
       "headline_1": "Ogni cucitura posizionata con intenzione.",
       "headline_2": "Il caos sta nell'indossarlo, non nel crearlo.",
       "step1_title": "Prima la struttura",
-      "step1_text": "Ogni abito parte dalla struttura. Le stecche del corsetto definiscono la silhouette prima ancora di tagliare un solo pezzo di raso. La struttura non è mai un ripensamento.",
+      "step1_text": "Ogni abito parte dalla struttura. Le stecche del corsetto definiscono la silhouette prima ancora di tagliare un solo pezzo di raso Duchesse. La struttura non è mai un ripensamento.",
       "step2_title": "Il tessuto come carattere",
-      "step2_text": "Il tessuto non è mai solo un rivestimento — è la personalità del capo. Il raso cattura la luce in modo diverso. I pois cambiano la conversazione prima ancora di dire una parola.",
+      "step2_text": "Il tessuto non è mai solo un rivestimento — è la personalità del capo. Il raso Duchesse cattura la luce in modo diverso. I pois cambiano la conversazione prima ancora di dire una parola.",
       "step3_title": "Dettagli che si guadagnano il loro posto",
       "step3_text": "Il rouches sulla scollatura a cuore. Il laccio sul retro. La zip invisibile sul lato. Niente è lì per decorazione — ogni dettaglio ha un compito."
     },

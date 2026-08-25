@@ -54,9 +54,9 @@
       "pink": {
         "num": "01 — 03",
         "name": "El Satén Rosa",
-        "desc": "Un corsé que va en serio. Una falda plisada que no. Confeccionado en suave satén rosa lila con varillaje estructurado, escote corazón y un cordón trasero que se toma su tiempo.",
+        "desc": "Un corsé que va en serio. Una falda plisada que no. Confeccionado en suave satén Duquesa rosa lila con varillaje estructurado, escote corazón y un cordón trasero que se toma su tiempo.",
         "details": [
-          "Satén con estructura de varillaje",
+          "Satén Duquesa con estructura de varillaje",
           "Escote corazón con volante",
           "Cierre de cordón trasero",
           "Cremallera invisible lateral",
@@ -67,9 +67,9 @@
       "blue": {
         "num": "02 — 03",
         "name": "El Azul Hielo",
-        "desc": "Satén azul empolvado. Escote corazón. Estructuralmente absurdo. La misma silueta que el rosa — mismos huesos, distinto ánimo. Es más discreto, hasta que lo ves moverse.",
+        "desc": "Satén Duquesa azul empolvado. Escote corazón. Estructuralmente absurdo. La misma silueta que el rosa — mismos huesos, distinto ánimo. Es más discreto, hasta que lo ves moverse.",
         "details": [
-          "Satén azul hielo con estructura de varillaje",
+          "Satén Duquesa azul hielo con estructura de varillaje",
           "Escote corazón con volante",
           "Cordón trasero de cinta a juego",
           "Cremallera invisible lateral",
@@ -82,7 +82,7 @@
         "name": "El Lunar",
         "desc": "Lunares negros sobre blanco. Encanto clásico. Caos contemporáneo. Misma silueta, misma estructura — pero el lunar lo cambia todo. Es el que hace que te giren a mirar dos veces.",
         "details": [
-          "Tela estructurada blanca con lunares negros",
+          "Satén Duquesa blanco con lunares negros",
           "Escote corazón con volante",
           "Cierre de cordón trasero",
           "Cremallera invisible lateral",
@@ -102,7 +102,7 @@
       "label": "La Historia",
       "headline": "Prendas que pertenecen a una película que no logras ubicar.",
       "p1": "La ropa de mujer suele elegir un bando: invisible, o esforzándose demasiado. Kaylah se saltó esa elección y creó tres vestidos en su lugar.",
-      "p2": "Cada uno comparte la misma base — corsé, escote corazón, falda plisada — y cuenta una historia distinta. El satén rosa que parece un sueño de Barbie. El azul hielo digno de una pasarela parisina. Los lunares que evocan a Marilyn Monroe en una azotea.",
+      "p2": "Cada uno comparte la misma base — corsé, escote corazón, falda plisada — y cuenta una historia distinta. El satén Duquesa rosa que parece un sueño de Barbie. El azul hielo digno de una pasarela parisina. Los lunares que evocan a Marilyn Monroe en una azotea.",
       "p3": "El nombre lo dice todo. Pretty Absurd es moda deliberada y alegremente fuera de lugar. Prendas que hacen que la gente mire — no porque sean extrañas, sino porque están exactamente bien en todo lo que tienen de incorrecto."
     },
     "philosophy": {
@@ -116,9 +116,9 @@
       "headline_1": "Cada costura colocada con intención.",
       "headline_2": "El caos está en llevarlo puesto, no en hacerlo.",
       "step1_title": "Primero la estructura",
-      "step1_text": "Cada vestido empieza por los huesos. El varillaje del corsé define la silueta antes de cortar un solo trozo de satén. La estructura nunca es una idea de último momento.",
+      "step1_text": "Cada vestido empieza por los huesos. El varillaje del corsé define la silueta antes de cortar un solo trozo de satén Duquesa. La estructura nunca es una idea de último momento.",
       "step2_title": "La tela como carácter",
-      "step2_text": "La tela nunca es solo un revestimiento — es la personalidad de la prenda. El satén capta la luz de forma distinta. Los lunares cambian la conversación antes de que digas una palabra.",
+      "step2_text": "La tela nunca es solo un revestimiento — es la personalidad de la prenda. El satén Duquesa capta la luz de forma distinta. Los lunares cambian la conversación antes de que digas una palabra.",
       "step3_title": "Detalles que se ganan su lugar",
       "step3_text": "El volante en el escote corazón. El cordón en la espalda. La cremallera invisible al costado. Nada está ahí por decoración — cada detalle cumple una función."
     },

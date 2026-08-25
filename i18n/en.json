@@ -53,9 +53,9 @@
       "pink": {
         "num": "01 — 03",
         "name": "The Pink Satin",
-        "desc": "A corset bodice that means business. A pleated skirt that means none. Made in soft lilac-pink satin with a structured boning, sweetheart neckline, and a back lacing that takes its time.",
+        "desc": "A corset bodice that means business. A pleated skirt that means none. Made in soft lilac-pink Duchess Satin with a structured boning, sweetheart neckline, and a back lacing that takes its time.",
         "details": [
-          "Satin with boning structure",
+          "Duchess Satin with boning structure",
           "Sweetheart neckline with ruffle trim",
           "Back lace-up closure",
           "Side invisible zip",
@@ -66,9 +66,9 @@
       "blue": {
         "num": "02 — 03",
         "name": "The Ice Blue",
-        "desc": "Powder blue satin. Sweetheart neckline. Structurally absurd. The same silhouette as the pink — same bones, different mood. This one is quieter, until you see it move.",
+        "desc": "Powder blue Duchess Satin. Sweetheart neckline. Structurally absurd. The same silhouette as the pink — same bones, different mood. This one is quieter, until you see it move.",
         "details": [
-          "Ice blue satin with boning structure",
+          "Ice blue Duchess Satin with boning structure",
           "Sweetheart neckline with ruffle trim",
           "Back ribbon lacing in matching blue",
           "Side invisible zip",
@@ -81,7 +81,7 @@
         "name": "The Polka Dot",
         "desc": "Black dots on white. Old-school charm. New-school chaos. Same silhouette, same structure — but the polka dot changes everything. It's the one that makes people stare a second time.",
         "details": [
-          "White structured fabric with black polka dots",
+          "White Duchess Satin with black polka dots",
           "Sweetheart neckline with ruffle trim",
           "Back lace-up closure",
           "Side invisible zip",
@@ -101,7 +101,7 @@
       "label": "The Story",
       "headline": "Clothes that belong in a film you can't quite place.",
       "p1": "Kaylah started Pretty Absurd with a simple bet: build three dresses no one could ignore, then see who's brave enough to wear them out.",
-      "p2": "All three share the same bones: a corset bodice, a sweetheart neckline, a pleated skirt. From there, they split hard. Pink Satin is a Barbie dream sequence. Ice Blue would not look out of place on a Paris catwalk, sharper and colder than the pink. The Polka Dot drags in a bit of Marilyn Monroe, thick black dots on white satin, the kind of print that reads from across a room.",
+      "p2": "All three share the same bones: a corset bodice, a sweetheart neckline, a pleated skirt. From there, they split hard. Pink Satin is a Barbie dream sequence. Ice Blue would not look out of place on a Paris catwalk, sharper and colder than the pink. The Polka Dot drags in a bit of Marilyn Monroe, thick black dots on white Duchess Satin, the kind of print that reads from across a room.",
       "p3": "The name is the whole pitch. Pretty Absurd makes clothes that don't belong anywhere in particular, and wears that on purpose. People stare because the pieces are correct in ways that shouldn't work."
     },
     "philosophy": {
@@ -115,9 +115,9 @@
       "headline_1": "Kaylah places every seam on purpose.",
       "headline_2": "The mess shows up when you wear it. Not before.",
       "step1_title": "Structure first",
-      "step1_text": "Every dress starts with the bones. The corset boning defines the silhouette before a single piece of satin is cut.",
+      "step1_text": "Every dress starts with the bones. The corset boning defines the silhouette before a single piece of Duchess Satin is cut.",
       "step2_title": "Fabric as character",
-      "step2_text": "Fabric carries most of the personality here. Satin catches light in a way that shifts depending on how you move. Polka dots do the talking before you open your mouth.",
+      "step2_text": "Fabric carries most of the personality here. Duchess Satin catches light in a way that shifts depending on how you move. Polka dots do the talking before you open your mouth.",
       "step3_title": "Details that earn their place",
       "step3_text": "A ruffle finishes the sweetheart neckline, lacing runs up the back, and the zip stays invisible at the side."
     },

@@ -54,9 +54,9 @@
       "pink": {
         "num": "01 — 03",
         "name": "O Cetim Rosa",
-        "desc": "Um corpete que leva a sério. Uma saia plissada que não leva. Feito em cetim rosa lilás macio, com estrutura de barbatanas, decote coração e um cadarço nas costas que não tem pressa.",
+        "desc": "Um corpete que leva a sério. Uma saia plissada que não leva. Feito em cetim Duquesa rosa lilás macio, com estrutura de barbatanas, decote coração e um cadarço nas costas que não tem pressa.",
         "details": [
-          "Cetim com estrutura de barbatanas",
+          "Cetim Duquesa com estrutura de barbatanas",
           "Decote coração com babado",
           "Fechamento com cadarço nas costas",
           "Zíper invisível lateral",
@@ -67,9 +67,9 @@
       "blue": {
         "num": "02 — 03",
         "name": "O Azul Gelo",
-        "desc": "Cetim azul empoeirado. Decote coração. Estruturalmente absurdo. A mesma silhueta do rosa — mesma base, humor diferente. Mais discreto, até você ver em movimento.",
+        "desc": "Cetim Duquesa azul empoeirado. Decote coração. Estruturalmente absurdo. A mesma silhueta do rosa — mesma base, humor diferente. Mais discreto, até você ver em movimento.",
         "details": [
-          "Cetim azul gelo com estrutura de barbatanas",
+          "Cetim Duquesa azul gelo com estrutura de barbatanas",
           "Decote coração com babado",
           "Cadarço de fita nas costas, tom sobre tom",
           "Zíper invisível lateral",
@@ -82,7 +82,7 @@
         "name": "A Poá",
         "desc": "Bolinhas pretas sobre branco. Charme retrô. Caos contemporâneo. Mesma silhueta, mesma estrutura — mas a poá muda tudo. É o vestido que faz todo mundo olhar duas vezes.",
         "details": [
-          "Tecido estruturado branco com poás pretas",
+          "Cetim Duquesa branco com poás pretas",
           "Decote coração com babado",
           "Fechamento com cadarço nas costas",
           "Zíper invisível lateral",
@@ -102,7 +102,7 @@
       "label": "A História",
       "headline": "Roupas que pertencem a um filme que você não consegue identificar.",
       "p1": "Roupas femininas normalmente escolhem um caminho: invisíveis, ou esforçando-se demais. Kaylah driblou essa escolha e criou três vestidos.",
-      "p2": "Cada um compartilha a mesma base — corpete, decote coração, saia plissada — e conta uma história diferente. Cetim rosa que parece um sonho de Barbie. Azul gelo digno de passarela parisiense. Poás que lembram Marilyn Monroe em uma cobertura.",
+      "p2": "Cada um compartilha a mesma base — corpete, decote coração, saia plissada — e conta uma história diferente. Cetim Duquesa rosa que parece um sonho de Barbie. Azul gelo digno de passarela parisiense. Poás que lembram Marilyn Monroe em uma cobertura.",
       "p3": "O nome diz tudo. Pretty Absurd é uma moda deliberada e alegremente fora do lugar. Roupas que fazem as pessoas olharem — não porque são estranhas, mas porque estão exatamente certas em tudo o que têm de errado."
     },
     "philosophy": {
@@ -116,9 +116,9 @@
       "headline_1": "Cada costura posicionada com intenção.",
       "headline_2": "O caos está em vestir, não em fazer.",
       "step1_title": "Estrutura primeiro",
-      "step1_text": "Cada vestido começa pela base. As barbatanas do corpete definem a silhueta antes de qualquer pedaço de cetim ser cortado. Estrutura nunca é um detalhe de última hora.",
+      "step1_text": "Cada vestido começa pela base. As barbatanas do corpete definem a silhueta antes de qualquer pedaço de cetim Duquesa ser cortado. Estrutura nunca é um detalhe de última hora.",
       "step2_title": "O tecido como personalidade",
-      "step2_text": "O tecido nunca é apenas um revestimento — é a personalidade da peça. O cetim capta a luz de um jeito diferente. As poás mudam a conversa antes mesmo de você dizer uma palavra.",
+      "step2_text": "O tecido nunca é apenas um revestimento — é a personalidade da peça. O cetim Duquesa capta a luz de um jeito diferente. As poás mudam a conversa antes mesmo de você dizer uma palavra.",
       "step3_title": "Detalhes que merecem seu lugar",
       "step3_text": "O babado no decote coração. O cadarço nas costas. O zíper invisível na lateral. Nada está ali por decoração — cada detalhe cumpre uma função."
     },

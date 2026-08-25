@@ -54,9 +54,9 @@
       "pink": {
         "num": "01 — 03",
         "name": "La Rose Satinée",
-        "desc": "Un bustier corset qui ne plaisante pas. Une jupe plissée qui ne prend rien au sérieux. En satin rose lilas doux, avec baleinage structuré, décolleté cœur et un laçage dans le dos qui prend son temps.",
+        "desc": "Un bustier corset qui ne plaisante pas. Une jupe plissée qui ne prend rien au sérieux. En satin duchesse rose lilas doux, avec baleinage structuré, décolleté cœur et un laçage dans le dos qui prend son temps.",
         "details": [
-          "Satin avec structure baleinée",
+          "Satin duchesse avec structure baleinée",
           "Décolleté cœur avec volant",
           "Fermeture laçage dans le dos",
           "Fermeture éclair invisible sur le côté",
@@ -67,9 +67,9 @@
       "blue": {
         "num": "02 — 03",
         "name": "Le Bleu Glacé",
-        "desc": "Satin bleu poudré. Décolleté cœur. Structurellement absurde. La même silhouette que la rose — les mêmes lignes, une autre humeur. Plus discrète, jusqu'à ce qu'on la voie bouger.",
+        "desc": "Satin duchesse bleu poudré. Décolleté cœur. Structurellement absurde. La même silhouette que la rose — les mêmes lignes, une autre humeur. Plus discrète, jusqu'à ce qu'on la voie bouger.",
         "details": [
-          "Satin bleu glacé avec structure baleinée",
+          "Satin duchesse bleu glacé avec structure baleinée",
           "Décolleté cœur avec volant",
           "Laçage ruban dans le dos, ton sur ton",
           "Fermeture éclair invisible sur le côté",
@@ -82,7 +82,7 @@
         "name": "Le Pois",
         "desc": "Pois noirs sur fond blanc. Charme rétro. Chaos contemporain. Même silhouette, même structure — mais le pois change tout. C'est celle qui fait qu'on regarde deux fois.",
         "details": [
-          "Tissu structuré blanc à pois noirs",
+          "Satin duchesse blanc à pois noirs",
           "Décolleté cœur avec volant",
           "Fermeture laçage dans le dos",
           "Fermeture éclair invisible sur le côté",
@@ -102,7 +102,7 @@
       "label": "L'Histoire",
       "headline": "Des vêtements sortis d'un film qu'on n'arrive pas à situer.",
       "p1": "Les vêtements pour femmes choisissent en général un camp : invisibles, ou trop voyants. Kaylah a refusé de choisir et a créé trois robes à la place.",
-      "p2": "Chacune partage la même ossature — bustier corset, décolleté cœur, jupe plissée — et raconte une histoire différente. Le satin rose qui évoque un rêve de poupée. Le bleu glacé digne d'un défilé parisien. Les pois qui font penser à Marilyn Monroe sur un toit.",
+      "p2": "Chacune partage la même ossature — bustier corset, décolleté cœur, jupe plissée — et raconte une histoire différente. Le satin duchesse rose qui évoque un rêve de poupée. Le bleu glacé digne d'un défilé parisien. Les pois qui font penser à Marilyn Monroe sur un toit.",
       "p3": "Le nom dit tout. Pretty Absurd est une mode volontairement, joyeusement décalée. Des vêtements qui font qu'on regarde — pas parce qu'ils sont étranges, mais parce qu'ils sont exactement justes dans tout ce qu'ils ont de travers."
     },
     "philosophy": {
@@ -116,9 +116,9 @@
       "headline_1": "Chaque couture placée avec intention.",
       "headline_2": "Le chaos est dans le port, pas dans la fabrication.",
       "step1_title": "La structure d'abord",
-      "step1_text": "Chaque robe commence par l'ossature. Le baleinage du corset définit la silhouette avant même qu'un seul morceau de satin soit coupé. La structure n'est jamais une réflexion après coup.",
+      "step1_text": "Chaque robe commence par l'ossature. Le baleinage du corset définit la silhouette avant même qu'un seul morceau de satin duchesse soit coupé. La structure n'est jamais une réflexion après coup.",
       "step2_title": "Le tissu comme caractère",
-      "step2_text": "Le tissu n'est jamais un simple revêtement — il est la personnalité de la pièce. Le satin capte la lumière différemment. Les pois changent la conversation avant même qu'on ait dit un mot.",
+      "step2_text": "Le tissu n'est jamais un simple revêtement — il est la personnalité de la pièce. Le satin duchesse capte la lumière différemment. Les pois changent la conversation avant même qu'on ait dit un mot.",
       "step3_title": "Des détails qui méritent leur place",
       "step3_text": "Le volant au décolleté cœur. Le laçage dans le dos. La fermeture éclair invisible sur le côté. Rien n'est là pour décorer — chaque détail a un rôle."
     },
