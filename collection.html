@@ -180,30 +180,21 @@
     <!-- ── Quick-shop grid ── -->
     <div class="collection-grid">
       <a href="#pink" class="collection-grid__card">
-        <div class="collection-grid__stage">
-          <img src="assets/images/product-detail/pink-hero.webp" alt="The Pink Satin" loading="lazy">
-        </div>
+        <div class="collection-grid__stage"></div>
         <span class="collection-grid__num" data-i18n="collection.pieces.pink.num">01 &mdash; 03</span>
         <h2 class="collection-grid__name" data-i18n="collection.pieces.pink.name">The Pink Satin</h2>
-        <span class="collection-grid__price" data-price="1950">R1,950</span>
         <span class="collection-grid__link" data-i18n="collection.view_dress">View the dress &darr;</span>
       </a>
       <a href="#blue" class="collection-grid__card">
-        <div class="collection-grid__stage">
-          <img src="assets/images/product-detail/blue-hero.webp" alt="The Ice Blue" loading="lazy">
-        </div>
+        <div class="collection-grid__stage"></div>
         <span class="collection-grid__num" data-i18n="collection.pieces.blue.num">02 &mdash; 03</span>
         <h2 class="collection-grid__name" data-i18n="collection.pieces.blue.name">The Ice Blue</h2>
-        <span class="collection-grid__price" data-price="1950">R1,950</span>
         <span class="collection-grid__link" data-i18n="collection.view_dress">View the dress &darr;</span>
       </a>
       <a href="#dot" class="collection-grid__card">
-        <div class="collection-grid__stage">
-          <img src="assets/images/product-detail/dot-hero.webp" alt="The Polka Dot" loading="lazy">
-        </div>
+        <div class="collection-grid__stage"></div>
         <span class="collection-grid__num" data-i18n="collection.pieces.polkadot.num">03 &mdash; 03</span>
         <h2 class="collection-grid__name" data-i18n="collection.pieces.polkadot.name">The Polka Dot</h2>
-        <span class="collection-grid__price" data-price="1950">R1,950</span>
         <span class="collection-grid__link" data-i18n="collection.view_dress">View the dress &darr;</span>
       </a>
     </div>
@@ -213,12 +204,10 @@
       <div class="dress-feature__grid">
         <div class="dress-feature__media">
           <div class="dress-feature__stage">
-            <img id="pink-stage" src="assets/images/product-detail/pink-hero.webp" alt="The Pink Satin — full-length product view" loading="lazy">
+            <img id="pink-stage" src="" alt="The Pink Satin — full-length product view" loading="lazy" style="display:none">
           </div>
           <div class="dress-feature__strip">
-            <img src="assets/images/product-detail/pink-side.webp" alt="The Pink Satin worn — front view" loading="lazy" onclick="document.getElementById('pink-stage').src=this.src">
-            <img src="assets/images/product-detail/pink-back.webp" alt="Pink satin back view with lacing" loading="lazy" onclick="document.getElementById('pink-stage').src=this.src">
-            <img src="assets/images/product-detail/pink-fabric.webp" alt="Pink satin fabric detail" loading="lazy" onclick="document.getElementById('pink-stage').src=this.src">
+            <img src="assets/images/product-detail/pink-fabric.webp" alt="Pink satin fabric detail" loading="lazy" onclick="document.getElementById('pink-stage').src=this.src; document.getElementById('pink-stage').style.display='block'">
           </div>
         </div>
         <div class="dress-feature__info">
@@ -256,12 +245,10 @@
       <div class="dress-feature__grid">
         <div class="dress-feature__media">
           <div class="dress-feature__stage">
-            <img id="blue-stage" src="assets/images/product-detail/blue-hero.webp" alt="The Ice Blue — full-length product view" loading="lazy">
+            <img id="blue-stage" src="" alt="The Ice Blue — full-length product view" loading="lazy" style="display:none">
           </div>
           <div class="dress-feature__strip">
-            <img src="assets/images/product-detail/blue-worn-back.webp" alt="The Ice Blue worn — back view with lacing" loading="lazy" onclick="document.getElementById('blue-stage').src=this.src">
-            <img src="assets/images/product-detail/blue-back.webp" alt="Ice blue back view with ribbon lacing" loading="lazy" onclick="document.getElementById('blue-stage').src=this.src">
-            <img src="assets/images/product-detail/blue-flat.webp" alt="Ice blue flat lay detail" loading="lazy" onclick="document.getElementById('blue-stage').src=this.src">
+            <img src="assets/images/product-detail/blue-flat.webp" alt="Ice blue flat lay detail" loading="lazy" onclick="document.getElementById('blue-stage').src=this.src; document.getElementById('blue-stage').style.display='block'">
           </div>
         </div>
         <div class="dress-feature__info">
@@ -299,12 +286,10 @@
       <div class="dress-feature__grid">
         <div class="dress-feature__media">
           <div class="dress-feature__stage">
-            <img id="dot-stage" src="assets/images/product-detail/dot-hero.webp" alt="The Polka Dot — full-length product view" loading="lazy">
+            <img id="dot-stage" src="" alt="The Polka Dot — full-length product view" loading="lazy" style="display:none">
           </div>
           <div class="dress-feature__strip">
-            <img src="assets/images/product-detail/dot-worn-bodice.webp" alt="The Polka Dot worn — bodice detail" loading="lazy" onclick="document.getElementById('dot-stage').src=this.src">
-            <img src="assets/images/product-detail/dot-worn-full.webp" alt="The Polka Dot worn — full length" loading="lazy" onclick="document.getElementById('dot-stage').src=this.src">
-            <img src="assets/images/product-detail/dot-fabric.webp" alt="Polka dot fabric macro" loading="lazy" onclick="document.getElementById('dot-stage').src=this.src">
+            <img src="assets/images/product-detail/dot-fabric.webp" alt="Polka dot fabric macro" loading="lazy" onclick="document.getElementById('dot-stage').src=this.src; document.getElementById('dot-stage').style.display='block'">
           </div>
         </div>
         <div class="dress-feature__info">
