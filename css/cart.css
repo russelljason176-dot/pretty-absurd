@@ -401,6 +401,9 @@
   padding: 10px 0;
   border-bottom: 1px dashed rgba(17, 17, 17, 0.15);
 }
+.checkout-summary__item[hidden] {
+  display: none;
+}
 .checkout-summary__totalrow {
   display: flex;
   justify-content: space-between;

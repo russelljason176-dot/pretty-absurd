@@ -1,0 +1,136 @@
+/* ============================================================
+   Policies page (Returns & Refunds / Terms & Conditions)
+   ============================================================ */
+
+.policies-hero {
+  max-width: 680px;
+}
+
+.policies-hero__label {
+  display: block;
+  font-family: var(--font-body);
+  font-size: var(--text-caption);
+  letter-spacing: var(--tracking-widest);
+  text-transform: uppercase;
+  color: var(--ink-faint);
+  margin-bottom: var(--space-4);
+}
+
+.policies-hero__headline {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-weight: 600;
+  font-size: var(--text-display);
+  line-height: var(--leading-tight);
+  letter-spacing: var(--tracking-tight);
+  color: var(--ink);
+  margin-bottom: var(--space-5);
+}
+
+.policies-hero__sub {
+  font-size: var(--text-body-lg);
+  color: var(--ink-muted);
+  line-height: var(--leading-loose);
+}
+
+.policies-jump {
+  display: flex;
+  gap: var(--space-6);
+  margin-top: var(--space-8);
+  padding-top: var(--space-6);
+  border-top: var(--border-thin);
+}
+
+.policies-jump a {
+  font-family: var(--font-body);
+  font-size: var(--text-caption);
+  letter-spacing: var(--tracking-wide);
+  text-transform: uppercase;
+  color: var(--ink);
+  border-bottom: 1px solid var(--ink);
+  padding-bottom: 2px;
+}
+@media (hover: hover) and (pointer: fine) {
+  .policies-jump a:hover { color: var(--pink-dark); border-color: var(--pink-dark); }
+}
+
+.policies-body {
+  max-width: 720px;
+  margin-top: var(--space-16);
+}
+
+.policies-section {
+  padding-top: var(--space-16);
+  border-top: var(--border-thin);
+  scroll-margin-top: var(--nav-height);
+}
+.policies-section:first-child {
+  padding-top: 0;
+  border-top: none;
+}
+
+.policies-section__label {
+  display: block;
+  font-family: var(--font-body);
+  font-size: var(--text-caption);
+  letter-spacing: var(--tracking-widest);
+  text-transform: uppercase;
+  color: var(--ink-faint);
+  margin-bottom: var(--space-4);
+}
+
+.policies-section__headline {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-weight: 600;
+  font-size: var(--text-heading);
+  color: var(--ink);
+  margin-bottom: var(--space-8);
+}
+
+.policies-section h3 {
+  font-family: var(--font-body);
+  font-style: normal;
+  font-weight: 700;
+  font-size: var(--text-body);
+  letter-spacing: 0.01em;
+  color: var(--ink);
+  margin: var(--space-8) 0 var(--space-3);
+}
+.policies-section h3:first-of-type { margin-top: 0; }
+
+.policies-section p {
+  font-size: var(--text-sm);
+  color: var(--ink-soft);
+  line-height: var(--leading-loose);
+  margin-bottom: var(--space-4);
+}
+
+.policies-section ul {
+  margin: 0 0 var(--space-4);
+  padding-left: var(--space-5);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+.policies-section li {
+  font-size: var(--text-sm);
+  color: var(--ink-soft);
+  line-height: var(--leading-normal);
+}
+
+.policies-section a {
+  color: var(--ink);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.policies-note {
+  margin-top: var(--space-16);
+  padding: var(--space-6);
+  background: var(--cream-dark);
+  border-radius: var(--radius-md);
+  font-size: var(--text-xs);
+  color: var(--ink-muted);
+  line-height: var(--leading-normal);
+}
