@@ -78,7 +78,7 @@
 
 .home-hero__wordmark {
   display: block;
-  width: clamp(200px, 24vw, 400px);
+  width: clamp(260px, 30vw, 520px);
   height: auto;
 }
 
@@ -154,7 +154,7 @@
   right: -40px;
   z-index: 2;
   height: 52px;
-  background-image: radial-gradient(circle at 32px 0, transparent 30px, var(--ink) 31px);
+  background-image: radial-gradient(circle at 32px 0, transparent 30px, var(--pink-page) 31px);
   background-size: 64px 52px;
   background-repeat: repeat-x;
   background-position: bottom;
