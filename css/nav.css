@@ -9,7 +9,7 @@
      on this element would create a new containing block for its
      position:fixed descendant (.nav__overlay, the mobile menu), which
      squishes the full-screen menu down into the nav bar's own height. */
-  background: rgba(247, 242, 238, 0.92);
+  background: rgba(252, 240, 249, 0.92);
   border-bottom: var(--border-thin);
   transition: background 0.3s ease, border-color 0.3s ease;
 }
