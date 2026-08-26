@@ -134,7 +134,7 @@
 .dress-feature__stage {
   background: var(--cream-dark);
   border-radius: var(--radius-lg);
-  aspect-ratio: 1 / 1;
+  aspect-ratio: 4 / 5;
   display: flex;
   align-items: center;
   justify-content: center;
