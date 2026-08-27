@@ -54,9 +54,9 @@
       "pink": {
         "num": "01 — 03",
         "name": "Das Rosa Satin",
-        "desc": "Ein Korsagen-Oberteil, das es ernst meint. Ein Faltenrock, der das nicht tut. Gefertigt aus weichem lila-rosa Duchesse-Satin mit stützender Verstärkung, Herzausschnitt und einer Rückenschnürung, die sich Zeit lässt.",
+        "desc": "Ein Korsagen-Oberteil, das es ernst meint. Ein Faltenrock, der das nicht tut. Gefertigt aus weichem lila-rosa Duchesse-Satin mit Herzausschnitt und einer Rückenschnürung, die sich Zeit lässt.",
         "details": [
-          "Duchesse-Satin mit Korsettverstärkung",
+          "Weicher lila-rosa Duchesse-Satin",
           "Herzausschnitt mit Rüschenbesatz",
           "Schnürung am Rücken",
           "Unsichtbarer Seitenreißverschluss",
@@ -69,7 +69,7 @@
         "name": "Das Eisblau",
         "desc": "Puderblauer Duchesse-Satin. Herzausschnitt. Strukturell absurd. Die gleiche Silhouette wie beim Rosa — gleiches Gerüst, andere Stimmung. Zurückhaltender, bis man es in Bewegung sieht.",
         "details": [
-          "Eisblauer Duchesse-Satin mit Korsettverstärkung",
+          "Eisblauer Duchesse-Satin",
           "Herzausschnitt mit Rüschenbesatz",
           "Bandschnürung am Rücken, farblich passend",
           "Unsichtbarer Seitenreißverschluss",
@@ -108,7 +108,7 @@
     "philosophy": {
       "label": "Die Philosophie",
       "quote": "„Pretty Absurd basiert auf einer einzigen Idee: Kleidung soll dich wie die interessanteste Person im Raum fühlen lassen. Nicht die geschmackvollste. Die interessanteste.“",
-      "body": "Feminin oder ernsthaft. Verspielt oder makellos. Frauen wird diese Wahl ständig aufgezwungen. Kaylah hat sie ignoriert. Die Korsettverstärkung ist ernst gemeint. Die Tupfen sind verspielt. Beides gleichzeitig, ganz bewusst."
+      "body": "Feminin oder ernsthaft. Verspielt oder makellos. Frauen wird diese Wahl ständig aufgezwungen. Kaylah hat sie ignoriert. Die Korsettstruktur ist ernst gemeint. Die Tupfen sind verspielt. Beides gleichzeitig, ganz bewusst."
     },
     "studio_caption": "Das Studio — wo alles beginnt",
     "process": {
@@ -116,7 +116,7 @@
       "headline_1": "Jede Naht mit Absicht gesetzt.",
       "headline_2": "Das Chaos liegt im Tragen, nicht im Machen.",
       "step1_title": "Erst die Struktur",
-      "step1_text": "Jedes Kleid beginnt mit dem Gerüst. Die Korsettverstärkung bestimmt die Silhouette, bevor auch nur ein Stück Duchesse-Satin zugeschnitten wird. Struktur ist nie ein nachträglicher Gedanke.",
+      "step1_text": "Jedes Kleid beginnt mit der Form. Die Silhouette des Korsetts wird entworfen, bevor auch nur ein Stück Duchesse-Satin zugeschnitten wird. Struktur ist nie ein nachträglicher Gedanke.",
       "step2_title": "Stoff als Charakter",
       "step2_text": "Der Stoff ist nie nur eine Hülle — er ist die Persönlichkeit des Stücks. Duchesse-Satin fängt das Licht anders ein. Tupfen verändern das Gespräch, noch bevor ein Wort fällt.",
       "step3_title": "Details, die ihren Platz verdienen",

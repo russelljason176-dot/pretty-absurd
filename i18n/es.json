@@ -54,11 +54,11 @@
       "pink": {
         "num": "01 — 03",
         "name": "El Satén Rosa",
-        "desc": "Un corsé que va en serio. Una falda plisada que no. Confeccionado en suave satén Duquesa rosa lila con varillaje estructurado, escote corazón y un cordón trasero que se toma su tiempo.",
+        "desc": "Un corsé que va en serio. Una falda plisada que no. Confeccionado en suave satén Duquesa rosa lila, con escote corazón y un cordón trasero que se toma su tiempo.",
         "details": [
-          "Satén Duquesa con estructura de varillaje",
+          "Suave satén Duquesa rosa lila",
           "Escote corazón con volante",
-          "Cierre de cordón trasero",
+          "Cordón trasero",
           "Cremallera invisible lateral",
           "Minifalda plisada"
         ],
@@ -69,7 +69,7 @@
         "name": "El Azul Hielo",
         "desc": "Satén Duquesa azul empolvado. Escote corazón. Estructuralmente absurdo. La misma silueta que el rosa — mismos huesos, distinto ánimo. Es más discreto, hasta que lo ves moverse.",
         "details": [
-          "Satén Duquesa azul hielo con estructura de varillaje",
+          "Satén Duquesa azul hielo",
           "Escote corazón con volante",
           "Cordón trasero de cinta a juego",
           "Cremallera invisible lateral",
@@ -84,7 +84,7 @@
         "details": [
           "Satén Duquesa blanco con lunares negros",
           "Escote corazón con volante",
-          "Cierre de cordón trasero",
+          "Cordón trasero",
           "Cremallera invisible lateral",
           "Minifalda plisada"
         ],
@@ -108,7 +108,7 @@
     "philosophy": {
       "label": "La Filosofía",
       "quote": "«Pretty Absurd se basa en una sola idea: la ropa debe hacerte sentir la persona más interesante de la sala. No la más elegante. La más interesante.»",
-      "body": "Femenina o seria. Divertida o pulida. A las mujeres se les impone constantemente esa elección. Kaylah la ignoró. El varillaje del corsé va en serio. Los lunares son divertidos. Ambas cosas, a la vez, a propósito."
+      "body": "Femenina o seria. Divertida o pulida. A las mujeres se les impone constantemente esa elección. Kaylah la ignoró. La estructura del corsé va en serio. Los lunares son divertidos. Ambas cosas, a la vez, a propósito."
     },
     "studio_caption": "El estudio — donde todo empieza",
     "process": {
@@ -116,7 +116,7 @@
       "headline_1": "Cada costura colocada con intención.",
       "headline_2": "El caos está en llevarlo puesto, no en hacerlo.",
       "step1_title": "Primero la estructura",
-      "step1_text": "Cada vestido empieza por los huesos. El varillaje del corsé define la silueta antes de cortar un solo trozo de satén Duquesa. La estructura nunca es una idea de último momento.",
+      "step1_text": "Cada vestido empieza por la forma. La silueta del corsé se dibuja antes de cortar un solo trozo de satén Duquesa. La estructura nunca es una idea de último momento.",
       "step2_title": "La tela como carácter",
       "step2_text": "La tela nunca es solo un revestimiento — es la personalidad de la prenda. El satén Duquesa capta la luz de forma distinta. Los lunares cambian la conversación antes de que digas una palabra.",
       "step3_title": "Detalles que se ganan su lugar",

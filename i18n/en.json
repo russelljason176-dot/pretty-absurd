@@ -44,20 +44,20 @@
   "collection": {
     "label": "The Collection",
     "headline": "Three Dresses.",
-    "sub": "Each one made to be stared at. Preordering is open now.",
+    "sub": "Each one made to be stared at. A limited, one-time drop — preordering is open now.",
     "view_dress": "View the dress ↓",
     "price_label": "Price",
     "cta_inquire": "Inquire about this dress",
-    "launch_note": "Preordering is open now",
+    "launch_note": "Limited drop — one-time only. Preordering is open now",
     "pieces": {
       "pink": {
         "num": "01 — 03",
         "name": "The Pink Satin",
-        "desc": "A corset bodice that means business. A pleated skirt that means none. Made in soft lilac-pink Duchess Satin with a structured boning, sweetheart neckline, and a back lacing that takes its time.",
+        "desc": "A corset bodice that means business. A pleated skirt that means none. Made in soft lilac-pink Duchess Satin with a sweetheart neckline and a back lacing that takes its time.",
         "details": [
-          "Duchess Satin with boning structure",
+          "Soft lilac-pink Duchess Satin",
           "Sweetheart neckline with ruffle trim",
-          "Back lace-up closure",
+          "Back lace-up detail",
           "Side invisible zip",
           "Pleated mini skirt"
         ],
@@ -68,7 +68,7 @@
         "name": "The Ice Blue",
         "desc": "Powder blue Duchess Satin. Sweetheart neckline. Structurally absurd. The same silhouette as the pink — same bones, different mood. This one is quieter, until you see it move.",
         "details": [
-          "Ice blue Duchess Satin with boning structure",
+          "Ice blue Duchess Satin",
           "Sweetheart neckline with ruffle trim",
           "Back ribbon lacing in matching blue",
           "Side invisible zip",
@@ -83,7 +83,7 @@
         "details": [
           "White Duchess Satin with black polka dots",
           "Sweetheart neckline with ruffle trim",
-          "Back lace-up closure",
+          "Back lace-up detail",
           "Side invisible zip",
           "Pleated mini skirt"
         ],
@@ -107,7 +107,7 @@
     "philosophy": {
       "label": "The Philosophy",
       "quote": "\"Pretty Absurd is built on one idea: clothes should make you feel like the most interesting person in the room. Not the most tasteful. The most interesting.\"",
-      "body": "Kaylah doesn't buy the idea that clothes have to pick a side, feminine or serious, playful or polished. The corset boning holds real structure. The polka dots don't apologize for being loud. Both live in the same dress, on purpose."
+      "body": "Kaylah doesn't buy the idea that clothes have to pick a side, feminine or serious, playful or polished. The corset shaping holds real structure. The polka dots don't apologize for being loud. Both live in the same dress, on purpose."
     },
     "studio_caption": "The studio, where it begins",
     "process": {
@@ -115,7 +115,7 @@
       "headline_1": "Kaylah places every seam on purpose.",
       "headline_2": "The mess shows up when you wear it. Not before.",
       "step1_title": "Structure first",
-      "step1_text": "Every dress starts with the bones. The corset boning defines the silhouette before a single piece of Duchess Satin is cut.",
+      "step1_text": "Every dress starts with the shape. The corset silhouette is drafted before a single piece of Duchess Satin is cut.",
       "step2_title": "Fabric as character",
       "step2_text": "Fabric carries most of the personality here. Duchess Satin catches light in a way that shifts depending on how you move. Polka dots do the talking before you open your mouth.",
       "step3_title": "Details that earn their place",

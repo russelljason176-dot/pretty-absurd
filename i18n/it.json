@@ -54,11 +54,11 @@
       "pink": {
         "num": "01 — 03",
         "name": "Il Raso Rosa",
-        "desc": "Un corsetto che fa sul serio. Una gonna plissettata che no. Realizzato in morbido raso Duchesse rosa lilla con struttura a stecche, scollatura a cuore e un laccio sul retro che prende il suo tempo.",
+        "desc": "Un corsetto che fa sul serio. Una gonna plissettata che no. Realizzato in morbido raso Duchesse rosa lilla, con scollatura a cuore e un laccio sul retro che prende il suo tempo.",
         "details": [
-          "Raso Duchesse con struttura a stecche",
+          "Morbido raso Duchesse rosa lilla",
           "Scollatura a cuore con rouches",
-          "Chiusura con laccio sul retro",
+          "Laccio sul retro",
           "Zip invisibile laterale",
           "Minigonna plissettata"
         ],
@@ -69,7 +69,7 @@
         "name": "L'Azzurro Ghiaccio",
         "desc": "Raso Duchesse azzurro cipria. Scollatura a cuore. Strutturalmente assurdo. Stessa silhouette del rosa — stessa struttura, umore diverso. Più discreto, finché non lo vedi muoversi.",
         "details": [
-          "Raso Duchesse azzurro ghiaccio con struttura a stecche",
+          "Raso Duchesse azzurro ghiaccio",
           "Scollatura a cuore con rouches",
           "Laccio in nastro sul retro, in tono",
           "Zip invisibile laterale",
@@ -84,7 +84,7 @@
         "details": [
           "Raso Duchesse bianco a pois neri",
           "Scollatura a cuore con rouches",
-          "Chiusura con laccio sul retro",
+          "Laccio sul retro",
           "Zip invisibile laterale",
           "Minigonna plissettata"
         ],
@@ -108,7 +108,7 @@
     "philosophy": {
       "label": "La Filosofia",
       "quote": "\"Pretty Absurd si basa su un'unica idea: i vestiti devono farti sentire la persona più interessante della stanza. Non la più elegante. La più interessante.\"",
-      "body": "Femminile o seria. Giocosa o curata. Alle donne viene imposta di continuo questa scelta. Kaylah l'ha ignorata. Le stecche del corsetto sono serie. I pois sono giocosi. Entrambi, insieme, di proposito."
+      "body": "Femminile o seria. Giocosa o curata. Alle donne viene imposta di continuo questa scelta. Kaylah l'ha ignorata. La struttura del corsetto è seria. I pois sono giocosi. Entrambi, insieme, di proposito."
     },
     "studio_caption": "Lo studio — dove tutto inizia",
     "process": {
@@ -116,7 +116,7 @@
       "headline_1": "Ogni cucitura posizionata con intenzione.",
       "headline_2": "Il caos sta nell'indossarlo, non nel crearlo.",
       "step1_title": "Prima la struttura",
-      "step1_text": "Ogni abito parte dalla struttura. Le stecche del corsetto definiscono la silhouette prima ancora di tagliare un solo pezzo di raso Duchesse. La struttura non è mai un ripensamento.",
+      "step1_text": "Ogni abito parte dalla forma. La silhouette del corsetto viene disegnata prima ancora di tagliare un solo pezzo di raso Duchesse. La struttura non è mai un ripensamento.",
       "step2_title": "Il tessuto come carattere",
       "step2_text": "Il tessuto non è mai solo un rivestimento — è la personalità del capo. Il raso Duchesse cattura la luce in modo diverso. I pois cambiano la conversazione prima ancora di dire una parola.",
       "step3_title": "Dettagli che si guadagnano il loro posto",

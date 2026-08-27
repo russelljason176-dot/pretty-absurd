@@ -219,6 +219,8 @@ function initMagazine() {
 
 /* === Magnetic button (hero ghost CTA) === */
 function initMagneticButton() {
+  if (!window.matchMedia('(hover: hover) and (pointer: fine)').matches) return; // desktop-mouse only — no cursor to follow on touch
+
   const hero       = document.querySelector('.home-hero');
   const btn        = document.querySelector('.home-hero__cta--ghost');
   const primaryBtn = document.querySelector('.home-hero__cta--primary');

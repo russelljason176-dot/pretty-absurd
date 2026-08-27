@@ -54,11 +54,11 @@
       "pink": {
         "num": "01 — 03",
         "name": "O Cetim Rosa",
-        "desc": "Um corpete que leva a sério. Uma saia plissada que não leva. Feito em cetim Duquesa rosa lilás macio, com estrutura de barbatanas, decote coração e um cadarço nas costas que não tem pressa.",
+        "desc": "Um corpete que leva a sério. Uma saia plissada que não leva. Feito em cetim Duquesa rosa lilás macio, com decote coração e um cadarço nas costas que não tem pressa.",
         "details": [
-          "Cetim Duquesa com estrutura de barbatanas",
+          "Cetim Duquesa rosa lilás macio",
           "Decote coração com babado",
-          "Fechamento com cadarço nas costas",
+          "Cadarço nas costas",
           "Zíper invisível lateral",
           "Minissaia plissada"
         ],
@@ -69,7 +69,7 @@
         "name": "O Azul Gelo",
         "desc": "Cetim Duquesa azul empoeirado. Decote coração. Estruturalmente absurdo. A mesma silhueta do rosa — mesma base, humor diferente. Mais discreto, até você ver em movimento.",
         "details": [
-          "Cetim Duquesa azul gelo com estrutura de barbatanas",
+          "Cetim Duquesa azul gelo",
           "Decote coração com babado",
           "Cadarço de fita nas costas, tom sobre tom",
           "Zíper invisível lateral",
@@ -84,7 +84,7 @@
         "details": [
           "Cetim Duquesa branco com poás pretas",
           "Decote coração com babado",
-          "Fechamento com cadarço nas costas",
+          "Cadarço nas costas",
           "Zíper invisível lateral",
           "Minissaia plissada"
         ],
@@ -108,7 +108,7 @@
     "philosophy": {
       "label": "A Filosofia",
       "quote": "\"Pretty Absurd se baseia em uma única ideia: a roupa deve fazer você se sentir a pessoa mais interessante da sala. Não a mais elegante. A mais interessante.\"",
-      "body": "Feminina ou séria. Divertida ou impecável. Essa escolha é imposta às mulheres o tempo todo. Kaylah ignorou. As barbatanas do corpete são sérias. As poás são divertidas. As duas coisas, ao mesmo tempo, de propósito."
+      "body": "Feminina ou séria. Divertida ou impecável. Essa escolha é imposta às mulheres o tempo todo. Kaylah ignorou. A estrutura do corpete é séria. As poás são divertidas. As duas coisas, ao mesmo tempo, de propósito."
     },
     "studio_caption": "O ateliê — onde tudo começa",
     "process": {
@@ -116,7 +116,7 @@
       "headline_1": "Cada costura posicionada com intenção.",
       "headline_2": "O caos está em vestir, não em fazer.",
       "step1_title": "Estrutura primeiro",
-      "step1_text": "Cada vestido começa pela base. As barbatanas do corpete definem a silhueta antes de qualquer pedaço de cetim Duquesa ser cortado. Estrutura nunca é um detalhe de última hora.",
+      "step1_text": "Cada vestido começa pela forma. A silhueta do corpete é desenhada antes de qualquer pedaço de cetim Duquesa ser cortado. Estrutura nunca é um detalhe de última hora.",
       "step2_title": "O tecido como personalidade",
       "step2_text": "O tecido nunca é apenas um revestimento — é a personalidade da peça. O cetim Duquesa capta a luz de um jeito diferente. As poás mudam a conversa antes mesmo de você dizer uma palavra.",
       "step3_title": "Detalhes que merecem seu lugar",

@@ -54,11 +54,11 @@
       "pink": {
         "num": "01 — 03",
         "name": "La Rose Satinée",
-        "desc": "Un bustier corset qui ne plaisante pas. Une jupe plissée qui ne prend rien au sérieux. En satin duchesse rose lilas doux, avec baleinage structuré, décolleté cœur et un laçage dans le dos qui prend son temps.",
+        "desc": "Un bustier corset qui ne plaisante pas. Une jupe plissée qui ne prend rien au sérieux. En satin duchesse rose lilas doux, avec décolleté cœur et un laçage dans le dos qui prend son temps.",
         "details": [
-          "Satin duchesse avec structure baleinée",
+          "Satin duchesse rose lilas doux",
           "Décolleté cœur avec volant",
-          "Fermeture laçage dans le dos",
+          "Laçage dans le dos",
           "Fermeture éclair invisible sur le côté",
           "Jupe courte plissée"
         ],
@@ -69,7 +69,7 @@
         "name": "Le Bleu Glacé",
         "desc": "Satin duchesse bleu poudré. Décolleté cœur. Structurellement absurde. La même silhouette que la rose — les mêmes lignes, une autre humeur. Plus discrète, jusqu'à ce qu'on la voie bouger.",
         "details": [
-          "Satin duchesse bleu glacé avec structure baleinée",
+          "Satin duchesse bleu glacé",
           "Décolleté cœur avec volant",
           "Laçage ruban dans le dos, ton sur ton",
           "Fermeture éclair invisible sur le côté",
@@ -84,7 +84,7 @@
         "details": [
           "Satin duchesse blanc à pois noirs",
           "Décolleté cœur avec volant",
-          "Fermeture laçage dans le dos",
+          "Laçage dans le dos",
           "Fermeture éclair invisible sur le côté",
           "Jupe courte plissée"
         ],
@@ -108,7 +108,7 @@
     "philosophy": {
       "label": "La Philosophie",
       "quote": "« Pretty Absurd repose sur une seule idée : les vêtements doivent vous donner l'impression d'être la personne la plus intéressante de la pièce. Pas la plus élégante. La plus intéressante. »",
-      "body": "Féminine ou sérieuse. Ludique ou soignée. On impose sans cesse ce choix aux femmes. Kaylah l'a ignoré. Le baleinage du corset est sérieux. Les pois sont ludiques. Les deux, en même temps, volontairement."
+      "body": "Féminine ou sérieuse. Ludique ou soignée. On impose sans cesse ce choix aux femmes. Kaylah l'a ignoré. La structure du corset est sérieuse. Les pois sont ludiques. Les deux, en même temps, volontairement."
     },
     "studio_caption": "L'atelier — là où tout commence",
     "process": {
@@ -116,7 +116,7 @@
       "headline_1": "Chaque couture placée avec intention.",
       "headline_2": "Le chaos est dans le port, pas dans la fabrication.",
       "step1_title": "La structure d'abord",
-      "step1_text": "Chaque robe commence par l'ossature. Le baleinage du corset définit la silhouette avant même qu'un seul morceau de satin duchesse soit coupé. La structure n'est jamais une réflexion après coup.",
+      "step1_text": "Chaque robe commence par la forme. La silhouette du corset est dessinée avant même qu'un seul morceau de satin duchesse soit coupé. La structure n'est jamais une réflexion après coup.",
       "step2_title": "Le tissu comme caractère",
       "step2_text": "Le tissu n'est jamais un simple revêtement — il est la personnalité de la pièce. Le satin duchesse capte la lumière différemment. Les pois changent la conversation avant même qu'on ait dit un mot.",
       "step3_title": "Des détails qui méritent leur place",
