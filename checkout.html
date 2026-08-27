@@ -147,8 +147,8 @@
 
           <div class="checkout-summary__totalrow"><span>Total</span><span id="checkout-summary-total">R0</span></div>
           <p class="checkout-summary__note">Each dress is made to order — please allow 4–5 weeks to be made, plus 3–4 days shipping.</p>
-          <p class="checkout-summary__note">Shipping within South Africa is included in the price — no extra charges at checkout. International orders aren't available through checkout — contact us for a shipping quote first. Payment is handled securely by Payfast — your card details never touch this site.</p>
-          <button type="submit" form="checkout-form" class="checkout-pay-btn" id="checkout-pay-btn">Pay with Payfast</button>
+          <p class="checkout-summary__note">Shipping within South Africa is included in the price — no extra charges at checkout. International orders aren't available through checkout — contact us for a shipping quote first. Submit your order below and we'll email you a secure Yoco payment link to complete it.</p>
+          <button type="submit" form="checkout-form" class="checkout-pay-btn" id="checkout-pay-btn">Submit Order</button>
           <p class="checkout-summary__note">By placing this order you agree to our <a href="policies.html#terms" style="color:inherit;">Terms &amp; Conditions</a> and <a href="policies.html#returns" style="color:inherit;">Returns &amp; Refunds Policy</a>.</p>
         </div>
       </div>
@@ -197,30 +197,24 @@
 
   <script>
     /* ============================================================
-       Payfast handoff — sandbox mode.
-       SWITCH TO LIVE: set PAYFAST_SANDBOX = false and fill in
-       PAYFAST_MERCHANT_ID (3661343, once verified) + PAYFAST_MERCHANT_KEY.
-       No backend on this site, so this uses Payfast's hosted checkout
-       redirect (no card data ever touches prettyabsurd.co.za) rather
-       than a signed API integration. NOTE: without a server, there's
-       no ITN webhook receiver, so orders won't auto-confirm server-side
-       yet — check the Payfast dashboard for order fulfillment until
-       that's built.
+       Order submission — interim manual-Yoco flow.
+       This site has no backend, and Yoco's real checkout API needs a
+       secret key that can't live in browser code, so for now the order
+       is emailed to Kaylah via Formspree (same endpoint as the contact
+       form) instead of an automatic card charge. Kaylah then sends the
+       customer a Yoco Payment Link by hand to complete payment.
+       TODO once a serverless backend exists: replace the fetch() below
+       with a call to that backend, which creates a real Yoco Checkout
+       session server-side and returns a redirect URL.
        ============================================================ */
-    const PAYFAST_SANDBOX = true;
-    const PAYFAST_MERCHANT_ID = '10000100';   // sandbox test ID — swap for 3661343 once live
-    const PAYFAST_MERCHANT_KEY = '46f0cd694581a'; // sandbox test key — swap for the real key once live
-    const PAYFAST_PROCESS_URL = PAYFAST_SANDBOX
-      ? 'https://sandbox.payfast.co.za/eng/process'
-      : 'https://www.payfast.co.za/eng/process';
+    const ORDER_FORM_ENDPOINT = 'https://formspree.io/f/mnjejwqz';
 
     /* ============================================================
        Waitlist promo codes — 10% off, one code per waitlist member.
        Client-side only (no backend on this static site), so this
        can't enforce a hard "used once" cap across devices/browsers —
        Kaylah hands out one code per person and crosses it off her
-       list manually when they order, same honor-system approach as
-       the Payfast account recovery codes.
+       list manually when they order.
        ============================================================ */
     const PROMO_CODES = ['ABSURDVIP1', 'ABSURDVIP2', 'ABSURDVIP3', 'ABSURDVIP4', 'ABSURDVIP5'];
     const PROMO_DISCOUNT = 0.10;
@@ -325,46 +319,40 @@
 
       const btn = document.getElementById('checkout-pay-btn');
       btn.disabled = true;
-      btn.textContent = 'Redirecting to Payfast…';
+      btn.textContent = 'Submitting…';
 
       const itemNames = items.map(i => `${i.name} (${i.size}) x${i.qty}`).join(', ');
-      const mPaymentId = 'PA-' + Date.now();
+      const orderId = 'PA-' + Date.now();
 
-      const fields = {
-        merchant_id: PAYFAST_MERCHANT_ID,
-        merchant_key: PAYFAST_MERCHANT_KEY,
-        return_url: 'https://prettyabsurd.co.za/order-confirmation.html',
-        cancel_url: 'https://prettyabsurd.co.za/checkout.html',
-        notify_url: 'https://prettyabsurd.co.za/order-confirmation.html',
-        name_first: document.getElementById('co-first').value,
-        name_last: document.getElementById('co-last').value,
-        email_address: document.getElementById('co-email').value,
-        m_payment_id: mPaymentId,
-        amount: currentTotal().toFixed(2),
-        item_name: (appliedPromo ? itemNames + ` [${appliedPromo}]` : itemNames).slice(0, 100),
-        item_description: itemNames.slice(0, 255),
-        custom_str1: document.getElementById('co-address').value,
-        custom_str2: document.getElementById('co-city').value + ' ' + document.getElementById('co-postal').value,
-        custom_str3: document.getElementById('co-phone').value,
-        custom_str4: itemNames.slice(0, 255),
-        custom_str5: mPaymentId,
+      const orderDetails = {
+        order_id: orderId,
+        name: document.getElementById('co-first').value + ' ' + document.getElementById('co-last').value,
+        email: document.getElementById('co-email').value,
+        phone: document.getElementById('co-phone').value,
+        address: document.getElementById('co-address').value,
+        city: document.getElementById('co-city').value,
+        postal: document.getElementById('co-postal').value,
+        items: appliedPromo ? itemNames + ` [promo: ${appliedPromo}]` : itemNames,
+        total: 'R' + currentTotal().toFixed(2),
+        _subject: `New order ${orderId} — Pretty Absurd`,
       };
 
-      sessionStorage.setItem('pa-last-order', JSON.stringify({ mPaymentId, items, total: currentTotal(), promo: appliedPromo }));
-      if (appliedPromo) localStorage.removeItem('pa-promo-code');
-
-      const form = document.createElement('form');
-      form.method = 'POST';
-      form.action = PAYFAST_PROCESS_URL;
-      Object.entries(fields).forEach(([key, value]) => {
-        const input = document.createElement('input');
-        input.type = 'hidden';
-        input.name = key;
-        input.value = value;
-        form.appendChild(input);
-      });
-      document.body.appendChild(form);
-      form.submit();
+      fetch(ORDER_FORM_ENDPOINT, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+        body: JSON.stringify(orderDetails),
+      })
+        .then((res) => {
+          if (!res.ok) throw new Error('Order submission failed');
+          sessionStorage.setItem('pa-last-order', JSON.stringify({ mPaymentId: orderId, items, total: currentTotal(), promo: appliedPromo }));
+          if (appliedPromo) localStorage.removeItem('pa-promo-code');
+          window.location.href = 'order-confirmation.html';
+        })
+        .catch(() => {
+          btn.disabled = false;
+          btn.textContent = 'Submit Order';
+          alert('Something went wrong submitting your order — please try again, or contact us directly.');
+        });
     });
   </script>
 </body>

@@ -67,8 +67,8 @@
     <div class="nav-spacer"></div>
     <section class="order-confirm">
       <span class="order-confirm__mark">Thank you.</span>
-      <h1 class="collection-header__headline">Your order is in.</h1>
-      <p class="order-confirm__note" id="order-confirm-detail">We'll email you a confirmation shortly and follow up with shipping details.</p>
+      <h1 class="collection-header__headline">Your order request is in.</h1>
+      <p class="order-confirm__note" id="order-confirm-detail">We'll email you a secure Yoco payment link shortly to complete your order, plus shipping details.</p>
       <p class="order-confirm__note">She's made to order, by hand — please allow 4–5 weeks to be made, plus 3–4 days shipping.</p>
       <a href="collection.html" class="error-404__link">Keep browsing</a>
     </section>
@@ -116,7 +116,7 @@
         try {
           const order = JSON.parse(raw);
           document.getElementById('order-confirm-detail').textContent =
-            `Order ${order.mPaymentId} — ${paCartFormatZAR(order.total)}. We'll email you a confirmation shortly and follow up with shipping details.`;
+            `Order ${order.mPaymentId} — ${paCartFormatZAR(order.total)}. We'll email you a secure Yoco payment link shortly to complete your order, plus shipping details.`;
         } catch {}
         sessionStorage.removeItem('pa-last-order');
       }
