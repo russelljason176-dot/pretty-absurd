@@ -371,7 +371,7 @@
   border: var(--border-mid);
   background: var(--white);
   font-family: var(--font-body);
-  font-size: var(--text-sm);
+  font-size: 16px; /* iOS Safari zooms in on focus if an input is smaller than this */
   color: var(--ink);
 }
 .checkout-form__field input:focus {
@@ -431,7 +431,7 @@
   border: var(--border-mid);
   background: var(--white);
   font-family: var(--font-body);
-  font-size: 12px;
+  font-size: 16px; /* iOS Safari zooms in on focus if an input is smaller than this */
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: var(--ink);

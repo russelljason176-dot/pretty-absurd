@@ -46,7 +46,7 @@
     align-items: center;
     justify-content: center;
     padding: var(--space-3) var(--container-pad);
-    background: var(--ink);
+    background: #002FA7; /* Yves Klein blue */
     border-top: 1px solid rgba(247, 242, 238, 0.15);
     transform: translateY(100%);
     transition: transform var(--dur-base) var(--ease-out);
@@ -63,8 +63,8 @@
     letter-spacing: var(--tracking-wide);
     text-transform: uppercase;
     color: var(--ink);
-    background: var(--cream);
-    border: 1px solid var(--cream);
+    background: var(--pink);
+    border: 1px solid var(--pink);
     padding: 13px 28px;
   }
 }
