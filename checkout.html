@@ -205,8 +205,9 @@
        Checkout session and hands back a redirectUrl to send the
        customer to. The order is also emailed via Formspree (fire and
        forget) so Kaylah has a record even before payment completes.
-       Currently running against Yoco's TEST keys — swap the Worker's
-       YOCO_SECRET_KEY to a live key when ready to accept real payments.
+       Running on Yoco's LIVE keys as of 2026-08-27 — real payments are
+       being taken. Yoco domain verification for prettyabsurd.co.za
+       is complete (Manage > Connect > Checkout API in the Yoco app).
 
        Pretty Absurd takes a 50% deposit at checkout (see DEPOSIT_RATE
        below) — only that amount is charged via Yoco here. The other
