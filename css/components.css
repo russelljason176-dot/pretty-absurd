@@ -46,7 +46,7 @@
     align-items: center;
     justify-content: center;
     padding: var(--space-3) var(--container-pad);
-    background: #002FA7; /* Yves Klein blue */
+    background: var(--ink);
     border-top: 1px solid rgba(247, 242, 238, 0.15);
     transform: translateY(100%);
     transition: transform var(--dur-base) var(--ease-out);

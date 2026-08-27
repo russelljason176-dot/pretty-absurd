@@ -121,13 +121,16 @@
     <section class="home-hero" aria-label="Hero">
       <div class="nav-spacer" aria-hidden="true"></div>
       <div class="home-hero__img-wrap">
-        <img
-          src="assets/images/editorial/home-hero-collage.webp"
-          alt="Pretty Absurd SS26 collection — Polka Dot, Ice Blue, and Pink Satin styled looks"
-          class="home-hero__img"
-          loading="eager"
-          fetchpriority="high"
-        >
+        <picture>
+          <source media="(max-width: 768px)" srcset="assets/images/editorial/home-hero-mobile-pattern.webp">
+          <img
+            src="assets/images/editorial/home-hero-collage.webp"
+            alt="Pretty Absurd SS26 collection — Polka Dot, Ice Blue, and Pink Satin styled looks"
+            class="home-hero__img"
+            loading="eager"
+            fetchpriority="high"
+          >
+        </picture>
         <div class="home-hero__overlay" aria-hidden="true"></div>
       </div>
       <div class="home-hero__content">

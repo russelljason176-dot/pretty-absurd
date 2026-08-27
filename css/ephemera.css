@@ -83,6 +83,7 @@
   }
   .pa-sticker[data-s="3"] {
     width: clamp(90px, 24vw, 130px);
+    top: -18px;
   }
   .pa-sticker[data-s="4"] {
     display: none; /* sits mid-height — collides with stacked cards on narrow screens */
