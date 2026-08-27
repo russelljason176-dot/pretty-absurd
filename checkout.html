@@ -147,8 +147,8 @@
 
           <div class="checkout-summary__totalrow"><span>Total</span><span id="checkout-summary-total">R0</span></div>
           <p class="checkout-summary__note">Each dress is made to order — please allow 4–5 weeks to be made, plus 3–4 days shipping.</p>
-          <p class="checkout-summary__note">Shipping within South Africa is included in the price — no extra charges at checkout. International orders aren't available through checkout — contact us for a shipping quote first. Submit your order below and we'll email you a secure Yoco payment link to complete it.</p>
-          <button type="submit" form="checkout-form" class="checkout-pay-btn" id="checkout-pay-btn">Submit Order</button>
+          <p class="checkout-summary__note">Shipping within South Africa is included in the price — no extra charges at checkout. International orders aren't available through checkout — contact us for a shipping quote first. Payment is handled securely by Yoco — your card details never touch this site.</p>
+          <button type="submit" form="checkout-form" class="checkout-pay-btn" id="checkout-pay-btn">Pay with Yoco</button>
           <p class="checkout-summary__note">By placing this order you agree to our <a href="policies.html#terms" style="color:inherit;">Terms &amp; Conditions</a> and <a href="policies.html#returns" style="color:inherit;">Returns &amp; Refunds Policy</a>.</p>
         </div>
       </div>
@@ -197,16 +197,16 @@
 
   <script>
     /* ============================================================
-       Order submission — interim manual-Yoco flow.
-       This site has no backend, and Yoco's real checkout API needs a
-       secret key that can't live in browser code, so for now the order
-       is emailed to Kaylah via Formspree (same endpoint as the contact
-       form) instead of an automatic card charge. Kaylah then sends the
-       customer a Yoco Payment Link by hand to complete payment.
-       TODO once a serverless backend exists: replace the fetch() below
-       with a call to that backend, which creates a real Yoco Checkout
-       session server-side and returns a redirect URL.
+       Yoco checkout — via a small Cloudflare Worker backend, since
+       Yoco's Checkout API needs a secret key that can't live in this
+       static site's browser code. The Worker creates a real Yoco
+       Checkout session and hands back a redirectUrl to send the
+       customer to. The order is also emailed via Formspree (fire and
+       forget) so Kaylah has a record even before payment completes.
+       Currently running against Yoco's TEST keys — swap the Worker's
+       YOCO_SECRET_KEY to a live key when ready to accept real payments.
        ============================================================ */
+    const YOCO_CHECKOUT_ENDPOINT = 'https://yoco-checkout.pretty-absurdd.workers.dev/';
     const ORDER_FORM_ENDPOINT = 'https://formspree.io/f/mnjejwqz';
 
     /* ============================================================
@@ -319,39 +319,48 @@
 
       const btn = document.getElementById('checkout-pay-btn');
       btn.disabled = true;
-      btn.textContent = 'Submitting…';
+      btn.textContent = 'Redirecting to Yoco…';
 
       const itemNames = items.map(i => `${i.name} (${i.size}) x${i.qty}`).join(', ');
       const orderId = 'PA-' + Date.now();
+      const name = document.getElementById('co-first').value + ' ' + document.getElementById('co-last').value;
+      const email = document.getElementById('co-email').value;
+      const total = currentTotal();
 
-      const orderDetails = {
-        order_id: orderId,
-        name: document.getElementById('co-first').value + ' ' + document.getElementById('co-last').value,
-        email: document.getElementById('co-email').value,
-        phone: document.getElementById('co-phone').value,
-        address: document.getElementById('co-address').value,
-        city: document.getElementById('co-city').value,
-        postal: document.getElementById('co-postal').value,
-        items: appliedPromo ? itemNames + ` [promo: ${appliedPromo}]` : itemNames,
-        total: 'R' + currentTotal().toFixed(2),
-        _subject: `New order ${orderId} — Pretty Absurd`,
-      };
-
+      // Fire-and-forget order record for Kaylah, doesn't block the Yoco redirect.
       fetch(ORDER_FORM_ENDPOINT, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
-        body: JSON.stringify(orderDetails),
+        body: JSON.stringify({
+          order_id: orderId,
+          name,
+          email,
+          phone: document.getElementById('co-phone').value,
+          address: document.getElementById('co-address').value,
+          city: document.getElementById('co-city').value,
+          postal: document.getElementById('co-postal').value,
+          items: appliedPromo ? itemNames + ` [promo: ${appliedPromo}]` : itemNames,
+          total: 'R' + total.toFixed(2),
+          _subject: `New order ${orderId} — Pretty Absurd`,
+        }),
+      }).catch(() => {});
+
+      fetch(YOCO_CHECKOUT_ENDPOINT, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ amount: total, orderId, items: itemNames, name, email }),
       })
-        .then((res) => {
-          if (!res.ok) throw new Error('Order submission failed');
-          sessionStorage.setItem('pa-last-order', JSON.stringify({ mPaymentId: orderId, items, total: currentTotal(), promo: appliedPromo }));
+        .then((res) => res.json().then((data) => ({ ok: res.ok, data })))
+        .then(({ ok, data }) => {
+          if (!ok || !data.redirectUrl) throw new Error(data.error || 'Yoco checkout creation failed');
+          sessionStorage.setItem('pa-last-order', JSON.stringify({ mPaymentId: orderId, items, total, promo: appliedPromo }));
           if (appliedPromo) localStorage.removeItem('pa-promo-code');
-          window.location.href = 'order-confirmation.html';
+          window.location.href = data.redirectUrl;
         })
         .catch(() => {
           btn.disabled = false;
-          btn.textContent = 'Submit Order';
-          alert('Something went wrong submitting your order — please try again, or contact us directly.');
+          btn.textContent = 'Pay with Yoco';
+          alert('Something went wrong starting payment — please try again, or contact us directly.');
         });
     });
   </script>
