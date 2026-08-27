@@ -220,13 +220,14 @@
 
     /* ============================================================
        Waitlist promo codes — 10% off, one code per waitlist member.
-       Client-side only (no backend on this static site), so this
-       can't enforce a hard "used once" cap across devices/browsers —
-       Kaylah hands out one code per person and crosses it off her
-       list manually when they order.
+       Enforced server-side by the yoco-checkout Worker (Cloudflare KV
+       tracks which codes have been used) — /promo/check here is just
+       a preview so the customer sees the discount before submitting;
+       the Worker independently re-checks and marks the code used when
+       the deposit checkout session is actually created, so this can't
+       be bypassed by skipping the preview call.
        ============================================================ */
-    const PROMO_CODES = ['ABSURDVIP1', 'ABSURDVIP2', 'ABSURDVIP3', 'ABSURDVIP4', 'ABSURDVIP5'];
-    const PROMO_DISCOUNT = 0.10;
+    let PROMO_DISCOUNT = 0.10; // default; overwritten by the Worker's response on a valid check
     let appliedPromo = null;
 
     function normalizePromo(code) {
@@ -248,18 +249,39 @@
       const note = document.getElementById('checkout-promo-note');
       const normalized = normalizePromo(code);
       if (!normalized) return;
-      if (PROMO_CODES.includes(normalized)) {
-        appliedPromo = normalized;
-        localStorage.setItem('pa-promo-code', normalized);
-        note.textContent = '10% waitlist discount applied.';
-        note.hidden = false;
-        note.style.color = '';
-      } else if (!silent) {
-        note.textContent = 'That code isn\'t valid.';
-        note.hidden = false;
-        note.style.color = 'var(--pink-dark)';
-      }
-      renderCheckout();
+
+      fetch(YOCO_CHECKOUT_ENDPOINT + 'promo/check', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ code: normalized }),
+      })
+        .then((res) => res.json())
+        .then((data) => {
+          if (data.valid) {
+            appliedPromo = normalized;
+            PROMO_DISCOUNT = data.discount || PROMO_DISCOUNT;
+            localStorage.setItem('pa-promo-code', normalized);
+            note.textContent = '10% waitlist discount applied.';
+            note.hidden = false;
+            note.style.color = '';
+          } else {
+            appliedPromo = null;
+            localStorage.removeItem('pa-promo-code');
+            if (!silent) {
+              note.textContent = data.reason === 'used' ? 'That code has already been used.' : "That code isn't valid.";
+              note.hidden = false;
+              note.style.color = 'var(--pink-dark)';
+            }
+          }
+          renderCheckout();
+        })
+        .catch(() => {
+          if (!silent) {
+            note.textContent = "Couldn't check that code — try again in a moment.";
+            note.hidden = false;
+            note.style.color = 'var(--pink-dark)';
+          }
+        });
     }
 
     function renderCheckout() {
