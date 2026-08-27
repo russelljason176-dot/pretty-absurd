@@ -145,10 +145,12 @@
           </div>
           <p class="checkout-promo__note" id="checkout-promo-note" hidden></p>
 
-          <div class="checkout-summary__totalrow"><span>Total</span><span id="checkout-summary-total">R0</span></div>
+          <div class="checkout-summary__item"><span>Order total</span><span id="checkout-summary-total">R0</span></div>
+          <div class="checkout-summary__totalrow"><span>Deposit due now (50%)</span><span id="checkout-summary-deposit">R0</span></div>
+          <p class="checkout-summary__note">Balance of <span id="checkout-summary-balance">R0</span> is due before your dress ships.</p>
           <p class="checkout-summary__note">Each dress is made to order — please allow 4–5 weeks to be made, plus 3–4 days shipping.</p>
           <p class="checkout-summary__note">Shipping within South Africa is included in the price — no extra charges at checkout. International orders aren't available through checkout — contact us for a shipping quote first. Payment is handled securely by Yoco — your card details never touch this site.</p>
-          <button type="submit" form="checkout-form" class="checkout-pay-btn" id="checkout-pay-btn">Pay with Yoco</button>
+          <button type="submit" form="checkout-form" class="checkout-pay-btn" id="checkout-pay-btn">Pay Deposit with Yoco</button>
           <p class="checkout-summary__note">By placing this order you agree to our <a href="policies.html#terms" style="color:inherit;">Terms &amp; Conditions</a> and <a href="policies.html#returns" style="color:inherit;">Returns &amp; Refunds Policy</a>.</p>
         </div>
       </div>
@@ -205,6 +207,13 @@
        forget) so Kaylah has a record even before payment completes.
        Currently running against Yoco's TEST keys — swap the Worker's
        YOCO_SECRET_KEY to a live key when ready to accept real payments.
+
+       Pretty Absurd takes a 50% deposit at checkout (see DEPOSIT_RATE
+       below) — only that amount is charged via Yoco here. The other
+       50% balance is collected separately before the dress ships;
+       how that second charge gets triggered isn't built yet (pending
+       a decision — automatic before ship date, or Kaylah sends a
+       manual Yoco Payment Link once it's ready).
        ============================================================ */
     const YOCO_CHECKOUT_ENDPOINT = 'https://yoco-checkout.pretty-absurdd.workers.dev/';
     const ORDER_FORM_ENDPOINT = 'https://formspree.io/f/mnjejwqz';
@@ -224,9 +233,15 @@
       return (code || '').trim().toUpperCase();
     }
 
+    const DEPOSIT_RATE = 0.5; // Pretty Absurd takes a 50% deposit at checkout, balance due before shipping.
+
     function currentTotal() {
       const raw = PaCart.total();
       return appliedPromo ? raw * (1 - PROMO_DISCOUNT) : raw;
+    }
+
+    function currentDeposit() {
+      return currentTotal() * DEPOSIT_RATE;
     }
 
     function applyPromo(code, { silent } = {}) {
@@ -279,6 +294,8 @@
       }
 
       document.getElementById('checkout-summary-total').textContent = paCartFormatZAR(currentTotal());
+      document.getElementById('checkout-summary-deposit').textContent = paCartFormatZAR(currentDeposit());
+      document.getElementById('checkout-summary-balance').textContent = paCartFormatZAR(currentTotal() - currentDeposit());
     }
 
     document.addEventListener('DOMContentLoaded', () => {
@@ -326,6 +343,8 @@
       const name = document.getElementById('co-first').value + ' ' + document.getElementById('co-last').value;
       const email = document.getElementById('co-email').value;
       const total = currentTotal();
+      const deposit = currentDeposit();
+      const balance = total - deposit;
 
       // Fire-and-forget order record for Kaylah, doesn't block the Yoco redirect.
       fetch(ORDER_FORM_ENDPOINT, {
@@ -341,25 +360,27 @@
           postal: document.getElementById('co-postal').value,
           items: appliedPromo ? itemNames + ` [promo: ${appliedPromo}]` : itemNames,
           total: 'R' + total.toFixed(2),
-          _subject: `New order ${orderId} — Pretty Absurd`,
+          deposit_paid_now: 'R' + deposit.toFixed(2),
+          balance_due_before_shipping: 'R' + balance.toFixed(2),
+          _subject: `New order ${orderId} — Pretty Absurd (50% deposit)`,
         }),
       }).catch(() => {});
 
       fetch(YOCO_CHECKOUT_ENDPOINT, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ amount: total, orderId, items: itemNames, name, email }),
+        body: JSON.stringify({ amount: deposit, orderId: orderId + '-DEPOSIT', items: itemNames, name, email }),
       })
         .then((res) => res.json().then((data) => ({ ok: res.ok, data })))
         .then(({ ok, data }) => {
           if (!ok || !data.redirectUrl) throw new Error(data.error || 'Yoco checkout creation failed');
-          sessionStorage.setItem('pa-last-order', JSON.stringify({ mPaymentId: orderId, items, total, promo: appliedPromo }));
+          sessionStorage.setItem('pa-last-order', JSON.stringify({ mPaymentId: orderId, items, total, deposit, balance, promo: appliedPromo }));
           if (appliedPromo) localStorage.removeItem('pa-promo-code');
           window.location.href = data.redirectUrl;
         })
         .catch(() => {
           btn.disabled = false;
-          btn.textContent = 'Pay with Yoco';
+          btn.textContent = 'Pay Deposit with Yoco';
           alert('Something went wrong starting payment — please try again, or contact us directly.');
         });
     });
