@@ -4,7 +4,7 @@
   "nav": {
     "brand": "Pretty Absurd",
     "lookbook": "Lookbook",
-    "collection": "Die Kleider",
+    "collection": "Die Taschen",
     "about": "Über uns",
     "contact": "Kontakt"
   },
@@ -12,7 +12,7 @@
     "hero": {
       "sub": "Zu viel ist genau der Punkt.",
       "cta_lookbook": "Lookbook entdecken",
-      "cta_collection": "Kleider ansehen"
+      "cta_collection": "Die Taschen ansehen"
     },
     "receipt": {
       "brand": "PRETTY ABSURD",
@@ -20,14 +20,14 @@
       "blue": "Das Eisblau",
       "dot": "Das Tupfenkleid",
       "total": "GESAMT",
-      "status_line": "STATUS … jetzt offen<br>VORBESTELLUNG … jetzt offen",
-      "cta_main": "TIPPEN, UM VORZUBESTELLEN",
-      "cta_sub": "zur Vorbestellung — xo"
+      "status_line": "STATUS … vorrätig<br>LIEFERUNG … The Courier Guy",
+      "cta_main": "TIPPEN ZUM SHOPPEN",
+      "cta_sub": "die taschen sind da — xo"
     },
     "shop": {
-      "label": "Die Kollektion",
-      "headline": "Drei Kleider. Neun Looks.",
-      "cta": "Die ganze Kollektion ansehen →"
+      "label": "Die Taschen",
+      "headline": "Brokat, geknotet und gefranst.",
+      "cta": "Alle Taschen ansehen →"
     },
     "designer": {
       "label": "Die Designerin",
@@ -37,12 +37,20 @@
     },
     "notify": {
       "headline": "Erfahre es als Erste.",
-      "sub": "Vorbestellung ab 22. August 2026. Hinterlasse deine E-Mail, wir sagen dir sofort Bescheid.",
+      "sub": "Hinterlasse deine E-Mail, wir informieren dich über neue Taschen und Nachschub.",
       "placeholder": "deine@email.com",
       "btn": "Benachrichtigen"
     }
   },
+  "bags": {
+    "shoulder":    { "descriptor": "Schultertasche aus Brokat", "desc": "divine… eine weiche, runde schultertasche aus brokat, großzügig geschnitten und mit einer franse versehen, die sich bewegt, sobald du dich bewegst. das kühnste stück der linie." },
+    "knot-fringe": { "descriptor": "geknotete Brokattasche mit Fransen", "desc": "candy… die japanisch inspirierte knotentasche, ums handgelenk gebunden und mit einer langen franse versehen, die einfach nicht stillhält." },
+    "knot":        { "descriptor": "geknotete Brokattasche", "desc": "edie… eine knotentasche, der japanischen furoshiki-tradition entlehnt und dann dorthin mitgenommen, wo sie eigentlich nicht hingehört hätte. handgeschnittener brokat, pailletten-tüll, taftfutter. von hand gefertigt in johannesburg… 15 stück auf einmal." }
+  },
   "collection": {
+    "bags_label": "Die Taschen",
+    "bags_headline": "Brokat, geknotet und gefranst.",
+    "bags_sub": "Drei Formen, eine Handvoll Farben, in kleinen Stückzahlen gefertigt. Ist eine Farbe vergriffen, kommt sie nicht wieder.",
     "label": "Die Kollektion",
     "headline": "Drei Kleider.",
     "sub": "Jedes gemacht, um angestarrt zu werden. Vorbestellung ab 22. August — Kollektion erscheint am 22. August 2026.",
@@ -124,7 +132,7 @@
     },
     "cta_strip": {
       "text": "Drei Kleider. Vorbestellung ab 22. August — Kollektion erscheint am 22. August 2026.",
-      "cta_collection": "Kleider ansehen →",
+      "cta_collection": "Die Taschen ansehen →",
       "cta_lookbook": "Lookbook entdecken →"
     }
   },
@@ -240,12 +248,15 @@
     "nav_prev": "ZURÜCK",
     "nav_next": "WEITER"
   },
+  "faq": {
+    "pricing_answer": "Divine kostet R600, Candy R500 und Edie R400. Die Lieferung kostet pauschal R150, überall in Südafrika."
+  },
   "footer": {
-    "tagline": "Kleider, die man anstarren muss.",
+    "tagline": "Gemacht, um angestarrt zu werden.",
     "copy": "© 2026 Pretty Absurd. Alle Rechte vorbehalten.",
     "links": {
       "lookbook": "Lookbook",
-      "collection": "Die Kleider",
+      "collection": "Die Taschen",
       "about": "Über uns",
       "contact": "Kontakt"
     }

@@ -304,6 +304,15 @@
 }
 
 /* ── Responsive ── */
+/* Shop header ("The Bags" intro) — shrink drastically on phones so the
+   actual bag frames appear with far less scrolling; the breadcrumb + label
+   + headline still orient the visitor, the sub-line and half the padding
+   aren't worth the scroll cost at this width. */
+@media (max-width: 560px) {
+  .collection-header.section--sm { padding-block: var(--space-4) var(--space-6); }
+  .collection-header__sub { display: none; }
+}
+
 @media (max-width: 900px) {
   .collection-grid { grid-template-columns: 1fr; }
 

@@ -36,8 +36,7 @@
     <div class="nav__inner">
       <a href="/" class="nav__brand">Pretty Absurd</a>
       <ul class="nav__links" role="list">
-        <li><a href="lookbook.html"    class="nav__link">Lookbook</a></li>
-        <li><a href="collection.html"  class="nav__link">The Dresses</a></li>
+        <li><a href="collection.html"  class="nav__link">The Bags</a></li>
         <li><a href="about.html"       class="nav__link">About</a></li>
         <li><a href="faq.html"         class="nav__link">FAQ</a></li>
         <li><a href="contact.html"     class="nav__link">Contact</a></li>
@@ -54,8 +53,7 @@
     </div>
     <div class="nav__overlay" id="nav-overlay" role="dialog" aria-label="Mobile navigation">
       <ul class="nav__overlay-links" role="list">
-        <li><a href="lookbook.html"    class="nav__overlay-link">Lookbook</a></li>
-        <li><a href="collection.html"  class="nav__overlay-link">The Dresses</a></li>
+        <li><a href="collection.html"  class="nav__overlay-link">The Bags</a></li>
         <li><a href="about.html"       class="nav__overlay-link">About</a></li>
         <li><a href="faq.html"         class="nav__overlay-link">FAQ</a></li>
         <li><a href="contact.html"     class="nav__overlay-link">Contact</a></li>
@@ -136,7 +134,7 @@
         <div class="checkout-summary">
           <div class="checkout-summary__title">Order Summary</div>
           <div id="checkout-summary-items"></div>
-          <div class="checkout-summary__item"><span>Shipping</span><span>Included (South Africa)</span></div>
+          <div class="checkout-summary__item"><span>Delivery (The Courier Guy)</span><span id="checkout-summary-delivery">R0</span></div>
           <div class="checkout-summary__item" id="checkout-summary-discount-row" hidden><span id="checkout-summary-discount-label">Promo</span><span id="checkout-summary-discount">&minus;R0</span></div>
 
           <div class="checkout-promo">
@@ -145,12 +143,10 @@
           </div>
           <p class="checkout-promo__note" id="checkout-promo-note" hidden></p>
 
-          <div class="checkout-summary__item"><span>Order total</span><span id="checkout-summary-total">R0</span></div>
-          <div class="checkout-summary__totalrow"><span>Deposit due now (50%)</span><span id="checkout-summary-deposit">R0</span></div>
-          <p class="checkout-summary__note">Balance of <span id="checkout-summary-balance">R0</span> is due before your dress ships.</p>
-          <p class="checkout-summary__note">Each dress is made to order — please allow 4–5 weeks to be made, plus 3–4 days shipping.</p>
-          <p class="checkout-summary__note">Shipping within South Africa is included in the price — no extra charges at checkout. International orders aren't available through checkout — contact us for a shipping quote first. Payment is handled securely by Yoco — your card details never touch this site.</p>
-          <button type="submit" form="checkout-form" class="checkout-pay-btn" id="checkout-pay-btn">Pay Deposit with Yoco</button>
+          <div class="checkout-summary__totalrow"><span>Total</span><span id="checkout-summary-total">R0</span></div>
+          <p class="checkout-summary__note">Delivered anywhere in South Africa by The Courier Guy. You'll get a tracking number by email once your bag ships.</p>
+          <p class="checkout-summary__note">International orders aren't available through checkout — contact us for a shipping quote first. Payment is handled securely by Yoco — your card details never touch this site.</p>
+          <button type="submit" form="checkout-form" class="checkout-pay-btn" id="checkout-pay-btn">Pay with Yoco</button>
           <p class="checkout-summary__note">By placing this order you agree to our <a href="policies.html#terms" style="color:inherit;">Terms &amp; Conditions</a> and <a href="policies.html#returns" style="color:inherit;">Returns &amp; Refunds Policy</a>.</p>
         </div>
       </div>
@@ -158,7 +154,7 @@
 
     <div class="container checkout-empty" id="checkout-empty" hidden>
       <p style="font-size: var(--text-subheading); margin-bottom: var(--space-4);">Your bag is empty.</p>
-      <a href="collection.html" class="error-404__link">See the dresses</a>
+      <a href="collection.html" class="error-404__link">See the bags</a>
     </div>
   </main>
 
@@ -167,7 +163,7 @@
       <div class="footer__top">
         <div>
           <div class="footer__brand">Pretty Absurd</div>
-          <div class="footer__tagline">Dresses made to be stared at.</div>
+          <div class="footer__tagline">Made to be stared at.</div>
         </div>
       </div>
       <div class="footer__bottom">
@@ -209,12 +205,10 @@
        being taken. Yoco domain verification for prettyabsurd.co.za
        is complete (Manage > Connect > Checkout API in the Yoco app).
 
-       Pretty Absurd takes a 50% deposit at checkout (see DEPOSIT_RATE
-       below) — only that amount is charged via Yoco here. The other
-       50% balance is collected separately before the dress ships;
-       how that second charge gets triggered isn't built yet (pending
-       a decision — automatic before ship date, or Kaylah sends a
-       manual Yoco Payment Link once it's ready).
+       Bags launch (2026-09-30): full payment at checkout, plus a flat
+       Courier Guy delivery fee. The Worker recalculates the total
+       from its own price list (see PRICES / DELIVERY_FEE in
+       cloudflare-worker/yoco-checkout.js) — keep both in sync.
        ============================================================ */
     const YOCO_CHECKOUT_ENDPOINT = 'https://yoco-checkout.pretty-absurdd.workers.dev/';
     const ORDER_FORM_ENDPOINT = 'https://formspree.io/f/mnjejwqz';
@@ -225,7 +219,7 @@
        tracks which codes have been used) — /promo/check here is just
        a preview so the customer sees the discount before submitting;
        the Worker independently re-checks and marks the code used when
-       the deposit checkout session is actually created, so this can't
+       the checkout session is actually created, so this can't
        be bypassed by skipping the preview call.
        ============================================================ */
     let PROMO_DISCOUNT = 0.10; // default; overwritten by the Worker's response on a valid check
@@ -235,15 +229,15 @@
       return (code || '').trim().toUpperCase();
     }
 
-    const DEPOSIT_RATE = 0.5; // Pretty Absurd takes a 50% deposit at checkout, balance due before shipping.
+    const DELIVERY_FEE = 150; // flat, South Africa — The Courier Guy. Must match DELIVERY_FEE in the Worker.
 
-    function currentTotal() {
+    function currentSubtotal() {
       const raw = PaCart.total();
-      return appliedPromo ? raw * (1 - PROMO_DISCOUNT) : raw;
+      return appliedPromo ? raw * (1 - PROMO_DISCOUNT) : raw; // promo applies to bags, not delivery
     }
 
-    function currentDeposit() {
-      return currentTotal() * DEPOSIT_RATE;
+    function currentTotal() {
+      return currentSubtotal() + DELIVERY_FEE;
     }
 
     function applyPromo(code, { silent } = {}) {
@@ -316,9 +310,8 @@
         discountRow.hidden = true;
       }
 
+      document.getElementById('checkout-summary-delivery').textContent = paCartFormatZAR(DELIVERY_FEE);
       document.getElementById('checkout-summary-total').textContent = paCartFormatZAR(currentTotal());
-      document.getElementById('checkout-summary-deposit').textContent = paCartFormatZAR(currentDeposit());
-      document.getElementById('checkout-summary-balance').textContent = paCartFormatZAR(currentTotal() - currentDeposit());
     }
 
     document.addEventListener('DOMContentLoaded', () => {
@@ -366,8 +359,7 @@
       const name = document.getElementById('co-first').value + ' ' + document.getElementById('co-last').value;
       const email = document.getElementById('co-email').value;
       const total = currentTotal();
-      const deposit = currentDeposit();
-      const balance = total - deposit;
+      const cart = items.map(i => ({ productId: i.productId, colour: i.size, qty: i.qty }));
 
       // Fire-and-forget order record for Kaylah, doesn't block the Yoco redirect.
       fetch(ORDER_FORM_ENDPOINT, {
@@ -382,28 +374,27 @@
           city: document.getElementById('co-city').value,
           postal: document.getElementById('co-postal').value,
           items: appliedPromo ? itemNames + ` [promo: ${appliedPromo}]` : itemNames,
-          total: 'R' + total.toFixed(2),
-          deposit_paid_now: 'R' + deposit.toFixed(2),
-          balance_due_before_shipping: 'R' + balance.toFixed(2),
-          _subject: `New order ${orderId} — Pretty Absurd (50% deposit)`,
+          delivery: 'R' + DELIVERY_FEE.toFixed(2) + ' (The Courier Guy)',
+          total_paid: 'R' + total.toFixed(2),
+          _subject: `New order ${orderId} — Pretty Absurd — book Courier Guy`,
         }),
       }).catch(() => {});
 
       fetch(YOCO_CHECKOUT_ENDPOINT, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ amount: deposit, orderId: orderId + '-DEPOSIT', items: itemNames, name, email }),
+        body: JSON.stringify({ amount: total, cart, orderId, items: itemNames, name, email, promoCode: appliedPromo }),
       })
         .then((res) => res.json().then((data) => ({ ok: res.ok, data })))
         .then(({ ok, data }) => {
           if (!ok || !data.redirectUrl) throw new Error(data.error || 'Yoco checkout creation failed');
-          sessionStorage.setItem('pa-last-order', JSON.stringify({ mPaymentId: orderId, items, total, deposit, balance, promo: appliedPromo }));
+          sessionStorage.setItem('pa-last-order', JSON.stringify({ mPaymentId: orderId, items, total, delivery: DELIVERY_FEE, promo: appliedPromo }));
           if (appliedPromo) localStorage.removeItem('pa-promo-code');
           window.location.href = data.redirectUrl;
         })
         .catch(() => {
           btn.disabled = false;
-          btn.textContent = 'Pay Deposit with Yoco';
+          btn.textContent = 'Pay with Yoco';
           alert('Something went wrong starting payment — please try again, or contact us directly.');
         });
     });

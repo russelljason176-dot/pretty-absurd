@@ -51,6 +51,10 @@
   align-items: center;
   justify-content: center;
 }
+/* JS sets [hidden] when the cart is empty, but the display:flex above
+   overrides the browser's default [hidden]{display:none} — without this
+   the "0" badge always showed, even empty. */
+.pa-cart-toggle__count[hidden] { display: none; }
 
 /* ── Drawer scrim + panel ── */
 .pa-cart-scrim {
@@ -68,7 +72,7 @@
   right: 0;
   bottom: 0;
   width: min(420px, 100vw);
-  background: #f5f1ea;
+  background: var(--cream-dark);
   color: #171717;
   z-index: calc(var(--z-overlay) + 1);
   display: flex;
@@ -380,7 +384,7 @@
 }
 
 .checkout-summary {
-  background: #f5f1ea;
+  background: var(--cream-dark);
   border: 1.5px dashed rgba(17, 17, 17, 0.25);
   padding: var(--space-8);
   font-family: 'Space Mono', monospace;

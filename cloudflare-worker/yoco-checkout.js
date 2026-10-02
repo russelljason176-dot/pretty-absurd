@@ -29,6 +29,13 @@ const ALLOWED_ORIGIN = 'https://prettyabsurd.co.za';
 const VALID_PROMO_CODES = ['ABSURDVIP1', 'ABSURDVIP2', 'ABSURDVIP3', 'ABSURDVIP4', 'ABSURDVIP5'];
 const PROMO_DISCOUNT = 0.10;
 
+/* Server-side price list (ZAR). The browser's "amount" is ignored — the
+   total is rebuilt from these so nobody can edit the price in dev tools.
+   Must match js/products.js + DELIVERY_FEE in checkout.html. */
+const PRICES = { shoulder: 600, 'knot-fringe': 500, knot: 400 };
+const DELIVERY_FEE = 150; // flat, South Africa — The Courier Guy
+const MAX_QTY_PER_LINE = 10;
+
 export default {
   async fetch(request, env) {
     if (request.method === 'OPTIONS') {
@@ -77,9 +84,18 @@ async function handleCheckout(request, env) {
     return json({ error: 'Invalid JSON' }, 400);
   }
 
-  const amountCents = Math.round(Number(body.amount) * 100);
-  if (!Number.isFinite(amountCents) || amountCents <= 0) {
-    return json({ error: 'Invalid amount' }, 400);
+  const cart = Array.isArray(body.cart) ? body.cart : [];
+  if (!cart.length) {
+    return json({ error: 'Empty cart' }, 400);
+  }
+  let subtotal = 0;
+  for (const line of cart) {
+    const price = PRICES[line && line.productId];
+    const qty = Number(line && line.qty);
+    if (!price || !Number.isInteger(qty) || qty < 1 || qty > MAX_QTY_PER_LINE) {
+      return json({ error: 'Invalid cart item' }, 400);
+    }
+    subtotal += price * qty;
   }
 
   let promoCode = null;
@@ -93,6 +109,9 @@ async function handleCheckout(request, env) {
       return json({ error: 'That promo code has already been used' }, 409);
     }
   }
+
+  const discounted = promoCode ? subtotal * (1 - PROMO_DISCOUNT) : subtotal;
+  const amountCents = Math.round((discounted + DELIVERY_FEE) * 100);
 
   const yocoRes = await fetch('https://payments.yoco.com/api/checkouts', {
     method: 'POST',

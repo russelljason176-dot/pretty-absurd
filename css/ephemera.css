@@ -185,7 +185,7 @@
 
 .pa-curl {
   position: absolute; top: 0; left: -3px; right: -3px; height: 26px; z-index: 0;
-  background: linear-gradient(180deg,#f3efe7 0%,#ece8df 46%,rgba(0,0,0,.09) 86%,transparent 100%);
+  background: linear-gradient(180deg,#ffffff 0%,var(--cream-dark) 46%,rgba(0,0,0,.09) 86%,transparent 100%);
   border-radius: 0 0 40% 40%/0 0 100% 100%; transform: rotate(-.6deg); pointer-events: none;
 }
 

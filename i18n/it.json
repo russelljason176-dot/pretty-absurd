@@ -4,7 +4,7 @@
   "nav": {
     "brand": "Pretty Absurd",
     "lookbook": "Lookbook",
-    "collection": "Gli Abiti",
+    "collection": "Le Borse",
     "about": "Chi Siamo",
     "contact": "Contatti"
   },
@@ -12,7 +12,7 @@
     "hero": {
       "sub": "Troppo è proprio il punto.",
       "cta_lookbook": "Scopri il lookbook",
-      "cta_collection": "Scopri gli abiti"
+      "cta_collection": "Scopri le borse"
     },
     "receipt": {
       "brand": "PRETTY ABSURD",
@@ -20,14 +20,14 @@
       "blue": "L'Azzurro Ghiaccio",
       "dot": "Il Pois",
       "total": "TOTALE",
-      "status_line": "STATO … aperto<br>PREORDINE … aperto",
-      "cta_main": "TOCCA PER PREORDINARE",
-      "cta_sub": "unisciti al preordine — xo"
+      "status_line": "STATO … disponibile<br>CONSEGNA … The Courier Guy",
+      "cta_main": "TOCCA PER ACQUISTARE",
+      "cta_sub": "le borse sono arrivate — xo"
     },
     "shop": {
-      "label": "La Collezione",
-      "headline": "Tre Abiti. Nove Look.",
-      "cta": "Vedi tutta la collezione →"
+      "label": "Le Borse",
+      "headline": "Broccato, annodato e frangiato.",
+      "cta": "Vedi tutte le borse →"
     },
     "designer": {
       "label": "La Stilista",
@@ -37,12 +37,20 @@
     },
     "notify": {
       "headline": "Sii la prima a saperlo.",
-      "sub": "Preordini aperti dal 22 agosto 2026. Lascia la tua e-mail, ti avviseremo appena aprono.",
+      "sub": "Lascia la tua e-mail e ti avviseremo di nuove borse e riassortimenti.",
       "placeholder": "tua@email.com",
       "btn": "Avvisami"
     }
   },
+  "bags": {
+    "shoulder":    { "descriptor": "borsa a spalla in broccato", "desc": "divine… una borsa a spalla morbida e rotonda in broccato, tagliata generosamente e finita con una frangia che si muove non appena ti muovi tu. il pezzo più audace della linea." },
+    "knot-fringe": { "descriptor": "borsa annodata in broccato, frangiata", "desc": "candy… la borsa annodata di ispirazione giapponese, legata al polso e finita con una lunga frangia che non sta mai ferma." },
+    "knot":        { "descriptor": "borsa annodata in broccato", "desc": "edie… una borsa annodata presa in prestito dalla tradizione giapponese del furoshiki, poi portata dove non sarebbe dovuta andare. broccato tagliato a mano, tulle paillettato, fodera in taffetà. fatta a mano a johannesburg… 15 alla volta." }
+  },
   "collection": {
+    "bags_label": "Le Borse",
+    "bags_headline": "Broccato, annodato e frangiato.",
+    "bags_sub": "Tre forme, una manciata di colori, realizzate in piccoli numeri. Quando un colore finisce, è finito.",
     "label": "La Collezione",
     "headline": "Tre Abiti.",
     "sub": "Ognuno fatto per essere guardato. Preordini aperti dal 22 agosto — Collezione disponibile dal 22 agosto 2026.",
@@ -124,7 +132,7 @@
     },
     "cta_strip": {
       "text": "Tre abiti. Preordini aperti dal 22 agosto — Collezione disponibile dal 22 agosto 2026.",
-      "cta_collection": "Scopri gli abiti →",
+      "cta_collection": "Scopri le borse →",
       "cta_lookbook": "Scopri il lookbook →"
     }
   },
@@ -240,12 +248,15 @@
     "nav_prev": "PREC",
     "nav_next": "SUCC"
   },
+  "faq": {
+    "pricing_answer": "Divine costa R600, Candy R500 ed Edie R400. La consegna ha un costo fisso di R150 in tutto il Sudafrica."
+  },
   "footer": {
-    "tagline": "Abiti fatti per essere guardati.",
+    "tagline": "Fatte per essere guardate.",
     "copy": "© 2026 Pretty Absurd. Tutti i diritti riservati.",
     "links": {
       "lookbook": "Lookbook",
-      "collection": "Gli Abiti",
+      "collection": "Le Borse",
       "about": "Chi Siamo",
       "contact": "Contatti"
     }

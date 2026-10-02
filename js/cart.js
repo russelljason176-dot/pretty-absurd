@@ -2,7 +2,7 @@
    Pretty Absurd — cart (localStorage, client-side only)
    ============================================================ */
 
-const PA_CART_KEY = 'pa-cart-v1';
+const PA_CART_KEY = 'pa-cart-v2'; // v2: bags launch — drops any old dress items from returning visitors' carts
 
 const PaCart = (() => {
   function read() {
@@ -104,7 +104,7 @@ function paCartRenderDrawer() {
         <img class="pa-cart-item__img" src="${item.img}" alt="" loading="lazy">
         <div class="pa-cart-item__info">
           <span class="pa-cart-item__name">${item.name}</span>
-          <span class="pa-cart-item__size">SIZE ${item.size}</span>
+          <span class="pa-cart-item__size">${item.size}</span>
           <div class="pa-cart-item__qty">
             <button type="button" class="pa-cart-item__qtybtn" data-action="dec" aria-label="Decrease quantity">&minus;</button>
             <span>${item.qty}</span>
@@ -176,10 +176,10 @@ function initPaCart() {
   document.querySelectorAll('.pa-add-to-cart').forEach(form => {
     form.addEventListener('submit', (e) => {
       e.preventDefault();
-      const sizeInput = form.querySelector('input[name="size"]:checked');
+      const sizeInput = form.querySelector('input[name="colour"]:checked, input[name="size"]:checked');
       if (!sizeInput) {
         const note = form.querySelector('.pa-add-to-cart__note');
-        if (note) { note.hidden = false; note.textContent = 'Pick a size first'; }
+        if (note) { note.hidden = false; note.textContent = 'Pick a colour first'; }
         return;
       }
       const product = {
