@@ -4,7 +4,7 @@
   "nav": {
     "brand": "Pretty Absurd",
     "lookbook": "Lookbook",
-    "collection": "Os Vestidos",
+    "collection": "As Bolsas",
     "about": "Sobre",
     "contact": "Contato"
   },
@@ -12,7 +12,7 @@
     "hero": {
       "sub": "O exagero é justamente o objetivo.",
       "cta_lookbook": "Entrar no lookbook",
-      "cta_collection": "Ver os vestidos"
+      "cta_collection": "Ver as bolsas"
     },
     "receipt": {
       "brand": "PRETTY ABSURD",
@@ -20,14 +20,14 @@
       "blue": "O Azul Gelo",
       "dot": "A Poá",
       "total": "TOTAL",
-      "status_line": "STATUS … aberto<br>PRÉ-VENDA … aberta",
-      "cta_main": "TOQUE PARA PRÉ-ENCOMENDAR",
-      "cta_sub": "entrar na pré-venda — xo"
+      "status_line": "STATUS … em estoque<br>ENTREGA … The Courier Guy",
+      "cta_main": "TOQUE PARA COMPRAR",
+      "cta_sub": "as bolsas chegaram — xo"
     },
     "shop": {
-      "label": "A Coleção",
-      "headline": "Três Vestidos. Nove Looks.",
-      "cta": "Ver a coleção completa →"
+      "label": "As Bolsas",
+      "headline": "Brocado, amarrado e com franjas.",
+      "cta": "Ver todas as bolsas →"
     },
     "designer": {
       "label": "A Estilista",
@@ -37,12 +37,20 @@
     },
     "notify": {
       "headline": "Seja a primeira a saber.",
-      "sub": "Pré-venda abre em 22 de agosto de 2026. Deixe seu e-mail e avisamos assim que abrir.",
+      "sub": "Deixe seu e-mail e avisamos sobre novas bolsas e reposições.",
       "placeholder": "seu@email.com",
       "btn": "Avise-me"
     }
   },
+  "bags": {
+    "shoulder":    { "descriptor": "bolsa de ombro em brocado", "desc": "divine… uma bolsa de ombro macia e arredondada em brocado, cortada com generosidade e finalizada com uma franja que se move assim que você se move. a peça mais ousada da linha." },
+    "knot-fringe": { "descriptor": "bolsa amarrada em brocado, com franjas", "desc": "candy… a bolsa amarrada de inspiração japonesa, presa ao pulso e finalizada com uma longa franja que simplesmente não para quieta." },
+    "knot":        { "descriptor": "bolsa amarrada em brocado", "desc": "edie… uma bolsa amarrada emprestada da tradição japonesa do furoshiki, levada depois para onde não deveria ter ido. brocado cortado à mão, tule com paetês, forro de tafetá. feita à mão em johannesburgo… 15 de cada vez." }
+  },
   "collection": {
+    "bags_label": "As Bolsas",
+    "bags_headline": "Brocado, amarrado e com franjas.",
+    "bags_sub": "Três formatos, algumas cores, feitas em pequenas quantidades. Quando uma cor acaba, acabou de vez.",
     "label": "A Coleção",
     "headline": "Três Vestidos.",
     "sub": "Cada um feito para ser admirado. Pré-venda abre em 22 de agosto — Coleção chega em 22 de agosto de 2026.",
@@ -124,7 +132,7 @@
     },
     "cta_strip": {
       "text": "Três vestidos. Pré-venda abre em 22 de agosto — Coleção chega em 22 de agosto de 2026.",
-      "cta_collection": "Ver os vestidos →",
+      "cta_collection": "Ver as bolsas →",
       "cta_lookbook": "Entrar no lookbook →"
     }
   },
@@ -240,12 +248,15 @@
     "nav_prev": "ANT",
     "nav_next": "PRÓX"
   },
+  "faq": {
+    "pricing_answer": "A Divine custa R600, a Candy R500 e a Edie R400. A entrega tem taxa fixa de R150 em qualquer lugar da África do Sul."
+  },
   "footer": {
-    "tagline": "Vestidos feitos para serem admirados.",
+    "tagline": "Feitas para serem admiradas.",
     "copy": "© 2026 Pretty Absurd. Todos os direitos reservados.",
     "links": {
       "lookbook": "Lookbook",
-      "collection": "Os Vestidos",
+      "collection": "As Bolsas",
       "about": "Sobre",
       "contact": "Contato"
     }

@@ -1,0 +1,268 @@
+/* ============================================================
+   The Bags — picture-frame card + product feature
+   ============================================================ */
+
+/* ── Backdrops — matches .home-shop on the homepage, see css/gallery-wall.css ── */
+.collection-intro { background: var(--cream); }
+
+.bags-parchment { background: var(--pink-page); }
+
+/* ── Frame grid ── */
+.bag-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: clamp(1.25rem, 3vw, 2.75rem);
+  max-width: var(--container-max);
+  margin: 0 auto var(--space-20);
+  padding-inline: var(--container-pad);
+}
+
+/* Frame artwork varies in aspect ratio per bag (see js/products.js `frame`),
+   so at a common column width each renders a different height. Each frame
+   keeps its own natural size (no cropping, no empty backdrop showing behind
+   it); the info block below is pushed to the bottom of the row instead, so
+   name/price/View Bag always start at the same row across the grid. */
+.bag-frame {
+  display: flex;
+  flex-direction: column;
+}
+
+.bag-frame__info {
+  margin-top: auto;
+  padding-top: var(--space-6);
+}
+
+.bag-frame__name {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-weight: 600;
+  font-size: clamp(1.4rem, 2.2vw, 1.75rem);
+  line-height: var(--leading-snug);
+}
+
+.bag-frame__descriptor {
+  display: block;
+  margin-top: var(--space-1);
+  font-family: var(--font-body);
+  font-size: var(--text-sm);
+  color: var(--ink-soft);
+}
+
+.bag-frame__price {
+  display: block;
+  margin-top: var(--space-1);
+  font-family: var(--font-body);
+  font-size: var(--text-sm);
+  color: var(--ink-muted);
+}
+
+.bag-frame__dots {
+  display: flex;
+  gap: 6px;
+  margin-top: var(--space-3);
+}
+
+.bag-frame__dots span {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 1px solid rgba(17, 17, 17, 0.25);
+}
+
+.bag-frame__cta {
+  /* was a bare <span> with margin-top — vertical margins on an inline
+     element are ignored, so it had no real gap and sat on top of the
+     colour dots above it. inline-flex makes the margin actually apply. */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: var(--space-4);
+  padding: 10px 22px;
+  border: 1.5px solid var(--ink);
+  border-radius: 999px;
+  font-family: var(--font-body);
+  font-weight: 500;
+  font-size: var(--text-caption);
+  letter-spacing: var(--tracking-wide);
+  text-transform: uppercase;
+  transition: background var(--dur-fast) ease, color var(--dur-fast) ease;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .bag-frame:hover .bag-frame__cta { background: var(--ink); color: var(--cream); }
+}
+
+/* ── Product feature ── */
+.bag-feature {
+  padding: var(--space-20) var(--container-pad);
+  border-top: var(--border-thin);
+  scroll-margin-top: var(--nav-height);
+}
+
+.bag-feature__grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: clamp(2rem, 5vw, 4.5rem);
+  align-items: start;
+  max-width: 1120px;
+  margin-inline: auto;
+}
+
+.bag-feature__media { min-width: 0; }
+
+.bag-feature__media .pf { max-width: 520px; margin-inline: auto; }
+
+.bag-feature__strip {
+  display: flex;
+  gap: var(--space-3);
+  margin: var(--space-5) auto 0;
+  max-width: 520px;
+  overflow-x: auto;
+  padding: 4px;
+}
+
+.bag-feature__thumb {
+  flex: 0 0 64px;
+  aspect-ratio: 3 / 4;
+  padding: 0;
+  border: 0;
+  border-radius: 8px;
+  overflow: hidden;
+  cursor: pointer;
+  opacity: 0.65;
+  outline: 1.5px solid transparent;
+  outline-offset: 2px;
+  background: var(--cream-dark);
+  transition: opacity var(--dur-fast) ease;
+}
+
+.bag-feature__thumb img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.bag-feature__thumb.is-active { opacity: 1; outline-color: var(--ink); }
+
+.bag-feature__num {
+  display: block;
+  font-size: var(--text-caption);
+  letter-spacing: var(--tracking-widest);
+  text-transform: uppercase;
+  color: var(--ink-faint);
+  margin-bottom: var(--space-3);
+}
+
+.bag-feature__name {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-weight: 600;
+  font-size: clamp(2.25rem, 4.5vw, 3.5rem);
+  line-height: var(--leading-tight);
+  letter-spacing: var(--tracking-tight);
+}
+
+.bag-feature__descriptor {
+  font-size: var(--text-body-lg);
+  color: var(--ink-soft);
+  margin-bottom: var(--space-3);
+}
+
+.bag-feature__price {
+  font-size: 1.25rem;
+  font-weight: 500;
+  margin-bottom: var(--space-6);
+}
+
+.bag-feature__desc {
+  font-size: var(--text-body-lg);
+  color: var(--ink-soft);
+  line-height: var(--leading-loose);
+  max-width: 42ch;
+  margin-bottom: var(--space-6);
+}
+
+.bag-feature__label {
+  display: block;
+  font-size: var(--text-caption);
+  letter-spacing: var(--tracking-widest);
+  text-transform: uppercase;
+  color: var(--ink-muted);
+  margin-bottom: var(--space-3);
+}
+
+.bag-feature__label strong { color: var(--ink); font-weight: 500; }
+
+/* Colour swatches */
+.bag-swatches {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: var(--space-6);
+}
+
+.bag-swatch { position: relative; }
+
+.bag-swatch input {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  margin: 0;
+  cursor: pointer;
+}
+
+.bag-swatch span {
+  display: block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid rgba(17, 17, 17, 0.25);
+  box-shadow: 0 0 0 3px var(--cream), 0 0 0 4px transparent;
+  transition: box-shadow var(--dur-fast) ease;
+}
+
+.bag-swatch input:checked + span { box-shadow: 0 0 0 3px var(--cream), 0 0 0 4.5px var(--ink); }
+.bag-swatch input:focus-visible + span { outline: 2px solid var(--pink-dark); outline-offset: 6px; }
+.bag-swatch input:disabled { cursor: not-allowed; }
+.bag-swatch input:disabled + span {
+  opacity: 0.35;
+  background-image: linear-gradient(135deg, transparent 47%, var(--ink) 47%, var(--ink) 53%, transparent 53%) !important;
+}
+
+.bag-feature .pa-add-to-cart__submit { width: 100%; justify-content: center; border-radius: 999px; padding: 16px 30px; }
+
+.bag-feature__details {
+  list-style: none;
+  margin-top: var(--space-8);
+  padding-top: var(--space-6);
+  border-top: var(--border-thin);
+  display: grid;
+  gap: var(--space-2);
+}
+
+.bag-feature__details li {
+  font-size: var(--text-sm);
+  color: var(--ink-muted);
+  padding-left: var(--space-5);
+  position: relative;
+}
+
+.bag-feature__details li::before { content: '—'; position: absolute; left: 0; color: var(--ink-faint); }
+
+.bag-feature__info-block {
+  margin-top: var(--space-4);
+  font-size: var(--text-sm);
+  color: var(--ink-muted);
+  line-height: var(--leading-normal);
+}
+
+.bag-feature__info-block a { color: inherit; }
+
+/* ── Responsive ── */
+@media (max-width: 900px) {
+  .bag-grid { grid-template-columns: repeat(2, 1fr); }
+  .bag-grid .bag-frame:last-child { grid-column: 1 / -1; max-width: calc(50% - 0.7rem); margin-inline: auto; width: 100%; }
+  .bag-feature__grid { grid-template-columns: 1fr; }
+  .bag-feature { padding-block: var(--space-12); }
+}
+
+@media (max-width: 560px) {
+  .bag-grid { grid-template-columns: 1fr; gap: var(--space-12); }
+  .bag-grid .bag-frame:last-child { max-width: none; }
+  .bag-grid .bag-frame { max-width: 360px; margin-inline: auto; width: 100%; }
+}

@@ -1,0 +1,50 @@
+{
+ "pink-gilt": {
+  "w": 735,
+  "h": 933,
+  "left": 21.63,
+  "top": 17.47,
+  "width": 56.87,
+  "height": 65.38
+ },
+ "verdigris-oval": {
+  "w": 736,
+  "h": 936,
+  "left": 20.11,
+  "top": 14.42,
+  "width": 61.28,
+  "height": 71.26
+ },
+ "lapis-gilt": {
+  "w": 667,
+  "h": 1000,
+  "left": 23.84,
+  "top": 21.5,
+  "width": 52.32,
+  "height": 58.1
+ },
+ "mint-oval": {
+  "w": 473,
+  "h": 644,
+  "left": 19.66,
+  "top": 20.19,
+  "width": 60.68,
+  "height": 60.71
+ },
+ "teal-gilt": {
+  "w": 427,
+  "h": 640,
+  "left": 13.35,
+  "top": 10.16,
+  "width": 73.3,
+  "height": 76.72
+ },
+ "pink-carved": {
+  "w": 736,
+  "h": 902,
+  "left": 22.15,
+  "top": 18.96,
+  "width": 56.79,
+  "height": 62.86
+ }
+}

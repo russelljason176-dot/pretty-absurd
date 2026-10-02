@@ -4,7 +4,7 @@
   "nav": {
     "brand": "Pretty Absurd",
     "lookbook": "Lookbook",
-    "collection": "Les Robes",
+    "collection": "Les Sacs",
     "about": "À propos",
     "contact": "Contact"
   },
@@ -12,7 +12,7 @@
     "hero": {
       "sub": "Trop, c'est justement le but.",
       "cta_lookbook": "Découvrir le lookbook",
-      "cta_collection": "Voir les robes"
+      "cta_collection": "Voir les sacs"
     },
     "receipt": {
       "brand": "PRETTY ABSURD",
@@ -20,14 +20,14 @@
       "blue": "Le Bleu Glacé",
       "dot": "Le Pois",
       "total": "TOTAL",
-      "status_line": "STATUT … ouvert<br>PRÉCOMMANDE … ouverte",
-      "cta_main": "TOUCHEZ POUR PRÉCOMMANDER",
-      "cta_sub": "rejoindre la précommande — xo"
+      "status_line": "STATUT … en stock<br>LIVRAISON … The Courier Guy",
+      "cta_main": "TOUCHEZ POUR ACHETER",
+      "cta_sub": "les sacs sont arrivés — xo"
     },
     "shop": {
-      "label": "La Collection",
-      "headline": "Trois Robes. Neuf Allures.",
-      "cta": "Voir toute la collection →"
+      "label": "Les Sacs",
+      "headline": "Brocart, noué et frangé.",
+      "cta": "Voir tous les sacs →"
     },
     "designer": {
       "label": "La Créatrice",
@@ -37,12 +37,20 @@
     },
     "notify": {
       "headline": "Soyez la première informée.",
-      "sub": "Précommandes ouvertes le 22 août 2026. Laissez votre e-mail, on vous prévient dès l'ouverture.",
+      "sub": "Laissez votre e-mail et on vous préviendra des nouveaux sacs et réassorts.",
       "placeholder": "votre@email.com",
       "btn": "M'avertir"
     }
   },
+  "bags": {
+    "shoulder":    { "descriptor": "sac porté épaule en brocart", "desc": "divine… un sac porté épaule tout en rondeur, en brocart, taillé généreusement et fini par une frange qui bouge dès que vous bougez. la pièce la plus audacieuse de la ligne." },
+    "knot-fringe": { "descriptor": "sac noué en brocart, frangé", "desc": "candy… le sac noué d'inspiration japonaise, attaché au poignet et fini par une longue frange qui ne tient jamais en place." },
+    "knot":        { "descriptor": "sac noué en brocart", "desc": "edie… un sac noué emprunté à la tradition japonaise du furoshiki, puis emmené là où elle n'aurait pas dû aller. brocart taillé main, tulle pailleté, doublure en taffetas. fait à la main à johannesburg… 15 à la fois." }
+  },
   "collection": {
+    "bags_label": "Les Sacs",
+    "bags_headline": "Brocart, noué et frangé.",
+    "bags_sub": "Trois formes, quelques coloris, fabriqués en petite série. Une fois qu'un coloris est épuisé, il ne revient pas.",
     "label": "La Collection",
     "headline": "Trois Robes.",
     "sub": "Chacune faite pour qu'on la regarde. Précommandes ouvertes le 22 août — Collection disponible le 22 août 2026.",
@@ -124,7 +132,7 @@
     },
     "cta_strip": {
       "text": "Trois robes. Précommandes ouvertes le 22 août — Collection disponible le 22 août 2026.",
-      "cta_collection": "Voir les robes →",
+      "cta_collection": "Voir les sacs →",
       "cta_lookbook": "Découvrir le lookbook →"
     }
   },
@@ -240,12 +248,15 @@
     "nav_prev": "PRÉC",
     "nav_next": "SUIV"
   },
+  "faq": {
+    "pricing_answer": "Divine est à R600, Candy à R500 et Edie à R400. La livraison est forfaitaire à R150 partout en Afrique du Sud."
+  },
   "footer": {
-    "tagline": "Des robes faites pour qu'on les regarde.",
+    "tagline": "Faits pour être regardés.",
     "copy": "© 2026 Pretty Absurd. Tous droits réservés.",
     "links": {
       "lookbook": "Lookbook",
-      "collection": "Les Robes",
+      "collection": "Les Sacs",
       "about": "À propos",
       "contact": "Contact"
     }

@@ -3,7 +3,7 @@
   "nav": {
     "brand": "Pretty Absurd",
     "lookbook": "Lookbook",
-    "collection": "The Dresses",
+    "collection": "The Bags",
     "about": "About",
     "contact": "Contact"
   },
@@ -11,7 +11,7 @@
     "hero": {
       "sub": "Too much is the whole point.",
       "cta_lookbook": "Enter the lookbook",
-      "cta_collection": "See the dresses"
+      "cta_collection": "See the bags"
     },
     "receipt": {
       "brand": "PRETTY ABSURD",
@@ -19,14 +19,14 @@
       "blue": "The Ice Blue",
       "dot": "The Polka Dot",
       "total": "TOTAL",
-      "status_line": "STATUS … now open<br>PREORDER … now open",
-      "cta_main": "TAP TO PREORDER",
-      "cta_sub": "join the preorder — xo"
+      "status_line": "STATUS … in stock<br>DELIVERY … The Courier Guy",
+      "cta_main": "TAP TO SHOP",
+      "cta_sub": "the bags are here — xo"
     },
     "shop": {
-      "label": "The Collection",
-      "headline": "One Dress. Three Looks.",
-      "cta": "See the full collection →"
+      "label": "The Bags",
+      "headline": "Brocade, tied and fringed.",
+      "cta": "Shop all the bags →"
     },
     "designer": {
       "label": "The Designer",
@@ -36,12 +36,20 @@
     },
     "notify": {
       "headline": "Don't miss a drop.",
-      "sub": "Preordering is open now. Leave your email and we'll keep you posted on new drops and restocks.",
+      "sub": "Leave your email and we'll let you know about new drops and restocks.",
       "placeholder": "your@email.com",
-      "btn": "Keep me posted"
+      "btn": "Notify me"
     }
   },
+  "bags": {
+    "shoulder":    { "descriptor": "brocade shoulder bag", "desc": "divine… a soft, rounded shoulder bag in brocade, cut generously and finished with a fringe that moves the moment you do. the boldest piece in the line." },
+    "knot-fringe": { "descriptor": "fringed brocade knot bag", "desc": "candy… the japanese-inspired knot bag, tied at the wrist and finished with a long fringe that just won’t sit still." },
+    "knot":        { "descriptor": "brocade knot bag", "desc": "edie… a knot bag borrowed from the japanese furoshiki tradition, then taken somewhere she shouldn’t have been. hand-cut brocade, sequin tulle, taffeta lining. made by hand in johannesburg… 15 at a time." }
+  },
   "collection": {
+    "bags_label": "The Bags",
+    "bags_headline": "Brocade, tied and fringed.",
+    "bags_sub": "Three shapes, a handful of colours, made in small numbers. When a colour is gone, it’s gone.",
     "label": "The Collection",
     "headline": "Three Dresses.",
     "sub": "Each one made to be stared at. A limited, one-time drop — preordering is open now.",
@@ -123,7 +131,7 @@
     },
     "cta_strip": {
       "text": "Three dresses. Preordering is open now.",
-      "cta_collection": "See the dresses →",
+      "cta_collection": "See the bags →",
       "cta_lookbook": "Enter the lookbook →"
     }
   },
@@ -239,12 +247,15 @@
     "nav_prev": "PREV",
     "nav_next": "NEXT"
   },
+  "faq": {
+    "pricing_answer": "Divine is R600, Candy is R500 and Edie is R400. Delivery is a flat R150 anywhere in South Africa."
+  },
   "footer": {
-    "tagline": "Dresses made to be stared at.",
+    "tagline": "Made to be stared at.",
     "copy": "© 2026 Pretty Absurd. All rights reserved.",
     "links": {
       "lookbook": "Lookbook",
-      "collection": "The Dresses",
+      "collection": "The Bags",
       "about": "About",
       "contact": "Contact"
     }

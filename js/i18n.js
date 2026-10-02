@@ -22,6 +22,7 @@ const I18N = (() => {
 
   function apply() {
     document.documentElement.lang = lang;
+    document.dispatchEvent(new CustomEvent('i18n:apply', { detail: { lang } }));
     document.querySelectorAll('[data-i18n]').forEach(el => {
       const val = get(el.dataset.i18n);
       if (typeof val === 'string') el.textContent = val;

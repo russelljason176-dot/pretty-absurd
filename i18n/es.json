@@ -4,7 +4,7 @@
   "nav": {
     "brand": "Pretty Absurd",
     "lookbook": "Lookbook",
-    "collection": "Los Vestidos",
+    "collection": "Los Bolsos",
     "about": "Sobre Nosotros",
     "contact": "Contacto"
   },
@@ -12,7 +12,7 @@
     "hero": {
       "sub": "El exceso es justamente el punto.",
       "cta_lookbook": "Entrar al lookbook",
-      "cta_collection": "Ver los vestidos"
+      "cta_collection": "Ver los bolsos"
     },
     "receipt": {
       "brand": "PRETTY ABSURD",
@@ -20,14 +20,14 @@
       "blue": "El Azul Hielo",
       "dot": "El Lunar",
       "total": "TOTAL",
-      "status_line": "ESTADO … abierto<br>PEDIDO ANTICIPADO … abierto",
-      "cta_main": "TOCA PARA PREORDENAR",
-      "cta_sub": "únete al pedido anticipado — xo"
+      "status_line": "ESTADO … en stock<br>ENTREGA … The Courier Guy",
+      "cta_main": "TOCA PARA COMPRAR",
+      "cta_sub": "los bolsos ya están aquí — xo"
     },
     "shop": {
-      "label": "La Colección",
-      "headline": "Tres Vestidos. Nueve Looks.",
-      "cta": "Ver la colección completa →"
+      "label": "Los Bolsos",
+      "headline": "Brocado, anudado y con flecos.",
+      "cta": "Ver todos los bolsos →"
     },
     "designer": {
       "label": "La Diseñadora",
@@ -37,12 +37,20 @@
     },
     "notify": {
       "headline": "Sé la primera en saberlo.",
-      "sub": "Los pedidos anticipados abren el 22 de agosto de 2026. Deja tu correo y te avisamos en cuanto abran.",
+      "sub": "Deja tu correo y te avisaremos de nuevos bolsos y reposiciones.",
       "placeholder": "tu@email.com",
       "btn": "Avísame"
     }
   },
+  "bags": {
+    "shoulder":    { "descriptor": "bolso de hombro en brocado", "desc": "divine… un bolso de hombro suave y redondeado en brocado, cortado con generosidad y rematado con un fleco que se mueve en cuanto tú lo haces. la pieza más atrevida de la línea." },
+    "knot-fringe": { "descriptor": "bolso anudado en brocado, con flecos", "desc": "candy… el bolso anudado de inspiración japonesa, atado a la muñeca y rematado con un largo fleco que no se está quieto ni un momento." },
+    "knot":        { "descriptor": "bolso anudado en brocado", "desc": "edie… un bolso anudado tomado de la tradición japonesa del furoshiki, y luego llevado a donde no debía. brocado cortado a mano, tul con lentejuelas, forro de tafetán. hecho a mano en johannesburgo… 15 a la vez." }
+  },
   "collection": {
+    "bags_label": "Los Bolsos",
+    "bags_headline": "Brocado, anudado y con flecos.",
+    "bags_sub": "Tres formas, un puñado de colores, hechos en pocas unidades. Cuando un color se agota, se agota para siempre.",
     "label": "La Colección",
     "headline": "Tres Vestidos.",
     "sub": "Cada uno hecho para ser mirado. Los pedidos anticipados abren el 22 de agosto — Colección disponible el 22 de agosto de 2026.",
@@ -124,7 +132,7 @@
     },
     "cta_strip": {
       "text": "Tres vestidos. Los pedidos anticipados abren el 22 de agosto — Colección disponible el 22 de agosto de 2026.",
-      "cta_collection": "Ver los vestidos →",
+      "cta_collection": "Ver los bolsos →",
       "cta_lookbook": "Entrar al lookbook →"
     }
   },
@@ -240,12 +248,15 @@
     "nav_prev": "ANT",
     "nav_next": "SIG"
   },
+  "faq": {
+    "pricing_answer": "Divine cuesta R600, Candy R500 y Edie R400. La entrega tiene un costo fijo de R150 en cualquier parte de Sudáfrica."
+  },
   "footer": {
-    "tagline": "Vestidos hechos para ser mirados.",
+    "tagline": "Hechos para ser mirados.",
     "copy": "© 2026 Pretty Absurd. Todos los derechos reservados.",
     "links": {
       "lookbook": "Lookbook",
-      "collection": "Los Vestidos",
+      "collection": "Los Bolsos",
       "about": "Sobre Nosotros",
       "contact": "Contacto"
     }

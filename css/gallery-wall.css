@@ -1,0 +1,115 @@
+/* ============================================================
+   Gallery wall — homepage "Brocade, tied and fringed."
+   Real carved frame artwork (assets/images/frames/*.webp, cut to
+   transparent) hung salon-style. The bag photo sits behind the
+   frame, clipped to the frame's opening by a mask (*-mask.png).
+   Every frame links to its bag + colour.
+   ============================================================ */
+
+.home-shop {
+  background: var(--pink-page);
+}
+
+.gw {
+  column-count: 3;
+  column-gap: 10px;
+  max-width: 1100px;
+  margin: var(--space-10) auto var(--space-12);
+}
+
+@media (min-width: 700px)  { .gw { column-count: 4; column-gap: 22px; } }
+@media (min-width: 1000px) { .gw { column-count: 5; column-gap: 28px; } }
+
+/* Phones — 3 tight columns read as squished. Drop to 2, give them room to
+   breathe, and scatter with a slight alternating tilt so it reads as a
+   hung gallery wall rather than a grid. */
+@media (max-width: 560px) {
+  .gw {
+    column-count: 2;
+    column-gap: 22px;
+    margin-inline: var(--container-pad);
+  }
+  .pf { margin-bottom: 32px; }
+  .pf:nth-child(3n)   { transform: rotate(-2deg); }
+  .pf:nth-child(3n+1) { transform: rotate(1.5deg); }
+  .pf:nth-child(3n+2) { transform: rotate(-1deg); margin-top: 18px; }
+}
+
+.pf {
+  --w: 100%;
+  position: relative;
+  display: block;
+  width: var(--w);
+  margin: 0 auto 14px;
+  break-inside: avoid;
+  text-decoration: none;
+  transition: transform var(--dur-base) var(--ease-out);
+}
+
+.pf__photo {
+  position: absolute;
+  overflow: hidden;
+  background: var(--cream-dark);
+  -webkit-mask-size: 100% 100%;
+          mask-size: 100% 100%;
+  -webkit-mask-repeat: no-repeat;
+          mask-repeat: no-repeat;
+}
+
+.pf__photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.pf__frame {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: auto;
+  pointer-events: none;
+  filter: drop-shadow(0 8px 10px rgba(50, 30, 10, 0.35));
+}
+
+/* hover / keyboard label */
+.pf__tag {
+  position: absolute;
+  left: 50%;
+  bottom: 4%;
+  transform: translate(-50%, 6px);
+  z-index: 2;
+  padding: 4px 10px;
+  background: rgba(247, 242, 238, 0.95);
+  border: 1px solid rgba(110, 75, 18, 0.45);
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 0.95rem;
+  color: var(--ink);
+  white-space: nowrap;
+  opacity: 0;
+  transition: opacity var(--dur-fast) ease, transform var(--dur-fast) ease;
+  pointer-events: none;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .pf:hover { transform: translateY(-4px) rotate(-0.8deg); }
+  .pf:hover .pf__tag { opacity: 1; transform: translate(-50%, 0); }
+}
+.pf:focus-visible { outline: 2px solid var(--pink-dark); outline-offset: 4px; }
+.pf:focus-visible .pf__tag { opacity: 1; transform: translate(-50%, 0); }
+
+/* sizes (width within its column) */
+.pf--sm { --w: 66%; }
+.pf--md { --w: 84%; }
+.pf--lg { --w: 100%; }
+
+/* frame geometry: opening position as % of the frame artwork */
+.pf--pink-gilt .pf__photo { left: 21.63%; top: 17.47%; width: 56.87%; height: 65.38%; -webkit-mask-image: url("../assets/images/frames/pink-gilt-mask.png"); mask-image: url("../assets/images/frames/pink-gilt-mask.png"); }
+.pf--verdigris-oval .pf__photo { left: 20.11%; top: 14.42%; width: 61.28%; height: 71.26%; -webkit-mask-image: url("../assets/images/frames/verdigris-oval-mask.png"); mask-image: url("../assets/images/frames/verdigris-oval-mask.png"); }
+.pf--lapis-gilt .pf__photo { left: 23.84%; top: 21.5%; width: 52.32%; height: 58.1%; -webkit-mask-image: url("../assets/images/frames/lapis-gilt-mask.png"); mask-image: url("../assets/images/frames/lapis-gilt-mask.png"); }
+.pf--mint-oval .pf__photo { left: 19.66%; top: 20.19%; width: 60.68%; height: 60.71%; -webkit-mask-image: url("../assets/images/frames/mint-oval-mask.png"); mask-image: url("../assets/images/frames/mint-oval-mask.png"); }
+.pf--teal-gilt .pf__photo { left: 13.35%; top: 10.16%; width: 73.3%; height: 76.72%; -webkit-mask-image: url("../assets/images/frames/teal-gilt-mask.png"); mask-image: url("../assets/images/frames/teal-gilt-mask.png"); }
+.pf--pink-carved .pf__photo { left: 22.15%; top: 18.96%; width: 56.79%; height: 62.86%; -webkit-mask-image: url("../assets/images/frames/pink-carved-mask.png"); mask-image: url("../assets/images/frames/pink-carved-mask.png"); }
+
+.home-shop__cta { display: block; text-align: center; }
